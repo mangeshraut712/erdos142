@@ -77,6 +77,10 @@ Most scripts print JSON on stdout. Captured runs live in
 script means the finite checks in that file succeeded. It is not a
 proof of the local target.
 
+After this layout change (2026-09-14), all thirteen `verify_*.py`
+scripts were rerun from the repo root; all exited 0. That does not
+change the open status of the mathematics.
+
 ## Repository map
 
 ```
