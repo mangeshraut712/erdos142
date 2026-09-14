@@ -1,0 +1,99 @@
+{
+  "status": "finite construction checks passed; unrestricted energy lemma refuted by the written proof",
+  "digit_windows": [
+    {
+      "d": 2,
+      "p": 409609,
+      "window_size": 4,
+      "window_rank_at_most": 3,
+      "target_subset_size": 2,
+      "relative_density": "1/2",
+      "window_3AP_free": true,
+      "old_size_cutoff_satisfied": false,
+      "asymptotic_A_d_generated": false
+    },
+    {
+      "d": 3,
+      "p": 26214401,
+      "window_size": 8,
+      "window_rank_at_most": 4,
+      "target_subset_size": 2,
+      "relative_density": "1/4",
+      "window_3AP_free": true,
+      "old_size_cutoff_satisfied": false,
+      "asymptotic_A_d_generated": false
+    },
+    {
+      "d": 4,
+      "p": 1677721631,
+      "window_size": 16,
+      "window_rank_at_most": 5,
+      "target_subset_size": 4,
+      "relative_density": "1/4",
+      "window_3AP_free": true,
+      "old_size_cutoff_satisfied": false,
+      "asymptotic_A_d_generated": false
+    },
+    {
+      "d": 5,
+      "p": 107374182427,
+      "window_size": 32,
+      "window_rank_at_most": 6,
+      "target_subset_size": 6,
+      "relative_density": "3/16",
+      "window_3AP_free": true,
+      "old_size_cutoff_satisfied": false,
+      "asymptotic_A_d_generated": false
+    }
+  ],
+  "arc_state_cases": 69,
+  "fixed_size_partition_cases": 84,
+  "asymptotic_bound_diagnostics": [
+    {
+      "d": 64,
+      "characters_controlled": 8,
+      "arc_counts_controlled_up_to": 64,
+      "variance_over_a_squared_upper_bound": "2^14",
+      "bound_only_not_generated_set": true
+    },
+    {
+      "d": 128,
+      "characters_controlled": 11,
+      "arc_counts_controlled_up_to": 128,
+      "variance_over_a_squared_upper_bound": "2^-17",
+      "bound_only_not_generated_set": true
+    },
+    {
+      "d": 256,
+      "characters_controlled": 16,
+      "arc_counts_controlled_up_to": 256,
+      "variance_over_a_squared_upper_bound": "2^-90",
+      "bound_only_not_generated_set": true
+    },
+    {
+      "d": 512,
+      "characters_controlled": 22,
+      "arc_counts_controlled_up_to": 512,
+      "variance_over_a_squared_upper_bound": "2^-272",
+      "bound_only_not_generated_set": true
+    },
+    {
+      "d": 1024,
+      "characters_controlled": 32,
+      "arc_counts_controlled_up_to": 1024,
+      "variance_over_a_squared_upper_bound": "2^-658",
+      "bound_only_not_generated_set": true
+    },
+    {
+      "d": 4096,
+      "characters_controlled": 64,
+      "arc_counts_controlled_up_to": 4096,
+      "variance_over_a_squared_upper_bound": "2^-3274",
+      "bound_only_not_generated_set": true
+    }
+  ],
+  "arithmetic": "exact integers and rational numbers",
+  "target_r4_status": "OPEN",
+  "cutoff_qualified_energy_status": "OPEN",
+  "external_dependencies": []
+}

@@ -1,0 +1,232 @@
+{
+  "status": "signed-form diagnostics passed; no target asymptotic theorem proved",
+  "exact_indicator_subsets": 10400,
+  "nonempty_4ap_free_subsets": 2647,
+  "signed_mixed_subsets": 244,
+  "generic_negative_spectrum_cases": 10356,
+  "examples": [
+    {
+      "p": 7,
+      "size": 4,
+      "alpha": "4/7",
+      "ap_free": true,
+      "in_regime": false,
+      "T": "6/343",
+      "M": "-108/2401",
+      "three_ap_count": 10,
+      "signed_mixed": true,
+      "popularity": {
+        "count": 6,
+        "count_lower_bound": "25/8",
+        "weighted_endpoint_density": "1/2",
+        "weighted_mass": "1"
+      },
+      "A": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "numerical_fourier": {
+        "mixed_formula_residual": 2.0327851070503216e-17,
+        "quadratic_phases_checked": 49,
+        "minimum_quadratic_rayleigh": 0.0008005849081247714,
+        "arithmetic": "floating point, tolerance 1e-10"
+      },
+      "numerical_quadratic_overlap": {
+        "overlap": 0.07996668054977092,
+        "exact_target": "192/2401",
+        "residual": 1.3877787807814457e-17,
+        "tolerance": 1e-10
+      },
+      "numerical_eigenvalues": {
+        "K": [
+          -0.22307897325840423,
+          -0.08829056982141355,
+          -0.08829056982141353,
+          0.14285714285714288,
+          0.23114771267855636,
+          0.23114771267855644,
+          0.3659361161155471
+        ],
+        "H": [
+          -0.21615638870664158,
+          -0.08829056982141353,
+          -0.08829056982141352,
+          1.892278133426429e-19,
+          0.17534006217602938,
+          0.23114771267855636,
+          0.23114771267855638
+        ],
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "p": 11,
+      "size": 5,
+      "alpha": "5/11",
+      "ap_free": true,
+      "in_regime": false,
+      "T": "40/1331",
+      "M": "-420/14641",
+      "three_ap_count": 15,
+      "signed_mixed": true,
+      "popularity": {
+        "count": 10,
+        "count_lower_bound": "269/80",
+        "weighted_endpoint_density": "1/2",
+        "weighted_mass": "1"
+      },
+      "A": [
+        3,
+        6,
+        8,
+        9,
+        10
+      ],
+      "numerical_fourier": {
+        "mixed_formula_residual": 1.5655703451987028e-16,
+        "quadratic_phases_checked": 121,
+        "minimum_quadratic_rayleigh": 0.005438387374472818,
+        "arithmetic": "floating point, tolerance 1e-10"
+      },
+      "numerical_quadratic_overlap": {
+        "overlap": 0.07171641281333242,
+        "exact_target": "1050/14641",
+        "residual": 0.0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "p": 13,
+      "size": 4,
+      "alpha": "4/13",
+      "ap_free": true,
+      "in_regime": false,
+      "T": "-12/2197",
+      "M": "516/28561",
+      "three_ap_count": 4,
+      "signed_mixed": false,
+      "popularity": null,
+      "A": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "numerical_fourier": {
+        "mixed_formula_residual": 3.860145221858155e-17,
+        "quadratic_phases_checked": 169,
+        "minimum_quadratic_rayleigh": 1.9985277502981944e-05,
+        "arithmetic": "floating point, tolerance 1e-10"
+      },
+      "numerical_quadratic_overlap": {
+        "overlap": 0.0722663772276881,
+        "exact_target": "2064/28561",
+        "residual": 1.3877787807814457e-17,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "p": 101,
+      "size": 28,
+      "alpha": "28/101",
+      "ap_free": true,
+      "in_regime": true,
+      "T": "-1348/1030301",
+      "M": "-253540/104060401",
+      "three_ap_count": 204,
+      "signed_mixed": true,
+      "popularity": {
+        "count": 78,
+        "count_lower_bound": "32451/4088",
+        "weighted_endpoint_density": "44/189",
+        "weighted_mass": "299/378"
+      },
+      "A": [
+        0,
+        20,
+        22,
+        25,
+        30,
+        32,
+        33,
+        34,
+        37,
+        38,
+        39,
+        48,
+        49,
+        52,
+        53,
+        54,
+        58,
+        59,
+        78,
+        79,
+        81,
+        84,
+        88,
+        90,
+        93,
+        94,
+        95,
+        97
+      ],
+      "numerical_fourier": {
+        "mixed_formula_residual": 8.530730257494366e-17,
+        "quadratic_phases_checked": 16,
+        "minimum_quadratic_rayleigh": 6.72537117232235e-05,
+        "arithmetic": "floating point, tolerance 1e-10"
+      },
+      "numerical_quadratic_overlap": {
+        "overlap": 0.05167844778918351,
+        "exact_target": "5377680/104060401",
+        "residual": 0.0,
+        "tolerance": 1e-10
+      }
+    }
+  ],
+  "semicircle_localization_checks": 7028,
+  "concentration_regularization_checks": 1012,
+  "relative_window_identity_checks": 2150,
+  "affine_spreading_checks": [
+    {
+      "p": 7,
+      "A": [
+        0,
+        1,
+        3
+      ],
+      "affine_images": 42,
+      "exact_mean_squared_max_discrepancy": "81/49",
+      "scope": "finite covariance and discrepancy checks; asymptotic counterexample proved analytically"
+    },
+    {
+      "p": 13,
+      "A": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "affine_images": 156,
+      "exact_mean_squared_max_discrepancy": "7253/2197",
+      "scope": "finite covariance and discrepancy checks; asymptotic counterexample proved analytically"
+    }
+  ],
+  "false_fiber_inference": {
+    "p": 13,
+    "A": [
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "d": 1,
+    "m_d": "-55/2197",
+    "c_3d": "1/169"
+  },
+  "external_dependencies": []
+}

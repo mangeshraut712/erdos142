@@ -1,0 +1,126 @@
+{
+  "status": "exact compatibility diagnostics passed; local target remains OPEN",
+  "overlapping_local_laws": 21,
+  "prime_subset_fiber_checks": 2179,
+  "overlap_hypergraph": {
+    "points": 16,
+    "distinct_4AP_edges": 10,
+    "density": "1/64",
+    "assignments": 65536,
+    "all_constraints_satisfied": true,
+    "independent_six_point_moment": "(1/64)^6",
+    "scope": "finite probability law, not a fixed cyclic set or target-density construction"
+  },
+  "fixed_size_extension": {
+    "ground_set_size": 1009,
+    "fixed_sample_size": 32,
+    "local_points": 10,
+    "local_4AP_edges": 3,
+    "global_moment_comparisons": 244,
+    "conditional_endpoint_rate": "30/1007",
+    "global_density": "32/1009",
+    "scope": "fixed-size random sets avoid only the represented local edges"
+  },
+  "relative_center_checks": 219,
+  "Z101_fiber_witness": {
+    "p": 101,
+    "size": 28,
+    "active_differences": 100,
+    "weighted_variance": "17181266911/1389540232080",
+    "lattice_lower_bound": "625/364389921",
+    "weighted_mean_r": "44/189",
+    "alpha": "28/101"
+  },
+  "scalar_recurrences": {
+    "endpoint_path_steps": 200,
+    "rank_stalling_steps": 20,
+    "interpretation": "scalar feasible bounds only, not a sequence of actual sets"
+  },
+  "spread_weighted_spectrum_family": [
+    {
+      "p": 19,
+      "relative_deficit": "5/33",
+      "largest_atom_upper_bound": "252/3971",
+      "window_size": 6,
+      "meets_large_window_cutoff": false
+    },
+    {
+      "p": 31,
+      "relative_deficit": "5/33",
+      "largest_atom_upper_bound": "252/10571",
+      "window_size": 6,
+      "meets_large_window_cutoff": false
+    },
+    {
+      "p": 61,
+      "relative_deficit": "5/33",
+      "largest_atom_upper_bound": "252/40931",
+      "window_size": 6,
+      "meets_large_window_cutoff": false
+    }
+  ],
+  "weighted_sampling": [
+    {
+      "p": 5,
+      "size": 2,
+      "samples_per_tuple": 1,
+      "tuples_checked": 2,
+      "expected_weighted_squared_error": "7/250",
+      "low_cubic_hypothesis": false,
+      "low_cubic_upper_bound": null,
+      "spread_K": "5/2"
+    },
+    {
+      "p": 5,
+      "size": 2,
+      "samples_per_tuple": 2,
+      "tuples_checked": 4,
+      "expected_weighted_squared_error": "7/500",
+      "low_cubic_hypothesis": false,
+      "low_cubic_upper_bound": null,
+      "spread_K": "5/2"
+    },
+    {
+      "p": 13,
+      "size": 4,
+      "samples_per_tuple": 1,
+      "tuples_checked": 4,
+      "expected_weighted_squared_error": "75/4394",
+      "low_cubic_hypothesis": true,
+      "low_cubic_upper_bound": "64/2197",
+      "spread_K": "13/8"
+    },
+    {
+      "p": 13,
+      "size": 4,
+      "samples_per_tuple": 2,
+      "tuples_checked": 16,
+      "expected_weighted_squared_error": "75/8788",
+      "low_cubic_hypothesis": true,
+      "low_cubic_upper_bound": "32/2197",
+      "spread_K": "13/8"
+    },
+    {
+      "p": 101,
+      "size": 28,
+      "samples_per_tuple": 1,
+      "tuples_checked": 28,
+      "expected_weighted_squared_error": "208855/14424214",
+      "low_cubic_hypothesis": true,
+      "low_cubic_upper_bound": "21952/1030301",
+      "spread_K": "101/49"
+    },
+    {
+      "p": 101,
+      "size": 28,
+      "samples_per_tuple": 2,
+      "tuples_checked": 784,
+      "expected_weighted_squared_error": "208855/28848428",
+      "low_cubic_hypothesis": true,
+      "low_cubic_upper_bound": "10976/1030301",
+      "spread_K": "101/49"
+    }
+  ],
+  "arithmetic": "integers and exact fractions",
+  "external_dependencies": []
+}

@@ -1,0 +1,8 @@
+{
+  "command": "python3 verify_endpoint_incidence.py",
+  "date": "2026-09-14",
+  "status": "passed",
+  "exact_star_cases": 24,
+  "exact_gram_entries": 1896,
+  "target_proved": false
+}
