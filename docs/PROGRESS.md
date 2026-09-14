@@ -168,6 +168,8 @@ is proved.
 
 See the root README for commands.
 
+On 2026-09-14, after the directory move, all thirteen `verification/scripts/verify_*.py` checkers were rerun from the repository root with Python 3 (stdlib only). All thirteen exited 0. `_probe_terminal.py` is an adversarial diagnostic, not a named verifier; it still stops with a pre-existing `TypeError` in `max_block_gain` and was not rewritten in this reorganization.
+
 ## Prize and publication
 
 No prize completion is claimed. No literature novelty is claimed for the
