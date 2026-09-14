@@ -1,147 +1,136 @@
-# Offline Erdős 142 research attempt — 2026-09-06
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright 2026 Mangesh Raut -->
 
-STATUS: (E) OPEN — SINGLE FINAL OBSTRUCTION
+# Erdős problem 142 — research pack
 
-Full-group audit of the energy theorem (14 September, later):
-[FULL_GROUP_ENERGY_AUDIT.md](FULL_GROUP_ENERGY_AUDIT.md) settles the
-Omega=Z_p specialization only in part. Proved: the theorem is trivially
-true for p <= 4^(C log(2/a)) (the sparse end of its own cutoff); every
-interval-supported Behrend/sphere set, every affine image, and every
-random thinning is a trivial YES instance; the logarithmic-rank window
-version implies r_3(N) <= N exp(-c (log N)^(1/4)) via the checkpointed
-bridge; and rank a^(-c), c<1/2, at density >= epsilon/(2 log n) already
-suffices for the r4 target. Neither a proof nor an eligible counterexample
-in the nontrivial regime was found; the Freiman-embedded sphere family is
-the one remaining full-group instance. Run
-`python3 verify_full_group_energy.py` for its exact finite checks.
+**Status: (E) OPEN — SINGLE FINAL OBSTRUCTION**
 
-Latest endpoint-incidence audit (14 September):
-[ENDPOINT_INCIDENCE_AUDIT.md](ENDPOINT_INCIDENCE_AUDIT.md) records the
-orientation convention, growing-star entropy bounds, and the exact
-middle-pair incidence Gram matrix. These do not prove the full-cutoff
-arithmetic energy theorem. This continuation has status
-**(E) OPEN — SINGLE FINAL OBSTRUCTION**. Run
-`python3 verify_endpoint_incidence.py` for its exact finite diagnostics.
+Author: [Mangesh Raut](https://github.com/mangeshraut712)
+(`mbr63@drexel.edu`). Offline notes from **2026-09-06**, continued
+through **2026-09-14**, now a public repository.
 
-Latest AP-geometry result: [AP_RICHNESS_COUNTEREXAMPLE.md](AP_RICHNESS_COUNTEREXAMPLE.md)
-shows that total AP richness and density-only direction-support/entropy
-bounds still do not force relative coarse energy. A small AP-rich progression
-can supply all nontrivial ambient APs while avoiding A entirely. The full
-checkpoint-qualified energy lemma and the r4 target remain open. Run
-`python3 verify_ap_richness.py` for exact supporting checks.
+This is a working notebook with finite checkers, not a completed
+solution. There is no proof of \(r_4(N)=o(N/\log N)\), no proof of
+official Erdős #142, no new claimed asymptotic, and no prize claim.
 
-14 September update: [UNIFORM_ENERGY_COUNTEREXAMPLE.md](UNIFORM_ENERGY_COUNTEREXAMPLE.md)
-refutes the newly proposed uniform energy lemma when it is quantified over
-every controlled window without the checkpoint size/AP-availability cutoff.
-It gives a deterministic infinite family at logarithmic relative density.
-The cutoff-qualified energy lemma and r_4(N)=o(N/log N) remain open. Run
-`python3 verify_energy_counterexample.py` for supporting exact finite checks.
+## Problem (as used in these notes)
 
-Latest continuation (13 September 2026): [LOCALIZATION_BRIDGE.md](LOCALIZATION_BRIDGE.md)
-proves the signed-compression-to-factor-energy bridge and a direct terminal
-window bound, and corrects gaps in the previous conditional closing claim.
-The required uniform arithmetic factor is still unproved. Run
-`python3 verify_localization.py` for the new exact finite diagnostics.
+Let \(r_4(N)\) be the size of the largest subset of \(\{1,\ldots,N\}\)
+with no 4-term arithmetic progression. The **local target** of the
+increment program here is
 
-No proof of r_4(N) = o(N/log N), no new asymptotic bound, and no claim of
-research novelty resulted from this attempt. All mathematics was developed
-offline. Auxiliary statements were proved algebraically and checked on finite
-examples. The finite checks are not an asymptotic proof.
+\[
+r_4(N)=o(N/\log N).
+\]
 
-## Main verified auxiliary statements
+That target is open. The notes repeatedly distinguish it from
+**official Erdős problem 142**, which is also open and is **not**
+settled by a \(k=4\) little-o bound of this shape even if one were
+proved ([docs/audits/MIXED_INCREMENT.md](docs/audits/MIXED_INCREMENT.md)
+§10). Read the official statement at
+[erdosproblems.com/142](https://www.erdosproblems.com/142).
 
-Phase 2 independently verified the alpha^(3/2) lemma and reset the arithmetic
-inverse threshold to C<4/3. It also proved that a uniform correlation bound
-in the **actual** U3 norm with C<2 is impossible even in the stipulated
-AP-free density regime. The direct density-sensitive correlation target
-remains open. See [PHASE2_AUDIT.md](PHASE2_AUDIT.md) for the complete proofs,
-normalization obstruction, and exponent ledger. Run `python3 verify_phase2.py`
-for the new finite checks, including an eligible 28-element set in Z_101.
+If a bounty is listed anywhere, verify it on that site, OEIS, or the
+literature. **This repo does not record a prize amount.**
 
-The signed-branch continuation is in [SIGNED_RESEARCH.md](SIGNED_RESEARCH.md).
-It records the exact endpoint operator and conditional endpoint distribution,
-the nonnegative quadratic-phase Rayleigh identity, popular negative fibers,
-and concentration/mass-retention bookkeeping. The target remains open:
-no sufficient arithmetic increment follows yet. Run `python3 verify_signed.py`
-for its exact subset checks and separately labelled Fourier diagnostics.
-Hostile review also disproved a proposed universal near-full-mass increment
-on integer progressions; the affine-spreading counterexample and the
-replacement relative-window identity are preserved in that report.
+## How far we are
 
-Use normalized averages on Z_p, p > 3 prime, f = 1_A - alpha, and
-b = alpha(1-alpha). A is progression-free for nonzero differences.
+Auxiliary identities (U³ lower bounds, relative-window counting,
+signed-operator algebra, a localization bridge) are written and, where
+claimed, checked on small cyclic groups. Several proposed closing lemmas
+are **refuted** (unrestricted uniform energy; AP-richness as a substitute
+for coarse energy; actual-U³ inverse with exponent \(C<2\); mixed mass
+as a ready-made increment).
 
-1. The exact indicator count is alpha/p, including the diagonal. The
-   endpoint-balanced expansion and a mixed Cauchy–Schwarz inequality give
+What remains is one sufficient closing input: a **full-cutoff arithmetic
+energy theorem** (logarithmic-rank quarter-arc factors with
+\(\mathrm{Var}(E(1_A\mid F))\ge\eta a^2\)). That is the “single final
+obstruction.” Details, including the full-group \(\mathbb Z_p\) case and
+the Freiman-embedded sphere family, are in
+**[docs/PROGRESS.md](docs/PROGRESS.md)**. Next steps:
+[docs/ROADMAP.md](docs/ROADMAP.md).
 
-   ||f||_(U3)^2 >= max(0, alpha^3 - 1/p)/(1 + 2 sqrt(b)).
+## Quickstart (verifiers)
 
-   In particular, p alpha^3 >= 2 implies ||f||_(U3) >= alpha^(3/2)/2.
-   This improves the crude starting estimate supplied in the request. Its
-   novelty is not claimed, and it supplies no density-increment scale.
+Python 3, **standard library only** (`pyproject.toml` lists no runtime
+dependencies). From the repository root:
 
-2. For a fixed shift, put c = E f(x)f(x+h), theta = alpha^2+c,
-   t = alpha-theta, z = 1-2alpha+theta, gamma = b+c. For gamma > 0,
+```bash
+python3 verification/scripts/verify_core.py
+python3 verification/scripts/verify_phase2.py
+python3 verification/scripts/verify_signed.py
+python3 verification/scripts/verify_relative.py
+python3 verification/scripts/verify_increment.py
+python3 verification/scripts/verify_mixed.py
+python3 verification/scripts/verify_compat.py
+python3 verification/scripts/verify_compatibility.py
+python3 verification/scripts/verify_localization.py
+python3 verification/scripts/verify_energy_counterexample.py
+python3 verification/scripts/verify_ap_richness.py
+python3 verification/scripts/verify_endpoint_incidence.py
+python3 verification/scripts/verify_full_group_energy.py
+```
 
-   R = f(x)f(x+h) - c - (1-2alpha)c/gamma * (f(x)+f(x+h)).
+Most scripts print JSON on stdout. Captured runs live in
+`verification/results/`. `verify_full_group_energy.py` also writes
+`verification/results/full_group_energy_verification.json`. A passing
+script means the finite checks in that file succeeded. It is not a
+proof of the local target.
 
-   Its four atom values are (t theta, -z theta, -z theta, t z)/gamma,
-   and its squared L2 norm is t z theta/gamma. Every four-atom function
-   orthogonal to 1, f(x), f(x+h) is a scalar multiple of R. With a missing
-   atom, that orthogonal space is zero in weighted L2. Complementary and
-   constant pairs cover gamma = 0 and also have zero residual.
+After this layout change (2026-09-14), all thirteen `verify_*.py`
+scripts were rerun from the repo root; all exited 0. That does not
+change the open status of the mathematics.
 
-3. Write W_xi = |fhat(xi)|^2, S = sum W_xi^2, and
+## Repository map
 
-   D = S^2 - sum_(k,xi) W_k^2 W_xi W_(xi-k).
+```
+README.md                 this page
+LICENSE, NOTICE           Apache-2.0
+CITATION.cff, AUTHORS     citation and author of record
+CONTRIBUTING.md           DCO + CLA-lite
+CODE_OF_CONDUCT.md, SECURITY.md
+docs/PROGRESS.md          proved / refuted / open
+docs/ROADMAP.md           contribution ideas
+docs/PRIORITY_AND_ATTRIBUTION.md
+docs/literature/          external problem page; no invented bounty
+docs/audits/              full research trail (markdown)
+verification/scripts/     verify_*.py and _probe_terminal.py
+verification/results/     captured JSON
+pyproject.toml            metadata; stdlib-only
+```
 
-   Then, for b,S > 0,
+Codeowners: [@mangeshraut712](.github/CODEOWNERS).
 
-   D = (1/2) sum_(k,xi) W_k^2 (W_xi-W_(xi-k))^2,
-   D/S^2 >= S/b^2 >= 1/(p-1),
-   D/S^2 >= (2/625) * (1-b^2/(pS)).
+## Contributing and sponsors
 
-   If D/S^2 < 2/625, the stronger conclusion is
-   1-b^2/(pS) <= (5/4) D/S^2.
+Patches that prove, refute, or correctly weaken the remaining energy
+theorem are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md): Apache-2.0
+on contributions, DCO sign-off (`git commit -s`), do not strip
+attribution, do not mark the problem solved from examples.
 
-   The last statement follows by setting mu = W^2/S, proving approximate
-   convolution idempotence of mu, showing its high Fourier eigenvalues form
-   a subgroup, and using primality plus mu(0)=0. Probability eigenvalues
-   use SUM_k mu(k)e_p(-tk), not a normalized average.
+Sponsor the author via [GitHub Sponsors](https://github.com/sponsors/mangeshraut712)
+or the [GitHub profile](https://github.com/mangeshraut712).
 
-## Explicit rejected shortcuts
+## Citation
 
-- Z_7, A={0,1,3}: two identical successive residual input pairs give
-  different two-step residuals. No deterministic composition from those
-  inputs holds in general.
-- Z_5, A={0,1}: E R_1(x)R_1(x+2) = 4/245 > 0. The sign of the forbidden
-  pair-indicator correlation cannot be passed to the residual alone.
-- The same Z_5 example has nu_2(0)=4/5 but (nu_1*nu_1)(0)=41473/83205,
-  for nu_h proportional to |Fourier(f(x)f(x+h))|^4.
-- Z_13, A={0,1,3,9}: all nonzero ordered differences occur once. This
-  progression-free set has exactly flat nonzero squared Fourier magnitudes.
-- For g=(1,1/2,1/2,1/2,1/2) on Z_5, Lambda_4(g)=7/50 and U3(g)^8=11/625.
-  Thus the proposed general strengthening |Lambda_4(g)| <= U3(g)^4 fails.
+```
+Mangesh Raut, Erdős problem 142 research pack,
+https://github.com/mangeshraut712/erdos142, 2026.
+```
 
-## Verification
+Machine-readable: [CITATION.cff](CITATION.cff). A Zenodo DOI is
+recommended later; none is registered yet.
 
-Run with the Python standard library:
+## License
 
-    python3 verify_core.py
+Copyright 2026 Mangesh Raut. Licensed under the Apache License 2.0.
+SPDX-License-Identifier: Apache-2.0. See [LICENSE](LICENSE) and
+[NOTICE](NOTICE).
 
-The captured result is in verification.json. The script checks all 2,208
-subsets in Z_5, Z_7, Z_11, plus the Z_13 difference-set example. Extra atom
-checks on Z_4 and Z_6 cover complementary-pair degeneracies. It also checks
-276 general nonnegative even spectral arrays. Exhaustive identities use
-exact rational arithmetic. The radical Fourier-probability values receive
-a separate floating-point check with tolerance 1e-12.
+## Public copies
 
-## Unresolved step
-
-There is no proved mechanism turning these estimates into a density
-increment on a sufficiently large set. In a hypothetical iteration with
-density gain c alpha^s and logarithmic size loss C alpha^(-t), s >= 1,
-t >= 0, the total loss has order alpha^(-(s+t-1)) when s+t-1 > 0.
-To obtain little-o at alpha = epsilon/log N for every fixed epsilon > 0,
-this model needs exponent below 1, or a further saving at the endpoint.
-No such increment theorem was established here.
+This repository is public on purpose. Cloning cannot be prevented.
+Copyright headers, NOTICE, DCO/CLA-lite, and citation metadata exist so
+that reuse keeps the author’s name and does not pretend the mathematics
+is finished. They are not a secrecy mechanism.
+See [docs/PRIORITY_AND_ATTRIBUTION.md](docs/PRIORITY_AND_ATTRIBUTION.md).
