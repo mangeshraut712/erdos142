@@ -27,11 +27,16 @@ That target is open. The notes repeatedly distinguish it from
 **official Erdős problem 142**, which is also open and is **not**
 settled by a \(k=4\) little-o bound of this shape even if one were
 proved ([docs/audits/MIXED_INCREMENT.md](docs/audits/MIXED_INCREMENT.md)
-§10). Read the official statement at
-[erdosproblems.com/142](https://www.erdosproblems.com/142).
+§10). Official statement:
+[docs/literature/OFFICIAL_142.md](docs/literature/OFFICIAL_142.md);
+live pages
+[erdosproblems.com/142](https://www.erdosproblems.com/142) and
+[latex/142](https://www.erdosproblems.com/latex/142).
 
 If a bounty is listed anywhere, verify it on that site, OEIS, or the
-literature. **This repo does not record a prize amount.**
+literature. Historical prize remarks from the official commentary are
+in [OFFICIAL_142.md](docs/literature/OFFICIAL_142.md); this pack does
+not claim a live, collectable bounty.
 
 ## How far we are
 

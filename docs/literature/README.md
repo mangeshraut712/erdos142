@@ -9,11 +9,14 @@ This directory is a pointer, not a reconstructed bibliography.
 
 The numbering “Erdős problem 142” is that of
 [erdosproblems.com](https://www.erdosproblems.com/)
-(see [problem 142](https://www.erdosproblems.com/142)).
+(see [problem 142](https://www.erdosproblems.com/142) and the
+[LaTeX page](https://www.erdosproblems.com/latex/142)).
 
-This pack **does not copy** the official statement from that site. Read
-it there. In the notes here, “official Erdős #142” is distinguished from
-the **local target**
+A local record of that official statement, status, site prize commentary,
+and cited upper bounds is
+**[OFFICIAL_142.md](OFFICIAL_142.md)**. Recheck the live site before
+relying on the paraphrase. In the notes here, “official Erdős #142” is
+distinguished from the **local target**
 
 \[
 r_4(N)=o(N/\log N),
@@ -27,10 +30,12 @@ would not by itself settle official #142
 
 ## Prize / bounty
 
-No prize amount is recorded in this repository. If a bounty is attached
-to problem 142, **verify it** on erdosproblems.com, OEIS, or the
-published literature. Do not trust a number that appears only in a clone
-or a chat summary.
+Historical prize remarks from the official commentary are summarized in
+[OFFICIAL_142.md](OFFICIAL_142.md). This pack does **not** claim a live
+bounty UI or that anyone can collect those amounts today. If a bounty
+is attached to problem 142, **verify it** on erdosproblems.com, OEIS, or
+the published literature. Do not trust a number that appears only in a
+clone or a chat summary.
 
 ## Related sequences and papers
 
