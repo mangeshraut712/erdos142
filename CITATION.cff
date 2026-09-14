@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this research pack, please cite it as below."
+type: software
+title: "Erdős problem 142 research pack"
+abstract: >-
+  Public offline research notes, finite verifiers, and progress reports
+  toward a density-increment approach related to Erdős problem 142 and the
+  local target r_4(N)=o(N/log N). The problem remains open. No closed
+  proof or prize claim is made in this record.
+authors:
+  - family-names: Raut
+    given-names: Mangesh
+    email: mbr63@drexel.edu
+    alias: mangeshraut712
+repository-code: "https://github.com/mangeshraut712/erdos142"
+url: "https://github.com/mangeshraut712/erdos142"
+license: Apache-2.0
+date-released: "2026-09-06"
+keywords:
+  - Erdős problems
+  - additive combinatorics
+  - arithmetic progressions
+  - density increment
+  - r_4
+preferred-citation:
+  type: software
+  title: "Erdős problem 142 research pack"
+  authors:
+    - family-names: Raut
+      given-names: Mangesh
+  year: 2026
+  url: "https://github.com/mangeshraut712/erdos142"

@@ -1,0 +1,25 @@
+[project]
+name = "erdos142"
+version = "0.0.0"
+description = "Research notes and finite verifiers for an open attempt on Erdős problem 142"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Mangesh Raut", email = "mbr63@drexel.edu" },
+]
+keywords = [
+  "erdos",
+  "additive-combinatorics",
+  "research",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mangeshraut712/erdos142"
+Repository = "https://github.com/mangeshraut712/erdos142"
+Issues = "https://github.com/mangeshraut712/erdos142/issues"
+Sponsor = "https://github.com/sponsors/mangeshraut712"
+
+[tool.setuptools]
+py-modules = []
