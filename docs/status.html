@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright 2026 Mangesh Raut -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erdős 142 — research pack status</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --line: rgba(0, 0, 0, 0.08);
+      --green: #248a3d;
+      --green-bg: #e4f6e8;
+      --amber: #9a6700;
+      --amber-bg: #fff4d6;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .viewport {
+      width: 1440px;
+      height: 900px;
+      overflow: hidden;
+      padding: 48px 88px 40px;
+    }
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+    h1 {
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+      font-weight: 650;
+      margin: 0 0 12px;
+    }
+    #feature h1 { font-size: 40px; }
+    .lede {
+      max-width: 42rem;
+      font-size: 21px;
+      line-height: 1.4;
+      color: var(--muted);
+      margin: 0;
+    }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+    .pill.open { background: var(--amber-bg); color: var(--amber); border-color: transparent; }
+    .pill.pass { background: var(--green-bg); color: var(--green); border-color: transparent; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 28px 30px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 12px 40px rgba(0,0,0,0.04);
+    }
+    h2 {
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 12px;
+      font-weight: 650;
+    }
+    .card p, .card li {
+      font-size: 17px;
+      line-height: 1.45;
+      margin: 0;
+    }
+    .card ul { margin: 10px 0 0; padding-left: 1.15em; color: var(--ink); }
+    a { color: #0066cc; text-decoration: none; }
+    .footnote {
+      margin-top: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .win {
+      background: #1d1d1f;
+      color: #f5f5f7;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.18);
+      height: 430px;
+      display: flex;
+      flex-direction: column;
+    }
+    .win-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 18px;
+      background: #2c2c2e;
+      font-size: 13px;
+      color: #a1a1a6;
+    }
+    .traffic { display: flex; gap: 6px; margin-right: 10px; }
+    .traffic i { width: 12px; height: 12px; border-radius: 50%; display: block; }
+    .r { background: #ff5f57; }
+    .y { background: #febc2e; }
+    .g { background: #28c840; }
+    pre {
+      margin: 0;
+      padding: 22px 26px 28px;
+      overflow: hidden;
+      font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+      font-size: 15px;
+      line-height: 1.55;
+      color: #d2d2d7;
+      white-space: pre-wrap;
+    }
+    .ok { color: #32d74b; }
+    .key { color: #64d2ff; }
+    .str { color: #ffd60a; }
+    .num { color: #bf5af2; }
+    .meta {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .stat {
+      flex: 1;
+      background: var(--card);
+      border-radius: 18px;
+      padding: 18px 20px;
+    }
+    .stat b { display: block; font-size: 28px; letter-spacing: -0.03em; }
+    .stat span { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <section class="viewport" id="overview" aria-label="Overview">
+    <header>
+      <div>
+        <p class="kicker">Research notebook · stdlib Python verifiers</p>
+        <h1>Erdős problem 142</h1>
+        <p class="lede">Working notes toward a density increment for r<sub>4</sub>. Official #142 and the local o(N/log N) target both remain open. Finite checkers are not a proof.</p>
+      </div>
+      <div class="pills">
+        <span class="pill open"><span class="dot"></span> Status: OPEN</span>
+        <span class="pill">Single final obstruction</span>
+        <span class="pill pass"><span class="dot"></span> Verifiers exit 0</span>
+      </div>
+    </header>
+    <div class="grid">
+      <article class="card">
+        <h2>What this pack is</h2>
+        <p>An offline research notebook with exact finite checks of auxiliary identities on small cyclic groups. It does not claim r<sub>4</sub>(N) = o(N/log N), an asymptotic for all r<sub>k</sub>(N), or a prize.</p>
+        <ul>
+          <li>Official statement: <a href="https://www.erdosproblems.com/142">erdosproblems.com/142</a></li>
+          <li>Local target in these notes: r<sub>4</sub>(N) = o(N/log N), still unproved</li>
+          <li>Python 3, standard library only — no runtime dependencies</li>
+        </ul>
+        <p class="footnote">Snapshot for humans, 2026-09-16. Mathematics unchanged from the written audits.</p>
+      </article>
+      <article class="card">
+        <h2>Single final obstruction</h2>
+        <p>A <strong>full-cutoff arithmetic energy theorem</strong> (logarithmic-rank quarter-arc factors with Var(E(1<sub>A</sub> | F)) ≥ η a<sup>2</sup>) is still missing. Auxiliary U<sup>3</sup>, signed-operator, and localization identities are written; several closing shortcuts are refuted.</p>
+        <p class="footnote">See docs/PROGRESS.md · not a solution.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="viewport" id="feature" aria-label="Verifier results">
+    <header>
+      <div>
+        <p class="kicker">Feature · live stdlib run from repository root</p>
+        <h1>Finite verifiers passed</h1>
+        <p class="lede">Three scripts printed JSON and exited 0. Passing checkers support identities on small groups. They do not close official Erdős #142.</p>
+      </div>
+      <div class="pills">
+        <span class="pill pass"><span class="dot"></span> verify_core.py · exit 0</span>
+        <span class="pill pass"><span class="dot"></span> verify_phase2.py · exit 0</span>
+        <span class="pill pass"><span class="dot"></span> verify_signed.py · exit 0</span>
+      </div>
+    </header>
+    <div class="meta">
+      <div class="stat"><b>2,208</b><span>exact counting-energy subsets (core)</span></div>
+      <div class="stat"><b>762</b><span>nonempty proper 4-AP-free subsets</span></div>
+      <div class="stat"><b>10,400</b><span>signed-form indicator subsets</span></div>
+    </div>
+    <div class="win">
+      <div class="win-bar">
+        <span class="traffic"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+        python3 verification/scripts/verify_core.py
+      </div>
+      <pre><span class="ok">{</span>
+  <span class="key">"status"</span>: <span class="str">"finite auxiliary checks passed; no asymptotic theorem proved"</span>,
+  <span class="key">"exact_counting_energy_subsets"</span>: <span class="num">2208</span>,
+  <span class="key">"nonempty_proper_4ap_free_subsets"</span>: <span class="num">762</span>,
+  <span class="key">"exact_four_atom_subsets"</span>: <span class="num">2288</span>,
+  <span class="key">"exact_general_even_spectral_arrays"</span>: <span class="num">276</span>,
+  <span class="key">"groups_for_counting"</span>: [<span class="num">5</span>, <span class="num">7</span>, <span class="num">11</span>],
+  <span class="key">"extra_groups_for_degeneracies"</span>: [<span class="num">4</span>, <span class="num">6</span>],
+  <span class="key">"spectral_kernel_counterexample"</span>: <span class="str">"float check of exact radical formulas, tolerance 1e-12"</span>,
+  <span class="key">"external_dependencies"</span>: []
+<span class="ok">}</span>
+
+<span class="ok"># also:</span> verify_phase2.py → phase 2 finite checks passed; no asymptotic density bound proved
+<span class="ok"># also:</span> verify_signed.py → signed-form diagnostics passed; no target asymptotic theorem proved</pre>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var shot = new URLSearchParams(location.search).get("shot");
+      if (shot === "home") {
+        var feature = document.getElementById("feature");
+        if (feature) feature.style.display = "none";
+      }
+      if (shot === "feature") {
+        var overview = document.getElementById("overview");
+        if (overview) overview.style.display = "none";
+      }
+    })();
+  </script>
+</body>
+</html>
