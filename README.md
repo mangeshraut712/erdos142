@@ -5,6 +5,16 @@
 
 **Status: (E) OPEN — SINGLE FINAL OBSTRUCTION**
 
+<p align="center">
+  <img src="docs/screenshots/01-home.png" width="720" alt="Status overview: Erdős problem 142 remains OPEN, with a single final obstruction and stdlib verifiers that exit 0">
+</p>
+<p align="center"><em>Overview — official #142 and the local <code>r₄(N)=o(N/log N)</code> target are both still open.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/02-feature.png" width="720" alt="Passing stdlib verifier JSON from verify_core.py, verify_phase2.py, and verify_signed.py, each exiting 0">
+</p>
+<p align="center"><em>Feature — live finite checkers from the repo root (JSON on stdout, exit 0). Not a proof.</em></p>
+
 Author: [Mangesh Raut](https://github.com/mangeshraut712)
 (`mbr63@drexel.edu`). Offline notes from **2026-09-06**, continued
 through **2026-09-14**, now a public repository.
@@ -97,6 +107,8 @@ CODE_OF_CONDUCT.md, SECURITY.md
 docs/PROGRESS.md          proved / refuted / open
 docs/ROADMAP.md           contribution ideas
 docs/PRIORITY_AND_ATTRIBUTION.md
+docs/status.html          static OPEN-status snapshot (no extra deps)
+docs/screenshots/         README card images from that page
 docs/literature/          external problem page; no invented bounty
 docs/audits/              full research trail (markdown)
 verification/scripts/     verify_*.py and _probe_terminal.py
