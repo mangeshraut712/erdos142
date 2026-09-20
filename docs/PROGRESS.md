@@ -12,6 +12,10 @@ are not an asymptotic proof.
 This file only records claims already written in [docs/audits/](audits/).
 It does not add a proof, a prize amount, or a “solved” claim.
 
+Read this as a **status digest**, not a product changelog. The GitHub
+landing page is [README.md](../README.md); the docs map is
+[README.md](README.md).
+
 ## What the pack is trying to do
 
 The notes work toward a density-increment iteration whose **local

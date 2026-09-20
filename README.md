@@ -1,9 +1,36 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <!-- Copyright 2026 Mangesh Raut -->
 
-# Erdős problem 142 — research pack
+<p align="center">
+  <img src="https://img.shields.io/badge/status-OPEN-9A6700?style=flat-square" alt="Status: OPEN">
+  <img src="https://img.shields.io/badge/Python-3%20stdlib-0071E3?style=flat-square&logo=python&logoColor=white" alt="Python 3, standard library only">
+  <img src="https://img.shields.io/badge/License-Apache%202.0-1d1d1f?style=flat-square" alt="Apache License 2.0">
+</p>
 
-**Status: (E) OPEN — SINGLE FINAL OBSTRUCTION**
+<h1 align="center">Erdős problem 142</h1>
+
+<p align="center">
+  Research notebook — density-increment notes for <em>r</em><sub>4</sub>, finite checkers, and an honest remaining obstruction.<br>
+  Not a product. Not a solution.
+</p>
+
+<p align="center">
+  <a href="docs/PROGRESS.md">Progress</a> ·
+  <a href="docs/ROADMAP.md">Roadmap</a> ·
+  <a href="docs/literature/OFFICIAL_142.md">Official #142</a> ·
+  <a href="docs/audits/">Audits</a> ·
+  <a href="https://www.erdosproblems.com/142">erdosproblems.com/142</a>
+</p>
+
+> [!IMPORTANT]
+> **Status: OPEN — single final obstruction.** Official Erdős #142 and the
+> local target \(r_4(N)=o(N/\log N)\) are both still open in this pack.
+> Passing Python checkers is not a proof. There is no new claimed
+> asymptotic and no prize claim.
+
+Author: [Mangesh Raut](https://github.com/mangeshraut712)
+(`mbr63@drexel.edu`). Offline notes from **2026-09-06**, continued
+through **2026-09-14**, now a public repository.
 
 <p align="center">
   <img src="docs/screenshots/01-home.png" width="720" alt="Status overview: Erdős problem 142 remains OPEN, with a single final obstruction and stdlib verifiers that exit 0">
@@ -15,13 +42,17 @@
 </p>
 <p align="center"><em>Feature — live finite checkers from the repo root (JSON on stdout, exit 0). Not a proof.</em></p>
 
-Author: [Mangesh Raut](https://github.com/mangeshraut712)
-(`mbr63@drexel.edu`). Offline notes from **2026-09-06**, continued
-through **2026-09-14**, now a public repository.
+## At a glance
 
-This is a working notebook with finite checkers, not a completed
-solution. There is no proof of \(r_4(N)=o(N/\log N)\), no proof of
-official Erdős #142, no new claimed asymptotic, and no prize claim.
+| Surface | Honest status |
+|---|---|
+| Official Erdős #142 | **OPEN** — prove an asymptotic for all \(r_k(N)\) |
+| Local target in these notes | **OPEN** — \(r_4(N)=o(N/\log N)\) |
+| Remaining closing input | Full-cutoff arithmetic energy theorem (named, unproved) |
+| Finite checkers | 13 stdlib `verify_*.py` scripts; last captured run exit 0 |
+
+Even a proof of the local target would **not** settle official #142
+([MIXED_INCREMENT.md](docs/audits/MIXED_INCREMENT.md) §10).
 
 ## Problem (as used in these notes)
 
@@ -33,11 +64,9 @@ increment program here is
 r_4(N)=o(N/\log N).
 \]
 
-That target is open. The notes repeatedly distinguish it from
-**official Erdős problem 142**, which is also open and is **not**
-settled by a \(k=4\) little-o bound of this shape even if one were
-proved ([docs/audits/MIXED_INCREMENT.md](docs/audits/MIXED_INCREMENT.md)
-§10). Official statement:
+That target is open. **Official Erdős problem 142** is also open and is
+**not** settled by a \(k=4\) little-o bound of this shape even if one
+were proved. Official statement:
 [docs/literature/OFFICIAL_142.md](docs/literature/OFFICIAL_142.md);
 live pages
 [erdosproblems.com/142](https://www.erdosproblems.com/142) and
@@ -63,12 +92,23 @@ energy theorem** (logarithmic-rank quarter-arc factors with
 obstruction.” Details, including the full-group \(\mathbb Z_p\) case and
 the Freiman-embedded sphere family, are in
 **[docs/PROGRESS.md](docs/PROGRESS.md)**. Next steps:
-[docs/ROADMAP.md](docs/ROADMAP.md).
+[docs/ROADMAP.md](docs/ROADMAP.md). Docs map:
+[docs/README.md](docs/README.md).
 
 ## Quickstart (verifiers)
 
 Python 3, **standard library only** (`pyproject.toml` lists no runtime
 dependencies). From the repository root:
+
+```bash
+for s in verification/scripts/verify_*.py; do python3 "$s" || exit 1; done
+```
+
+Most scripts print JSON on stdout. Captured runs live in
+`verification/results/`. A passing script means the finite checks in that
+file succeeded. It is not a proof of the local target.
+
+Individual scripts (same thirteen files as the loop):
 
 ```bash
 python3 verification/scripts/verify_core.py
@@ -86,24 +126,19 @@ python3 verification/scripts/verify_endpoint_incidence.py
 python3 verification/scripts/verify_full_group_energy.py
 ```
 
-Most scripts print JSON on stdout. Captured runs live in
-`verification/results/`. `verify_full_group_energy.py` also writes
-`verification/results/full_group_energy_verification.json`. A passing
-script means the finite checks in that file succeeded. It is not a
-proof of the local target.
-
-After this layout change (2026-09-14), all thirteen `verify_*.py`
-scripts were rerun from the repo root; all exited 0. That does not
-change the open status of the mathematics.
+After the 2026-09-14 layout change, all thirteen `verify_*.py` scripts
+were rerun from the repo root; all exited 0. That does not change the
+open status of the mathematics.
 
 ## Repository map
 
 ```
-README.md                 this page
+README.md                 this page (GitHub card)
 LICENSE, NOTICE           Apache-2.0
 CITATION.cff, AUTHORS     citation and author of record
 CONTRIBUTING.md           DCO + CLA-lite
 CODE_OF_CONDUCT.md, SECURITY.md
+docs/README.md            docs index
 docs/PROGRESS.md          proved / refuted / open
 docs/ROADMAP.md           contribution ideas
 docs/PRIORITY_AND_ATTRIBUTION.md
