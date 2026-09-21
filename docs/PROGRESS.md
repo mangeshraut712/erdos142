@@ -14,7 +14,7 @@ It does not add a proof, a prize amount, or a “solved” claim.
 
 Read this as a **status digest**, not a product changelog. The GitHub
 landing page is [README.md](../README.md); the docs map is
-[README.md](README.md).
+[docs/README.md](README.md).
 
 ## What the pack is trying to do
 

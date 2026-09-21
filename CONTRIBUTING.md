@@ -22,6 +22,7 @@ secrecy. See [docs/PRIORITY_AND_ATTRIBUTION.md](docs/PRIORITY_AND_ATTRIBUTION.md
 
 ## How to help
 
+A map of human-facing notes is in [docs/README.md](docs/README.md).
 Suggested next steps are in [docs/ROADMAP.md](docs/ROADMAP.md) and the
 continuation prompts at the ends of the latest audits under
 [docs/audits/](docs/audits/). Open an issue before a large write-up so
@@ -37,7 +38,10 @@ python3 verification/scripts/verify_full_group_energy.py
 ```
 
 Keep new checkers in `verification/scripts/` and captured JSON in
-`verification/results/`.
+`verification/results/`. Running `verify_full_group_energy.py` rewrites
+`verification/results/full_group_energy_verification.json`; float
+serialization can dirty a clean checkout. Do not commit that incidental
+diff unless you intend to refresh the capture.
 
 ## License of contributions (CLA-lite)
 

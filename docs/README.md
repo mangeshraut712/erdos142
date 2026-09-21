@@ -20,3 +20,7 @@ completed solution of official Erdős problem 142 or of the local
 
 Start with **PROGRESS.md**, then the named energy theorem in
 [audits/ENDPOINT_INCIDENCE_AUDIT.md](audits/ENDPOINT_INCIDENCE_AUDIT.md) §5.
+
+Stdlib checkers: see the Quickstart in [../README.md](../README.md).
+`verify_full_group_energy.py` rewrites a tracked JSON capture; passing
+scripts are finite identities, not a proof.

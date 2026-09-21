@@ -105,8 +105,13 @@ for s in verification/scripts/verify_*.py; do python3 "$s" || exit 1; done
 ```
 
 Most scripts print JSON on stdout. Captured runs live in
-`verification/results/`. A passing script means the finite checks in that
-file succeeded. It is not a proof of the local target.
+`verification/results/`. `verify_full_group_energy.py` also **rewrites**
+the tracked file
+`verification/results/full_group_energy_verification.json`. Serialized
+floats can differ from the committed capture and leave a clean checkout
+dirty; do not commit that noise unless you mean to refresh the snapshot.
+A passing script means the finite checks in that file succeeded. It is
+not a proof of the local target.
 
 Individual scripts (same thirteen files as the loop):
 
