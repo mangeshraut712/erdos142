@@ -3,9 +3,10 @@
 
 # Roadmap / contribution ideas
 
-The problem is open. Useful work is a proof or a cutoff-eligible
-counterexample of the remaining energy theorem, or a clearly weaker
-hypothesis that still closes the iteration ledger.
+The problem is open. This is a research continuation list, not a product
+backlog. Useful work is a proof or a cutoff-eligible counterexample of
+the remaining energy theorem, or a clearly weaker hypothesis that still
+closes the iteration ledger.
 
 Do not open a PR that only restates a refuted lemma without the cutoff.
 
