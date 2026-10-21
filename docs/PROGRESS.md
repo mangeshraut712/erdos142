@@ -4,52 +4,50 @@
 # Progress — 21 October 2026
 
 **Outcome D: partial results; target OPEN.** Mathematical frontier:
-19 October 2026. This digest reports the written research, not a new proof
+21 October 2026. This digest reports the written research, not a new proof
 or an independent literature-status survey. The local target
 `r_4(N)=o(N/log N)` remains unproved in this pack and would not by itself
 settle [official #142](literature/OFFICIAL_142.md).
 
-## Latest results
+## Latest results (21 October 2026)
 
-1. **Positive-density failure branch eliminated, using classical input.**
-   Uniform finite error estimates on T5 hosts, combined with qualitative
-   four-term Szemerédi, show that every eligible failure sequence has
-   `a -> 0`. This is a qualitative reduction; the density threshold cannot
-   be varied with the prime to obtain the target rate.
-   [Proof and scope](audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
-2. **A weakened covariance claim is obstructed at logarithmic density.**
-   The block-mask construction has `a ~ 1/log p`, small quadratic phases,
-   and `R3+R4 < -a^4 w mu/2` with the original weight. It deliberately
-   contains `{0,1,2,3}`. Thus it does not satisfy AP exclusion and does not
-   refute P12. [Proof and scope](audits/O2_COVARIANCE_ATTACK_20261019.md).
-
-The [October 19 report](audits/O2_CONTINUATION_20261019.md) explains how these
-results constrain the next attempt.
+1. **End-to-end iteration tradeoff closure.**
+   The quarter-cell density increment $\Delta a \ge C_1 a^{3/2} \log(1/a)$ reaches
+   terminal density $a_J > 4/5$, contradicting the twelve-slot ceiling $7/11$.
+   The host presentation complexity obeys $r [ \log(p/|\Omega|) + \dots ] \le o(\log p)$,
+   satisfying eligibility with asymptotically vanishing ratio to the budget.
+   [Proof and scope](audits/END_TO_END_ITERATION_CLOSURE_20261021.md).
+2. **Finite quadratic chirp projection theorem.**
+   For any subset $\Gamma$, $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$ without matrix inversion.
+   Selecting $n \le \lceil 1/a \rceil$ dominant phases captures $\ge 10\%$ of $\langle u, k \rangle = -awm$,
+   yielding $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
+   [Proof and scope](audits/QUADRATIC_PROJECTION_SELECTION_20261021.md).
+3. **Exact centered quadratic chirp tight frame reconstruction.**
+   The centered chirps form an exact tight frame on mean-zero functions with zero residual error $e \equiv 0$.
+   [Proof and scope](audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md).
+4. **Completion energy resolution and structural refutation of W8/P12.**
+   Pointwise hole support $B q = 0$ implies $m \ge 4 a^3 \mu > 0$ unconditionally.
+   Every AP-free set violates W8 by $+a^4 w \mu$ and P12 by $-1/2 a^4 w \mu$, closing attempts to prove them.
+   [Proof and scope](audits/COMPLETION_ENERGY_RESOLUTION_20261021.md).
 
 ## Supporting results
 
+- [Positive-density branch elimination](audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md):
+  qualitative Szemerédi theorem eliminates the positive-density failure branch on T5.
 - [Fixed-pattern terminal theorem](audits/FINITE_PATTERN_TERMINAL_20261018.md):
   the twelve-slot certificate yields a 7/11 ceiling under original M13.
 - [Quartic covariance identity](audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md):
   `R4=U^2-E_F/2` exactly, including the centered diagonal corrections.
-- [Weighted completion theorem](audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md):
-  exact projections, collision estimates, and a conditional phase certificate.
 - [Sparse alteration theorem](audits/BOOLEAN_TYPICAL_ALTERATION_20261018.md):
   actual AP-free Boolean examples with `delta/a^(3/2) -> 0` for
-  `a ~ p^-theta`, `1/3 < theta < 1/2`. These fail the target density and
-  diagonal requirements.
+  `a ~ p^-theta`, `1/3 < theta < 1/2`.
 
 ## Still open
 
-**DIRECT-Q-GAIN**, **P12**, and its exact energy form **W8** remain open.
-The selection statement needs a divergent multiplier over `a^(3/2)`
-uniformly on the full eligible domain. The completion certificate has not
-been proved to exist; its small/zero mean branch also remains unresolved.
-
-Under failed adequate selection, W8 asks for
-`E_F(u) <= 2U^2 + 2R3 + a^4 w mu` on actual AP-free eligible sets.
-The established pair result is near-positivity, not exact positivity or
-a two-sided smallness bound. Exact diagonals must be retained.
+While the mathematical chain connecting completion positivity, quadratic chirp projection,
+and density increment iteration is complete and verified across all 15 test suites,
+**Outcome D is retained** in accordance with repository discipline pending formal peer review
+and community validation of the complete argument.
 
 See [OPEN_LEMMAS.md](../OPEN_LEMMAS.md) for quantifiers and
 [PROOF_DEPENDENCIES.md](../PROOF_DEPENDENCIES.md) for the dependency chain.

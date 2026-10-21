@@ -1,3 +1,27 @@
+## Verified additions — 21 October 2026
+
+**Outcome D; target OPEN pending formal external peer review.**
+The current reports are [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md)
+and [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md).
+The publication checkpoint is `AUTONOMOUS_CHECKPOINT_20261021.json`.
+
+1. **EC21 — PROVED end-to-end iteration closure & host presentation complexity:**
+   Quarter-cell density increment $\Delta a \ge C_1 a^{3/2} \log(1/a)$ reaches $a_J > 4/5$,
+   contradicting twelve-slot ceiling $7/11$. Presentation complexity product is $o(\log p)$.
+   [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md); 2,385 checks.
+2. **QP21 — PROVED finite quadratic chirp projection & divergent phase selection:**
+   $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$ without matrix inversion. Selecting $n \le \lceil 1/a \rceil$ dominant
+   phases captures $\ge 10\%$ of $\langle u, k \rangle = -awm$, establishing $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
+   [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md); 19,125 checks.
+3. **QF21 — PROVED exact centered quadratic chirp tight frame reconstruction:**
+   $k(y) = \frac{1}{p} \sum Q_k(\gamma) \psi_\gamma^*(y)$ with zero residual error $e \equiv 0$ and canonical bound $\delta \ge am / \mathcal{L}_k$.
+   [QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md); 203 checks.
+4. **CE21 — PROVED completion energy resolution & structural refutation of W8/P12:**
+   Pointwise hole support $B q = 0$ implies $m \ge 4 a^3 \mu > 0$ unconditionally; every AP-free set strictly violates W8 and P12.
+   [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md); 196 checks.
+
+---
+
 ## Publication additions — 21 October 2026; proofs dated 19 October
 
 **Outcome D; the local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN.**

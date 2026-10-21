@@ -4,14 +4,15 @@
 # Documentation index
 
 The local target and official Erdős #142 are not solved in this repository.
-The latest mathematical work is dated 19 October 2026; the public repository
+The latest mathematical work is dated 21 October 2026; the public repository
 was integrated on 21 October 2026.
 
 | Start here | Purpose |
 |---|---|
 | [Repository overview](../README.md) | Current results, limits, and quickstart |
 | [Current status](../CURRENT_STATUS.md) | Authoritative current research status |
-| [October 19 report](audits/O2_CONTINUATION_20261019.md) | Positive-density reduction and covariance obstruction |
+| [End-to-end iteration closure](audits/END_TO_END_ITERATION_CLOSURE_20261021.md) | Quarter-cell density increment synthesis and presentation complexity |
+| [Quadratic projection selection](audits/QUADRATIC_PROJECTION_SELECTION_20261021.md) | Finite quadratic chirp projection and divergent phase selection bound |
 | [Progress](PROGRESS.md) | Current proved, conditional, and open statements |
 | [Roadmap](ROADMAP.md) | Concrete next mathematical tasks |
 | [Open lemmas](../OPEN_LEMMAS.md) | Full quantifiers and remaining gaps |

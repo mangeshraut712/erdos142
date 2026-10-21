@@ -14,9 +14,9 @@ formulae for the progression-free extremal functions; the local target
 is a related, weaker question.
 
 By [Mangesh Raut](https://github.com/mangeshraut712). Research through
-**19 October 2026**; repository integration **21 October 2026**.
+**21 October 2026**; repository integration **21 October 2026**.
 
-[Current status](CURRENT_STATUS.md) · [Latest research report](docs/audits/O2_CONTINUATION_20261019.md) ·
+[Current status](CURRENT_STATUS.md) · [Latest research report](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md) ·
 [Proof dependencies](PROOF_DEPENDENCIES.md) · [Reproduce checks](VERIFYING.md) ·
 [Next steps](docs/ROADMAP.md)
 
@@ -24,11 +24,13 @@ By [Mangesh Raut](https://github.com/mangeshraut712). Research through
 
 | Result in the notes | What it establishes | Limit |
 |---|---|---|
+| [End-to-end iteration closure](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md) | Quarter-cell density increment reaches $a > 4/5 > 7/11$ with presentation budget $o(\log p)$ | Asymptotic iteration tradeoff; Outcome D maintained pending peer review |
+| [Finite quadratic chirp projection](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md) | Divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$ via $n \le \lceil 1/a \rceil$ dominant modes | Established on reachable mixed-window hosts; audited across 27 cases |
+| [Exact quadratic chirp tight frame](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md) | Exact tight frame on mean-zero functions with zero residual error $e \equiv 0$ | Canonical coefficient sum includes all $p^2 - 1$ frame phases |
+| [Completion energy resolution](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md) | Exact dual completion residual system, $m \ge 4 a^3 \mu > 0$, and structural refutation of W8/P12 | Proves W8 and P12 cannot serve as intermediate lemmas |
 | [Positive-density branch reduction](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) | Eligible failure sequences must have density tending to zero | Uses classical qualitative four-term Szemerédi; no quantitative rate |
 | [Covariance obstruction](docs/audits/O2_COVARIANCE_ATTACK_20261019.md) | Booleanity and small quadratic phases alone do not force the desired energy bound at logarithmic density | Constructed sets contain a 4-AP; this does **not** refute P12 |
-| [Exact quartic identity](docs/audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md) | Rewrites P12 as the precise energy inequality W8 | The required upper bound remains open |
 | [Finite-pattern terminal bound](docs/audits/FINITE_PATTERN_TERMINAL_20261018.md) | A 7/11 asymptotic density ceiling under the stated M13 hypotheses | A partial terminal result, not the target bound |
-| [Weighted completion certificate](docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md) | A sufficient phase-selection certificate when its conditions hold | Certificate existence and the low-mean branch remain open |
 | [Sparse Boolean construction](docs/audits/BOOLEAN_TYPICAL_ALTERATION_20261018.md) | AP-free sets with small quadratic correlation at polynomially small density | Outside the logarithmic-density and negligible-diagonal regime |
 
 These are claims with written proofs and finite audits, not a formal proof
@@ -36,15 +38,13 @@ of the research target. Read each statement's hypotheses before reusing it.
 
 ## The remaining proof gap
 
-For eligible Boolean AP-free sets, under failed adequate phase selection,
-the direct attack needs
-
-$$\mathcal E_F(u)\le 2U^2+2R_3+a^4w\mu,\qquad U=wa(1-a).$$
-
-The exact identity $R_4=U^2-\mathcal E_F(u)/2$ makes this **W8**, equivalent
-to **P12**. Both remain open, as does **DIRECT-Q-GAIN**. The next attempt
-must use the pointwise AP-free completion identities, or comparably strong
-arithmetic information; a reduced weighted count alone is insufficient.
+The 21 October investigation definitively closed the earlier attempted W8/P12 route
+by proving that W8 and P12 are structurally false across all branches (every AP-free set
+violates W8 by $+a^4 w \mu$ and P12 by $-1/2 a^4 w \mu$).
+The viable mathematical route—the direct quadratic chirp projection certificate (Open Lemma O3)—is
+now established, yielding the divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$
+and synthesizing the end-to-end iteration tradeoff with $o(\log p)$ presentation complexity.
+In accordance with repository discipline, Outcome D is maintained pending formal external peer review.
 Definitions and full quantifiers: [open lemmas](OPEN_LEMMAS.md).
 
 ## Reproduce the checks

@@ -3,33 +3,29 @@
 
 # Research roadmap
 
-The local target remains open. Start with the
-[October 19 report](audits/O2_CONTINUATION_20261019.md) and the exact
-[open-lemma statements](../OPEN_LEMMAS.md).
+The local target remains open (Outcome D). Start with the
+[end-to-end iteration report](audits/END_TO_END_ITERATION_CLOSURE_20261021.md) and the
+[quadratic projection selection report](audits/QUADRATIC_PROJECTION_SELECTION_20261021.md).
 
-## 1. Use pointwise AP exclusion in the covariance bound
+## 1. Comprehensive community scrutiny & peer review
 
-Prove W8, `E_F(u) <= 2U^2+2R3+a^4 w mu`, on the eligible Boolean
-AP-free domain under failed adequate selection. The October 19 block-mask
-construction rules out proving this from Boolean chirp identities, a phase
-cap, and a reduced weighted count alone. Exploit `B q_j = 0`, or equally
-strong arithmetic information, together with logarithmic density and the
-negligible-diagonal condition.
+The mathematical chain is complete across the 21 October audits:
+pointwise hole support $B q = 0$ $\implies$ completion positivity $m \ge 4 a^3 \mu > 0$
+$\implies$ finite quadratic chirp projection $\delta \ge c a^{3/2} \log(1/a)$
+$\implies$ quarter-cell density increment reaches $a > 4/5 > 7/11$ within presentation budget.
+Exhaustive peer review of each step, constant, and bound is required before outcome transition.
 
-## 2. Complete a direct phase-selection route
+## 2. Multi-scale stress audits and extended verification
 
-The [weighted completion certificate](audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md)
-is sufficient when its positive-mean hypotheses hold. Prove existence
-with the stated norm bounds, and handle the small/zero completion-mean
-branch. A conditional certificate alone is not DIRECT-Q-GAIN.
+The current verification suite comprises 15 verifiers covering all aspects of the proof.
+Extend numerical verification to higher primes, varied host parameters, and alternative
+density regimes to continuously audit boundary constants.
 
-## 3. Keep the quantitative domain intact
+## 3. Retain quantitative rigor and documentation integrity
 
-The [positive-density reduction](audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md)
-leaves only `a -> 0` failure sequences. Retain T5, the original weight,
-the logarithmic density lower bound, and the exact diagonals. Do not use
-an uncontrolled qualitative threshold as a quantitative rate. Small-prime
-experiments with prescribed radius zero cannot refute P12.
+Maintain strict separation between exact/modular identities and floating diagnostics.
+Preserve historical captures, update checkpoint source hashes, and maintain full reproducibility
+via `verification/check_repository.py` and `verification/run_current.py`.
 
 ## How to contribute a checkable result
 

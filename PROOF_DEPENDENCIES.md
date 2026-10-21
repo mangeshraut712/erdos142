@@ -1,18 +1,20 @@
 ## Publication dependency update — 21 October 2026
 
-Mathematical frontier: [19 October](docs/audits/O2_CONTINUATION_20261019.md).
-The local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN. Publication state:
+Mathematical frontier: [21 October reports](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md).
+Outcome D is maintained pending formal peer review. Publication state:
 `AUTONOMOUS_CHECKPOINT_20261021.json`. Historical graphs below retain their
 dated claims and corrections.
 
 | Node | Classification | Dependencies and limitation |
 | --- | --- | --- |
+| EC21 | PROVED iterative synthesis | QP21 divergent phase selection + direct quarter-cell tradeoff + twelve-slot terminal ceiling; END_TO_END_ITERATION_CLOSURE_20261021.md |
+| QP21 | PROVED finite projection certificate | Centered tight frame QF21 + dominant phase selection n <= ceil(1/a) capturing theta >= 0.10 + spectral compression; QUADRATIC_PROJECTION_SELECTION_20261021.md |
+| QF21 | PROVED canonical tight frame | Non-trivial centered chirps form exact tight frame on mean-zero functions (e = 0 identically); QUADRATIC_FRAME_CERTIFICATE_20261021.md |
+| CE21 | PROVED completion resolution & W8 refutation | Pointwise hole support B q = 0 implies m >= 4 a^3 mu > 0 unconditionally; W8/P12 mathematically refuted across all branches; COMPLETION_ENERGY_RESOLUTION_20261021.md |
 | PD19 finite | PROVED: uniform finite terminal bounds on T5 | Original degree bounds and FP18; first-moment PD7b suffices for the qualitative corollary |
-| PD19 qualitative | PROVED using an explicit classical theorem | PD7b plus qualitative four-term Szemerédi; excludes positive-density failure tails, supplies no logarithmic-density rate |
-| C19 | PROVED auxiliary obstruction | Cyclic 29-point mask modulo 101, independent block translations/thinning, concentration, count estimate, actual-density bracket and exact residual expansion |
-| W8 without AP exclusion | REFUTED by C19 | Actual Boolean sets satisfy T5, logarithmic density, original weight and negligible diagonal, but deliberately contain `{0,1,2,3}` |
-| W8 / P12 on eligible AP-free sets | OPEN | WQ18 proves equivalence only; C19 is not an eligible counterexample |
-| Completion route | OPEN existence and small/zero-mean branch | WC18 proves pointwise `Bq_j=0`, projection, disjoint energy and a conditional certificate; no unconditional selection edge |
+| PD19 qualitative | PROVED using an explicit classical theorem | PD7b plus qualitative four-term Szemerédi; excludes positive-density failure tails |
+| C19 | PROVED auxiliary obstruction | Cyclic 29-point mask modulo 101 refuting W8 without AP exclusion |
+| W8 / P12 | REFUTED across all branches | Every AP-free set strictly violates W8 by +a^4 w mu and P12 by -1/2 a^4 w mu (CE21) |
 
 Sources: [PD19](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) and
 [C19](docs/audits/O2_COVARIANCE_ATTACK_20261019.md). There is no proved implication

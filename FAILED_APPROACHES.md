@@ -1,3 +1,15 @@
+## 21 October 2026 — Structural impossibility and definitive closure of W8 and P12
+
+**REFUTED: W8 ($E_F(u) \le 2U^2 + 2R_3 + a^4 w \mu$) and P12 ($R_3 + R_4 \ge -\frac{1}{2} a^4 w \mu$) as direct sublemmas across all branches.**
+By Theorem 3 of [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md), for every 4-AP-free set $A$:
+$$E_F(u) = 2U^2 + 2R_3 + 2a^4 T + 2R_1 + 2R_2 - 2aw/p.$$
+Every AP-free set strictly violates W8 by $+a^4 w \mu (1 - o(1)) > 0$ and violates P12 by $-1/2 a^4 w \mu (1+o(1)) < 0$.
+Meanwhile, the October 19 block construction violates them under failed selection without AP exclusion.
+Thus W8 and P12 are **mathematically false across all branches** and cannot serve as intermediate steps.
+Never attempt to prove W8 or P12 again; the direct completion certificate (Open Lemma O3) is the operative route.
+
+---
+
 ## Publication update — 21 October 2026; obstruction proved 19 October
 
 **REFUTED: W8 from Booleanity, small individual chirps and a count deficit
