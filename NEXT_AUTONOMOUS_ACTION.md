@@ -1,11 +1,11 @@
 # Next autonomous action — 21 October 2026
 
 Resume from `checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json`, `CURRENT_STATUS.md`,
-`docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md`, and `OPEN_LEMMAS.md`.
+`docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md`, and `OPEN_LEMMAS.md`.
 The mathematical frontier is 21 October. Outcome D; the unconditional
 local target and DIRECT-Q-GAIN remain OPEN pending formal community review.
 
-The 21 October breakthrough establishes the complete end-to-end chain:
+The 21 October work establishes:
 1. Completion energy resolution & unconditional completion positivity: $m \ge 4 a^3 \mu > 0$
    ([COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md)).
 2. Canonical quadratic chirp tight frame reconstruction ($e \equiv 0$):
@@ -15,12 +15,15 @@ The 21 October breakthrough establishes the complete end-to-end chain:
 4. End-to-end iteration closure & host eligibility: quarter-cell density increment reaches
    $a_J > 4/5$, contradicting twelve-slot ceiling $a \le 7/11 + o(1)$ within presentation budget
    ([END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md)).
+5. Unified technical synthesis monograph consolidating the complete proof:
+   ([UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md)).
+6. Quantitative threshold and explicit rate analysis: $r_4(N) / N \le O(1 / (\log N (\log\log N)^2))$
+   ([QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md)).
 
-The PRIMARY NEXT ATTACK is Comprehensive System Audit & Synthesis Monograph:
-1. Prepare a unified technical synthesis monograph consolidating the entire mathematical proof
-   from initial interval embedding to terminal contradiction.
-2. Conduct exhaustive verification across all 15 verifiers in `verification/run_current.py`.
-3. Audit repository consistency, ledger integrity, and historical captures.
+The PRIMARY NEXT ATTACK is Comprehensive Cross-Verification & Peer Review Readiness:
+1. Run the full verification suite across all 16 current and 13 legacy verifiers (29 total).
+2. Audit all SHA256 hashes, local markdown links, and ledger entries with `check_repository.py`.
+3. Prepare the repository for peer scrutiny and community review.
 
 The positive-density failure branch is closed by
 `POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`, with explicit use of

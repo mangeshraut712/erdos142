@@ -30,6 +30,7 @@ CURRENT = [
     "verification/scripts/verify_quadratic_frame_certificate_20261021.py",
     "verification/scripts/verify_quadratic_projection_selection_20261021.py",
     "verification/scripts/verify_end_to_end_iteration_closure_20261021.py",
+    "verification/scripts/verify_quantitative_threshold_20261021.py",
 ]
 LEGACY = [
     f"verification/scripts/{name}.py"

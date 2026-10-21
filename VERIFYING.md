@@ -51,8 +51,8 @@ python verification/check_repository.py
 python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-`current` runs the fifteen October 17–21 entry points; `legacy` runs the
-thirteen original September verifiers; `all` runs both (28 scripts).
+`current` runs the sixteen October 17–21 entry points; `legacy` runs the
+thirteen original September verifiers; `all` runs both (29 scripts).
 These options select the publication suites, not every historical experiment.
 The runner copies the complete research tree to a temporary directory,
 sets the local module paths, keeps assertions enabled, and records exit

@@ -11,7 +11,7 @@
   "background_work_running": false,
   "execution_state": "verified_publication_checkpoint",
   "supersedes_for_navigation": "checkpoints/AUTONOMOUS_CHECKPOINT_20261019.json",
-  "report": "docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md",
+  "report": "docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md",
   "proved_results": [
     {
       "id": "BO17",
@@ -91,6 +91,12 @@
       "id": "UM21",
       "source": "docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md",
       "claim": "Unified technical synthesis monograph consolidating the complete proof of r_4(N) = o(N / log N) from initial interval embedding to terminal contradiction",
+      "target_proved": false
+    },
+    {
+      "id": "QR21",
+      "source": "docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md",
+      "claim": "Quantitative threshold and explicit rate analysis: dimensionless budget ratio cancellation R(N) ~ 100 C_4 / (loglog N)^2, double-exponential crossover N_0 ~ exp(exp(424)), and effective rate r_4(N) / N <= O(1 / (log N * (loglog N)^2))",
       "target_proved": false
     }
   ],
@@ -335,6 +341,13 @@
       "seconds": 0.15,
       "source_sha256": "66f7a4f92cef2617c9af5f74d67050869c465b977ebd9ebc4e1cf1ab5b7b4963",
       "reported_checks": 2385
+    },
+    {
+      "script": "verification/scripts/verify_quantitative_threshold_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.12,
+      "source_sha256": "71769dd26ce2d7cf4f9abf10668587df6023adf8725bed2e893578236d40cc9f",
+      "reported_checks": 32
     }
   ],
   "history": "history/publication_20261021",
@@ -348,10 +361,10 @@
     "CITATION.cff": "2bf3369fea0a06176eb2b791b102de39bbe8bf9664acf234892d707e7fc54bce",
     "CODE_OF_CONDUCT.md": "b2b7da52b025b4d118e691e105f7bebe81978ad5c1d701b96972597141f9e012",
     "CONTRIBUTING.md": "22b194cd7213df553c88492394193a0b96cf2aa0d1a1ef6c280df9b697be258d",
-    "CURRENT_STATUS.md": "4cf0a14367c1871d908c323d931173aad476cf0d553fc6b270a0e44718aa89e5",
+    "CURRENT_STATUS.md": "f4968e0c8291e22113612f37e7a7ba449435c295721d185f373285c608a80104",
     "FAILED_APPROACHES.md": "785d08cb19ea3c56f8133e23d59b4154b74ac8341cf96d894e08f2e385cb263d",
     "LICENSE": "c96f7895a0c600c81a7c22994b59ab93394be6d17cecdd5a8e15c6bdcb999ff4",
-    "NEXT_AUTONOMOUS_ACTION.md": "1603db4740af3c6f6d3c04a7124394d04258fe559f2f56c5f399e40cf67ea36e",
+    "NEXT_AUTONOMOUS_ACTION.md": "45755fe639460c2fa416201bb0174d0b07d8ca6c019afc6f75124e192f48454b",
     "NOTICE": "fd7bae0b129b47e8f7dd846742716d27e32b29f3e8881f2de94ef6bbf2907969",
     "OPEN_LEMMAS.md": "c2c04d5dc1d0704f2a43f13584caf01669d161c77d3a2ae4a058b3c54c7a789f",
     "PROOF_DEPENDENCIES.md": "5a5d035e6c1c1a6561882976a11fdfe112b8e6f784dc1b95c19bf5168478223b",
@@ -359,7 +372,7 @@
     "SECURITY.md": "c0c85855b01fbe64d9b9f88c503ec9b4364b59fd1ca89a5431c117bb2926acf7",
     "SOLUTION_LEDGER.md": "fb08f5ee798231101dd61218b841a231150018238f60c493b36b7f0b2349325d",
     "VERIFIED_THEOREMS.md": "0dca6861f9f4281cd394f7ceee1fa9dbd6d54c0ad9dddef40c92e3b15f9cab19",
-    "VERIFYING.md": "2c2129bfa425eb32e1ed521475f62de99540e58f52f4413147113987deb84be8",
+    "VERIFYING.md": "8d839df12fff314f624aaef7e71c89cb24257759d4e09a1605e792310f94effa",
     "checkpoints/AUTONOMOUS_CHECKPOINT_20261015.json": "e330b82b01c4255cb49bc8084135cc12ab591680a7fdf7c1342845dd27e05cb5",
     "checkpoints/AUTONOMOUS_CHECKPOINT_20261016.json": "8b021993c3162732e47b939fe5e3549881cdcff11b19ea7983970b3f1c83e18b",
     "checkpoints/AUTONOMOUS_CHECKPOINT_20261017.json": "354ae4a3bccf7ed87c05537472f3f20e4970f62e309c2c2d89c700b951666e7b",
@@ -427,6 +440,7 @@
     "docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md": "f1edb86ff98766012923a602adb157a7461f6f573b8461aad879dcf43484b61f",
     "docs/audits/QUADRATIC_TO_LINEAR_TRANSFER_20261014.md": "f20aef9e798d6127506624e2087e53214e490e011ce8250c4faf7fa3142ecf1f",
     "docs/audits/QUADRATIC_TWO_BRANCH_CLOSURE_20261014.md": "1322fdbbef7ef4b05222020ac38ae8f58be84d0eba0490020d496c0037128399",
+    "docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md": "5acc5de2bf4f9d2b4b044412a6e4818361e41c986ce0a749e8cbb022ba99e856",
     "docs/audits/RANK1_HOSTILE_SEARCH_20261002.md": "421ffed742a8a09a92986e0c7ef1e65085c2ad423e583317ef85042ca8db7666",
     "docs/audits/RATIONAL_CLASSES_20261002.md": "d25cde710870435d67324cea4078fb227c8df75b4d6cbb60aeae254290711638",
     "docs/audits/README.md": "5b28a5e0dc7dd581275e1ef1a839ade1139be13a443f0998c8a979cb7627b7a8",
@@ -675,6 +689,7 @@
     "verification/results/QUADRATIC_PROJECTION_SELECTION_VERIFICATION_20261021.json": "29117550a870e015a1e64959db3790e25eb2ad6911e7ffb9f1bfc1af149e1668",
     "verification/results/QUADRATIC_TO_LINEAR_TRANSFER_VERIFICATION_20261014.json": "cdbffcdecddf2dcf708897aca0608827d6ee304ba80fe42a34c8547b10372838",
     "verification/results/QUADRATIC_TWO_BRANCH_VERIFICATION_20261014.json": "45a4d48a6dc55c0368590aac08e8bde5a2ac2cd3b4f26f7824e04a2295e4bc54",
+    "verification/results/QUANTITATIVE_THRESHOLD_VERIFICATION_20261021.json": "684c6ed6a1a26f5fa2c0d656e91fefd7b4b7f4c1ac23a827e17670a65d2167c3",
     "verification/results/RESIDUAL_FIELD_AMPLIFICATION_VERIFICATION_20261014.json": "0752d5efb5338d207669159de1c8588ef7c66b1ed0dee1708b25682cd6f41e24",
     "verification/results/RESIDUAL_FIELD_AUDIT_VERIFICATION_20261015.json": "f78abd3210a3fa9c673d812272fc5ffd85ea4b5edcde41ab1635ad3320aa3157",
     "verification/results/SIGNED_QUARTIC_VERIFICATION_20261014.json": "ab96d8f2da02717d59fabd2af1b3fede114c6bba522d63892d8e29ecda1852b8",
@@ -743,7 +758,7 @@
     "verification/results/vacuity_verification_20261002.json": "4f56d76fb482df1ce1d8c7cec49a6933be55387f0ef3a630ec35fed313276224",
     "verification/results/verification.json": "0a2c636c38557d37939269ab40559dc089cf87e632a52ec19bf56759c7539d25",
     "verification/results/window_lattice_verification_20261002.json": "31c1ca0e550547133668dd694223b9f537b161c2233bc1108e42ee604495be4d",
-    "verification/run_current.py": "ea16dc0aef4e8e3b75e9a6ae3f54c6117abe6b8e6aee12ca8a3c5bbce00c72bf",
+    "verification/run_current.py": "6c34e270e1945c7e3222de76433d6f43c5cab664b7406fe5ee4b985a856ccff4",
     "verification/scripts/_probe_terminal.py": "0ec1b4b77a3151cb4f7333b338e94e65e44973c67d7da4b3d4995a576bcfdec5",
     "verification/scripts/discover_degree_six_extension_20261012.py": "0d2b5b7d8a981bc3c685aed4b93e5b23ff5a449a223364c66ace9324581295fe",
     "verification/scripts/discover_select_20261002.py": "c0577b3f4244b270a781ee5f00ef2b127b4fb729b94306ba665b936e66804783",
@@ -795,6 +810,7 @@
     "verification/scripts/verify_quadratic_projection_selection_20261021.py": "2b98ca57eaedcdb337758c03e60dca2d535399bfde5dc8a2143b3cf011f14e82",
     "verification/scripts/verify_quadratic_to_linear_transfer_20261014.py": "375f323977a6122b0c12ad9bcbfa6f5c94534aee404eb459ce8c178c2708487f",
     "verification/scripts/verify_quadratic_two_branch_20261014.py": "3807054f7054eb8d3946b598a9513f1bb6bae591771417027e508dad4762e40b",
+    "verification/scripts/verify_quantitative_threshold_20261021.py": "71769dd26ce2d7cf4f9abf10668587df6023adf8725bed2e893578236d40cc9f",
     "verification/scripts/verify_rank1_hostile_search_20261002.py": "dc10f922d2bc148116fc4cd393d4a68b2e88f037cdcc0a771376ee43451b6c8e",
     "verification/scripts/verify_rational_classes_20261002.py": "a3fbac4dfb74851ba1aab8c303bf1351f7a697f35f072b471380f52554ff285d",
     "verification/scripts/verify_relative.py": "cea6f33fdf291f9978ff28ad814358b6f5b3469eef766c18cb20da25639c97a0",
