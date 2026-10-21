@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-21",
+  "offline": true,
+  "target_proved": false,
+  "counts": {
+    "chirp_energy_identity_floating": 6,
+    "chirp_fourth_power_lower_bound": 6,
+    "pointwise_hole_support": 148,
+    "ap_free_expansion_h_ne0": 6,
+    "completion_inner_product_identity": 6,
+    "exact_R4_completion_formula": 6,
+    "exact_R3_completion_formula": 6,
+    "completion_mean_positivity": 6,
+    "norm_k_lower_bound": 6
+  },
+  "total_checks": 196,
+  "max_errors": {
+    "chirp_energy_identity_floating": 6.661338147750939e-16,
+    "ap_free_expansion_h_ne0": 5.2909066017292616e-17,
+    "completion_inner_product_identity": 9.71445146547012e-17,
+    "exact_R4_completion_formula": 4.7704895589362195e-17,
+    "exact_R3_completion_formula": 1.0755285551056204e-16
+  },
+  "cases": [
+    {
+      "p": 5,
+      "type": "chirp_identity",
+      "set_size": 3,
+      "alpha": 0.6,
+      "energy": 0.36000000000000004,
+      "fourth_power_excess": 0.24000000000000005
+    },
+    {
+      "p": 7,
+      "type": "chirp_identity",
+      "set_size": 4,
+      "alpha": 0.5714285714285714,
+      "energy": 0.3265306122448984,
+      "fourth_power_excess": 0.24489795918367355
+    },
+    {
+      "p": 11,
+      "type": "chirp_identity",
+      "set_size": 6,
+      "alpha": 0.5454545454545454,
+      "energy": 0.2975206611570244,
+      "fourth_power_excess": 0.24793388429751925
+    },
+    {
+      "p": 13,
+      "type": "chirp_identity",
+      "set_size": 6,
+      "alpha": 0.46153846153846156,
+      "energy": 0.21301775147929025,
+      "fourth_power_excess": 0.1775147928994084
+    },
+    {
+      "p": 17,
+      "type": "chirp_identity",
+      "set_size": 8,
+      "alpha": 0.47058823529411764,
+      "energy": 0.22145328719723117,
+      "fourth_power_excess": 0.1937716262975755
+    },
+    {
+      "p": 19,
+      "type": "chirp_identity",
+      "set_size": 8,
+      "alpha": 0.42105263157894735,
+      "energy": 0.17728531855955618,
+      "fourth_power_excess": 0.15512465373961137
+    },
+    {
+      "p": 7,
+      "type": "completion_system",
+      "host_size": 7,
+      "set_size": 4,
+      "m_rel": 0.12244897959183673,
+      "R3_ne0": -0.006187897899684654,
+      "R4_ne0": -0.0014279764383887663,
+      "awm": 0.06997084548104955
+    },
+    {
+      "p": 11,
+      "type": "completion_system",
+      "host_size": 11,
+      "set_size": 6,
+      "m_rel": 0.08264462809917354,
+      "R3_ne0": -0.0032039540269852254,
+      "R4_ne0": -0.004843186319861413,
+      "awm": 0.04507888805409466
+    },
+    {
+      "p": 13,
+      "type": "completion_system",
+      "host_size": 13,
+      "set_size": 6,
+      "m_rel": 0.05128205128205128,
+      "R3_ne0": -0.006194568709886789,
+      "R4_ne0": -0.0017560255647157375,
+      "awm": 0.023668639053254437
+    },
+    {
+      "p": 17,
+      "type": "completion_system",
+      "host_size": 17,
+      "set_size": 8,
+      "m_rel": 0.04152249134948097,
+      "R3_ne0": -0.004800483428965028,
+      "R4_ne0": -0.0016001611429883435,
+      "awm": 0.019539995929167515
+    },
+    {
+      "p": 19,
+      "type": "completion_system",
+      "host_size": 12,
+      "set_size": 6,
+      "m_rel": 0.029239766081871343,
+      "R3_ne0": -0.0020775623268698066,
+      "R4_ne0": -0.0006925207756232687,
+      "awm": 0.009233610341643581
+    },
+    {
+      "p": 23,
+      "type": "completion_system",
+      "host_size": 14,
+      "set_size": 7,
+      "m_rel": 0.03571428571428571,
+      "R3_ne0": -0.003426275992438562,
+      "R4_ne0": -0.00047258979206049167,
+      "awm": 0.010869565217391304
+    }
+  ],
+  "scope": [
+    "Theorem 1: Exact chirp energy identity and 4th-power lower bound verified across multiple primes.",
+    "Theorem 2: Exact dual residual equations verified on full and proper window hosts.",
+    "Theorem 3: Pointwise hole support B q_j = 0 verified for every vertex in A.",
+    "Theorem 4: Completion mean positivity m > 0 verified on all tested AP-free configurations.",
+    "Theorem 5: Exact L2 norm lower bound for k verified.",
+    "No asymptotic selection claim is made."
+  ],
+  "source_sha256": {
+    "verification/scripts/verify_completion_energy_resolution_20261021.py": "6c8f105116b3874e4579104a3d48b2afca10d51cabfd0913db1c0aea505a5ee5",
+    "docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md": "7e916d8c9d8de41603bfb7f0d654ba8fe10e1f61588da7f05f3663e008e1fcc8",
+    "docs/audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md": "0032257a1377f8692609e488cb8cb5b90e43898a7fea29da1afaf1c4fa16d77f",
+    "docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md": "fa9ebc049188fbb30a457320ff68398250993b43d56af8dca2d7202e388a8707"
+  }
+}

@@ -1,37 +1,28 @@
 # Next autonomous action — 21 October 2026
 
-Resume from `AUTONOMOUS_CHECKPOINT_20261021.json`, `CURRENT_STATUS.md`,
-`O2_CONTINUATION_20261019.md`, and `OPEN_LEMMAS.md`.
-The mathematical frontier is 19 October. Outcome D; the unconditional
-local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN.
+Resume from `checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json`, `CURRENT_STATUS.md`,
+`docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md`, and `OPEN_LEMMAS.md`.
+The mathematical frontier is 21 October. Outcome D; the unconditional
+local target and DIRECT-Q-GAIN remain OPEN.
 
-The next proof attempt should exploit the original four pointwise AP-free
-completion identities `Bq_j=0`, together with the logarithmic-density and
-negligible-diagonal hypotheses, to establish the original-weight bound
+The 21 October breakthrough establishes that W8 and P12 are structurally impossible
+as intermediate sublemmas: every AP-free set strictly violates W8 (by $+a^4 w \mu$)
+and P12 (by $-1/2 a^4 w \mu$), while the 19 October block construction violates them
+under failed selection without AP exclusion. Thus attempts to prove W8 or P12 are closed.
 
-    E_F(u)<=2U^2+2R_3^F+a^4wmu, U=wa(1-a).             (W8)
+Furthermore, Theorem 4 of `docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md` proves that
+$m >= 4 a^3 \mu (1 - o(1)) > 0$ unconditionally on reachable hosts, completely eliminating
+the small/zero-mean completion branch of Open Lemma O3.
 
-This is exactly P12 because `R4=U^2-E_F/2`. Use the original weight,
-proper-host transform, exact chirp-index affine map, and cubic term.
-The positive energy is subtracted. Pointwise small individual chirps and
-the direct cubic Cauchy-Schwarz estimate do not provide the required bound.
+The PRIMARY NEXT ATTACK is therefore Open Lemma O3 (direct quadratic phase certificate):
+For the centered completion field $k = q - m$, construct an explicit finite quadratic phase representation
+    k = sum c_chi (chi - E_Omega chi) + e
+with sum |c_chi| <= m / (2 sqrt(a) R(a)) and ||e||_{L2(Omega)} <= (m/2) sqrt(a / (1-a)),
+or exploit the non-linear cubic integral alignment between $u$ and $k$ (correlation $1 - a \to 1$)
+to deduce delta >= a^(3/2) R(a) directly.
 
-Read `O2_COVARIANCE_ATTACK_20261019.md` before weakening the hypotheses.
-Its Boolean block construction satisfies T5, the logarithmic density range,
-initial-host geometry, original H, and negligible diagonal, yet violates
-W8 with `Q<=(-11/20+o(1))a^4wmu`. It deliberately contains `{0,1,2,3}`.
-It is NOT AP-free and NOT a P12 counterexample. Boolean chirp identities
-and a weighted count below half the main term cannot replace actual AP
-exclusion. A successful coupling of `D_s(c,t)` with
-`D_s(3c+gamma,3t-beta)` must use the stronger arithmetic hypothesis.
-
-An alternative route is O3: prove the small-l1, small-error completion
-certificate in `WEIGHTED_COMPLETION_CERTIFICATE_20261018.md` using the
-actual relative Gram matrix, then close its small/zero-completion-mean
-branch. The certificate requires `m>0`. Four completion channels are
-necessary for the original weight. Their hole projection and the
-disjoint-six-point lower bound are proved; sufficient phase concentration
-and a complete low-mean alternative remain OPEN.
+Read `docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md`, `docs/audits/O2_COVARIANCE_ATTACK_20261019.md`,
+and `docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md` before proceeding.
 
 The positive-density failure branch is closed by
 `POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`, with explicit use of

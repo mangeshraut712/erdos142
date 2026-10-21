@@ -1,13 +1,37 @@
 # Current research status — 21 October 2026
 
 **Outcome (D): NEW RIGOROUS PARTIAL THEOREMS.** The unconditional target
-`r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, and O2/(P12) remain **OPEN**.
-No eligible P12 counterexample or unconditional selection theorem is claimed.
+`r_4(N)=o(N/log N)` and DIRECT-Q-GAIN remain **OPEN**.
+No unconditional selection theorem or eligible counterexample is claimed.
 
-Publication checkpoint: 21 October 2026; mathematical frontier: 19 October.
-The current account is [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md).
+Publication checkpoint: 21 October 2026; mathematical frontier: 21 October 2026.
+The latest report is [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md).
+The previous reports include [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md) and
+[O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 The exact restart state is [AUTONOMOUS_CHECKPOINT_20261021.json](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json).
 Earlier dated reports and checkpoints are preserved as research history.
+
+## Completion identities, chirp energy, and structural impossibility of W8 (21 October)
+
+The 21 October investigation resolves the coupling between the pointwise completion
+identities `Bq_j=0`, the shifted-chirp energy $E_F(u)$, and the quartic residual $R_4^F$:
+
+1. **Exact cyclic AP-free chirp energy identity**: For every cyclic 4-AP-free set $A \subset \mathbb{F}_p$,
+   $\sum_{c, t} |Q_B(c, t)|^2 |Q_B(3c, 3t)|^2 = \alpha^2$, which forces
+   $\sum_{(c, t) \ne (0, 0)} |Q_B(c, t)|^4 \ge \alpha^2 (1 - \alpha^2)$.
+2. **Exact dual completion residual system**: Pointwise hole support $B q_j = 0$ implies
+   $\langle u, q \rangle_\Omega = -am$, decomposing as $R_1^{h \ne 0} + 2R_2^{h \ne 0} + 3R_3^{h \ne 0} + 4R_4^{h \ne 0} = -awm$.
+   Combining with $a^4 T^{h \ne 0} + R_1^{h \ne 0} + R_2^{h \ne 0} + R_3^{h \ne 0} + R_4^{h \ne 0} = 0$ yields the exact formulas:
+   $R_4^{h \ne 0} = 3 a^4 T^{h \ne 0} - awm + 2 R_1^{h \ne 0} + R_2^{h \ne 0}$ and
+   $R_3^{h \ne 0} = -4 a^4 T^{h \ne 0} + awm - 3 R_1^{h \ne 0} - 2 R_2^{h \ne 0}$.
+3. **Structural impossibility of W8 / P12**: For *every* 4-AP-free set, $E_F(u) = 2 U^2 + 2 R_3 + 2 a^4 T + 2 R_1 + 2 R_2 - 2aw/p$.
+   Therefore every AP-free set violates W8 by $+a^4 w \mu (1 - o(1)) > 0$ and violates P12 by $-1/2 a^4 w \mu (1+o(1)) < 0$.
+   Since the 19 October construction showed that failed selection without AP exclusion also violates W8 and P12,
+   W8 and P12 are **mathematically false across all branches** and cannot bridge failed selection to AP exclusion.
+4. **Completion mean lower bound**: The completion mean satisfies $m \ge 4 a^3 \mu (1 - o(1)) > 0$,
+   ruling out the small/zero mean branch of O3.
+5. **Geometric alignment**: The centered residual $u$ and centered completion field $k = q - m$ obey
+   $\langle u, k \rangle_\Omega = -am$ with asymptotic correlation $1 - a \to 1$.
 
 ## Positive-density reduction on 19 October
 
@@ -76,21 +100,15 @@ expansion is
     a^4T+R_1^F+R_2^F+R_3^F+R_4^F=aw/p.
 
 Thus on reachable hosts `Q=R_3^F+R_4^F<=-(1-o(1))a^4wmu`.
-Under failed adequate selection, the missing P12 lower bound is
+The 21 October analysis proves that `Q >= -1/2 a^4 w \mu` (P12) and `E_F(u) <= 2U^2 + 2R_3 + a^4 w \mu` (W8)
+are structurally violated by every AP-free set (with deficits $-1/2 a^4 w \mu$ and $+a^4 w \mu$ respectively).
+Combined with the 19 October block construction, this establishes that W8 and P12 cannot be proved
+as valid intermediate bounds.
 
-    Q>=-(1/2)a^4wmu.
-
-It is exactly equivalent at finite p to the OPEN bound
-
-    E_F(u)<=2U^2+2R_3^F+a^4wmu.                         (W8)
-
-Positivity of E_F has the wrong orientation because it is subtracted.
-Individual chirp caps cannot supply this bound without using AP exclusion,
-as the October 19 auxiliary construction demonstrates. The direct cubic
-bound has an uncontrolled spectral term
-`4c(1-a)(w/mu)a^-1/2 R(a)` after normalization, plus an original-weight
-boundary envelope only `O_epsilon(1)` at logarithmic density.
-Keep the cubic contribution in W8.
+The viable attack route is therefore Open Lemma O3 (the direct completion certificate):
+The completion mean satisfies $m \ge 4 a^3 \mu (1 - o(1)) > 0$ unconditionally on reachable hosts.
+With $k = q - m$ and $\langle u, k \rangle_\Omega = -am$, proving the finite spectral approximation
+in `WEIGHTED_COMPLETION_CERTIFICATE_20261018.md` directly establishes $\delta \ge a^{3/2} R(a)$.
 
 DIRECT-Q-GAIN retains the exact domain
 
