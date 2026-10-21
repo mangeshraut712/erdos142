@@ -188,7 +188,8 @@ classical theorem.
 the logarithmic-density and negligible-diagonal regime. The later
 logarithmic-density block construction deliberately contains a 4-AP.
 Neither supplies an eligible counterexample to P12. The exact covariance
-identity W7–W8 is proved; its required energy upper bound remains open.
+identity W7 and its equivalence with W8 are proved; the W8 energy upper
+bound remains open.
 
 A report's check count measures its own recorded checks. It is not a
 confidence percentage, a count of independent proofs, or interchangeable

@@ -36,5 +36,6 @@ jobs:
         with:
           name: finite-checks-python-${{ matrix.python-version }}
           path: .verification-runs/ci/
+          include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 14

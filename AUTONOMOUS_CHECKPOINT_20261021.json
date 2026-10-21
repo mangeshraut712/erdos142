@@ -281,7 +281,7 @@
   "history": "history/publication_20261021",
   "next_action": "Use pointwise AP-free completion identities Bq_j=0 with logarithmic density and negligible diagonals to prove W8, or complete both direct-selection branches.",
   "file_sha256": {
-    ".github/workflows/verify.yml": "f6ced170da430065550d776067e0ecb445c43cfbf16de0e4d5428a287c6693bc",
+    ".github/workflows/verify.yml": "31b3a3cf6472ac32f63b499bc150aefb42aca6c62f8f100097ada77e2081ddeb",
     ".gitignore": "2769b20fead5be19720f1769a9f3e866e526c6b81f11ddeefc2f4307eed9ead7",
     "AGENTS.md": "42743fbe656babfe6108a3a87e947834f2747ae7bdb863f4a73c33927f6ecf45",
     "AUTHORS": "6040f8dd3ef92f2fab8b0cfc77dbafd4e55e2d11a0fc991ad3d015911a921dca",
@@ -404,7 +404,7 @@
     "TWO_CHANNEL_VERIFICATION_20261014.json": "8b2f0dc29c06d0c1b415d0c6c8ec69a1b8d9fcb119e06ae2cbe0ab468439adb3",
     "VACUITY_OF_FULL_GROUP_OPEN_20261002.md": "1474152f860c3777e1e9bce9c1d1729c876d09ab632a53b3b0cb0df303717f5c",
     "VERIFIED_THEOREMS.md": "467e2df4d88100952a60df29aee0c1c0215fdb0b3cf261d51a869e8f1e32f431",
-    "VERIFYING.md": "746110c842862272faaea01c9186a4dc731a58d205edf6ec8d4996a6037e0177",
+    "VERIFYING.md": "075e09fcaf9dff00dd2ae09d10ada99bc2ed06da8eb16d3ef96f67446e2d7c61",
     "WEIGHTED_COMPLETION_CERTIFICATE_20261018.md": "fa9ebc049188fbb30a457320ff68398250993b43d56af8dca2d7202e388a8707",
     "WEIGHTED_COMPLETION_VERIFICATION_20261018.json": "c36b374e2ae120b76b1e5e74d0b9f9b729503d339982c937cb26fab55ebda949",
     "WEIGHTED_PAIR_REDUCTION_20261016.md": "4977ef97a49ea24b9325b66ab90e83b3a9c87b69b53a020462689fe68783f7fe",
