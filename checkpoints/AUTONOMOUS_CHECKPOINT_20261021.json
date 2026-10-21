@@ -505,7 +505,7 @@
     "docs/manuscript/README.md": "7c0928b56bfb156ab66f2c00f3cee1d6357411e274a5ac5f5294c3254f56673b",
     "docs/manuscript/erdos142_density_increment.tex": "9c3977e0d56bba0d3e10ba8bbbc9ea3b98e086b2d994bb1c2efb603f74720b6e",
     "docs/manuscript/references.bib": "8729198b39e454428c3a6131e0d48d5b353613eeb4f9262b28d11bca5c668d8e",
-    "formalization/lean/Erdos142/HoleSupport.lean": "7e2401e12f418aaafc11662d189f6f3c77972acd541339bc61db3bfacca74b65",
+    "formalization/lean/Erdos142/HoleSupport.lean": "d019774aef5e40f52e26f78ea026fa425f66cdf9e3b025ff535b680f6908eba7",
     "formalization/lean/Erdos142/TightFrame.lean": "80c2cf40f3bea78ad1e2104a3183b40f0ee1cd9b8e863bfa3eafeb5f115b656d",
     "formalization/lean/README.md": "7a751c4a95971c7df9f7dd651fbf84d58b95474c7256ad61a55d739f705bf636",
     "formalization/lean/lakefile.lean": "c36a1ee9ff3fb2c8952dc285ad94bd8fee6be463ce8367322fed663bc0776bf4",

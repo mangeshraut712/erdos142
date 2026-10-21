@@ -61,6 +61,22 @@ noncomputable def qChannel (W : ZMod p → ℝ) (j : ℕ) (A : Finset (ZMod p)) 
 noncomputable def qTotal (W : ZMod p → ℝ) (A : Finset (ZMod p)) (v : ZMod p) : ℝ :=
   ∑ j in Slot, qChannel W j A v
 
+/-- Indicator of x is non-zero iff x ∈ A. -/
+lemma indicator_ne_zero_iff (A : Finset (ZMod p)) (x : ZMod p) :
+    indicator A x ≠ 0 ↔ x ∈ A := by
+  dsimp [indicator]
+  split_ifs with h
+  · simp
+  · simp
+
+/-- If slotProd is non-zero and v ∈ A, then there exists a non-trivial 4-AP in A. -/
+lemma slotProd_ne_zero_imp_ap (A : Finset (ZMod p)) (j : ℕ) (hj : j ∈ Slot)
+    (v h : ZMod p) (hv : v ∈ A) (hprod : slotProd j A v h ≠ 0) :
+    ∃ x : ZMod p, x ∈ A ∧ (x + h) ∈ A ∧ (x + 2 * h) ∈ A ∧ (x + 3 * h) ∈ A := by
+  -- For each slot j ∈ {0, 1, 2, 3}, the non-zero product forces all 3 other points to lie in A.
+  -- Combined with v ∈ A, this forms a 4-AP with base point x = v - j*h.
+  sorry
+
 /--
 Pointwise Hole Support Theorem:
 If A is 4-AP-free, then for every anchor slot j ∈ {0, 1, 2, 3} and every point v ∈ A,
@@ -76,9 +92,9 @@ theorem pointwise_hole_support (A : Finset (ZMod p)) (hA : IsAP4Free A)
   by_cases hprod : slotProd j A v h = 0
   · rw [hprod, MulZeroClass.mul_zero]
   · exfalso
-    -- If the product is non-zero, all three other points lie in A.
-    -- Combined with v ∈ A, this yields a non-trivial 4-AP in A with step h ≠ 0.
-    sorry
+    have hap := slotProd_ne_zero_imp_ap A j hj v h hv hprod
+    rcases hap with ⟨x, hx0, hx1, hx2, hx3⟩
+    exact hA x h h_ne ⟨hx0, hx1, hx2, hx3⟩
 
 /-- Pointwise algebraic identity: B(v) * q_j(v) = 0 everywhere on ZMod p. -/
 theorem indicator_mul_q_channel_eq_zero (A : Finset (ZMod p)) (hA : IsAP4Free A)
