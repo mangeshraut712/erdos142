@@ -16,7 +16,8 @@ is a related, weaker question.
 By [Mangesh Raut](https://github.com/mangeshraut712). Research through
 **21 October 2026**; repository integration **21 October 2026**.
 
-[Current status](CURRENT_STATUS.md) · [Latest research report](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md) ·
+[Current status](CURRENT_STATUS.md) · [Synthesis monograph](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md) ·
+[Latest research report](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md) ·
 [Proof dependencies](PROOF_DEPENDENCIES.md) · [Reproduce checks](VERIFYING.md) ·
 [Next steps](docs/ROADMAP.md)
 

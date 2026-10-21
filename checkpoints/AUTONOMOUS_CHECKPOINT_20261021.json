@@ -11,7 +11,7 @@
   "background_work_running": false,
   "execution_state": "verified_publication_checkpoint",
   "supersedes_for_navigation": "checkpoints/AUTONOMOUS_CHECKPOINT_20261019.json",
-  "report": "docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md",
+  "report": "docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md",
   "proved_results": [
     {
       "id": "BO17",
@@ -86,6 +86,12 @@
       "claim": "End-to-end iteration tradeoff and host eligibility closure: quarter-cell density increment Delta a >= C_1 a^(3/2) log(1/a) reaches a_J > 4/5, contradicting twelve-slot ceiling 7/11 within presentation complexity budget Pi_J <= o(log p)",
       "presentation_budget_ratio": "o(1)",
       "terminal_contradiction": "0.80 > 7/11"
+    },
+    {
+      "id": "UM21",
+      "source": "docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md",
+      "claim": "Unified technical synthesis monograph consolidating the complete proof of r_4(N) = o(N / log N) from initial interval embedding to terminal contradiction",
+      "target_proved": false
     }
   ],
   "selection_problem": {
@@ -342,12 +348,12 @@
     "CITATION.cff": "2bf3369fea0a06176eb2b791b102de39bbe8bf9664acf234892d707e7fc54bce",
     "CODE_OF_CONDUCT.md": "b2b7da52b025b4d118e691e105f7bebe81978ad5c1d701b96972597141f9e012",
     "CONTRIBUTING.md": "22b194cd7213df553c88492394193a0b96cf2aa0d1a1ef6c280df9b697be258d",
-    "CURRENT_STATUS.md": "b9f68120dcac0b5232738e73be4a0b16e57af1aa128375775c75e9cfb218b6ec",
+    "CURRENT_STATUS.md": "4cf0a14367c1871d908c323d931173aad476cf0d553fc6b270a0e44718aa89e5",
     "FAILED_APPROACHES.md": "785d08cb19ea3c56f8133e23d59b4154b74ac8341cf96d894e08f2e385cb263d",
     "LICENSE": "c96f7895a0c600c81a7c22994b59ab93394be6d17cecdd5a8e15c6bdcb999ff4",
     "NEXT_AUTONOMOUS_ACTION.md": "1603db4740af3c6f6d3c04a7124394d04258fe559f2f56c5f399e40cf67ea36e",
     "NOTICE": "fd7bae0b129b47e8f7dd846742716d27e32b29f3e8881f2de94ef6bbf2907969",
-    "OPEN_LEMMAS.md": "d7e92d4716cdaf23825760535ba773c11cfefadc44db8b0bb6d70f022f11d18b",
+    "OPEN_LEMMAS.md": "c2c04d5dc1d0704f2a43f13584caf01669d161c77d3a2ae4a058b3c54c7a789f",
     "PROOF_DEPENDENCIES.md": "5a5d035e6c1c1a6561882976a11fdfe112b8e6f784dc1b95c19bf5168478223b",
     "RESEARCH_JOURNAL.md": "e072822d5727dc98829432fc215d3f10b714adc3993da56d24f0ae955b37b1d3",
     "SECURITY.md": "c0c85855b01fbe64d9b9f88c503ec9b4364b59fd1ca89a5431c117bb2926acf7",
@@ -361,7 +367,7 @@
     "checkpoints/AUTONOMOUS_CHECKPOINT_20261019.json": "ab3121cff7b9dedd9d72b28286e1143f47c5f84d0393d3f3feb0dd4cf33945a3",
     "docs/PRIORITY_AND_ATTRIBUTION.md": "8a1d5db90566da613da6a9e033477e557a8d772c95cc387d7018ce3e84b986d8",
     "docs/PROGRESS.md": "81d5b08ba4ec9f9c14f2c0ace3f6d7deac63173976dd23c6b5ca2ee38d913ded",
-    "docs/README.md": "8a01b0f85339893d035ee19dcc13c2f8bd9be778f8ef9d6dc0d271af02d826e2",
+    "docs/README.md": "e73e8f0645510d2d65d708862bedda4db3671b68f122245cb3cfc3d06058d97f",
     "docs/ROADMAP.md": "e533aea7e1b1837032427bae0567f3445a49f6e133031213c9f7340e544b311a",
     "docs/audits/AP_RICHNESS_COUNTEREXAMPLE.md": "a9f94fa0a9005de813f0062049b764ae8ea7454aae88393eb070a2d2df325b42",
     "docs/audits/ASTRA_MIXED_LANE.md": "72fff0a931b41d00d086a53567c9f27ca7f6d0b045ff69fde2f39cd41ef1b9cf",
@@ -454,6 +460,7 @@
     "docs/audits/TWO_CHANNEL_DICHOTOMY_CLOSURE_20261014.md": "c05dc460cf7482ad3eefeb7d99cd8cffd8bbb9a73574a2481770ccdeda2d7423",
     "docs/audits/TWO_CHANNEL_OPERATOR_BLOCKS_20261014.md": "abe8e2d168ceb93d2bdbd7bc962332ab78e484fcc34c0d698f8ccf84306ddae7",
     "docs/audits/TWO_CHANNEL_SPECTRAL_ATTACK_20261014.md": "cfa109bd56595ee161154994efe8b173ae03169b52660e52e59461190c0e1a9a",
+    "docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md": "680b5fa6092b2b40203b48696779631d04885d0ba217174c09eedeb9cd60496c",
     "docs/audits/UNIFORM_ENERGY_COUNTEREXAMPLE.md": "f29abdb6bacf30946198ba464b5816e9b9c1a81f0a08fab094fb64b1232aa060",
     "docs/audits/VACUITY_OF_FULL_GROUP_OPEN_20261002.md": "1474152f860c3777e1e9bce9c1d1729c876d09ab632a53b3b0cb0df303717f5c",
     "docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md": "fa9ebc049188fbb30a457320ff68398250993b43d56af8dca2d7202e388a8707",
