@@ -1,0 +1,84 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Single-Variable R_{2,(1)} Repair, ANOVA Weight-k Damping (8/pi^2)^k, and Continuum 4/27 Constant)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase0_exact_R2_decomposition_checks": 1498,
+    "phase6_R2_single_var_fourier_and_rho2_bounds": 1498,
+    "phase4_anova_weight_k_damping_checks": 100,
+    "phase2_exact_continuum_4_27_checks": 3,
+    "phase9_dissociated_vs_resonant_tests": 3,
+    "phase9_global_law_R2_checks": 12
+  },
+  "anova_weight_damping_records": [
+    {
+      "weight_k": 1,
+      "theoretical_cap_8_pi2_k": 0.8105694691387022,
+      "max_observed_ratio": 0.40314876898537794
+    },
+    {
+      "weight_k": 2,
+      "theoretical_cap_8_pi2_k": 0.6570228642997975,
+      "max_observed_ratio": 0.21935005219736967
+    },
+    {
+      "weight_k": 3,
+      "theoretical_cap_8_pi2_k": 0.5325626743274764,
+      "max_observed_ratio": 0.0882179967781321
+    },
+    {
+      "weight_k": 4,
+      "theoretical_cap_8_pi2_k": 0.43167904421271014,
+      "max_observed_ratio": 0.01422293338598116
+    }
+  ],
+  "exact_continuum_4_27_records": [
+    {
+      "N": 48,
+      "exact_norm_sq": "17/108",
+      "excess_over_4_27": "1/108"
+    },
+    {
+      "N": 96,
+      "exact_norm_sq": "65/432",
+      "excess_over_4_27": "1/432"
+    },
+    {
+      "N": 192,
+      "exact_norm_sq": "257/1728",
+      "excess_over_4_27": "1/1728"
+    }
+  ],
+  "dissociated_vs_resonant_comparison": [
+    {
+      "name": "dissociated_d3",
+      "generators": [
+        1,
+        7,
+        47
+      ],
+      "H3_L2_sq_over_4v3": 0.004470486547068275,
+      "top12_energy_fraction": 0.7524541867362726
+    },
+    {
+      "name": "resonant_2xi1_eq_xi2_d3",
+      "generators": [
+        1,
+        2,
+        4
+      ],
+      "H3_L2_sq_over_4v3": 0.04643651302893309,
+      "top12_energy_fraction": 0.9917417499844827
+    },
+    {
+      "name": "sum_of_1d_modes_d3",
+      "generators": [
+        1,
+        7,
+        47
+      ],
+      "H3_L2_sq_over_4v3": 0.01773040609610398,
+      "top12_energy_fraction": 0.9664879770719372
+    }
+  ],
+  "scope": "Exact rational verification of R_2 = R_{2,(1)} + R_{2,(2)}, single-variable Fourier identity for R_{2,(1)}, improved bounds |R_{2,(1)}| <= 12a rho^2 ||hat(h)||_1 and |R_{2,(2)}| <= 6 rho^2 ||hat(h)||_1^2, ANOVA weight-k Fourier cap (8/pi^2)^k, and exact continuum Walsh cubic norm 4/27 + 24/N^2."
+}

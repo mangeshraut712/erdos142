@@ -1,0 +1,101 @@
+{
+  "status": "finite supporting checks passed; H and greedy selection unproved",
+  "checks": {
+    "variable_energy_trajectories": 324,
+    "exact_window_label_counts": 225,
+    "quadratic_resonance_kernels": 17667,
+    "adversarial_cases": 8
+  },
+  "adversarial_examples": [
+    {
+      "family": "random Boolean",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.16923076923076924,
+      "nonzero_ordered_4APs": 2,
+      "nonzero_ordered_3APs": 4,
+      "max_relative_coefficient_squared": 0.007980962954929017,
+      "best_one_character_quarter_energy": 0.03425687434737208,
+      "coefficient_squared_over_greedy_scale": 0.27429852206904554
+    },
+    {
+      "family": "quadratic Boolean interval",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.18461538461538463,
+      "nonzero_ordered_4APs": 6,
+      "nonzero_ordered_3APs": 14,
+      "max_relative_coefficient_squared": 0.012706937726853355,
+      "best_one_character_quarter_energy": 0.0705084018545557,
+      "coefficient_squared_over_greedy_scale": 0.3641790621861922
+    },
+    {
+      "family": "3AP-free ternary digits",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.12307692307692308,
+      "nonzero_ordered_4APs": 0,
+      "nonzero_ordered_3APs": 0,
+      "max_relative_coefficient_squared": 0.017058290677549565,
+      "best_one_character_quarter_energy": 0.05518174133558751,
+      "coefficient_squared_over_greedy_scale": 1.1512951971141225
+    },
+    {
+      "family": "sparse cube",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.12307692307692308,
+      "nonzero_ordered_4APs": 0,
+      "nonzero_ordered_3APs": 0,
+      "max_relative_coefficient_squared": 0.011570424031976346,
+      "best_one_character_quarter_energy": 0.041994928148774306,
+      "coefficient_squared_over_greedy_scale": 0.7809090528701059
+    },
+    {
+      "family": "progression plus cube",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.24615384615384617,
+      "nonzero_ordered_4APs": 8,
+      "nonzero_ordered_3APs": 16,
+      "max_relative_coefficient_squared": 0.030998430093509097,
+      "best_one_character_quarter_energy": 0.07241773071732586,
+      "coefficient_squared_over_greedy_scale": 0.4922099152662341
+    },
+    {
+      "family": "concentrated interval",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.3230769230769231,
+      "nonzero_ordered_4APs": 126,
+      "nonzero_ordered_3APs": 200,
+      "max_relative_coefficient_squared": 0.0963590407516204,
+      "best_one_character_quarter_energy": 0.21869822485207105,
+      "coefficient_squared_over_greedy_scale": 0.8909187361321452
+    },
+    {
+      "family": "separated pieces",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.12307692307692308,
+      "nonzero_ordered_4APs": 0,
+      "nonzero_ordered_3APs": 0,
+      "max_relative_coefficient_squared": 0.013823371047752398,
+      "best_one_character_quarter_energy": 0.04856247824573616,
+      "coefficient_squared_over_greedy_scale": 0.9329645622787524
+    },
+    {
+      "family": "tensor seed",
+      "p": 257,
+      "window_size": 65,
+      "relative_density": 0.24615384615384617,
+      "nonzero_ordered_4APs": 0,
+      "nonzero_ordered_3APs": 0,
+      "max_relative_coefficient_squared": 0.018975142759632996,
+      "best_one_character_quarter_energy": 0.06155981670151711,
+      "coefficient_squared_over_greedy_scale": 0.3012976264188084
+    }
+  ],
+  "arithmetic": "integer label/kernel counts; floating energy diagnostics tolerance 1e-10",
+  "external_dependencies": []
+}

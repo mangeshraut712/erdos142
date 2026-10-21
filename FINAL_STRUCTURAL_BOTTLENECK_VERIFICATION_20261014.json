@@ -1,0 +1,14 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Unconditional Elimination of Branch III on Z_p via One-Sided D_3 Truncation, Spectral K^{(2)}/K^{(3)} Splitting, and Clipped Completion Projection)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "theorem_B_one_sided_pairing_checks": 2508,
+    "theorem_D_clipped_completion_checks": 5016,
+    "theorem_A_proper_window_D3_bijection_bounds": 2508,
+    "theorem_A_unconditional_D3_R1_T_bounds": 2259,
+    "theorem_C_spectral_splitting_K2_K3_checks": 753,
+    "theorem_E_rich_cubic_multiplier_checks": 753,
+    "global_law_orbit_checks": 16
+  },
+  "scope": "100% exact rational and numerical verification of Theorems A, B, C, D, E across Z_7, Z_11, proper windows (11,5), (13,6), and the p=23, 29 rational global laws."
+}

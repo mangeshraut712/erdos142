@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "relative_main_term_cases": 5844,
+  "scope": "finite checks support the symbolic relative-marginal proof; SELECT unresolved"
+}

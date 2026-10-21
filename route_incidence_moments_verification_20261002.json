@@ -1,0 +1,8 @@
+{
+  "status": "finite exact checks passed",
+  "checks": {
+    "subsets": 2205,
+    "ap_free": 762,
+    "schur": 762
+  }
+}

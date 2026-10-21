@@ -1,0 +1,8 @@
+{
+  "status": "checks passed",
+  "convolution_subsets": 2208,
+  "exact_sampling_moments": 15,
+  "relative_rotation_integrals": 886,
+  "relative_residual_refinement_checks": 2658,
+  "simultaneous_regularized_Gram_checks": 36
+}

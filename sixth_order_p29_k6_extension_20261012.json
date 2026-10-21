@@ -1,0 +1,761 @@
+{
+  "status": "EXACT FINITE GLOBAL EXTENSION VERIFIED",
+  "p": 29,
+  "k": 6,
+  "scope": "p=29 lies below the uniform n>=200 theorem; no asymptotic extension or SELECT counterexample is claimed",
+  "admissible_root_trade_choices": 235794,
+  "four_set_orbits": 33,
+  "AP_free_k_set_orbits": 459,
+  "cap": "120a/n exceeds a^2 here, so each supporting set satisfies that cap automatically",
+  "fourth_moments": [
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "orbit_size": 406,
+      "trade_average": "-1",
+      "moment": "0"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "orbit_size": 812,
+      "trade_average": "21973/117897",
+      "moment": "699350/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "orbit_size": 812,
+      "trade_average": "2969/78598",
+      "moment": "135945/207420122"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "orbit_size": 812,
+      "trade_average": "1603/18138",
+      "moment": "98705/143598546"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "orbit_size": 812,
+      "trade_average": "8761/235794",
+      "moment": "1222775/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        8
+      ],
+      "orbit_size": 812,
+      "trade_average": "4570/117897",
+      "moment": "21115/32185881"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        9
+      ],
+      "orbit_size": 812,
+      "trade_average": "4555/117897",
+      "moment": "612260/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        10
+      ],
+      "orbit_size": 812,
+      "trade_average": "10433/117897",
+      "moment": "641650/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        11
+      ],
+      "orbit_size": 812,
+      "trade_average": "32209/235794",
+      "moment": "1340015/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        12
+      ],
+      "orbit_size": 812,
+      "trade_average": "1487/39299",
+      "moment": "203930/311130183"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        13
+      ],
+      "orbit_size": 812,
+      "trade_average": "4267/117897",
+      "moment": "87260/133341507"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        14
+      ],
+      "orbit_size": 812,
+      "trade_average": "10307/117897",
+      "moment": "641020/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "orbit_size": 406,
+      "trade_average": "9433/235794",
+      "moment": "1226135/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "orbit_size": 812,
+      "trade_average": "2673/78598",
+      "moment": "406355/622260366"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        8
+      ],
+      "orbit_size": 812,
+      "trade_average": "-4711/235794",
+      "moment": "1155415/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "orbit_size": 812,
+      "trade_average": "8219/235794",
+      "moment": "174295/266683014"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        11
+      ],
+      "orbit_size": 812,
+      "trade_average": "-794/39299",
+      "moment": "64175/103710061"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        12
+      ],
+      "orbit_size": 812,
+      "trade_average": "2723/78598",
+      "moment": "135535/207420122"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        13
+      ],
+      "orbit_size": 812,
+      "trade_average": "8051/235794",
+      "moment": "174175/266683014"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        17
+      ],
+      "orbit_size": 812,
+      "trade_average": "-1633/78598",
+      "moment": "18325/29631446"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        18
+      ],
+      "orbit_size": 812,
+      "trade_average": "-5039/235794",
+      "moment": "164825/266683014"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        20
+      ],
+      "orbit_size": 812,
+      "trade_average": "4130/117897",
+      "moment": "610135/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        22
+      ],
+      "orbit_size": 812,
+      "trade_average": "-4871/235794",
+      "moment": "164945/266683014"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        24
+      ],
+      "orbit_size": 812,
+      "trade_average": "-4591/235794",
+      "moment": "165145/266683014"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        25
+      ],
+      "orbit_size": 812,
+      "trade_average": "-2575/117897",
+      "moment": "576610/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        27
+      ],
+      "orbit_size": 406,
+      "trade_average": "8267/235794",
+      "moment": "1220305/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "orbit_size": 406,
+      "trade_average": "-9340/117897",
+      "moment": "542785/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "orbit_size": 812,
+      "trade_average": "-6243/78598",
+      "moment": "12475/21457254"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        13
+      ],
+      "orbit_size": 812,
+      "trade_average": "-9332/117897",
+      "moment": "542825/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        23
+      ],
+      "orbit_size": 812,
+      "trade_average": "-18979/235794",
+      "moment": "1084075/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        26
+      ],
+      "orbit_size": 406,
+      "trade_average": "-9491/117897",
+      "moment": "542030/933390549"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "orbit_size": 406,
+      "trade_average": "-18905/235794",
+      "moment": "1084445/1866781098"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        9,
+        21
+      ],
+      "orbit_size": 203,
+      "trade_average": "-9677/117897",
+      "moment": "77300/133341507"
+    }
+  ],
+  "global_law": [
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        18
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "12182309717263/2250405984859708"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        26
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "28456040959055669/962048558527525170"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        19
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "6331706927834411/96204855852752517"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "15645994898842681/481024279263762585"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        9,
+        22
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "1375317611050577/49335823514232060"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        9,
+        24
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "10057428306992327/384819423411010068"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        11,
+        17
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "186387033653320363/1924097117055050340"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        11,
+        24
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "164685476997103/12333955878558015"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        12,
+        25
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "27822363337088534/481024279263762585"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        16,
+        21
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "3185268149235196/160341426421254195"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        18
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "39285100992386051/962048558527525170"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        8,
+        26
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "2350699335545653/641365705685016780"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        21
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "11139040435523149/160341426421254195"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        13,
+        20
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "23766755866357753/481024279263762585"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        18,
+        25
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "8350681739537597/320682852842508390"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        18
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "1272862314592859/384819423411010068"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        25
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "27635479909611373/1924097117055050340"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        8,
+        22
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "13148453974498276/481024279263762585"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        13,
+        21
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "4396554759305419/128273141137003356"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        20,
+        22
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "19166356553308867/962048558527525170"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        12
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "3548637745361273/101268269318686860"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        18
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "731387323941289/148007470542696180"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        7,
+        9,
+        10
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "55683709055619917/1924097117055050340"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        8,
+        10,
+        17
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "3188143558485128/160341426421254195"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "orbit_size": 406,
+      "orbit_probability": "22881261580571599/962048558527525170"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        17
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "82948584016859237/1924097117055050340"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        12,
+        13,
+        14
+      ],
+      "orbit_size": 406,
+      "orbit_probability": "8285349098763469/481024279263762585"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        4,
+        13,
+        20
+      ],
+      "orbit_size": 406,
+      "orbit_probability": "11548639008627094/481024279263762585"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        4,
+        14,
+        19
+      ],
+      "orbit_size": 406,
+      "orbit_probability": "40789335515649073/962048558527525170"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7,
+        8,
+        17
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "23000409014834467/1924097117055050340"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7,
+        12,
+        25
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "142494077876222257/1924097117055050340"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7,
+        21,
+        27
+      ],
+      "orbit_size": 812,
+      "orbit_probability": "5176382987266987/481024279263762585"
+    }
+  ]
+}

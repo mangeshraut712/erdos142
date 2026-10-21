@@ -1,0 +1,117 @@
+{
+ "exact_small": [
+  {
+   "r": 3,
+   "B": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "points": 36,
+   "4ap_free": true
+  },
+  {
+   "r": 4,
+   "B": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    10,
+    11
+   ],
+   "points": 119,
+   "4ap_free": true
+  },
+  {
+   "r": 5,
+   "B": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    9,
+    13,
+    14,
+    15
+   ],
+   "points": 361,
+   "4ap_free": true
+  },
+  {
+   "r": 6,
+   "B": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    14,
+    16,
+    17,
+    18
+   ],
+   "points": 1333,
+   "4ap_free": true
+  }
+ ],
+ "large": [
+  {
+   "r": 50,
+   "density": 0.06446102388005315,
+   "sqrt_r_times_density": 0.4558082710781356,
+   "junta1_energy_over_a2": 0.0011150192789285036,
+   "junta2_energy_over_a2": 0.0026053367752050466,
+   "mod15_energy_over_a2": 1.1897421219227733,
+   "target_scale_1_over_log": 0.29113423194951304,
+   "log_cutoff_margin": 2.980966235957723,
+   "B_density": 0.31788079470198677
+  },
+  {
+   "r": 100,
+   "density": 0.03708513053219984,
+   "sqrt_r_times_density": 0.3708513053219984,
+   "junta1_energy_over_a2": 0.0002682221847452551,
+   "junta2_energy_over_a2": 0.0006337134986186964,
+   "mod15_energy_over_a2": 0.7882052621641913,
+   "target_scale_1_over_log": 0.25077197868173356,
+   "log_cutoff_margin": 15.706535862864428,
+   "B_density": 0.2757475083056478
+  },
+  {
+   "r": 200,
+   "density": 0.027982725415227047,
+   "sqrt_r_times_density": 0.3957354979437639,
+   "junta1_energy_over_a2": 3.193249298608689e-05,
+   "junta2_energy_over_a2": 9.100255769547126e-05,
+   "mod15_energy_over_a2": 0.9429134194555251,
+   "target_scale_1_over_log": 0.23422960805264537,
+   "log_cutoff_margin": 43.62985693404403,
+   "B_density": 0.22628951747088186
+  },
+  {
+   "r": 300,
+   "density": 0.01608778046485351,
+   "sqrt_r_times_density": 0.27864853146140334,
+   "junta1_energy_over_a2": 5.4794322444898646e-05,
+   "junta2_energy_over_a2": 0.00012070136040950512,
+   "mod15_energy_over_a2": 0.6440895734014545,
+   "target_scale_1_over_log": 0.20734660311487288,
+   "log_cutoff_margin": 70.73748208768887,
+   "B_density": 0.19866814650388456
+  }
+ ],
+ "first_r_meeting_cutoff_if_a_equals_c_over_sqrt_r": 45,
+ "c_used": 0.27864853146140334,
+ "target_proved": false
+}

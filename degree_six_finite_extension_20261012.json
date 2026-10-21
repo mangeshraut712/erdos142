@@ -1,0 +1,443 @@
+{
+  "status": "EXACT FINITE GLOBAL EXTENSION VERIFIED",
+  "p": 23,
+  "k": 5,
+  "scope": "p=23 lies below the uniform n>=200 theorem; no asymptotic extension or SELECT counterexample is claimed",
+  "admissible_root_trade_choices": 61858,
+  "four_set_orbits": 20,
+  "AP_free_five_set_orbits": 59,
+  "cap": "120a/n exceeds a^2 here, so each supporting set satisfies that cap automatically",
+  "fourth_moments": [
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "orbit_size": 253,
+      "trade_average": "-1",
+      "moment": "0"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "orbit_size": 506,
+      "trade_average": "7333/30929",
+      "moment": "5466/7825037"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "orbit_size": 506,
+      "trade_average": "1353/61858",
+      "moment": "63211/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "orbit_size": 506,
+      "trade_average": "6051/61858",
+      "moment": "67909/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "orbit_size": 506,
+      "trade_average": "1475/61858",
+      "moment": "63333/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        8
+      ],
+      "orbit_size": 506,
+      "trade_average": "3030/30929",
+      "moment": "33959/54775259"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        9
+      ],
+      "orbit_size": 506,
+      "trade_average": "10345/61858",
+      "moment": "72203/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        10
+      ],
+      "orbit_size": 506,
+      "trade_average": "1405/61858",
+      "moment": "63263/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        11
+      ],
+      "orbit_size": 506,
+      "trade_average": "5837/61858",
+      "moment": "67695/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "orbit_size": 253,
+      "trade_average": "1801/61858",
+      "moment": "63659/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "orbit_size": 506,
+      "trade_average": "993/61858",
+      "moment": "62851/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        8
+      ],
+      "orbit_size": 506,
+      "trade_average": "597/30929",
+      "moment": "2866/4979569"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        10
+      ],
+      "orbit_size": 506,
+      "trade_average": "5745/61858",
+      "moment": "67603/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        14
+      ],
+      "orbit_size": 506,
+      "trade_average": "-1976/30929",
+      "moment": "28953/54775259"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        15
+      ],
+      "orbit_size": 506,
+      "trade_average": "-4083/61858",
+      "moment": "57775/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        18
+      ],
+      "orbit_size": 506,
+      "trade_average": "-1933/30929",
+      "moment": "2636/4979569"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        19
+      ],
+      "orbit_size": 506,
+      "trade_average": "-2042/30929",
+      "moment": "28887/54775259"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        21
+      ],
+      "orbit_size": 253,
+      "trade_average": "1129/61858",
+      "moment": "62987/109550518"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "orbit_size": 253,
+      "trade_average": "-4818/30929",
+      "moment": "26111/54775259"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        4,
+        20
+      ],
+      "orbit_size": 253,
+      "trade_average": "-4857/30929",
+      "moment": "26072/54775259"
+    }
+  ],
+  "global_law": [
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "2929639/900652480"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "196202387/1801304960"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "16026429/360260992"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        13
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "167360181/1801304960"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        4,
+        20
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "705911/64332320"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "62454079/1801304960"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        9
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "149937887/1801304960"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        10
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "15566347/450326240"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        5,
+        20
+      ],
+      "orbit_size": 253,
+      "orbit_probability": "20420999/450326240"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        11
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "10297619/112581560"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        6,
+        16
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "20488829/1801304960"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        8,
+        9
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "1334089/45032624"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        8,
+        17
+      ],
+      "orbit_size": 253,
+      "orbit_probability": "11826709/257329280"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        9,
+        10
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "741607/25732928"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        4,
+        10
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "4802691/56290780"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7,
+        8
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "10218809/112581560"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7,
+        10
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "5645177/225163120"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        7,
+        19
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "67246167/1801304960"
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        8,
+        14
+      ],
+      "orbit_size": 506,
+      "orbit_probability": "86367863/900652480"
+    }
+  ]
+}

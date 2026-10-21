@@ -1,0 +1,64 @@
+{
+ "lift_isomorphism_trials": 40,
+ "threshold": {
+  "1": {
+   "cube_size": 3,
+   "cube_4aps": 0,
+   "cube_3aps": 2
+  },
+  "2": {
+   "cube_size": 9,
+   "cube_4aps": 0,
+   "cube_3aps": 16
+  },
+  "3": {
+   "cube_size": 27,
+   "cube_4aps": 0,
+   "cube_3aps": 98
+  },
+  "random_convex_sets_above_3^r_all_contain_4ap": 208
+ },
+ "digit_windows": [
+  {
+   "d": 2,
+   "rank": 3,
+   "p": 409609,
+   "size": 9,
+   "size_equals_3^(rank-1)": true,
+   "nontrivial_4aps": 0,
+   "nontrivial_3aps": 8
+  },
+  {
+   "d": 3,
+   "rank": 4,
+   "p": 26214401,
+   "size": 27,
+   "size_equals_3^(rank-1)": true,
+   "nontrivial_4aps": 0,
+   "nontrivial_3aps": 49
+  },
+  {
+   "d": 4,
+   "rank": 5,
+   "p": 1677721631,
+   "size": 81,
+   "size_equals_3^(rank-1)": true,
+   "nontrivial_4aps": 0,
+   "nontrivial_3aps": 272
+  },
+  {
+   "d": 5,
+   "rank": 6,
+   "p": 107374182427,
+   "size": 243,
+   "size_equals_3^(rank-1)": true,
+   "nontrivial_4aps": 0,
+   "nontrivial_3aps": 1441
+  }
+ ],
+ "endpoint_supply": {
+  "trials": 200,
+  "min_pairs_minus_bound": 0.0
+ },
+ "target_proved": false
+}

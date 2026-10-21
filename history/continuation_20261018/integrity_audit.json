@@ -1,0 +1,109 @@
+{
+  "old_checkpoint_hashes_verified": 23,
+  "old_files": [
+    {
+      "file": "CURRENT_STATUS.md",
+      "verified_at": "history/continuation_20261018/before_updates/CURRENT_STATUS.md"
+    },
+    {
+      "file": "OPEN_LEMMAS.md",
+      "verified_at": "history/continuation_20261018/before_updates/OPEN_LEMMAS.md"
+    },
+    {
+      "file": "NEXT_AUTONOMOUS_ACTION.md",
+      "verified_at": "history/continuation_20261018/before_updates/NEXT_AUTONOMOUS_ACTION.md"
+    },
+    {
+      "file": "AUTONOMOUS_RESUME_PROMPT.md",
+      "verified_at": "history/continuation_20261018/before_updates/AUTONOMOUS_RESUME_PROMPT.md"
+    },
+    {
+      "file": "RESUME_AUDIT_20261017.md",
+      "verified_at": "history/continuation_20261018/before_updates/RESUME_AUDIT_20261017.md"
+    },
+    {
+      "file": "RESEARCH_JOURNAL.md",
+      "verified_at": "history/continuation_20261018/before_updates/RESEARCH_JOURNAL.md"
+    },
+    {
+      "file": "README.md",
+      "verified_at": "history/continuation_20261018/before_updates/README.md"
+    },
+    {
+      "file": "SOLUTION_LEDGER.md",
+      "verified_at": "history/continuation_20261018/before_updates/SOLUTION_LEDGER.md"
+    },
+    {
+      "file": "PROOF_DEPENDENCIES.md",
+      "verified_at": "history/continuation_20261018/before_updates/PROOF_DEPENDENCIES.md"
+    },
+    {
+      "file": "VERIFIED_THEOREMS.md",
+      "verified_at": "history/continuation_20261018/before_updates/VERIFIED_THEOREMS.md"
+    },
+    {
+      "file": "FAILED_APPROACHES.md",
+      "verified_at": "history/continuation_20261018/before_updates/FAILED_APPROACHES.md"
+    },
+    {
+      "file": "MIXED_QUADRATIC_TERMINAL_20261016.md",
+      "verified_at": "MIXED_QUADRATIC_TERMINAL_20261016.md"
+    },
+    {
+      "file": "LOG_DENSITY_ATTACK_20261016.md",
+      "verified_at": "LOG_DENSITY_ATTACK_20261016.md"
+    },
+    {
+      "file": "LOG_DENSITY_VERIFICATION_20261016.json",
+      "verified_at": "LOG_DENSITY_VERIFICATION_20261016.json"
+    },
+    {
+      "file": "WEIGHTED_PAIR_REDUCTION_20261016.md",
+      "verified_at": "WEIGHTED_PAIR_REDUCTION_20261016.md"
+    },
+    {
+      "file": "DIRECT_INCREMENT_TRADEOFF_20261016.md",
+      "verified_at": "DIRECT_INCREMENT_TRADEOFF_20261016.md"
+    },
+    {
+      "file": "GLOBAL_CHIRP_INVERSE_OBSTRUCTION_20261016.md",
+      "verified_at": "GLOBAL_CHIRP_INVERSE_OBSTRUCTION_20261016.md"
+    },
+    {
+      "file": "verify_weighted_pair_20261016.py",
+      "verified_at": "verify_weighted_pair_20261016.py"
+    },
+    {
+      "file": "WEIGHTED_PAIR_VERIFICATION_20261016.json",
+      "verified_at": "WEIGHTED_PAIR_VERIFICATION_20261016.json"
+    },
+    {
+      "file": "AUTONOMOUS_CHECKPOINT_20261016.json",
+      "verified_at": "AUTONOMOUS_CHECKPOINT_20261016.json"
+    },
+    {
+      "file": "history/resume_20261017/resume_verification.json",
+      "verified_at": "history/resume_20261017/resume_verification.json"
+    },
+    {
+      "file": "history/resume_20261017/weighted_pair_rerun.json",
+      "verified_at": "history/resume_20261017/weighted_pair_rerun.json"
+    },
+    {
+      "file": "history/resume_20261017/before_sync/sha256.json",
+      "verified_at": "history/resume_20261017/before_sync/sha256.json"
+    }
+  ],
+  "before_update_files_verified": 12,
+  "long_documents_preserved_verbatim": [
+    "SOLUTION_LEDGER.md",
+    "PROOF_DEPENDENCIES.md",
+    "VERIFIED_THEOREMS.md",
+    "FAILED_APPROACHES.md",
+    "RESEARCH_JOURNAL.md",
+    "README.md"
+  ],
+  "target_proved": false,
+  "outcome": "D",
+  "saved_on_local_date": "2026-10-19"
+}

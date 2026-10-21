@@ -1,0 +1,36 @@
+{
+  "status": "degree-two certificate checks passed",
+  "exact_parameter_cases": 62,
+  "asymptotic_samples_only": [
+    {
+      "p": 101,
+      "k": 21,
+      "a": 0.2079207920792079,
+      "pseudo_Fourier_SELECT_ratio": 0.03690576209911689
+    },
+    {
+      "p": 1009,
+      "k": 145,
+      "a": 0.14370664023785926,
+      "pseudo_Fourier_SELECT_ratio": 0.005922086454816244
+    },
+    {
+      "p": 10007,
+      "k": 1086,
+      "a": 0.10852403317677625,
+      "pseudo_Fourier_SELECT_ratio": 0.0008552262408485582
+    },
+    {
+      "p": 100003,
+      "k": 8686,
+      "a": 0.08685739427817166,
+      "pseudo_Fourier_SELECT_ratio": 0.00011372495283584507
+    },
+    {
+      "p": 1000003,
+      "k": 72382,
+      "a": 0.07238178285465144,
+      "pseudo_Fourier_SELECT_ratio": 1.435238457952176e-05
+    }
+  ]
+}

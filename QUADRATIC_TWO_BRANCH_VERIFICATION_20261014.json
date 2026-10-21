@@ -1,0 +1,36 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (First-Principles Trace/U^3 Operator Proof, Unified All-Chirp Identities for Branches I & II, and Quadratic Window Translation-Mixing Obstruction)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase1_exact_validity_polynomial_checks": 25,
+    "phase0_exact_rational_trace_u3_checks": 10,
+    "phase4_branch1_diagonal_free_chirp_checks": 2247,
+    "phase2_branch2_all_chirp_checks": 2247,
+    "phase6_global_law_chirp_checks": 16,
+    "phase5_quadratic_window_mixing_checks": 3
+  },
+  "quadratic_window_mixing_records": [
+    {
+      "p": 53,
+      "w": 0.24528301886792453,
+      "max_overlap_deviation_from_w2": 0.09077963688145246,
+      "gauss_bound": 0.5272601443587713,
+      "min_shift_boundary_loss_fraction": 0.4666666666666667
+    },
+    {
+      "p": 101,
+      "w": 0.24752475247524752,
+      "max_overlap_deviation_from_w2": 0.09714733849622587,
+      "gauss_bound": 0.49019354180374586,
+      "min_shift_boundary_loss_fraction": 0.4838709677419355
+    },
+    {
+      "p": 257,
+      "w": 0.2490272373540856,
+      "max_overlap_deviation_from_w2": 0.05471695256551954,
+      "gauss_bound": 0.4184051842860127,
+      "min_shift_boundary_loss_fraction": 0.5774647887323944
+    }
+  ],
+  "scope": "100% exact rational verification of tr(K_u^4)=tr(R_u^4)<=||u||_{U^3}^8 and a^2-U(U+4v) validity polynomial; 1e-11 verification of diagonal-free Branch I and zero-baseline Branch II all-chirp identities and Gauss-sum quadratic window mixing."
+}

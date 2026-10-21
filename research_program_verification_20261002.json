@@ -1,0 +1,61 @@
+{
+  "status": "supporting finite checks passed; H and unconditional target not proved",
+  "fourier": {
+    "subsets": 2208,
+    "ap_free_including_empty_full_test_range": 765,
+    "counting_sufficient_hypothesis_cases": 3,
+    "worst_float_fourier_error": 1.1657523856331735e-15,
+    "float_tolerance": 1e-10,
+    "dissociation_counterexample": "{1,2} in Z_5 has size 2 > log_3(5)"
+  },
+  "energy_atoms": {
+    "exact_rational_atom_instances": 6606
+  },
+  "scalar_budget": {
+    "scalar_trajectories": 180,
+    "worst_rank_envelope_ratio": 0.5125150446751552,
+    "worst_loss_envelope_ratio": 0.5133297784632812,
+    "asymptotic_substitution_diagnostics": [
+      {
+        "log_N": 100000000.0,
+        "terminal_product_over_log_N": 36.60940717032412,
+        "rank_over_sqrt_log_N": 4.834014284513375,
+        "loss_over_sqrt_log_N": 7.572045213334239
+      },
+      {
+        "log_N": 1e+16,
+        "terminal_product_over_log_N": 6.805295961169684,
+        "rank_over_sqrt_log_N": 2.2155096596303556,
+        "loss_over_sqrt_log_N": 3.0716613977920164
+      },
+      {
+        "log_N": 1e+32,
+        "terminal_product_over_log_N": 1.725918265813326,
+        "rank_over_sqrt_log_N": 1.1157897927140088,
+        "loss_over_sqrt_log_N": 1.546813097846376
+      },
+      {
+        "log_N": 1e+64,
+        "terminal_product_over_log_N": 0.43552867629853237,
+        "rank_over_sqrt_log_N": 0.5605064948155495,
+        "loss_over_sqrt_log_N": 0.7770269931338714
+      },
+      {
+        "log_N": 1e+128,
+        "terminal_product_over_log_N": 0.10939370433885877,
+        "rank_over_sqrt_log_N": 0.28091079968038346,
+        "loss_over_sqrt_log_N": 0.3894250575745947
+      }
+    ],
+    "scope": "floating diagnostics, not an asymptotic proof"
+  },
+  "terminal": {
+    "coordinate_windows": 130,
+    "exact_terminal_ap_free_instances": 4530
+  },
+  "prime_step": {
+    "primorial_bounds": 1000,
+    "prime_valuation_checks": 5193
+  },
+  "external_dependencies": []
+}

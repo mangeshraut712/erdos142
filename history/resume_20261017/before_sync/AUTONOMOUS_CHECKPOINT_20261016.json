@@ -1,0 +1,131 @@
+{
+  "checkpoint_date": "2026-10-16",
+  "principal_status": "D",
+  "offline": true,
+  "target": "r_4(N)=o(N/log N)",
+  "target_proved": false,
+  "execution_state": "research_cycle_saved",
+  "background_work_running": false,
+  "proved_results": [
+    {
+      "id": "MT16",
+      "status": "PROVED",
+      "source": "MIXED_QUADRATIC_TERMINAL_20261016.md",
+      "claim": "Mixed linear/quadratic interval terminal bound with finite errors, resonances and exact diagonal"
+    },
+    {
+      "id": "MR16",
+      "status": "PROVED",
+      "claim": "Weighted first residual is o(a^4 w mu) on specified reachable hosts"
+    },
+    {
+      "id": "DA16",
+      "status": "PROVED",
+      "source": "LOG_DENSITY_ATTACK_20261016.md",
+      "claim": "One quarter cell gives both gain kappa delta/8 and occupied mass retention kappa delta/(8a)"
+    },
+    {
+      "id": "DI16",
+      "status": "CONDITIONALLY PROVED",
+      "claim": "DIRECT-Q-P implies local target",
+      "unproved_premise": "DIRECT-Q-P existence of adequate degree <=2 phase correlation"
+    },
+    {
+      "id": "SP16",
+      "status": "PROVED",
+      "claim": "Sparse diffuse-completion AP-free examples for each fixed 1/2<theta<2/3",
+      "target_density_admissible": false
+    },
+    {
+      "id": "NP16",
+      "status": "PROVED AUXILIARY REFUTATION",
+      "claim": "Exact arithmetic pair kernel is not PSD",
+      "Boolean_witness": false,
+      "AP_free_counterexample": false
+    }
+  ],
+  "open_dependencies": [
+    "DIRECT-Q-P (L10)-(L11)",
+    "weighted signed lower bound (L9) under failure of phase selection",
+    "original SELECT/WSELECT/SIGNED/COLLECTIVE-WSELECT and thresholded pairing retention"
+  ],
+  "selection_problem": {
+    "domain": "r[log(p/n)+log(48r)+loglog p] <= log(p)/100; r>=1",
+    "density_range": "epsilon/(2log n) <= a <= 4/5",
+    "set": "actual cyclically nonzero-4AP-free Boolean A subset mixed interval window Omega",
+    "residual": "1_A-a on Omega, trivial factor only",
+    "conclusion": "exists nonconstant polynomial P of degree <=2 with |E_Omega (B-a)e_p(-P)| >= c_epsilon a^(3/2)sqrt(ell(a))R(a)",
+    "ell": "log(2/a)",
+    "R": "loglog(e^2/a)",
+    "status": "OPEN"
+  },
+  "quantitative_ledger": {
+    "conditional": true,
+    "initial_density": "epsilon/log N",
+    "L": "log N",
+    "rank": "O(sqrt(L)/(sqrt(log L)loglog L)+log L)",
+    "log_size_loss": "O(sqrt(L)sqrt(log L)/loglog L+(log L)^2)",
+    "rank_times_log_size_loss": "O(L/(loglog L)^2)+o(L)=o(L)",
+    "exact_finite_sums": "(L4) with eta=C sqrt(a ell(a))R(a)",
+    "terminal_errors": "(L14)",
+    "required_squared_correlation": "a^3 ell(a)R(a)^2",
+    "remaining_gain_over_a4": "a^(-1)ell(a)R(a)^2",
+    "unconditional_increment_proved": false
+  },
+  "verification": {
+    "new_script": "verify_log_density_attack_20261016.py",
+    "new_exit_code": 0,
+    "new_counts": {
+      "exact_tent_convolution": 76,
+      "floating_tent_transform_mass": 8,
+      "floating_tent_zero": 8,
+      "exact_persistent_baseline_lower_bound": 8,
+      "floating_persistent_vs_physical": 8,
+      "floating_all_vertex_degree_decomposition": 304,
+      "exact_eroded_slot_support": 660,
+      "floating_first_degree_error_envelope": 96,
+      "exact_weighted_APfree_hitting_diagonal_expansion": 24,
+      "exact_weighted_host_degree_cases": 8,
+      "floating_direct_atom_correlation_bound": 210,
+      "exact_direct_atom_gain_and_mass": 210,
+      "exact_retained_mass_telescope": 1,
+      "exact_arithmetic_pair_kernel_not_PSD": 1,
+      "exact_sparse_band_exponents": 4,
+      "exact_new_threshold_exponents": 4,
+      "floating_explicit_conditional_epoch_ledger": 12
+    },
+    "new_total": 1642,
+    "max_floating_errors": {
+      "floating_tent_transform_mass": 2.220446049250313e-16,
+      "floating_tent_zero": 2.7755575615628914e-17,
+      "floating_persistent_vs_physical": 1.3877787807814457e-17
+    },
+    "old_verifier_rerun": "verify_residual_field_audit_20261015.py",
+    "old_total": 21465,
+    "old_rerun_exit_code": 0,
+    "historical_outputs_preserved": true,
+    "source_and_historical_hash_checks_passed": true,
+    "asymptotic_selection_computationally_proved": false
+  },
+  "next_action": "Attack OPEN_LEMMAS.md O1 or O2, using Boolean/AP-free arithmetic beyond generic pair PSD.",
+  "resume_prompt": "AUTONOMOUS_RESUME_PROMPT.md",
+  "proof_audit": "LOG_DENSITY_PROOF_AUDIT_20261016.md",
+  "history_before_edits": "history/log_density_20261015",
+  "diagnostic_evidence": "history/log_density_20261016",
+  "file_sha256": {
+    "MIXED_QUADRATIC_TERMINAL_20261016.md": "2f34912dd3c66ac6ccd87713eac0fd0e8d040bcb7cb0e1ff588af5046a27c938",
+    "LOG_DENSITY_ATTACK_20261016.md": "1e36c4ea8305d252000d4f76a26eb7153276d6e33c7e331c346d411cc827b1c7",
+    "LOG_DENSITY_PROOF_AUDIT_20261016.md": "0faac733f186ac26804569727b4895e3ff35e6eb96c2c155bade88a20e1209b8",
+    "verify_log_density_attack_20261016.py": "a68703dfd1fb9776b16c2b8bbfc4f51776276c6b5b56f3004f386dca3717a48c",
+    "LOG_DENSITY_VERIFICATION_20261016.json": "5537d688b604ea49244de0ab2e2a409d78471d778f3db1bb5738aadf94d50831",
+    "CURRENT_STATUS.md": "7f04aa398e74f08084c6e11807535ab60172e1b0f4bf7b10e9a17e39bc88d4a4",
+    "SOLUTION_LEDGER.md": "ba34cae08a095582d0e4c36abee65a9e5497b5f94d98f8d647a2a511b0f89e6c",
+    "PROOF_DEPENDENCIES.md": "71c7bd97b6205c469aa825572ab595873db38825e9c7285d4d615bfd0d18c10c",
+    "OPEN_LEMMAS.md": "33feeb30954e79c8f2562373f850ea063801dca83f0da679604b9cea954e4091",
+    "VERIFIED_THEOREMS.md": "c9b952eaec31f595fb4a59f012a10be1d188452156ec814f26873d9d920f5173",
+    "FAILED_APPROACHES.md": "cdd1a8b3ce13f0ce9d2ef228a613cba0bd06590017233f537bab50e12db8c151",
+    "RESEARCH_JOURNAL.md": "744c7caacddb10a5febf5e3702679368704fbca90c56501eeb8f419194ad4129",
+    "NEXT_AUTONOMOUS_ACTION.md": "8a7171fb5af83cdf14bd3496967955b5ff2f77099c0ad4726df625f4c61f5728",
+    "AUTONOMOUS_RESUME_PROMPT.md": "938b603e27d5cf9c4cd9cf365260b42cb22a3aef7ea732ee22008e0fd9e77f2a"
+  }
+}

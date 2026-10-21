@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "hosts": 36,
+    "degree_vertices": 328,
+    "apfree_hole_certificates": 2721,
+    "codegree_pairs": 164
+  },
+  "status": "supporting checks passed; SELECT and target unresolved"
+}

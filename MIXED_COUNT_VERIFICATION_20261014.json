@@ -1,0 +1,68 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (with exact Phase 0 algebra correction and finite-dimensional dual characterization)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase0_corrected_binomial_identities": 2520,
+    "phase1_polynomial_P_Q_checks": 12600,
+    "phase5_subblock_channel_identities": 2520,
+    "phase3_abstract_dual_witnesses": 2,
+    "phase9_global_law_mixed_count_checks": 16
+  },
+  "abstract_feasible_lp_witnesses": [
+    {
+      "p": 101,
+      "a": "28/101",
+      "R_vector": [
+        "614656/104060401",
+        "0",
+        "0",
+        "0",
+        "-329028/104060401"
+      ],
+      "D_vector": [
+        "28/10201",
+        "2458624/104060401",
+        "3687936/104060401",
+        "2458624/104060401",
+        "614656/104060401"
+      ],
+      "R_sum_over_a4": -0.5353043002915452,
+      "meaning": "Satisfies all mixed-count positivity D_k>=0, completion identities, and R_1=R_2=R_3=0, yet R_1+R_2+R_3+R_4 = a/p - a^4. Proves that bounding R_4 (or R_3+R_4) from below is strictly required."
+    },
+    {
+      "p": 2147483647,
+      "a": "1/50",
+      "R_vector": [
+        "1/6250000",
+        "0",
+        "0",
+        "0",
+        "-2147358647/13421772793750000"
+      ],
+      "D_vector": [
+        "1/107374182350",
+        "1/1562500",
+        "3/3125000",
+        "1/1562500",
+        "1/6250000"
+      ],
+      "R_sum_over_a4": -0.9999417923390594,
+      "meaning": "Satisfies all mixed-count positivity D_k>=0, completion identities, and R_1=R_2=R_3=0, yet R_1+R_2+R_3+R_4 = a/p - a^4. Proves that bounding R_4 (or R_3+R_4) from below is strictly required."
+    }
+  ],
+  "global_law_checks": [
+    {
+      "file": "degree_six_finite_extension_20261012.json",
+      "p": 23,
+      "k": 5,
+      "checked_orbits": 8
+    },
+    {
+      "file": "sixth_order_p29_k6_extension_20261012.json",
+      "p": 29,
+      "k": 6,
+      "checked_orbits": 8
+    }
+  ],
+  "scope": "100% exact rational arithmetic verification of corrected binomial identities, 2-variable mixed-count polynomial Q(s,t), 10 reflection sub-blocks, and finite-dimensional LP dual obstruction."
+}

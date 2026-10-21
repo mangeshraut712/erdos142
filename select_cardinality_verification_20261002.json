@@ -1,0 +1,58 @@
+{
+  "status": "exact finite trade/PSD/cardinality checks passed; SELECT unresolved",
+  "checks": {
+    "root_edges": 7465,
+    "balanced_trades": 7465,
+    "cardinality_triples": 51744,
+    "PSD_row_certificates": 8,
+    "harmonic_quadratic_forms": 400,
+    "slow_threshold_trajectories": 9
+  },
+  "cases": [
+    {
+      "n": 40,
+      "p": 127,
+      "edges": 247,
+      "alternative_attempts": 266,
+      "max_pair_load": 68,
+      "max_absolute_pair_row": 66,
+      "verified_k_values": [
+        4,
+        6
+      ],
+      "negative_nonAP_fourth_moments": 21,
+      "scope": "degree-four PSD functional only; no representing law or pointwise Fourier caps"
+    },
+    {
+      "n": 64,
+      "p": 193,
+      "edges": 651,
+      "alternative_attempts": 681,
+      "max_pair_load": 80,
+      "max_absolute_pair_row": 80,
+      "verified_k_values": [
+        4,
+        6,
+        8
+      ],
+      "negative_nonAP_fourth_moments": 17,
+      "scope": "degree-four PSD functional only; no representing law or pointwise Fourier caps"
+    },
+    {
+      "n": 200,
+      "p": 607,
+      "edges": 6567,
+      "alternative_attempts": 6624,
+      "max_pair_load": 84,
+      "max_absolute_pair_row": 84,
+      "verified_k_values": [
+        4,
+        6,
+        8
+      ],
+      "negative_nonAP_fourth_moments": 12,
+      "scope": "degree-four PSD functional only; no representing law or pointwise Fourier caps"
+    }
+  ],
+  "external_dependencies": []
+}

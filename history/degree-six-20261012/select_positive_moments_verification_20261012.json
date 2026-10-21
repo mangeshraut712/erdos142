@@ -1,0 +1,67 @@
+{
+  "status": "passed; no SELECT proof or actual AP-free counterexample",
+  "counts": {
+    "exact_fourth_moment_identities": 60,
+    "exact_balanced_trades": 66904,
+    "AP_zero_moments": 7465,
+    "PSD_row_certificates": 5,
+    "exact_all_pair_literal_localizer_row_certificates": 5,
+    "exact_cylinder_value_checks": 285,
+    "numerical_cap_times_literal_pair_checks": 535344,
+    "numerical_all_linear_multiplier_cap_PSD_checks": 10
+  },
+  "cases": [
+    {
+      "n": 40,
+      "p": 127,
+      "repetitions_per_edge": 16,
+      "edges": 247,
+      "attempts": 4245,
+      "min_trade_mean": "-1",
+      "max_trade_mean": "1/2",
+      "max_absolute_pair_row": "39",
+      "max_absolute_triple_row": "41/8",
+      "checked_k": [
+        4
+      ]
+    },
+    {
+      "n": 64,
+      "p": 193,
+      "repetitions_per_edge": 16,
+      "edges": 651,
+      "attempts": 10780,
+      "min_trade_mean": "-1",
+      "max_trade_mean": "3/8",
+      "max_absolute_pair_row": "367/8",
+      "max_absolute_triple_row": "43/8",
+      "checked_k": [
+        4,
+        5
+      ]
+    },
+    {
+      "n": 200,
+      "p": 607,
+      "repetitions_per_edge": 8,
+      "edges": 6567,
+      "attempts": 53005,
+      "min_trade_mean": "-1",
+      "max_trade_mean": "1/2",
+      "max_absolute_pair_row": "249/4",
+      "max_absolute_triple_row": "11/2",
+      "checked_k": [
+        4,
+        8
+      ]
+    }
+  ],
+  "analytic_n200_bounds": {
+    "bad_probability": "355104192/1387488001",
+    "negative_trade_bound": "529304/59626385",
+    "positive_trade_bound": "30584/61789",
+    "pair_row_bound": "219376/637",
+    "triple_row_bound": "1698848/61789"
+  },
+  "numerical_tolerance": 1e-10
+}

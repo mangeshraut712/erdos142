@@ -1,0 +1,31 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Exact Collapse Theorem for F_SIGNED proved)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase1_exact_F_SIGNED_collapse_identities": 2520,
+    "phase3_two_channel_operator_identities": 2520,
+    "phase0_10block_lp_witnesses": 2,
+    "phase9_global_law_checks": 16
+  },
+  "full_10block_lp_witnesses": [
+    {
+      "p": 101,
+      "a": "28/101",
+      "all_10_gB_blocks_nonnegative": true,
+      "SE_SM_nonnegative": true,
+      "F_SIGNED_over_a4": 1.207042638483965,
+      "required_threshold_over_a4": 1.3673469387755102,
+      "note": "Full 10-block reflection-symmetric witness: F_SIGNED/a^4 -> 1 whereas required threshold/a^4 -> 13/8, because F_SIGNED = D_0 + R_0 + R_1/2 - 2w(a^2+v)/p identically!"
+    },
+    {
+      "p": 2147483647,
+      "a": "1/50",
+      "all_10_gB_blocks_nonnegative": true,
+      "SE_SM_nonnegative": true,
+      "F_SIGNED_over_a4": 1.000055879354503,
+      "required_threshold_over_a4": 1.6249976716935624,
+      "note": "Full 10-block reflection-symmetric witness: F_SIGNED/a^4 -> 1 whereas required threshold/a^4 -> 13/8, because F_SIGNED = D_0 + R_0 + R_1/2 - 2w(a^2+v)/p identically!"
+    }
+  ],
+  "scope": "100% exact rational arithmetic verification of the +R_1/2 sign correction, the Exact Collapse Theorem F_SIGNED = D_0 + R_0 + R_1/2 - 2w(a^2+v)/p = R_0 + R_1/2 + w(U-a^2-v)/p, the two-channel operator identities M_E, M_M, and the 10-block LP witnesses."
+}

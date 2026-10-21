@@ -1,0 +1,32 @@
+{
+ "rows": [
+  {
+   "r": 100,
+   "predicted_slope_over_a2": 0.0023339043804399004,
+   "measured_s1_over_a2": 0.0023339058148784397,
+   "ratio": 1.000000614608958,
+   "max_count_bias": 7.665864597833963,
+   "sqrt_r_log_r": 46.05170185988092,
+   "slope_times_r": 0.23339043804399004
+  },
+  {
+   "r": 300,
+   "predicted_slope_over_a2": 0.0007367289466455066,
+   "measured_s1_over_a2": 0.0007367289466392313,
+   "ratio": 0.9999999999914821,
+   "max_count_bias": 8.205016544203467,
+   "sqrt_r_log_r": 98.79241041425483,
+   "slope_times_r": 0.221018683993652
+  },
+  {
+   "r": 600,
+   "predicted_slope_over_a2": 0.0002025432029591307,
+   "measured_s1_over_a2": 0.00020254320300468198,
+   "ratio": 1.0000000002248968,
+   "max_count_bias": 5.78385665043779,
+   "sqrt_r_log_r": 156.69213575757482,
+   "slope_times_r": 0.12152592177547841
+  }
+ ],
+ "target_proved": false
+}

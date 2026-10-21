@@ -1,0 +1,24 @@
+{
+  "command": "python3 verify_target_scale_20260914.py",
+  "date": "2026-09-14",
+  "status": "passed",
+  "exact": {
+    "conditional_increment_cases": 160,
+    "conditional_boolean_points": 1056
+  },
+  "numerical_fourier": {
+    "tolerance": 2e-9,
+    "boolean_fourier_identities": 25,
+    "four_term_expansions": 3,
+    "dissociated_riesz_products": 194,
+    "quadratic_matrix_sums": 468
+  },
+  "quadratic_counts": [
+    {"p": 101, "size": 23, "ordered_nontrivial_4aps": 40},
+    {"p": 503, "size": 101, "ordered_nontrivial_4aps": 784},
+    {"p": 1009, "size": 159, "ordered_nontrivial_4aps": 1614}
+  ],
+  "conditional_budget_cases": 3,
+  "target_energy_proved": false,
+  "r4_target_proved": false
+}

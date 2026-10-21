@@ -1,0 +1,102 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (with exact sharper remaining sublemma)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase1_exact_cell_audits": 5610,
+    "phase1_loewner_matrix_audits": 2481,
+    "phase10_binomial_residual_identities": 321,
+    "phase2_unwindowed_fourier_synthesis_checks": 2481,
+    "phase9_regularized_gram_bridge_checks": 7443,
+    "phase5_operator_identities": 50,
+    "phase5_cross_channel_moment_identities": 50,
+    "phase7_quadratic_resonance_checks": 4,
+    "phase11_global_law_orbit_checks": 51
+  },
+  "proper_window_diagnostics": [
+    {
+      "name": "ternary_cube",
+      "p": 59,
+      "n": 14,
+      "SE": 0.0,
+      "SM": 0.006918021445866482,
+      "overlap_M_sq": 0.8771929824561404,
+      "s_pairs": 3,
+      "bound_E": 0.0,
+      "bound_M": 0.01159984600524679,
+      "actual_gain": 0.10422374772978796
+    },
+    {
+      "name": "three_point",
+      "p": 101,
+      "n": 25,
+      "SE": 0.0,
+      "SM": 4.7524752475247525e-05,
+      "overlap_M_sq": 0.005681818181818181,
+      "s_pairs": 12,
+      "bound_E": 0.0,
+      "bound_M": 0.0003736368322413934,
+      "actual_gain": 0.10542216639026719
+    },
+    {
+      "name": "digit_product",
+      "p": 277,
+      "n": 69,
+      "SE": 0.0,
+      "SM": 0.0,
+      "overlap_M_sq": 0.0,
+      "s_pairs": 3,
+      "bound_E": 0.0,
+      "bound_M": 0.0,
+      "actual_gain": 0.038884916657166105
+    }
+  ],
+  "quadratic_resonance_diagnostics": [
+    {
+      "p": 101,
+      "weighted_cov_f_hE": 7.541769801980078e-08,
+      "weighted_cov_f_hM": 1.4725716828465734e-07,
+      "weighted_var_hE": 3.7248414028534606e-11,
+      "weighted_var_hM": 6.255172269574149e-11,
+      "weighted_cov_hE_hM": 1.677566295066453e-11,
+      "boolean_host_cov_B_qE": 0.0007027072670996145,
+      "boolean_host_cov_B_qM": 0.0008521781498804718,
+      "note": "Both quadratic families have strictly POSITIVE covariance with h_E and h_M, opposite to the AP-free negative identity Cov(B, q) = -a E[q] < 0."
+    },
+    {
+      "p": 257,
+      "weighted_cov_f_hE": 6.464497133676109e-08,
+      "weighted_cov_f_hM": 1.1715413554034528e-07,
+      "weighted_var_hE": 2.6017386389127762e-11,
+      "weighted_var_hM": 4.3921049221772964e-11,
+      "weighted_cov_hE_hM": 1.092292390777182e-11,
+      "boolean_host_cov_B_qE": 0.0007330956329851325,
+      "boolean_host_cov_B_qM": 0.0008709487172976695,
+      "note": "Both quadratic families have strictly POSITIVE covariance with h_E and h_M, opposite to the AP-free negative identity Cov(B, q) = -a E[q] < 0."
+    }
+  ],
+  "finite_global_law_evaluations": [
+    {
+      "p": 23,
+      "k": 5,
+      "L_HE2": 0.13369511203410145,
+      "L_HM2": 0.14215980493338032,
+      "L_HE_HM": 0.015509020990417196,
+      "rank1_sos_baseline": 0.01971803214039239,
+      "matrix_sos_excess_trace": 0.236418852686697,
+      "matrix_sos_excess_det": 0.013937839945093141,
+      "orbits_strictly_improved_by_two_channel": "15/19"
+    },
+    {
+      "p": 29,
+      "k": 6,
+      "L_HE2": 0.15941846486974245,
+      "L_HM2": 0.18415493814822953,
+      "L_HE_HM": 0.033267386694874994,
+      "rank1_sos_baseline": 0.02961482221852037,
+      "matrix_sos_excess_trace": 0.28434375858093125,
+      "matrix_sos_excess_det": 0.020046528756164476,
+      "orbits_strictly_improved_by_two_channel": "28/32"
+    }
+  ],
+  "scope": "All cell decompositions, Loewner matrix inequalities, binomial R_0..R_4 identities, and cross-channel overlap counts verified in exact rational arithmetic; Fourier/Gram matrix pencil checks verified to 1e-10 tolerance. SELECT and r_4(N)=o(N/log N) remain conditional."
+}

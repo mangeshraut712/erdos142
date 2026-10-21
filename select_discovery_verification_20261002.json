@@ -1,0 +1,1272 @@
+{
+  "status": "finite exhaustive checks and LP completed",
+  "results": [
+    {
+      "kind": "full_group_diagnostic",
+      "p": 5,
+      "n": 5,
+      "ap_edges": 5,
+      "ap_free_subsets_density_le_point8": 25,
+      "residual_cases": 175,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.3119180224682205,
+          "p": 5,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "A": [
+            0,
+            1,
+            2
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.6,
+          "energy": 0.0,
+          "rho_squared": 0.1047213595499958,
+          "parseval_lower": 0.06,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.3119180224682205,
+          "p": 5,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "A": [
+            0,
+            1,
+            2
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.6,
+          "energy": 0.0,
+          "rho_squared": 0.1047213595499958,
+          "parseval_lower": 0.06,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.25": {
+          "ratio": 0.3119180224682205,
+          "p": 5,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "A": [
+            0,
+            1,
+            2
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.6,
+          "energy": 0.0,
+          "rho_squared": 0.1047213595499958,
+          "parseval_lower": 0.06,
+          "greedy_intermediate_requires_c_less_than": null
+        }
+      },
+      "eligibility": {}
+    },
+    {
+      "kind": "full_group_diagnostic",
+      "p": 7,
+      "n": 7,
+      "ap_edges": 21,
+      "ap_free_subsets_density_le_point8": 77,
+      "residual_cases": 539,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.13199580535186317,
+          "p": 7,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "A": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.5714285714285714,
+          "energy": 0.0,
+          "rho_squared": 0.04081632653061224,
+          "parseval_lower": 0.04081632653061224,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.13199580535186317,
+          "p": 7,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "A": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.5714285714285714,
+          "energy": 0.0,
+          "rho_squared": 0.04081632653061224,
+          "parseval_lower": 0.04081632653061224,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.25": {
+          "ratio": 0.13199580535186317,
+          "p": 7,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "A": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.5714285714285714,
+          "energy": 0.0,
+          "rho_squared": 0.04081632653061224,
+          "parseval_lower": 0.04081632653061224,
+          "greedy_intermediate_requires_c_less_than": null
+        }
+      },
+      "eligibility": {}
+    },
+    {
+      "kind": "full_group_diagnostic",
+      "p": 11,
+      "n": 11,
+      "ap_edges": 55,
+      "ap_free_subsets_density_le_point8": 660,
+      "residual_cases": 4620,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.08684318051512545,
+          "p": 11,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "A": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            10
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.5454545454545454,
+          "energy": 0.0,
+          "rho_squared": 0.024793388429752088,
+          "parseval_lower": 0.024793388429752067,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.08684318051512545,
+          "p": 11,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "A": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            10
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.5454545454545454,
+          "energy": 0.0,
+          "rho_squared": 0.024793388429752088,
+          "parseval_lower": 0.024793388429752067,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.25": {
+          "ratio": 0.08684318051512545,
+          "p": 11,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "A": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            10
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.5454545454545454,
+          "energy": 0.0,
+          "rho_squared": 0.024793388429752088,
+          "parseval_lower": 0.024793388429752067,
+          "greedy_intermediate_requires_c_less_than": null
+        }
+      },
+      "eligibility": {}
+    },
+    {
+      "kind": "full_group_diagnostic",
+      "p": 13,
+      "n": 13,
+      "ap_edges": 78,
+      "ap_free_subsets_density_le_point8": 1885,
+      "residual_cases": 13195,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.14786418332018264,
+          "p": 13,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "A": [
+            1,
+            2,
+            3,
+            7,
+            9,
+            12
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.46153846153846156,
+          "energy": 0.0,
+          "rho_squared": 0.03137737063746743,
+          "parseval_lower": 0.020710059171597635,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.14399047071468207,
+          "p": 13,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "A": [
+            2,
+            3,
+            4,
+            7,
+            8,
+            10
+          ],
+          "factor": "quarter_1_0.0",
+          "new_characters": 1,
+          "a": 0.46153846153846156,
+          "energy": 0.017751479289940825,
+          "rho_squared": 0.030555353341347614,
+          "parseval_lower": 0.019230769230769232,
+          "greedy_intermediate_requires_c_less_than": 0.12759509608045735
+        },
+        "0.25": {
+          "ratio": 0.12489881910306166,
+          "p": 13,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "A": [
+            2,
+            3,
+            5,
+            10,
+            11,
+            12
+          ],
+          "factor": "quarter_1_0.125",
+          "new_characters": 1,
+          "a": 0.46153846153846156,
+          "energy": 0.036982248520710054,
+          "rho_squared": 0.026504028569870993,
+          "parseval_lower": 0.017628205128205128,
+          "greedy_intermediate_requires_c_less_than": 0.2551901921609147
+        }
+      },
+      "eligibility": {}
+    },
+    {
+      "kind": "full_group_diagnostic",
+      "p": 17,
+      "n": 17,
+      "ap_edges": 136,
+      "ap_free_subsets_density_le_point8": 13923,
+      "residual_cases": 97461,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.10329086336364969,
+          "p": 17,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "A": [
+            1,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            12
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.47058823529411764,
+          "energy": 0.0,
+          "rho_squared": 0.022704334992418133,
+          "parseval_lower": 0.015570934256055364,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.10329086336364969,
+          "p": 17,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "A": [
+            1,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            12
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.47058823529411764,
+          "energy": 0.0,
+          "rho_squared": 0.022704334992418133,
+          "parseval_lower": 0.015570934256055364,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.25": {
+          "ratio": 0.10329086336364969,
+          "p": 17,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "A": [
+            1,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            12
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.47058823529411764,
+          "energy": 0.0,
+          "rho_squared": 0.022704334992418133,
+          "parseval_lower": 0.015570934256055364,
+          "greedy_intermediate_requires_c_less_than": null
+        }
+      },
+      "eligibility": {}
+    },
+    {
+      "kind": "proper_window",
+      "p": 13,
+      "n": 4,
+      "ap_edges": 1,
+      "ap_free_subsets_density_le_point8": 14,
+      "residual_cases": 98,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.14804117925949897,
+          "p": 13,
+          "omega": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "A": [
+            0,
+            1,
+            2
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.75,
+          "energy": 0.0,
+          "rho_squared": 0.07073414437212554,
+          "parseval_lower": 0.05078125,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.12890722432108925,
+          "p": 13,
+          "omega": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "A": [
+            0,
+            1,
+            2
+          ],
+          "factor": "quarter_1_0.125",
+          "new_characters": 1,
+          "a": 0.75,
+          "energy": 0.0625,
+          "rho_squared": 0.06159193179456411,
+          "parseval_lower": 0.033854166666666664,
+          "greedy_intermediate_requires_c_less_than": 0.1689511084599861
+        },
+        "0.25": {
+          "ratio": 0.12890722432108925,
+          "p": 13,
+          "omega": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "A": [
+            0,
+            1,
+            2
+          ],
+          "factor": "quarter_1_0.125",
+          "new_characters": 1,
+          "a": 0.75,
+          "energy": 0.0625,
+          "rho_squared": 0.06159193179456411,
+          "parseval_lower": 0.033854166666666664,
+          "greedy_intermediate_requires_c_less_than": 0.3379022169199722
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    },
+    {
+      "kind": "proper_window",
+      "p": 17,
+      "n": 5,
+      "ap_edges": 2,
+      "ap_free_subsets_density_le_point8": 28,
+      "residual_cases": 196,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.10568263973804129,
+          "p": 17,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.8,
+          "energy": 0.0,
+          "rho_squared": 0.05543217428385345,
+          "parseval_lower": 0.033999999999999996,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.07561162245990564,
+          "p": 17,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "factor": "quarter_2_0.125",
+          "new_characters": 1,
+          "a": 0.8,
+          "energy": 0.06,
+          "rho_squared": 0.03965946199367804,
+          "parseval_lower": 0.021249999999999998,
+          "greedy_intermediate_requires_c_less_than": 0.177956551347062
+        },
+        "0.25": {
+          "ratio": 0.07561162245990564,
+          "p": 17,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "factor": "quarter_2_0.125",
+          "new_characters": 1,
+          "a": 0.8,
+          "energy": 0.06,
+          "rho_squared": 0.03965946199367804,
+          "parseval_lower": 0.021249999999999998,
+          "greedy_intermediate_requires_c_less_than": 0.355913102694124
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    },
+    {
+      "kind": "proper_window",
+      "p": 19,
+      "n": 6,
+      "ap_edges": 3,
+      "ap_free_subsets_density_le_point8": 53,
+      "residual_cases": 371,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.20622534787002705,
+          "p": 19,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "factor": "trivial",
+          "new_characters": 0,
+          "a": 0.6666666666666666,
+          "energy": 0.0,
+          "rho_squared": 0.08221637980721898,
+          "parseval_lower": 0.03909465020576132,
+          "greedy_intermediate_requires_c_less_than": null
+        },
+        "0.125": {
+          "ratio": 0.17665959983202098,
+          "p": 19,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "A": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "factor": "quarter_2_0.0",
+          "new_characters": 1,
+          "a": 0.6666666666666666,
+          "energy": 0.027777777777777776,
+          "rho_squared": 0.07042932843315974,
+          "parseval_lower": 0.034207818930041156,
+          "greedy_intermediate_requires_c_less_than": 0.1553453055325895
+        },
+        "0.25": {
+          "ratio": 0.09729007075125598,
+          "p": 19,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "factor": "quarter_1_0.0",
+          "new_characters": 1,
+          "a": 0.6666666666666666,
+          "energy": 0.0888888888888889,
+          "rho_squared": 0.038786878000068706,
+          "parseval_lower": 0.023456790123456788,
+          "greedy_intermediate_requires_c_less_than": 0.310690611065179
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    },
+    {
+      "kind": "proper_window",
+      "p": 23,
+      "n": 7,
+      "ap_edges": 5,
+      "ap_free_subsets_density_le_point8": 102,
+      "residual_cases": 714,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.1408945547480117,
+          "p": 23,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "factor": "quarter_1_0.0",
+          "new_characters": 1,
+          "a": 0.7142857142857143,
+          "energy": 0.013605442176870751,
+          "rho_squared": 0.0625533890228357,
+          "parseval_lower": 0.028447742733457015,
+          "greedy_intermediate_requires_c_less_than": 0.04073006140534153
+        },
+        "0.125": {
+          "ratio": 0.1200106978798821,
+          "p": 23,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "A": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "factor": "quarter_2_0.125",
+          "new_characters": 1,
+          "a": 0.7142857142857143,
+          "energy": 0.03741496598639456,
+          "rho_squared": 0.05328151882667565,
+          "parseval_lower": 0.024891774891774895,
+          "greedy_intermediate_requires_c_less_than": 0.16292024562136612
+        },
+        "0.25": {
+          "ratio": 0.05158138258569931,
+          "p": 23,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "A": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "factor": "quarter_2_0.0",
+          "new_characters": 1,
+          "a": 0.7142857142857143,
+          "energy": 0.10884353741496598,
+          "rho_squared": 0.022900745149375658,
+          "parseval_lower": 0.014223871366728511,
+          "greedy_intermediate_requires_c_less_than": 0.32584049124273223
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    },
+    {
+      "kind": "proper_window",
+      "p": 29,
+      "n": 9,
+      "ap_edges": 9,
+      "ap_free_subsets_density_le_point8": 363,
+      "residual_cases": 2541,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.08714815800198152,
+          "p": 29,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8
+          ],
+          "factor": "quarter_1_0.0",
+          "new_characters": 1,
+          "a": 0.7777777777777778,
+          "energy": 0.00617283950617284,
+          "rho_squared": 0.04391181091115354,
+          "parseval_lower": 0.01917989417989418,
+          "greedy_intermediate_requires_c_less_than": 0.04346719228553308
+        },
+        "0.125": {
+          "ratio": 0.05794231773167959,
+          "p": 29,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "A": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          "factor": "quarter_2_0.125",
+          "new_characters": 1,
+          "a": 0.7777777777777778,
+          "energy": 0.0617283950617284,
+          "rho_squared": 0.029195707153439103,
+          "parseval_lower": 0.012786596119929453,
+          "greedy_intermediate_requires_c_less_than": 0.1738687691421323
+        },
+        "0.25": {
+          "ratio": 0.05794231773167959,
+          "p": 29,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "A": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          "factor": "quarter_2_0.125",
+          "new_characters": 1,
+          "a": 0.7777777777777778,
+          "energy": 0.0617283950617284,
+          "rho_squared": 0.029195707153439103,
+          "parseval_lower": 0.012786596119929453,
+          "greedy_intermediate_requires_c_less_than": 0.3477375382842646
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    },
+    {
+      "kind": "proper_window",
+      "p": 31,
+      "n": 10,
+      "ap_edges": 12,
+      "ap_free_subsets_density_le_point8": 667,
+      "residual_cases": 4669,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.06639445447003606,
+          "p": 31,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "factor": "quarter_1_0.125",
+          "new_characters": 1,
+          "a": 0.8,
+          "energy": 0.0016666666666666683,
+          "rho_squared": 0.03482491524423596,
+          "parseval_lower": 0.016361111111111108,
+          "greedy_intermediate_requires_c_less_than": 0.0444891378367655
+        },
+        "0.125": {
+          "ratio": 0.06531810277749775,
+          "p": 31,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "factor": "quarter_3_0.0",
+          "new_characters": 1,
+          "a": 0.8,
+          "energy": 0.043333333333333335,
+          "rho_squared": 0.03426035218298582,
+          "parseval_lower": 0.012055555555555552,
+          "greedy_intermediate_requires_c_less_than": 0.177956551347062
+        },
+        "0.25": {
+          "ratio": 0.06531810277749775,
+          "p": 31,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "factor": "quarter_3_0.0",
+          "new_characters": 1,
+          "a": 0.8,
+          "energy": 0.043333333333333335,
+          "rho_squared": 0.03426035218298582,
+          "parseval_lower": 0.012055555555555552,
+          "greedy_intermediate_requires_c_less_than": 0.355913102694124
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    },
+    {
+      "kind": "proper_window",
+      "p": 43,
+      "n": 14,
+      "ap_edges": 26,
+      "ap_free_subsets_density_le_point8": 7137,
+      "residual_cases": 49959,
+      "minima": {
+        "0.03125": {
+          "ratio": 0.08510217934697804,
+          "p": 43,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "A": [
+            0,
+            1,
+            2,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13
+          ],
+          "factor": "quarter_3_0.0",
+          "new_characters": 1,
+          "a": 0.6428571428571429,
+          "energy": 0.009353741496598634,
+          "rho_squared": 0.03200479496595406,
+          "parseval_lower": 0.016105847100745058,
+          "greedy_intermediate_requires_c_less_than": 0.0379352524591036
+        },
+        "0.125": {
+          "ratio": 0.047398184120441,
+          "p": 43,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "A": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            7,
+            11,
+            12,
+            13
+          ],
+          "factor": "quarter_1_0.0",
+          "new_characters": 1,
+          "a": 0.6428571428571429,
+          "energy": 0.03478664192949908,
+          "rho_squared": 0.01782526812090531,
+          "parseval_lower": 0.01424595812350914,
+          "greedy_intermediate_requires_c_less_than": 0.1517410098364144
+        },
+        "0.25": {
+          "ratio": 0.047398184120441,
+          "p": 43,
+          "omega": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "A": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            7,
+            11,
+            12,
+            13
+          ],
+          "factor": "quarter_1_0.0",
+          "new_characters": 1,
+          "a": 0.6428571428571429,
+          "energy": 0.03478664192949908,
+          "rho_squared": 0.01782526812090531,
+          "parseval_lower": 0.01424595812350914,
+          "greedy_intermediate_requires_c_less_than": 0.3034820196728288
+        }
+      },
+      "eligibility": {
+        "epsilon": 0.1,
+        "window_rank": 1,
+        "rank_bound_satisfied": true,
+        "size_bound_satisfied": true,
+        "narrow_diameter_satisfied": true,
+        "intermediate_factor_family": "trivial and six explicitly listed rank-one quarter partitions",
+        "asymptotic_p0": "not known; these are finite diagnostics"
+      }
+    }
+  ],
+  "first_moment_LP": {
+    "p": 13,
+    "density": 0.3076923076923077,
+    "optimal_component_bound": 0.0,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "analytic_certificate": "constant fractional B=a is feasible and has zero nonzero Fourier coefficients"
+  },
+  "proper_window_LP": {
+    "p": 43,
+    "n": 14,
+    "density": 0.5,
+    "optimal_residual_component_bound": 0.0,
+    "analytic_certificate": "B=a inside Omega makes u=0 and satisfies every AP sum<=3"
+  }
+}

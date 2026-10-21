@@ -1,0 +1,34 @@
+[
+  {
+    "script": "verify_route_quadratic_boolean_20261002.py",
+    "exit_code": 0,
+    "output": {
+      "status": "finite diagnostics passed; symbolic proofs in note; no asymptotic target proved",
+      "quadratic_host_subsets": 2208,
+      "AP_free_host_subsets_checked": 2612,
+      "Boolean_AP_free_subsets": 765,
+      "nonempty_margin_fibers": 5304
+    }
+  },
+  {
+    "script": "verify_route_incidence_moments_20261002.py",
+    "exit_code": 0,
+    "output": {
+      "status": "finite exact checks passed",
+      "checks": {
+        "subsets": 2205,
+        "ap_free": 762,
+        "schur": 762
+      }
+    }
+  },
+  {
+    "script": "route_constructions_checker_20261002.py",
+    "exit_code": 0,
+    "output": {
+      "parameter_cases": 1296,
+      "finite_shells_and_embeddings": 113,
+      "status": "supporting checks passed; general claims proved in accompanying markdown; target unresolved"
+    }
+  }
+]

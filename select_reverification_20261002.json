@@ -1,0 +1,82 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "script": "verify_select_algebra_20261002.py",
+      "returncode": 0,
+      "seconds": 1.87,
+      "stdout_tail": "{\n  \"status\": \"all finite algebra/moment checks passed; SELECT unproved\",\n  \"fullgroup_B_factor_cases\": 480,\n  \"expanded_terms\": 7680,\n  \"conditional_moments\": 3360,\n  \"low_energy_mainterm_cases\": 310\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_select_duality_20261002.py",
+      "returncode": 0,
+      "seconds": 0.07,
+      "stdout_tail": "{\n  \"status\": \"degree-two certificate checks passed\",\n  \"exact_parameter_cases\": 62,\n  \"asymptotic_samples_only\": [\n    {\n      \"p\": 101,\n      \"k\": 21,\n      \"a\": 0.2079207920792079,\n      \"pseudo_Fourier_SELECT_ratio\": 0.03690576209911689\n    },\n    {\n      \"p\": 1009,\n      \"k\": 145,\n      \"a\": 0.14370664023785926,\n      \"pseudo_Fourier_SELECT_ratio\": 0.005922086454816244\n    },\n    {\n      \"p\": 10007,\n      \"k\": 1086,\n      \"a\": 0.10852403317677625,\n      \"pseudo_Fourier_SELECT_ratio\": 0.0008552262408485582\n    },\n    {\n      \"p\": 100003,\n      \"k\": 8686,\n      \"a\": 0.08685739427817166,\n      \"pseudo_Fourier_SELECT_ratio\": 0.00011372495283584507\n    },\n    {\n      \"p\": 1000003,\n      \"k\": 72382,\n      \"a\": 0.07238178285465144,\n      \"pseudo_Fourier_SELECT_ratio\": 1.435238457952176e-05\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_select_quartic_relaxation_20261002.py",
+      "returncode": 0,
+      "seconds": 1.08,
+      "stdout_tail": "{\n  \"status\": \"quartic relaxation identities and PSD certificate checks passed\",\n  \"checks\": {\n    \"parameter_cases\": 20,\n    \"Gram_entries\": 24764,\n    \"pair_rows\": 107\n  },\n  \"PSD_sufficient_condition\": \"a <= 1/(1+sqrt(6))\",\n  \"exact_cardinality_enforced\": false,\n  \"residual_mean_zero_as_polynomial_identity\": false,\n  \"Z7_negative_direction_at_a_one_third\": \"-2/81\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_select_deletion_20261002.py",
+      "returncode": 0,
+      "seconds": 0.33,
+      "stdout_tail": "{\n  \"checks\": {\n    \"hosts\": 36,\n    \"degree_vertices\": 328,\n    \"apfree_hole_certificates\": 2721,\n    \"codegree_pairs\": 164\n  },\n  \"status\": \"supporting checks passed; SELECT and target unresolved\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_select_cardinality_20261002.py",
+      "returncode": 0,
+      "seconds": 2.48,
+      "stdout_tail": "{\n  \"status\": \"exact finite trade/PSD/cardinality checks passed; SELECT unresolved\",\n  \"checks\": {\n    \"root_edges\": 7465,\n    \"balanced_trades\": 7465,\n    \"cardinality_triples\": 51744,\n    \"PSD_row_certificates\": 8,\n    \"harmonic_quadratic_forms\": 400,\n    \"slow_threshold_trajectories\": 9\n  },\n  \"cases\": [\n    {\n      \"n\": 40,\n      \"p\": 127,\n      \"edges\": 247,\n      \"alternative_attempts\": 266,\n      \"max_pair_load\": 68,\n      \"max_absolute_pair_row\": 66,\n      \"verified_k_values\": [\n        4,\n        6\n      ],\n      \"negative_nonAP_fourth_moments\": 21,\n      \"scope\": \"degree-four PSD functional only; no representing law or pointwise Fourier caps\"\n    },\n    {\n      \"n\": 64,\n      \"p\": 193,\n      \"edges\": 651,\n      \"alternative_attempts\": 681,\n      \"max_pair_load\": 80,\n      \"max_absolute_pair_row\": 80,\n      \"verified_k_values\": [\n        4,\n        6,\n        8\n      ],\n      \"negative_nonAP_fourth_moments\": 17,\n      \"scope\": \"degree-four PSD functional only; no representing law or pointwise Fourier caps\"\n    },\n    {\n      \"n\": 200,\n      \"p\": 607,\n      \"edges\": 6567,\n      \"alternative_attempts\": 6624,\n      \"max_pair_load\": 84,\n      \"max_absolute_pair_row\": 84,\n      \"verified_k_values\": [\n        4,\n        6,\n        8\n      ],\n      \"negative_nonAP_fourth_moments\": 12,\n      \"scope\": \"degree-four PSD functional only; no representing law or pointwise Fourier caps\"\n    }\n  ],\n  \"external_dependencies\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_select_window_20261002.py",
+      "returncode": 0,
+      "seconds": 1.86,
+      "stdout_tail": "{\"status\": \"passed\", \"relative_main_term_cases\": 5844, \"scope\": \"finite checks support the symbolic relative-marginal proof; SELECT unresolved\"}\n",
+      "stderr": ""
+    },
+    {
+      "script": "discover_select_20261002.py",
+      "returncode": 0,
+      "seconds": 1.91,
+      "stdout_tail": "     1,\n            2,\n            3,\n            4,\n            5,\n            6,\n            7,\n            8,\n            9,\n            10,\n            11,\n            12,\n            13\n          ],\n          \"A\": [\n            0,\n            2,\n            3,\n            5,\n            6,\n            7,\n            11,\n            12,\n            13\n          ],\n          \"factor\": \"quarter_1_0.0\",\n          \"new_characters\": 1,\n          \"a\": 0.6428571428571429,\n          \"energy\": 0.03478664192949908,\n          \"rho_squared\": 0.01782526812090531,\n          \"parseval_lower\": 0.01424595812350914,\n          \"greedy_intermediate_requires_c_less_than\": 0.3034820196728288\n        }\n      },\n      \"eligibility\": {\n        \"epsilon\": 0.1,\n        \"window_rank\": 1,\n        \"rank_bound_satisfied\": true,\n        \"size_bound_satisfied\": true,\n        \"narrow_diameter_satisfied\": true,\n        \"intermediate_factor_family\": \"trivial and six explicitly listed rank-one quarter partitions\",\n        \"asymptotic_p0\": \"not known; these are finite diagnostics\"\n      }\n    }\n  ],\n  \"first_moment_LP\": {\n    \"p\": 13,\n    \"density\": 0.3076923076923077,\n    \"optimal_component_bound\": 0.0,\n    \"solver_message\": \"Optimization terminated successfully. (HiGHS Status 7: Optimal)\",\n    \"analytic_certificate\": \"constant fractional B=a is feasible and has zero nonzero Fourier coefficients\"\n  },\n  \"proper_window_LP\": {\n    \"p\": 43,\n    \"n\": 14,\n    \"density\": 0.5,\n    \"optimal_residual_component_bound\": 0.0,\n    \"analytic_certificate\": \"B=a inside Omega makes u=0 and satisfies every AP sum<=3\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_structural_attack_20261002.py",
+      "returncode": 0,
+      "seconds": 10.92,
+      "stdout_tail": "4615384617,\n      \"nonzero_ordered_4APs\": 8,\n      \"nonzero_ordered_3APs\": 16,\n      \"max_relative_coefficient_squared\": 0.030998430093509097,\n      \"best_one_character_quarter_energy\": 0.07241773071732586,\n      \"coefficient_squared_over_greedy_scale\": 0.4922099152662341\n    },\n    {\n      \"family\": \"concentrated interval\",\n      \"p\": 257,\n      \"window_size\": 65,\n      \"relative_density\": 0.3230769230769231,\n      \"nonzero_ordered_4APs\": 126,\n      \"nonzero_ordered_3APs\": 200,\n      \"max_relative_coefficient_squared\": 0.0963590407516204,\n      \"best_one_character_quarter_energy\": 0.21869822485207105,\n      \"coefficient_squared_over_greedy_scale\": 0.8909187361321452\n    },\n    {\n      \"family\": \"separated pieces\",\n      \"p\": 257,\n      \"window_size\": 65,\n      \"relative_density\": 0.12307692307692308,\n      \"nonzero_ordered_4APs\": 0,\n      \"nonzero_ordered_3APs\": 0,\n      \"max_relative_coefficient_squared\": 0.013823371047752398,\n      \"best_one_character_quarter_energy\": 0.04856247824573616,\n      \"coefficient_squared_over_greedy_scale\": 0.9329645622787524\n    },\n    {\n      \"family\": \"tensor seed\",\n      \"p\": 257,\n      \"window_size\": 65,\n      \"relative_density\": 0.24615384615384617,\n      \"nonzero_ordered_4APs\": 0,\n      \"nonzero_ordered_3APs\": 0,\n      \"max_relative_coefficient_squared\": 0.018975142759632996,\n      \"best_one_character_quarter_energy\": 0.06155981670151711,\n      \"coefficient_squared_over_greedy_scale\": 0.3012976264188084\n    }\n  ],\n  \"arithmetic\": \"integer label/kernel counts; floating energy diagnostics tolerance 1e-10\",\n  \"external_dependencies\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_structural_sampling_20261002.py",
+      "returncode": 0,
+      "seconds": 1.53,
+      "stdout_tail": "{\n  \"status\": \"checks passed\",\n  \"convolution_subsets\": 2208,\n  \"exact_sampling_moments\": 15,\n  \"relative_rotation_integrals\": 886,\n  \"relative_residual_refinement_checks\": 2658,\n  \"simultaneous_regularized_Gram_checks\": 36\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_structural_graph_20261002.py",
+      "returncode": 0,
+      "seconds": 2.39,
+      "stdout_tail": "{\n  \"status\": \"passed finite identities; no structural H proof\",\n  \"Boolean_sets\": 2208,\n  \"AP_free_sets\": 765,\n  \"pointwise_cocycles\": 47904,\n  \"saturated_signal_nonadditive_witness\": {\n    \"p\": 13,\n    \"A\": [\n      0,\n      1,\n      3,\n      9\n    ],\n    \"frequency_rule\": \"k_d=d^2 mod p\",\n    \"first_triangle\": [\n      1,\n      2,\n      0,\n      9\n    ],\n    \"violating_triangles\": 24\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_structural_geometry_20261002.py",
+      "returncode": 0,
+      "seconds": 1.12,
+      "stdout_tail": "{\n  \"checks\": {\n    \"interval_l1\": 4352,\n    \"gauss\": 438,\n    \"window_boundary\": 2179,\n    \"short_shift\": 321,\n    \"quadratic_cell_energy\": 107,\n    \"relative_quadratic_count\": 107\n  },\n  \"status\": \"finite supporting checks passed; H unresolved\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "interval_l1": 4352,
+    "gauss": 438,
+    "window_boundary": 2179,
+    "short_shift": 321,
+    "quadratic_cell_energy": 107,
+    "relative_quadratic_count": 107
+  },
+  "status": "finite supporting checks passed; H unresolved"
+}

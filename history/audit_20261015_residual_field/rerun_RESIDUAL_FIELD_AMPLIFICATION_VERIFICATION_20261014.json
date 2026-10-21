@@ -1,0 +1,12 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Exact Finite-p Zero-Wraparound Quadratic Window Bounds, Moment/Thresholded Completion Pointwise Fourier Caps Eliminating the W_Gamma Denominator Barrier, and Diagonal l^3 Dyadic Shell Dichotomy)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase0_exact_finite_L_polynomial_checks": 149,
+    "phase0_zero_wraparound_zp_checks": 3,
+    "phase2_truncated_D3_ge_half_a_checks": 2211,
+    "phase2_moment_and_thresholded_completion_checks": 2460,
+    "phase3_diagonal_l3_dyadic_shell_checks": 100
+  },
+  "scope": "100% exact rational and 1e-12 numerical verification of finite-p zero-wraparound polynomial bounds for Z_I, Phi_M, Phi_E, moment-weighted and thresholded completion Fourier caps, and diagonal l^3 dyadic shell dichotomy."
+}

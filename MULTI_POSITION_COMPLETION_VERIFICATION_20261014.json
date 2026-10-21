@@ -1,0 +1,118 @@
+{
+  "status": "passed; exact two-channel completion theorem verified; SELECT and target unresolved",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "exact_fourier_dual_channel_checks": 743,
+    "exact_joint_cell_identities": 5189,
+    "exact_2x2_loewner_checks": 2229,
+    "relative_gram_joint_projection_checks": 17832,
+    "set_window_cases_checked": 743,
+    "qE_or_qM_zero_Fourier_branch": 353,
+    "strict_two_channel_overlap_improvements": 1451,
+    "p13_trivial_factor_strict_improvements": 1508,
+    "exact_overlap_pair_classifications": 3368,
+    "exact_joint_degree_six_sos_checks": 15634
+  },
+  "window_rescues": [
+    {
+      "name": "three_point",
+      "p": 101,
+      "window_size": 25,
+      "endpoint_completions_in_window": 0,
+      "interior_completions_in_window": 1,
+      "rescued_by_interior_channel": true
+    },
+    {
+      "name": "ternary_cube",
+      "p": 59,
+      "window_size": 14,
+      "endpoint_completions_in_window": 0,
+      "interior_completions_in_window": 10,
+      "rescued_by_interior_channel": true
+    },
+    {
+      "name": "digit_product",
+      "p": 277,
+      "window_size": 69,
+      "endpoint_completions_in_window": 0,
+      "interior_completions_in_window": 0,
+      "rescued_by_interior_channel": false
+    },
+    {
+      "name": "z11_3",
+      "p": 11,
+      "window_size": 3,
+      "endpoint_completions_in_window": 0,
+      "interior_completions_in_window": 0,
+      "rescued_by_interior_channel": false
+    }
+  ],
+  "sample_strict_improvements": [
+    {
+      "p": 7,
+      "window_size": 7,
+      "factor": "trivial",
+      "set": [
+        3,
+        5,
+        6
+      ],
+      "endpoint_overlap_sq": 0.0,
+      "interior_overlap_sq": 0.5625,
+      "joint_overlap_sq": 0.5625
+    },
+    {
+      "p": 7,
+      "window_size": 7,
+      "factor": "quarter",
+      "set": [
+        3,
+        5,
+        6
+      ],
+      "endpoint_overlap_sq": 0.0,
+      "interior_overlap_sq": 0.6666666666666666,
+      "joint_overlap_sq": 0.6666666666666666
+    },
+    {
+      "p": 7,
+      "window_size": 7,
+      "factor": "parity",
+      "set": [
+        3,
+        5,
+        6
+      ],
+      "endpoint_overlap_sq": 0.0,
+      "interior_overlap_sq": 0.5764705882352941,
+      "joint_overlap_sq": 0.5764705882352941
+    },
+    {
+      "p": 7,
+      "window_size": 7,
+      "factor": "trivial",
+      "set": [
+        3,
+        4,
+        6
+      ],
+      "endpoint_overlap_sq": 0.0,
+      "interior_overlap_sq": 0.5625,
+      "joint_overlap_sq": 0.5625
+    },
+    {
+      "p": 7,
+      "window_size": 7,
+      "factor": "quarter",
+      "set": [
+        3,
+        4,
+        6
+      ],
+      "endpoint_overlap_sq": 0.0,
+      "interior_overlap_sq": 0.5,
+      "joint_overlap_sq": 0.5
+    }
+  ],
+  "scope": "Exact integer/Fraction verification for 2x2 cell covariance, Loewner order, overlap geometry, and degree-six SOS; 1e-10 tolerance for Fourier and Moore-Penrose Gram projections."
+}

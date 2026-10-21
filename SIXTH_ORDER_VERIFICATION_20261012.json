@@ -1,0 +1,56 @@
+{
+  "status": "D: NEW RIGOROUS PARTIAL THEOREM; SELECT and target unresolved",
+  "counts": {
+    "independent_exact_support_rank_certificates": 2,
+    "exact_global_moments": 38744,
+    "exact_finite_law_higher_moment_checks": 153,
+    "exact_intersection_pairs": 13368,
+    "exact_incidence_Gram_matrices": 7,
+    "numerical_Fourier_and_exact_count_expansions": 80,
+    "AP_free_higher_moment_examples": 69,
+    "exact_higher_moment_polynomial_identities": 78,
+    "exact_quadratic_resonance_classifications": 1,
+    "quadratic_weighted_diagnostics": 2
+  },
+  "finite_global_laws": [
+    {
+      "p": 23,
+      "k": 5,
+      "support_sets": 9108,
+      "positive_orbit_weights": 19,
+      "minimum_orbit_weight": "2929639/900652480",
+      "minimum_set_probability": "2929639/455730154880",
+      "linear_constraint_rank": 19,
+      "affine_solution_dimension": 40,
+      "note": "rank follows from exact independent support columns plus the single zero AP row; positivity only on the listed support"
+    },
+    {
+      "p": 29,
+      "k": 6,
+      "support_sets": 24360,
+      "positive_orbit_weights": 32,
+      "minimum_orbit_weight": "1272862314592859/384819423411010068",
+      "minimum_set_probability": "1272862314592859/312473371809740175216",
+      "linear_constraint_rank": 32,
+      "affine_solution_dimension": 427,
+      "note": "rank follows from exact independent support columns plus the single zero AP row; positivity only on the listed support"
+    }
+  ],
+  "quadratic_weighted_diagnostics": [
+    {
+      "p": 101,
+      "density": 0.0009999999999999998,
+      "sixth_energy_over_a6": 1.0198479480596152,
+      "nonzero_Fourier_max": 7.65796172730033e-05,
+      "scope": "weighted non-AP-free diagnostic; asymptotic claim proved symbolically"
+    },
+    {
+      "p": 1009,
+      "density": 0.001,
+      "sixth_energy_over_a6": 1.006985385802335,
+      "nonzero_Fourier_max": 3.051985589761083e-05,
+      "scope": "weighted non-AP-free diagnostic; asymptotic claim proved symbolically"
+    }
+  ],
+  "scope": "Exact integer/rational checks for combinatorics and global laws; Fourier comparisons numerical at tolerance 1e-9 or tighter. No finite check proves an asymptotic assertion."
+}

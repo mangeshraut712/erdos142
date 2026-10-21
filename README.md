@@ -1,6 +1,187 @@
+> **19 October 2026 update:**
+> [Current status](CURRENT_STATUS.md) and
+> [checkpoint](AUTONOMOUS_CHECKPOINT_20261019.json).
+> The positive-density failure branch is now excluded using a uniform
+> mixed-window transfer of the classical qualitative four-term theorem.
+> The remaining a->0 phase-selection problem, P12 and the target are OPEN.
+
+---
+
+> **Current checkpoint: 18 October 2026. Outcome D; target OPEN.**
+> Start with [CURRENT_STATUS.md](CURRENT_STATUS.md),
+> [O2_CONTINUATION_20261018.md](O2_CONTINUATION_20261018.md), and
+> [AUTONOMOUS_CHECKPOINT_20261018.json](AUTONOMOUS_CHECKPOINT_20261018.json).
+> The mixed-window terminal ceiling is now7/11+o(1). The original weighted
+> quartic identity makes P12 exactly the still-open covariance bound W8.
+> Actual polynomial-density Boolean counterexamples exclude an enlarged
+> all-density selection assertion, but do not refute the target-domain
+> claim. Historical headings below are preserved and superseded for
+> navigation by this checkpoint.
+
+---
+
+> **17 October 2026 recovery:** The latest operative frontier is in
+> [CURRENT_STATUS.md](CURRENT_STATUS.md), [OPEN_LEMMAS.md](OPEN_LEMMAS.md),
+> and [RESUME_AUDIT_20261017.md](RESUME_AUDIT_20261017.md). The late-16-October
+> pair theorem reduces the gap to R_3^F+R_4^F; DIRECT-Q-GAIN replaces the
+> stronger old threshold. The target remains OPEN. Earlier entries below
+> are historical and retain their original scope and later corrections.
+
 # Offline Erdős 142 research attempt — 2026-09-06
 
 STATUS: (E) OPEN — SINGLE FINAL OBSTRUCTION
+
+Mixed factors completed as a sketch (2 October):
+[MIXED_FACTORS_20261002.md](MIXED_FACTORS_20261002.md) sections 7-9 write
+out the two open points. Absorption is confined to a fixed box (the
+covolume bounds the steps, removing the circularity). Low-order coordinates
+are exact Z_q polynomials, and product minorants hold pointwise on cosets.
+They also assemble the energy bound. This is a complete sketch, NOT an
+independently checked proof. Run `python3 verify_coset_lemmas_20261002.py`
+and `python3 verify_selberg_constants_20261002.py`. The second checks the
+explicit Selberg/Vaaler constants (|S±| <= 3, coefficient bound 2/(N+1),
+Z_q l¹ mass <= 2 + log q). Correction: in the decay step the typical
+count window must be |n_d - r/4| <= sqrt(r log r), where P(n) >= r^(-O(1)).
+On the wider window sqrt(r) log r, P(n) gets as small as exp(-c log² r).
+Run `python3 verify_typical_window_20261002.py` (exact multinomials).
+
+Parameter audit (2 October):
+[PARAMETER_AUDIT_20261002.md](PARAMETER_AUDIT_20261002.md) checks every
+threshold for fixed C. It corrects the density of the random-alteration B
+(a ~ r^(-3/4), not r^(-1/2)), which broke the old junta allowance, and
+proves a density-free junta bound Y^2/a^2 <= 16 s log^2 r/r + O(s^4 log^4 r/r^2).
+The leading term matches the exact energies to 1e-6. Only the mixed-factor
+sketch remains. Run `python3 verify_parameter_audit_20261002.py` and
+`python3 verify_linear_junta_20261002.py`.
+
+Mixed factors (2 October, PROOF SKETCH):
+[MIXED_FACTORS_20261002.md](MIXED_FACTORS_20261002.md) sketches how to
+bypass the basis lemma. Condition on the structured phases, work on a coset
+of the torus, and bound absorption steps by covolume rather than by
+coefficients (O(log^2 r) steps, polylog junta). It also corrects the
+structure detector: use the single-centre sum, not Psi; checked by
+`python3 verify_two_run_20261002.py`. If the sketch survives a careful
+write-up, the symmetric candidate refutes the window energy lemma. The
+balance step no longer needs a numerical input: level smoothness replaced
+unimodality (`python3 verify_level_smoothness_20261002.py`). The target
+r_4(N)=o(N/log N) is unaffected.
+
+Generic factors (2 October):
+[GENERIC_FACTORS_20261002.md](GENERIC_FACTORS_20261002.md) proves the
+chi-square form, energy <= a * E_n chi^2(Law(cell|n) || Law(cell|sigma mod 15)).
+It also proves that strongly generic factors (all combinations with
+Psi >= O(log r log log r)) have energy O(a k^2/r^2). For mixed factors the
+absorption runs without a tower, and everything reduces to one OPEN basis
+lemma: bounded coefficients for the structured combination lattice. Run
+`python3 verify_chi_square_20261002.py`.
+
+Symmetrization (2 October):
+[SYMMETRIZATION_20261002.md](SYMMETRIZATION_20261002.md) proves that, for
+permutation-invariant A, the energy of any factor is controlled by how
+cell probabilities depend on the count vector under the uniform measure.
+Consequences: step 1 (junta plus residue) is PROVED for juntas of size
+o(sqrt(r)/log r), and every factor of exceptional characters is PROVED to
+have energy o(a^2/log(2/a)) on the balanced candidate. What remains is a
+statement about the uniform measure alone (generic characters). Run
+`python3 verify_symmetrization_20261002.py`.
+
+Orbit decay and rational classes (2 October):
+[RATIONAL_CLASSES_20261002.md](RATIONAL_CLASSES_20261002.md) proves a
+gamma-free Fourier decay, |E[1_T(n) e(xX)]| <= (r+1)^2
+exp(-(1/2) sum ||15*16^i x||^2). Corollary: residues X mod q reveal only
+sigma mod gcd(q,15) beyond juntas, with decay constant >= 1/(4q^2), tight
+at q=17 (a smeared parity of sigma). The mixed-factor counting problem
+stays OPEN. Run `python3 verify_rational_classes_20261002.py`.
+
+Cell bookkeeping (2 October):
+[CELL_BOOKKEEPING_20261002.md](CELL_BOOKKEEPING_20261002.md) proves that,
+for the symmetric candidate, factors built from exceptional characters
+reduce to junta-plus-residue equidistribution with polylog juntas and no
+small-cell loss, needing only relative error o((log r)^(-1/2)). Generic
+and mixed factors stay OPEN: aliasing of multiples, and a tower
+obstruction showing naive regularization overshoots at k of order log r.
+Run `python3 verify_cell_bookkeeping_20261002.py`.
+
+Junta plus residue (2 October): for the symmetric candidate, conditioning
+on up to 6 coordinates together with sigma mod 15 adds energy linearly in
+the number of coordinates, with slope 0.286/r, 0.234/r, 0.128/r at r=100,
+300, 600 (see CANDIDATE_LEMMAS_20261002.md section 5, step 1). Evidence
+that polylog-size juntas cost o(1/log r); not a proof. Run
+`python3 verify_junta_residue_20261002.py`.
+
+Candidate lemmas (2 October):
+[CANDIDATE_LEMMAS_20261002.md](CANDIDATE_LEMMAS_20261002.md) proves a
+Fourier-decay bound for count-symmetric sets on the base-16 window and a
+digit lemma showing the only escaping frequencies are "mod-15 character
+plus a few-digit junta"; proves asymptotic mod-15 balance for a random
+4-AP-free B (one numerical input). Two steps remain before the candidate
+refutes the window energy lemma. Run `python3 verify_candidate_lemmas_20261002.py`.
+
+Symmetric candidate (2 October):
+[SYMMETRIC_CANDIDATE_20261002.md](SYMMETRIC_CANDIDATE_20261002.md)
+gives a provably 4-AP-free, permutation-symmetric set of density about
+r^(-1/2) in a rank-(r+1) window {0,1,2,3}^r that meets the full cutoff.
+Its energy on digit juntas is negligible and on the sigma mod 15 class
+falls to 0.4 times the target scale by r=600. Generic characters and
+asymptotic balance are unproved: a CANDIDATE against the window energy
+lemma, not a refutation. Run `python3 verify_symmetric_balance_20261002.py`.
+
+Bounded-rank vacuity (2 October):
+[BOUNDED_RANK_VACUITY_20261002.md](BOUNDED_RANK_VACUITY_20261002.md)
+shows (with one cited geometry-of-numbers input) that windows of any fixed
+rank embed into integer intervals with constant loss, so under the target
+they hold no 4-AP-free sets of density eps/log n. Window counterexamples
+need rank tending to infinity, as both existing ones have (rank ~ log n).
+An interval-window energy experiment up to n=16000 finds only a boundary
+effect. Run `python3 verify_interval_window_energy_20261002.py`.
+
+Mod-3 increment refuted (2 October):
+[MOD3_INCREMENT_20261002.md](MOD3_INCREMENT_20261002.md) shows three
+far-apart translates of a 4-AP-free set stay 4-AP-free and are exactly
+balanced mod 3, so mod-3 classes alone give no increment; an exact extremal
+set at n=30 is balanced too. Slab/character cells are required. Run
+`python3 verify_mod3_increment_20261002.py`.
+
+Window lattice model (2 October):
+[WINDOW_LATTICE_MODEL_20261002.md](WINDOW_LATTICE_MODEL_20261002.md)
+proves every rank-r controlled window is 4-AP-isomorphic to the lattice
+points of a convex body in Z^r, that such sets contain a 4-AP once they
+exceed 3^r points, and that a whole rank-(d+1) window of size 3^d is
+4-AP-free. So the 3^r factor in the cutoff n>=8*3^r*a^(-3) is necessary.
+Gives a sharp endpoint-pair supply |A|(8a^(-2)-1) under the cutoff. The
+window energy lemma stays OPEN. Run `python3 verify_window_lattice_20261002.py`.
+
+Structural result (2 October):
+[VACUITY_OF_FULL_GROUP_OPEN_20261002.md](VACUITY_OF_FULL_GROUP_OPEN_20261002.md)
+proves that the full-group (OPEN) statement follows from the target itself
+and has non-vacuous content only if the target fails. Refuting it at density
+eps/log p is therefore as hard as disproving r_4(N)=o(N/log N); by Green–Tao
+it is vacuously true for a > C_0(log p)^(-c_0). Counterexample effort belongs
+in the hereditary/window version. Literature check: no published bound gives
+r_4(N)=o(N/log N). Run `python3 verify_vacuity_20261002.py`.
+
+Rank-one hostile search (2 October):
+[RANK1_HOSTILE_SEARCH_20261002.md](RANK1_HOSTILE_SEARCH_20261002.md)
+finds that greedy and hostile 4-AP-free sets in Z_p (p up to 797) carry
+no rank-one quarter-factor energy beyond the random-set noise floor; hostile
+sets fall to 0.66 times it. Rank one alone cannot drive the open statement.
+Finite diagnostics only. Run `python3 verify_rank1_hostile_search_20261002.py`.
+
+Target-density continuation (14 September):
+[TARGET_SCALE_ENERGY_BUDGET_20260914.md](TARGET_SCALE_ENERGY_BUDGET_20260914.md)
+derives the exact conditional energy gain, the four-term Fourier expansion,
+and a positive quadratic resonance giving many APs in the quadratic example.
+It shows conditionally that fixed polylogarithmic rank and inverse-polylogarithmic
+relative energy fit the iteration budget. The target-scale AP-free structural
+input remains unproved. Run `python3 verify_target_scale_20260914.py`.
+
+Latest full-group audit (14 September):
+[FULL_GROUP_HOSTILE_AUDIT_20260914.md](FULL_GROUP_HOSTILE_AUDIT_20260914.md) proves ENERGY
+for all sets with density at most p^(-1/4), with eta=1/4 and C=3,
+using a base-four singleton factor. It also gives an explicit harmonic
+cutoff bound, exact affine invariance, and the thinning host term.
+The denser full-group range remains open; no general-window extension
+or target proof follows. Run `python3 verify_full_group_hostile_20260914.py`.
 
 Full-group audit of the energy theorem (14 September, later):
 [FULL_GROUP_ENERGY_AUDIT.md](FULL_GROUP_ENERGY_AUDIT.md) settles the

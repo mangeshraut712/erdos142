@@ -1,0 +1,13 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Proper-Window Two-Branch Reduction, Operator U^3 Variance Bound ||K_u^{(3)}||_2^2 <= 4U||u||_{U^3}^4, Universal Arbitrary-Factor Residual U^3 Bound, and Peak-vs-Diffuse Dichotomy)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "theorem1_bilateral_multiplier_checks": 125,
+    "theorem2_proper_window_two_branch_checks": 300,
+    "theorem3_operator_fourier_splitting_checks": 753,
+    "theorem5_universal_branch2_u3_checks": 2247,
+    "theorem4_peak_vs_diffuse_checks": 4494,
+    "global_law_two_branch_checks": 16
+  },
+  "scope": "100% exact rational and numerical verification of Theorems 1-5 across Z_7, Z_11, proper windows (11,5), (13,6), (17,7), (23,9), and the p=23, 29 rational global laws."
+}

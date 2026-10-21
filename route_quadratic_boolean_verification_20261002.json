@@ -1,0 +1,7 @@
+{
+  "status": "finite diagnostics passed; symbolic proofs in note; no asymptotic target proved",
+  "quadratic_host_subsets": 2208,
+  "AP_free_host_subsets_checked": 2612,
+  "Boolean_AP_free_subsets": 765,
+  "nonempty_margin_fibers": 5304
+}

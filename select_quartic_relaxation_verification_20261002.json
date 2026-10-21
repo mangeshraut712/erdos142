@@ -1,0 +1,12 @@
+{
+  "status": "quartic relaxation identities and PSD certificate checks passed",
+  "checks": {
+    "parameter_cases": 20,
+    "Gram_entries": 24764,
+    "pair_rows": 107
+  },
+  "PSD_sufficient_condition": "a <= 1/(1+sqrt(6))",
+  "exact_cardinality_enforced": false,
+  "residual_mean_zero_as_polynomial_identity": false,
+  "Z7_negative_direction_at_a_one_third": "-2/81"
+}

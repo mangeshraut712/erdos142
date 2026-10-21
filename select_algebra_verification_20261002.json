@@ -1,0 +1,7 @@
+{
+  "status": "all finite algebra/moment checks passed; SELECT unproved",
+  "fullgroup_B_factor_cases": 480,
+  "expanded_terms": 7680,
+  "conditional_moments": 3360,
+  "low_energy_mainterm_cases": 310
+}

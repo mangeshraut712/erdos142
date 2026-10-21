@@ -1,0 +1,138 @@
+{
+  "checkpoint_date": "2026-10-17",
+  "latest_mathematical_work_date": "2026-10-16",
+  "principal_status": "D",
+  "offline": true,
+  "target": "r_4(N)=o(N/log N)",
+  "target_proved": false,
+  "execution_state": "recovered_and_synchronized",
+  "background_work_running": false,
+  "new_theorem_in_recovery": false,
+  "supersedes_for_navigation": "AUTONOMOUS_CHECKPOINT_20261016.json",
+  "recovery_reason": "Late October 16 proofs and verifier were saved after the previous navigation checkpoint.",
+  "proved_results": [
+    {
+      "id": "MT16",
+      "status": "PROVED",
+      "source": "MIXED_QUADRATIC_TERMINAL_20261016.md",
+      "claim": "Mixed-window terminal relative density <=3/4+o(1) under explicit rank/size budgets"
+    },
+    {
+      "id": "MR16",
+      "status": "PROVED",
+      "source": "MIXED_QUADRATIC_TERMINAL_20261016.md",
+      "claim": "Weighted R1 is o(a^4 w mu) on reachable hosts"
+    },
+    {
+      "id": "WP16",
+      "status": "PROVED",
+      "source": "WEIGHTED_PAIR_REDUCTION_20261016.md",
+      "equations": "P1-P10",
+      "claim": "Weighted R2 >= -o(a^4 w mu) on reachable hosts",
+      "exact_PSD_claimed": false,
+      "absolute_smallness_claimed": false
+    },
+    {
+      "id": "DT16",
+      "status": "PROVED",
+      "source": "DIRECT_INCREMENT_TRADEOFF_20261016.md",
+      "equations": "T1-T4",
+      "claim": "Direct-cell gain/size tradeoff and improved epoch upper bounds"
+    },
+    {
+      "id": "DG16",
+      "status": "PROVED CONDITIONAL IMPLICATION",
+      "source": "DIRECT_INCREMENT_TRADEOFF_20261016.md",
+      "equations": "T5-T12",
+      "claim": "DIRECT-Q-GAIN implies local target",
+      "unproved_premise": "DIRECT-Q-GAIN"
+    },
+    {
+      "id": "GI16",
+      "status": "PROVED AUXILIARY OBSTRUCTION",
+      "source": "GLOBAL_CHIRP_INVERSE_OBSTRUCTION_20261016.md",
+      "claim": "Bare U3 signal insufficient for global finite-field quadratic correlation for bounded real weights",
+      "Boolean_witness": false,
+      "AP_free_witness": false
+    }
+  ],
+  "open_dependencies": [
+    "DIRECT-Q-GAIN (T5)-(T6)",
+    "Weighted cubic-plus-quartic lower bound (P12) under failure of adequate phase selection",
+    "Original SELECT/WSELECT/SIGNED/COLLECTIVE-WSELECT packet existence and retention"
+  ],
+  "selection_problem": {
+    "status": "OPEN",
+    "name": "DIRECT-Q-GAIN",
+    "domain": "r[log(p/|Omega|)+log(48r)+loglog p] <= log(p)/100; r>=1",
+    "density_range": "epsilon/(2log|Omega|) <= a <= 4/5",
+    "set": "Actual cyclically nonzero-4AP-free Boolean A subset a mixed linear/quadratic interval window Omega",
+    "residual": "1_A-a on the current window, trivial factor only",
+    "conclusion": "Nonconstant polynomial P of degree <=2 with relative correlation >=c_epsilon a^(3/2)F_epsilon(a)",
+    "multiplier": "F_epsilon(a)>=1 and F_epsilon(a)->infinity uniformly as a->0",
+    "concrete_multiplier": "R(a)=loglog(e^2/a); replace with max(1,R) at a constant cost",
+    "old_sqrt_log_multiplier_required": false
+  },
+  "signed_gap": {
+    "known": "R1=o(a^4 w mu), R2>=-o(a^4 w mu)",
+    "AP_forced": "R3+R4 <= -(1-o(1))a^4 w mu",
+    "wanted_under_failed_selection": "R3+R4 >= -(1/2)a^4 w mu",
+    "exact_diagonal": "aw/p",
+    "status": "OPEN"
+  },
+  "quantitative_ledger": {
+    "conditional": true,
+    "L": "log N",
+    "initial_density": "epsilon/log N",
+    "rank": "O_epsilon(sqrt(L)/loglog L + log L)",
+    "log_size_loss_upper_bound": "O_epsilon(sqrt(L)/loglog L + (log L)^2)",
+    "rank_times_log_size_loss": "o(L)",
+    "required_squared_correlation": "a^3 R(a)^2",
+    "remaining_gain_over_a4": "a^(-1)R(a)^2",
+    "unconditional_increment_proved": false
+  },
+  "verification": {
+    "date": "2026-10-17",
+    "script": "verify_weighted_pair_20261016.py",
+    "exit_code": 0,
+    "finite_checks": 28520,
+    "isolated_rerun": true,
+    "matches_saved_report_exactly": true,
+    "global_chirp_coefficients_examined": 1098390,
+    "max_floating_identity_error": 9.325873406851315e-15,
+    "old_checkpoint_hashes_verified_before_sync": 14,
+    "latest_source_hashes_verified": 5,
+    "original_proof_notes_and_verification_outputs_preserved": true,
+    "asymptotic_selection_computationally_proved": false,
+    "evidence": "history/resume_20261017/resume_verification.json"
+  },
+  "next_action": "Attack OPEN_LEMMAS.md O2 / weighted-pair P12 via actual Boolean AP-free cubic/quartic arithmetic, or prove DIRECT-Q-GAIN directly.",
+  "resume_prompt": "AUTONOMOUS_RESUME_PROMPT.md",
+  "recovery_audit": "RESUME_AUDIT_20261017.md",
+  "before_sync_snapshot": "history/resume_20261017/before_sync",
+  "file_sha256": {
+    "CURRENT_STATUS.md": "6bf8b23f9f540ebccc546ca5a6670aa2bfdd4cdf4a501d6c3153efdc0d2926f3",
+    "OPEN_LEMMAS.md": "4d532f4d4e053f27518a8bba782e2a8cd814a4249f72d54c2d7118f329ddbf16",
+    "NEXT_AUTONOMOUS_ACTION.md": "3887e5decdc268489d68b852efa66d5bfd8faf71b72acaaa59620717e4d276f3",
+    "AUTONOMOUS_RESUME_PROMPT.md": "3b1139d8cfc45f428d3e13e6da3a81ab1de5c949da39c84c051f995a35489652",
+    "RESUME_AUDIT_20261017.md": "4a5e94e9b0f502ddd7ec26f7de61b12523d062c044eaaa5bcdf681fcc611fd09",
+    "RESEARCH_JOURNAL.md": "989dd4bd072f7570f58325cf4b73f7d099f3d0a3a7370a6b47f69dc208f2ebb3",
+    "README.md": "b98d7228be40ff82e60fffe0d550642768f7b2891bddb177457565d36c3becec",
+    "SOLUTION_LEDGER.md": "a6e14c5ba76012bfa0802924cab118bd51d7be99b1abd3eec8f5c90e74b70395",
+    "PROOF_DEPENDENCIES.md": "04508f67f471bc71c8dd49acaf58e54d79ada1b7dfc031a35023bd55bd8341b6",
+    "VERIFIED_THEOREMS.md": "40551e2d4319c20bc2c8ee9dcc5d0f0e9c50a34933fbe5894a45e870b11f4e84",
+    "FAILED_APPROACHES.md": "c5443ea982c0aa1857973322dfa4c4ab1ce3660d95fea108204a3fcf17f0290b",
+    "MIXED_QUADRATIC_TERMINAL_20261016.md": "2f34912dd3c66ac6ccd87713eac0fd0e8d040bcb7cb0e1ff588af5046a27c938",
+    "LOG_DENSITY_ATTACK_20261016.md": "1e36c4ea8305d252000d4f76a26eb7153276d6e33c7e331c346d411cc827b1c7",
+    "LOG_DENSITY_VERIFICATION_20261016.json": "5537d688b604ea49244de0ab2e2a409d78471d778f3db1bb5738aadf94d50831",
+    "WEIGHTED_PAIR_REDUCTION_20261016.md": "4977ef97a49ea24b9325b66ab90e83b3a9c87b69b53a020462689fe68783f7fe",
+    "DIRECT_INCREMENT_TRADEOFF_20261016.md": "e30c57c67ddb0ddc013de4be9e39b44e146c9645631aff7f00ddbea4117079b6",
+    "GLOBAL_CHIRP_INVERSE_OBSTRUCTION_20261016.md": "775c26bbbeee5cbdc66f808a982553395f314177c2d40b00c61d29b180637c26",
+    "verify_weighted_pair_20261016.py": "7c24cf708ef14707ce9aebae767eb96bed74343f8b00f921de1172af4d7ba202",
+    "WEIGHTED_PAIR_VERIFICATION_20261016.json": "2412f2587457c99c90e3748b7b8b0985c5ccca5676fe7ec0d9ee8a31b4c5b3e2",
+    "AUTONOMOUS_CHECKPOINT_20261016.json": "8b021993c3162732e47b939fe5e3549881cdcff11b19ea7983970b3f1c83e18b",
+    "history/resume_20261017/resume_verification.json": "c6cd74cf9c06a26fc78ba8ed0c2802e8afc9a73dd94a700502ebf5bfea97771c",
+    "history/resume_20261017/weighted_pair_rerun.json": "2412f2587457c99c90e3748b7b8b0985c5ccca5676fe7ec0d9ee8a31b4c5b3e2",
+    "history/resume_20261017/before_sync/sha256.json": "285f99b31354319217efaefc1f7feda3583b9928c02210a27fc4c0bc963b3eb2"
+  }
+}

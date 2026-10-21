@@ -1,0 +1,95 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM",
+  "executed_date": "2026-10-13",
+  "counts": {
+    "exact_cell_decompositions": 369,
+    "relative_Parseval_checks": 162,
+    "exact_derivative_operator_checks": 54,
+    "completion_and_Bh_Fourier_checks": 54,
+    "global_law_orbit_representatives": 51,
+    "exact_direct_counting_telescopes": 8
+  },
+  "example_tests": [
+    {
+      "name": "three_point",
+      "p": 101,
+      "window_size": 25,
+      "set": [
+        0,
+        1,
+        3
+      ],
+      "relative_density": 0.12,
+      "endpoint_completion_identically_zero": true,
+      "geometric_and_density_conditions_epsilon_half": true,
+      "scope": "finite test; unknown asymptotic p0 not tested; not a SELECT counterexample"
+    },
+    {
+      "name": "ternary_cube",
+      "p": 59,
+      "window_size": 14,
+      "set": [
+        0,
+        1,
+        3,
+        4,
+        9,
+        10,
+        12,
+        13
+      ],
+      "relative_density": 0.5714285714285714,
+      "endpoint_completion_identically_zero": true,
+      "geometric_and_density_conditions_epsilon_half": true,
+      "scope": "finite test; unknown asymptotic p0 not tested; not a SELECT counterexample"
+    },
+    {
+      "name": "digit_product",
+      "p": 277,
+      "window_size": 69,
+      "set": [
+        0,
+        1,
+        4,
+        16,
+        17,
+        20,
+        64,
+        65,
+        68
+      ],
+      "relative_density": 0.13043478260869565,
+      "endpoint_completion_identically_zero": true,
+      "geometric_and_density_conditions_epsilon_half": true,
+      "scope": "finite test; unknown asymptotic p0 not tested; not a SELECT counterexample"
+    },
+    {
+      "name": "interval",
+      "p": 101,
+      "size": 12,
+      "AP_free": false,
+      "nonzero_AP_count": 36,
+      "completion_mean": 0.005881776296441525,
+      "maximum_linear_Fourier": 0.11609090484027891,
+      "scope": "full-group diagnostic, not a proper H-window counterexample"
+    },
+    {
+      "name": "quadratic_Boolean_host",
+      "p": 101,
+      "size": 11,
+      "AP_free": false,
+      "nonzero_AP_count": 10,
+      "completion_mean": 0.0025487697284579942,
+      "maximum_linear_Fourier": 0.08528683920212703,
+      "scope": "full-group diagnostic, not a proper H-window counterexample"
+    },
+    {
+      "name": "genuine_quadratic_phase",
+      "p": 101,
+      "Boolean": false,
+      "all_Fourier_magnitudes": 0.09950371902099892,
+      "scope": "fails Boolean premise"
+    }
+  ],
+  "scope": "Fraction and integer tests are exact; Fourier tests use 1e-11 tolerance. No asymptotic concentration premise or degree-six target extension is established."
+}

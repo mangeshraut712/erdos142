@@ -1,0 +1,47 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Centered Baseline-Free All-Chirp Identities, Exact 16/69 Quadratic-Window Hitting-Degree Terminal Bound, and Fourth-Moment Chirp Norm Obstruction)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase0_chirp_parseval_checks": 15,
+    "phase0_complex_trilinear_chirp_checks": 375,
+    "phase1_universal_hitting_degree_checks": 100,
+    "phase5_quadratic_terminal_16_69_checks": 4,
+    "phase2_3_centered_baseline_free_chirp_checks": 2247,
+    "phase6_global_law_centered_chirp_checks": 16
+  },
+  "quadratic_window_terminal_records": [
+    {
+      "p": 101,
+      "w": 0.24752475247524752,
+      "Z_I_over_w3": 0.297536,
+      "max_H_over_w2": 1.3248000000000006,
+      "asymptotic_hole_lower_bound": 0.22458937198067622,
+      "terminal_density_upper_bound": 0.7754106280193238
+    },
+    {
+      "p": 257,
+      "w": 0.2490272373540856,
+      "Z_I_over_w3": 0.29648590087890614,
+      "max_H_over_w2": 1.2954101562500009,
+      "asymptotic_hole_lower_bound": 0.22887415190350527,
+      "terminal_density_upper_bound": 0.7711258480964948
+    },
+    {
+      "p": 509,
+      "w": 0.24950884086444008,
+      "Z_I_over_w3": 0.2963444824527444,
+      "max_H_over_w2": 1.2866265732531466,
+      "asymptotic_hole_lower_bound": 0.23032672308598273,
+      "terminal_density_upper_bound": 0.7696732769140173
+    },
+    {
+      "p": 1009,
+      "w": 0.24975222993062438,
+      "Z_I_over_w3": 0.29630154530948183,
+      "max_H_over_w2": 1.2777777777777792,
+      "asymptotic_hole_lower_bound": 0.2318881658943768,
+      "terminal_density_upper_bound": 0.7681118341056232
+    }
+  ],
+  "scope": "100% exact and 1e-11 numerical verification of complex all-chirp identities across 5 test classes, centered baseline-free chirp identities for S_E, S_M, M_E, M_M, R_4, exact fourth-moment chirp norms, and the 16/69 > 1/5 quadratic-window hole bound."
+}

@@ -1,0 +1,40 @@
+{
+ "mode_formula_exact_r": [
+  5,
+  17,
+  40,
+  90
+ ],
+ "fourier_decay_max_ratio": 0.9946361290025633,
+ "digit_lemma_cases": 105963,
+ "alteration_balance": [
+  {
+   "r": 300,
+   "sigma_sd": 19.399331508927784,
+   "beta": 0.0860724956090061,
+   "mean_mod15_energy_over_a2": 4.360757124653686,
+   "max_mod15_energy_over_a2": 13.859145162644632,
+   "mean_density": 0.006226814937159515,
+   "one_over_log": 0.17324904756612708
+  },
+  {
+   "r": 1200,
+   "sigma_sd": 38.747067586261394,
+   "beta": 0.06304649698776904,
+   "mean_mod15_energy_over_a2": 1.6571889517832739,
+   "max_mod15_energy_over_a2": 2.2844978789533674,
+   "mean_density": 0.0031486862224840116,
+   "one_over_log": 0.1549446598538425
+  },
+  {
+   "r": 4800,
+   "sigma_sd": 77.46828694423155,
+   "beta": 0.0461596663117331,
+   "mean_mod15_energy_over_a2": 1.421371345089838,
+   "max_mod15_energy_over_a2": 1.849622380502247,
+   "mean_density": 0.0010565327640998628,
+   "one_over_log": 0.1325221231865203
+  }
+ ],
+ "target_proved": false
+}

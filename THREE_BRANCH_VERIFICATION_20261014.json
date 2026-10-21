@@ -1,0 +1,160 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Exact Branch III Fourier Pairing and Three-Branch Endpoint Audit)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase3_exact_R1_pairing_checks": 2496,
+    "phase3_unwindowed_R1_fourier_checks": 2496,
+    "phase2_branch3_decomposition_and_norm_checks": 2247,
+    "phase1_three_way_dichotomy_checks": 2496,
+    "phase8_weakened_ledger_trajectories": 9,
+    "phase9_family_branch_classifications": 10,
+    "phase9_global_law_three_branch_checks": 12
+  },
+  "family_branch_classifications": [
+    {
+      "name": "sidon_z13",
+      "factor": "trivial",
+      "p": 13,
+      "n": 13,
+      "a": 0.3076923076923077,
+      "X_over_R0": 0.609375,
+      "Y_over_R0": 1.40625,
+      "R1_over_R0": 0.0,
+      "active_branch_c0_quarter": "I"
+    },
+    {
+      "name": "sidon_z13",
+      "factor": "quarter",
+      "p": 13,
+      "n": 13,
+      "a": 0.3076923076923077,
+      "X_over_R0": 0.3079482000712843,
+      "Y_over_R0": 0.1274800997980278,
+      "R1_over_R0": -0.1710823333729357,
+      "active_branch_c0_quarter": "I"
+    },
+    {
+      "name": "behrend_z43",
+      "factor": "trivial",
+      "p": 43,
+      "n": 43,
+      "a": 0.046511627906976744,
+      "X_over_R0": 0.0,
+      "Y_over_R0": 210.625,
+      "R1_over_R0": 0.0,
+      "active_branch_c0_quarter": "II"
+    },
+    {
+      "name": "behrend_z43",
+      "factor": "quarter",
+      "p": 43,
+      "n": 43,
+      "a": 0.046511627906976744,
+      "X_over_R0": 0.0,
+      "Y_over_R0": 29.551829268292682,
+      "R1_over_R0": 0.2926829268292683,
+      "active_branch_c0_quarter": "II"
+    },
+    {
+      "name": "ternary_cube_window",
+      "factor": "trivial",
+      "p": 59,
+      "n": 14,
+      "a": 0.5714285714285714,
+      "X_over_R0": 0.8120265151515151,
+      "Y_over_R0": -0.11837121212121213,
+      "R1_over_R0": -0.2878787878787879,
+      "active_branch_c0_quarter": "I"
+    },
+    {
+      "name": "ternary_cube_window",
+      "factor": "quarter",
+      "p": 59,
+      "n": 14,
+      "a": 0.5714285714285714,
+      "X_over_R0": 0.8120265151515151,
+      "Y_over_R0": -0.11837121212121213,
+      "R1_over_R0": -0.2878787878787879,
+      "active_branch_c0_quarter": "I"
+    },
+    {
+      "name": "digit_product_window",
+      "factor": "trivial",
+      "p": 277,
+      "n": 69,
+      "a": 0.13043478260869565,
+      "X_over_R0": 0.0,
+      "Y_over_R0": 14.988727858293077,
+      "R1_over_R0": -0.9855072463768116,
+      "active_branch_c0_quarter": "II"
+    },
+    {
+      "name": "digit_product_window",
+      "factor": "quarter",
+      "p": 277,
+      "n": 69,
+      "a": 0.13043478260869565,
+      "X_over_R0": 0.0,
+      "Y_over_R0": 14.988727858293077,
+      "R1_over_R0": -0.9855072463768116,
+      "active_branch_c0_quarter": "II"
+    },
+    {
+      "name": "three_point_window",
+      "factor": "trivial",
+      "p": 101,
+      "n": 25,
+      "a": 0.12,
+      "X_over_R0": 2.768917242601453,
+      "Y_over_R0": 50.196172248803826,
+      "R1_over_R0": -1.288676236044657,
+      "active_branch_c0_quarter": "I"
+    },
+    {
+      "name": "three_point_window",
+      "factor": "quarter",
+      "p": 101,
+      "n": 25,
+      "a": 0.12,
+      "X_over_R0": 2.768917242601453,
+      "Y_over_R0": 50.196172248803826,
+      "R1_over_R0": -1.288676236044657,
+      "active_branch_c0_quarter": "I"
+    }
+  ],
+  "weakened_ledger_trajectories_sample": [
+    {
+      "eps": 0.5,
+      "logN": 100.0,
+      "steps": 412,
+      "D_cum_over_sqrt_logN": 45.7,
+      "S_cum_over_sqrt_logN": 398.235959453068,
+      "terminal_product_over_logN": 18235.110832716753
+    },
+    {
+      "eps": 0.5,
+      "logN": 400.0,
+      "steps": 735,
+      "D_cum_over_sqrt_logN": 51.55,
+      "S_cum_over_sqrt_logN": 424.61639198673004,
+      "terminal_product_over_logN": 21911.22252203138
+    },
+    {
+      "eps": 0.5,
+      "logN": 1600.0,
+      "steps": 1246,
+      "D_cum_over_sqrt_logN": 51.325,
+      "S_cum_over_sqrt_logN": 418.20995697869085,
+      "terminal_product_over_logN": 21476.58502945557
+    },
+    {
+      "eps": 0.2,
+      "logN": 100.0,
+      "steps": 608,
+      "D_cum_over_sqrt_logN": 77.8,
+      "S_cum_over_sqrt_logN": 661.3438797591973,
+      "terminal_product_over_logN": 51517.51586268842
+    }
+  ],
+  "scope": "100% exact rational verification of the three-way dichotomy, exact R_1 pairing R_1 = 2<u,h_{E,g}+h_{M,g}>_p, quadratic/cubic-in-h splitting R_1 = R_{1,(2)} + R_{1,(3)}, L2 bounds <= 6av and <= 2v^{3/2}, and family branch classifications."
+}

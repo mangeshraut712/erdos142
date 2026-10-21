@@ -1,0 +1,180 @@
+[
+  {
+    "script": "verify_core.py",
+    "exit_code": 0,
+    "output": {
+      "status": "finite auxiliary checks passed; no asymptotic theorem proved",
+      "exact_counting_energy_subsets": 2208,
+      "nonempty_proper_4ap_free_subsets": 762,
+      "exact_four_atom_subsets": 2288,
+      "exact_general_even_spectral_arrays": 276,
+      "groups_for_counting": [
+        5,
+        7,
+        11
+      ],
+      "extra_groups_for_degeneracies": [
+        4,
+        6
+      ],
+      "spectral_kernel_counterexample": "float check of exact radical formulas, tolerance 1e-12",
+      "external_dependencies": []
+    }
+  },
+  {
+    "script": "verify_localization.py",
+    "exit_code": 0,
+    "output": {
+      "status": "proved bridge checks passed; extraction and target remain OPEN",
+      "terminal": {
+        "windows": 104,
+        "actual_4ap_free_subsets": 4418,
+        "arithmetic": "integer roots, residues, and exact packing"
+      },
+      "factor_atom_cases": 152,
+      "signed_factors": [
+        {
+          "p": 5,
+          "size": 2,
+          "T": "2/125",
+          "low_cubic": false,
+          "coarse_factors_checked": 10,
+          "signed_preserving_factors": 0,
+          "single_character_preserving_factors": 0,
+          "preserving_witnesses": [],
+          "soft_level_set_checked": false,
+          "scope": "finite diagnostic; no uniform compression theorem inferred"
+        },
+        {
+          "p": 13,
+          "size": 4,
+          "T": "-12/2197",
+          "low_cubic": true,
+          "coarse_factors_checked": 26,
+          "signed_preserving_factors": 1,
+          "single_character_preserving_factors": 0,
+          "preserving_witnesses": [
+            {
+              "frequencies": [
+                1,
+                3
+              ],
+              "offset": 0,
+              "cells": 12,
+              "correlation": "-12/2197"
+            }
+          ],
+          "soft_level_set_checked": true,
+          "scope": "finite diagnostic; no uniform compression theorem inferred"
+        },
+        {
+          "p": 101,
+          "size": 28,
+          "T": "-1348/1030301",
+          "low_cubic": true,
+          "coarse_factors_checked": 202,
+          "signed_preserving_factors": 1,
+          "single_character_preserving_factors": 0,
+          "preserving_witnesses": [
+            {
+              "frequencies": [
+                1,
+                3
+              ],
+              "offset": 0,
+              "cells": 12,
+              "correlation": "-49283/74181672"
+            }
+          ],
+          "soft_level_set_checked": true,
+          "scope": "finite diagnostic; no uniform compression theorem inferred"
+        }
+      ],
+      "Z11_wrap_counterexample": true,
+      "external_dependencies": []
+    }
+  },
+  {
+    "script": "verify_target_scale_20260914.py",
+    "exit_code": 0,
+    "output": {
+      "status": "passed",
+      "exact": {
+        "conditional_increment_cases": 160,
+        "conditional_boolean_points": 1056
+      },
+      "numerical_fourier": {
+        "boolean_fourier_identities": 25,
+        "four_term_expansions": 3,
+        "dissociated_riesz_products": 194,
+        "quadratic_matrix_sums": 468
+      },
+      "quadratic_counts": [
+        {
+          "p": 101,
+          "size": 23,
+          "ordered_nontrivial_4aps": 40,
+          "lambda4": 0.006175865111263602,
+          "positive_resonance": 0.0026700934969489452
+        },
+        {
+          "p": 503,
+          "size": 101,
+          "ordered_nontrivial_4aps": 784,
+          "lambda4": 0.003497899284215186,
+          "positive_resonance": 0.0011925333485374716
+        },
+        {
+          "p": 1009,
+          "size": 159,
+          "ordered_nontrivial_4aps": 1614,
+          "lambda4": 0.0017415117264736302,
+          "positive_resonance": 0.0008794495157244172
+        }
+      ],
+      "conditional_budget_cases": 3,
+      "target_energy_proved": false,
+      "r4_target_proved": false
+    }
+  },
+  {
+    "script": "verify_full_group_hostile_20260914.py",
+    "exit_code": 0,
+    "output": {
+      "status": "passed",
+      "exact": {
+        "base_four_point_encodings": 1512,
+        "sparse_singleton_factors": 20,
+        "affine_pullbacks": 172,
+        "affine_cell_moments": 21,
+        "thinning_sets": 24,
+        "support_subsets": 40
+      },
+      "numerical_diagnostics": {
+        "fourier_energy_identities": 16,
+        "arc_coefficient_bounds": 10496,
+        "jackson_kernels": 4,
+        "smoothed_factor_checks": 3
+      },
+      "quadratic_examples_not_ap_free": [
+        {
+          "p": 101,
+          "size": 23,
+          "contains_0_1_2_3": true
+        },
+        {
+          "p": 503,
+          "size": 101,
+          "contains_0_1_2_3": true
+        },
+        {
+          "p": 1009,
+          "size": 159,
+          "contains_0_1_2_3": true
+        }
+      ],
+      "energy_theorem_proved": false,
+      "target_proved": false
+    }
+  }
+]

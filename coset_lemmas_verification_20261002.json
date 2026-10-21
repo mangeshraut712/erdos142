@@ -1,0 +1,7 @@
+{
+ "minorant_min_gap": -2.220446049250313e-16,
+ "averaging_max_error": 1.7962296908674955e-14,
+ "covolume_rank_steps": 2094,
+ "covolume_index_steps": 100,
+ "target_proved": false
+}

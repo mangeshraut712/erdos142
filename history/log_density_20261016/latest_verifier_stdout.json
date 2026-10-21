@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "exact_tent_convolution": 76,
+    "floating_tent_transform_mass": 8,
+    "floating_tent_zero": 8,
+    "exact_persistent_baseline_lower_bound": 8,
+    "floating_persistent_vs_physical": 8,
+    "floating_all_vertex_degree_decomposition": 304,
+    "exact_eroded_slot_support": 660,
+    "floating_first_degree_error_envelope": 96,
+    "exact_weighted_APfree_hitting_diagonal_expansion": 24,
+    "exact_weighted_host_degree_cases": 8,
+    "floating_direct_atom_correlation_bound": 210,
+    "exact_direct_atom_gain_and_mass": 210,
+    "exact_retained_mass_telescope": 1,
+    "exact_arithmetic_pair_kernel_not_PSD": 1,
+    "exact_sparse_band_exponents": 4,
+    "exact_new_threshold_exponents": 4,
+    "floating_explicit_conditional_epoch_ledger": 12
+  },
+  "max_errors": {
+    "floating_tent_transform_mass": 2.220446049250313e-16,
+    "floating_tent_zero": 2.7755575615628914e-17,
+    "floating_persistent_vs_physical": 1.3877787807814457e-17
+  }
+}

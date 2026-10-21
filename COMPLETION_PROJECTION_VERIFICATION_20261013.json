@@ -1,0 +1,62 @@
+{
+  "status": "passed; exact partial theorem; SELECT unresolved",
+  "counts": {
+    "exact_cell_identities": 5189,
+    "relative_Gram_projection_checks": 4458,
+    "exact_pairing_and_variance_checks": 2229,
+    "AP_free_sets_checked": 743,
+    "q_zero_Fourier_branch": 276
+  },
+  "spectral_cancellation_example": {
+    "p": 7,
+    "set": [
+      4,
+      5,
+      6
+    ],
+    "window": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "factor": "trivial",
+    "frequencies": [
+      1
+    ],
+    "projected_w_z_inner_product": 0.00031746327983364273,
+    "global_w_z_inner_product": 0.0,
+    "meaning": "positive cross term reduces projected energy of k=-w+z"
+  },
+  "window_zero_example": {
+    "p": 11,
+    "set": [
+      0,
+      1,
+      2
+    ],
+    "window": [
+      0,
+      1,
+      2
+    ],
+    "completion_counts": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scope": "finite normalization diagnostic; not target-regime evidence"
+  },
+  "scope": "Integer/Fraction identities exact; Fourier and Gram checks tolerance 1e-10. No asymptotic character budget proved."
+}

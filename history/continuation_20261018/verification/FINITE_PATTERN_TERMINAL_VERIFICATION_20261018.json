@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-18",
+  "offline": true,
+  "target_proved": false,
+  "total_checks": 51971,
+  "counts": {
+    "exact_twelve_slot_cap": 2233,
+    "exact_twelve_slot_cap_attained": 1,
+    "exact_three_holes_cannot_hit": 64,
+    "exact_three_hole_parity_reduction": 2,
+    "nonempty_eroded_interior": 3,
+    "exact_independent_baseline": 3,
+    "exact_interior_forces_entire_host": 35472,
+    "floating_T_lower": 3,
+    "floating_T_upper": 3,
+    "floating_boundary_envelope": 3,
+    "exact_global_cyclic_APfree": 15,
+    "exact_physical_occupancy_cap": 12675,
+    "exact_centered_pair_expansion": 15,
+    "exact_single_diagonal_zero": 15,
+    "exact_pair_diagonal": 15,
+    "exact_finite_occupancy_slack": 15,
+    "floating_single_envelope": 15,
+    "floating_pair_near_positivity": 690,
+    "floating_proper_host_pair_error": 690,
+    "floating_centered_pair_envelope": 15,
+    "exact_finite_terminal_identity_bound": 12,
+    "floating_finite_terminal_envelope": 12
+  },
+  "R4_12": 8,
+  "eight_element_witness": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    9
+  ],
+  "cases": [
+    {
+      "p": 257,
+      "H": 1,
+      "slots": 4,
+      "cap": 3,
+      "linear": [
+        [
+          1,
+          0,
+          257
+        ]
+      ],
+      "quadratic": [],
+      "host_size": 257,
+      "interior_size": 233,
+      "mu": "2/257",
+      "T": "2/257",
+      "APfree_cases": 5
+    },
+    {
+      "p": 1009,
+      "H": 1,
+      "slots": 12,
+      "cap": 8,
+      "linear": [
+        [
+          1,
+          0,
+          1009
+        ]
+      ],
+      "quadratic": [],
+      "host_size": 1009,
+      "interior_size": 745,
+      "mu": "2/1009",
+      "T": "2/1009",
+      "APfree_cases": 5
+    },
+    {
+      "p": 1009,
+      "H": 1,
+      "slots": 12,
+      "cap": 8,
+      "linear": [
+        [
+          1,
+          0,
+          900
+        ]
+      ],
+      "quadratic": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1009
+        ]
+      ],
+      "host_size": 900,
+      "interior_size": 486,
+      "mu": "8/1027243729",
+      "T": "7205/8144648",
+      "APfree_cases": 5
+    }
+  ],
+  "scope": [
+    "Finite Boolean, occupancy, diagonal and expansion checks are exact rational.",
+    "Square-root error envelope comparisons use floats.",
+    "All physical windows have nonempty eroded interiors.",
+    "These finite tests do not verify an asymptotic phase-selection theorem."
+  ],
+  "source_sha256": {
+    "verify_finite_pattern_terminal_20261018.py": "74b300f51c7069e7aedf3ad00fdb5bbd2d40781de2d5a06365622144992fdb90"
+  }
+}

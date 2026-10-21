@@ -1,0 +1,10 @@
+{
+  "sandwich_max_violation": 0.0,
+  "sup_abs_S": 1.2781574579374406,
+  "integral_error": 1.3600232051658168e-15,
+  "coefficient_formula_error": 3.885780586188048e-16,
+  "max_coeff_over_2_by_N_plus_1": 1.0,
+  "max_arith_sum_over_bound": 0.421039585989399,
+  "zq_l1_over_2_plus_log_q": 0.4344462112742556,
+  "target_proved": false
+}

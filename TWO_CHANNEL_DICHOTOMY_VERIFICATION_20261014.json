@@ -1,0 +1,60 @@
+{
+  "principal_status": "D: NEW RIGOROUS PARTIAL THEOREM (Operator Block Cancellation and Repaired Dichotomy)",
+  "executed_date": "2026-10-14",
+  "counts": {
+    "phase3_row_col_incidence_checks": 836,
+    "phase1_dichotomy_identity_checks": 2508,
+    "phase2_operator_block_checks": 2508,
+    "phase8_schur_complement_checks": 2508,
+    "phase9_adversarial_diagnostics": 3,
+    "phase9_global_law_block_checks": 12
+  },
+  "adversarial_diagnostics": [
+    {
+      "name": "z11_extremal",
+      "p": 11,
+      "n": 11,
+      "a": 0.7272727272727273,
+      "X": 0.44477836213373406,
+      "Y": -0.1950686428522642,
+      "T": 0.24970971928146984,
+      "R0": 0.27976231131753293,
+      "R1": 0.0,
+      "DIAG": 0.03688272658971382,
+      "CROSS": -0.09835393757257017,
+      "COMPLEMENT": 0.034970288914691616,
+      "total_uKu": -0.026500922068164744
+    },
+    {
+      "name": "ternary_cube_window",
+      "p": 59,
+      "n": 14,
+      "a": 0.5714285714285714,
+      "X": 0.001641564410883572,
+      "Y": -0.00023929510362734286,
+      "T": 0.0014022693072562292,
+      "R0": 0.0020215650354437923,
+      "R1": -0.0005819656920216978,
+      "DIAG": 0.0008442331255972657,
+      "CROSS": -0.001407055209328776,
+      "COMPLEMENT": 0.0007504294449753472,
+      "total_uKu": 0.0001876073612438368
+    },
+    {
+      "name": "three_point_window",
+      "p": 101,
+      "n": 25,
+      "a": 0.12,
+      "X": 1.176355259288305e-05,
+      "Y": 0.00021325495147534555,
+      "T": 0.0002250185040682286,
+      "R0": 4.2484305460249e-06,
+      "R1": -5.4748514851485145e-06,
+      "DIAG": 0.00045548475639643174,
+      "CROSS": -2.070385256347417e-05,
+      "COMPLEMENT": 0.0,
+      "total_uKu": 0.00043478090383295754
+    }
+  ],
+  "scope": "100% exact rational arithmetic verification of the repaired dichotomy identities, operator block decompositions DIAG + CROSS + COMPLEMENT, trivial-factor block identities CROSS = -2(1-a)(S_E+S_M) and COMPLEMENT = D_{2,E}+D_{2,M}-2a(S_E+S_M)-2a^3/p, and Schur complement inequalities."
+}

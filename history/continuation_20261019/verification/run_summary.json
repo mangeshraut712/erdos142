@@ -1,0 +1,10 @@
+[
+  {
+    "script": "verify_positive_density_branch_20261019.py",
+    "report": "POSITIVE_DENSITY_BRANCH_VERIFICATION_20261019.json",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 18022,
+    "scope": "finite envelope algebra; classical qualitative theorem explicitly external to verifier"
+  }
+]

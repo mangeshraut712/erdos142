@@ -1,0 +1,67 @@
+[
+  {
+    "script": "verify_boolean_occupancy_20261017.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 14041
+  },
+  {
+    "script": "verify_boolean_o2_diagnostics_20261017.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 3382
+  },
+  {
+    "script": "verify_o2_cubic_quantifiers_20261017.py",
+    "exit_code": 0,
+    "summary": {
+      "checks": 468,
+      "maximum_identity_error": 1.5265566588595902e-16,
+      "scope": "finite identities only; primes outside logarithmic target domain"
+    }
+  },
+  {
+    "script": "verify_finite_pattern_terminal_20261018.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 51971
+  },
+  {
+    "script": "verify_o2_cubic_audit_20261018.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 48
+  },
+  {
+    "script": "verify_weighted_completion_20261018.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": {
+      "exact_overlap_geometry_channel_pairs": 144,
+      "exact_diagonal_mean_and_collision_cases": 366,
+      "exact_projection_and_disjoint_energy_cases": 366,
+      "numerical_atomic_and_Gram_cases": 145,
+      "hosts": 4
+    }
+  },
+  {
+    "script": "verify_weighted_quartic_covariance_20261018.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 15102
+  },
+  {
+    "script": "verify_boolean_alteration_chirp_20261018.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 440,
+    "chirp_coefficients_evaluated": 16894167
+  },
+  {
+    "script": "verify_boolean_typical_alteration_20261018.py",
+    "exit_code": 0,
+    "matches_saved_report": true,
+    "checks": 525186,
+    "chirp_coefficients_evaluated": 707238
+  }
+]

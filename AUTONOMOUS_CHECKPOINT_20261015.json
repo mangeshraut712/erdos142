@@ -1,0 +1,101 @@
+{
+  "checkpoint_date": "2026-10-15",
+  "principal_status": "D",
+  "target": "r_4(N)=o(N/log N)",
+  "target_proved": false,
+  "execution_state": "stopped_after_saved_research_cycle",
+  "background_work_running": false,
+  "offline": true,
+  "current_proved_results": [
+    {
+      "id": "QL15",
+      "status": "PROVED",
+      "source": "QUADRATIC_LOCALIZATION_20261015.md",
+      "claim": "a<=3/4+20(2+log p)/(beta p^(1/6)) for a single quadratic interval host under Q1-Q4 conditions"
+    },
+    {
+      "id": "SP15",
+      "status": "PROVED",
+      "source": "RESIDUAL_FIELD_AUDIT_20261015.md",
+      "claim": "Actual AP-free sparse sets at a comparable to p^(-3/5) have diffuse completion pairing on every budget-sized packet",
+      "target_density_admissible": false
+    },
+    {
+      "id": "PC15",
+      "status": "PROVED",
+      "claim": "Conditional cap-to-packet amplification; existence is open"
+    },
+    {
+      "id": "DS15",
+      "status": "PROVED",
+      "claim": "Sufficient shell cutoff a^(-3/4)ell^(-5/2); shell existence is open"
+    }
+  ],
+  "open_dependencies": [
+    "thresholded pairing retention",
+    "packet existence in logarithmic-density admissible windows",
+    "Branch II cubic-field alternative",
+    "uniform proper-window branch errors",
+    "stable quadratic host intersections and a complete increment/loss ledger"
+  ],
+  "proof_audit": {
+    "new_results": "rederived with explicit diagonals, critical vertex and finite errors",
+    "full_historical_conditional_chain": "not completely re-audited this run"
+  },
+  "verification": {
+    "new_script_exit_code": 0,
+    "new_counts": {
+      "exact_prime_inputs": 13,
+      "exact_interval_tuple_cases": 56,
+      "exact_actual_APfree_completion_support": 875,
+      "floating_relative_pairing": 5250,
+      "floating_conditional_synthesis": 5250,
+      "floating_packet_implication": 9933,
+      "exact_exponent_identities": 4,
+      "floating_conditional_Gram_order": 1,
+      "floating_sparse_full_pairing": 3,
+      "exact_sparse_actual_APfree_examples": 3,
+      "exact_weighted_count_and_diagonal": 12,
+      "floating_Gauss_error_envelopes": 12,
+      "exact_weighted_APfree_hitting": 48,
+      "exact_finite_pattern_incidence": 5
+    },
+    "max_floating_errors": {
+      "floating_relative_pairing": 2.7756649216609493e-17,
+      "floating_conditional_synthesis": 5.47744707147829e-16,
+      "floating_sparse_full_pairing": 1.3952712800389927e-22
+    },
+    "legacy_scripts_passed": [
+      "verify_core.py",
+      "verify_residual_field_amplification_20261014.py",
+      "verify_quadratic_to_linear_transfer_20261014.py"
+    ],
+    "legacy_runs_overwrote_original_outputs": false
+  },
+  "quantitative_ledger": {
+    "target_density": "a=epsilon/log N",
+    "old_squared_signal": "a^4",
+    "SELECT_squared_threshold": "a^(5/2)ell(a)",
+    "remaining_signal_ratio": "a^(-3/2)ell(a)",
+    "capturing_packet_coefficient_bound": "theta^2 gamma^2 a^2/(s^2 w^2)",
+    "sufficient_packet_size": "theta gamma/(w sqrt(c))*a^(-1/4)ell(a)^(-1/2)",
+    "quadratic_terminal_error_at_beta_epsilon_over_log_p": "O_epsilon((log p)^2 p^(-1/6))",
+    "unconditional_increment": "not established",
+    "unconditional_cumulative_rank": "not established",
+    "unconditional_cumulative_window_loss": "not established"
+  },
+  "next_action": "Attack L1 in OPEN_LEMMAS.md using the logarithmic-density hypothesis; if no new inequality is obtained, attack weighted localization on a specified mixed host class (L3).",
+  "resume_prompt": "AUTONOMOUS_RESUME_PROMPT.md",
+  "verification_command": "python3 verify_residual_field_audit_20261015.py",
+  "history_directory": "history/audit_20261015_residual_field",
+  "file_sha256": {
+    "RESIDUAL_FIELD_AUDIT_20261015.md": "eba009b4cc3a41ae110a2290f5c1149555b13bc0eb59edfdb7593df5cd35447b",
+    "QUADRATIC_LOCALIZATION_20261015.md": "45d453550e97d3d2488b58b8339251e9db756a74b9a3817303d22a3a0b537d75",
+    "verify_residual_field_audit_20261015.py": "18ce293bd3573c5cc31ac7a96713b081ad784cab4e32e4f292a0c6ff7de1530e",
+    "RESIDUAL_FIELD_AUDIT_VERIFICATION_20261015.json": "f78abd3210a3fa9c673d812272fc5ffd85ea4b5edcde41ab1635ad3320aa3157",
+    "CURRENT_STATUS.md": "ecd335ef9fe0098dca6489981dff38d9b2f70abf871dfc4f81ba12a0cace81e7",
+    "OPEN_LEMMAS.md": "9bedd4af96de906617821357aa1612df6a3c56ac489035e8399bf54784bede02",
+    "NEXT_AUTONOMOUS_ACTION.md": "90e0795158da468727b6db42b764019a223c01e4a73380c72c481fb18e6fe123",
+    "AUTONOMOUS_RESUME_PROMPT.md": "5116a691834d8a4345bdf878cd1748e0d752328369988d5f0d1ec08bffc94592"
+  }
+}

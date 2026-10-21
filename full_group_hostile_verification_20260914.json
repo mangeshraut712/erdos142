@@ -1,0 +1,27 @@
+{
+  "command": "python3 verify_full_group_hostile_20260914.py",
+  "date": "2026-09-14",
+  "status": "passed",
+  "exact": {
+    "base_four_point_encodings": 1512,
+    "sparse_singleton_factors": 20,
+    "affine_pullbacks": 172,
+    "affine_cell_moments": 21,
+    "thinning_sets": 24,
+    "support_subsets": 40
+  },
+  "numerical_diagnostics": {
+    "fourier_energy_identities": 16,
+    "arc_coefficient_bounds": 10496,
+    "jackson_kernels": 4,
+    "smoothed_factor_checks": 3
+  },
+  "quadratic_examples_not_ap_free": [
+    {"p": 101, "size": 23, "contains_0_1_2_3": true},
+    {"p": 503, "size": 101, "contains_0_1_2_3": true},
+    {"p": 1009, "size": 159, "contains_0_1_2_3": true}
+  ],
+  "energy_theorem_proved": false,
+  "target_proved": false,
+  "notes": "Base-four encodings and rational identities are exact. Logarithmic rank comparisons and Fourier/kernel diagnostics use floating point. No asymptotic theorem is certified by these computations."
+}

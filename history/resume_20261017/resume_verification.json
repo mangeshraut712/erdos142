@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-17",
+  "script": "verify_weighted_pair_20261016.py",
+  "exit_code": 0,
+  "finite_checks": 28520,
+  "matches_saved_report": true,
+  "historical_output_preserved": true,
+  "source_sha256": {
+    "verify_weighted_pair_20261016.py": "7c24cf708ef14707ce9aebae767eb96bed74343f8b00f921de1172af4d7ba202",
+    "WEIGHTED_PAIR_REDUCTION_20261016.md": "4977ef97a49ea24b9325b66ab90e83b3a9c87b69b53a020462689fe68783f7fe",
+    "DIRECT_INCREMENT_TRADEOFF_20261016.md": "e30c57c67ddb0ddc013de4be9e39b44e146c9645631aff7f00ddbea4117079b6",
+    "GLOBAL_CHIRP_INVERSE_OBSTRUCTION_20261016.md": "775c26bbbeee5cbdc66f808a982553395f314177c2d40b00c61d29b180637c26",
+    "LOG_DENSITY_VERIFICATION_20261016.json": "5537d688b604ea49244de0ab2e2a409d78471d778f3db1bb5738aadf94d50831"
+  }
+}
