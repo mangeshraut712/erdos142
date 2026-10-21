@@ -1,7 +1,7 @@
 ## Publication additions — 21 October 2026; proofs dated 19 October
 
 **Outcome D; the local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN.**
-The current report is [O2_CONTINUATION_20261019.md](O2_CONTINUATION_20261019.md).
+The current report is [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md).
 The publication checkpoint is `AUTONOMOUS_CHECKPOINT_20261021.json`.
 Earlier proof and verification entries below remain dated historical records.
 
@@ -15,7 +15,7 @@ thinning, concentration of all quadratic phases, an explicit count
 bound, and deterministic brackets for the final density-dependent H.
 The leading count constant is `10201/24389<9/20`. The cubic residual
 and proper-host boundary errors are retained.
-[Complete proof](O2_COVARIANCE_ATTACK_20261019.md).
+[Complete proof](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 
 Both October 19 notes received independent mathematical audits. Finite
 checks validate only their stated finite identities and examples; the
@@ -36,7 +36,7 @@ Independent proof audit passed. The verifier passed 18,022 checks:
 17,986 exact rational and 36 floating log-parameter checks; isolated
 rerun matched its saved report. These are envelope checks, not finite
 field witnesses or a proof of the classical theorem.
-[Proof](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
+[Proof](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
 
 ---
 
@@ -77,7 +77,7 @@ search's3,382 checks are not a theorem or genuine P12 counterexample.
 
 > **17 October 2026 recovery:** The latest operative frontier is in
 > [CURRENT_STATUS.md](CURRENT_STATUS.md), [OPEN_LEMMAS.md](OPEN_LEMMAS.md),
-> and [RESUME_AUDIT_20261017.md](RESUME_AUDIT_20261017.md). The late-16-October
+> and [RESUME_AUDIT_20261017.md](docs/audits/RESUME_AUDIT_20261017.md). The late-16-October
 > pair theorem reduces the gap to R_3^F+R_4^F; DIRECT-Q-GAIN replaces the
 > stronger old threshold. The target remains OPEN. Earlier entries below
 > are historical and retain their original scope and later corrections.

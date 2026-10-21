@@ -1,7 +1,7 @@
 ## Publication update — 21 October 2026; mathematical frontier 19 October
 
 **Outcome D. The local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN.**
-The current report is [O2_CONTINUATION_20261019.md](O2_CONTINUATION_20261019.md);
+The current report is [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md);
 the publication checkpoint is `AUTONOMOUS_CHECKPOINT_20261021.json`.
 Earlier dated entries below are retained as history.
 
@@ -16,7 +16,7 @@ interval have `a~1/log p`, `delta=o(a^(3/2))`, original H and negligible
 diagonal, yet `R3+R4<=(-11/20+o(1))a^4wmu`. They deliberately contain
 `{0,1,2,3}`. Thus W8 without AP exclusion is REFUTED, while P12 on
 AP-free sets remains OPEN. The conditional iteration is unchanged.
-[Construction and proof](O2_COVARIANCE_ATTACK_20261019.md).
+[Construction and proof](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 
 Next: exploit pointwise `Bq_j=0` with the logarithmic-density/small-diagonal
 regime to prove W8, or establish the completion certificate and handle its
@@ -33,7 +33,7 @@ Combining with the classical qualitative four-term Szemerédi theorem
 excludes every positive-density eligible tail. DIRECT-Q-GAIN failure now
 requires a->0 with bounded delta/a^(3/2). This is a reduction, not the
 needed logarithmic-density rate. Source:
-[POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
+[POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
 
 ---
 
@@ -41,7 +41,7 @@ needed logarithmic-density rate. Source:
 
 **Outcome D; target OPEN.** This entry supersedes conflicting historical
 frontiers below; history is preserved verbatim. See
-[O2_CONTINUATION_20261018.md](O2_CONTINUATION_20261018.md).
+[O2_CONTINUATION_20261018.md](docs/audits/O2_CONTINUATION_20261018.md).
 
 The original weighted expansion and exact diagonal aw/p now reduce P12
 EXACTLY to W8: `E_F<=2U²+2R3+a^4wmu`, using the proved
@@ -69,7 +69,7 @@ Neither W8 nor completion-certificate existence has been proved.
 
 > **17 October 2026 recovery:** The latest operative frontier is in
 > [CURRENT_STATUS.md](CURRENT_STATUS.md), [OPEN_LEMMAS.md](OPEN_LEMMAS.md),
-> and [RESUME_AUDIT_20261017.md](RESUME_AUDIT_20261017.md). The late-16-October
+> and [RESUME_AUDIT_20261017.md](docs/audits/RESUME_AUDIT_20261017.md). The late-16-October
 > pair theorem reduces the gap to R_3^F+R_4^F; DIRECT-Q-GAIN replaces the
 > stronger old threshold. The target remains OPEN. Earlier entries below
 > are historical and retain their original scope and later corrections.

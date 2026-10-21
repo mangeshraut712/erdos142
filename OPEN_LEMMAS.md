@@ -3,7 +3,7 @@
 The target `r_4(N)=o(N/log N)` remains OPEN. Current outcome is D.
 The previous list is preserved in
 `history/publication_20261021/before_updates/OPEN_LEMMAS.md`.
-The mathematical frontier is [the October 19 continuation](O2_CONTINUATION_20261019.md);
+The mathematical frontier is [the October 19 continuation](docs/audits/O2_CONTINUATION_20261019.md);
 the publication state is `AUTONOMOUS_CHECKPOINT_20261021.json`.
 Terminal geometry, Boolean occupancy and the exact covariance identities
 are proved; the missing input is still arithmetic phase selection.

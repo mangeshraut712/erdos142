@@ -2,7 +2,7 @@
 
 **REFUTED: W8 from Booleanity, small individual chirps and a count deficit
 without actual AP exclusion.** The construction in
-[O2_COVARIANCE_ATTACK_20261019.md](O2_COVARIANCE_ATTACK_20261019.md)
+[O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md)
 has `a~1/log p`, `delta=o(a^(3/2))`, T5, an actual initial interval,
 original prescribed H, `pa^3mu->infinity`, and
 `R3+R4<=(-11/20+o(1))a^4wmu`. All exact Boolean identities hold.
@@ -29,7 +29,7 @@ explicit use of the classical qualitative four-term theorem. Thus do not
 continue searching that branch of DIRECT-Q-GAIN's general negation.
 The lower-density branch remains OPEN. Substituting a0=epsilon/log p into
 a theorem with an uncontrolled p0(a0) would be invalid and does not prove
-the target. [Proof](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
+the target. [Proof](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
 
 ---
 
@@ -74,7 +74,7 @@ Sources: O2_CONTINUATION_20261018.md and its linked complete notes.
 
 > **17 October 2026 recovery:** The latest operative frontier is in
 > [CURRENT_STATUS.md](CURRENT_STATUS.md), [OPEN_LEMMAS.md](OPEN_LEMMAS.md),
-> and [RESUME_AUDIT_20261017.md](RESUME_AUDIT_20261017.md). The late-16-October
+> and [RESUME_AUDIT_20261017.md](docs/audits/RESUME_AUDIT_20261017.md). The late-16-October
 > pair theorem reduces the gap to R_3^F+R_4^F; DIRECT-Q-GAIN replaces the
 > stronger old threshold. The target remains OPEN. Earlier entries below
 > are historical and retain their original scope and later corrections.

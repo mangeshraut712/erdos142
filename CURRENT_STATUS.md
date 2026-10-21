@@ -5,8 +5,8 @@
 No eligible P12 counterexample or unconditional selection theorem is claimed.
 
 Publication checkpoint: 21 October 2026; mathematical frontier: 19 October.
-The current account is [O2_CONTINUATION_20261019.md](O2_CONTINUATION_20261019.md).
-The exact restart state is [AUTONOMOUS_CHECKPOINT_20261021.json](AUTONOMOUS_CHECKPOINT_20261021.json).
+The current account is [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md).
+The exact restart state is [AUTONOMOUS_CHECKPOINT_20261021.json](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json).
 Earlier dated reports and checkpoints are preserved as research history.
 
 ## Positive-density reduction on 19 October
@@ -15,14 +15,14 @@ The positive-density failure branch is now ruled out uniformly on the
 whole T5 domain. The proof transfers the classical qualitative four-term
 Szemerédi theorem through the finite-pattern terminal estimate; that
 classical dependency is explicit and no quantitative rate is claimed.
-See [POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
+See [POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
 Failure of DIRECT-Q-GAIN is therefore equivalent to an eligible sequence
 with a tending to zero and bounded delta/a^(3/2). The logarithmic-density
 case remains OPEN. Its finite envelope verifier passed 18,022 checks.
 
 ## Covariance obstruction on 19 October: AP exclusion is essential
 
-[The Boolean block construction](O2_COVARIANCE_ATTACK_20261019.md) gives
+[The Boolean block construction](docs/audits/O2_COVARIANCE_ATTACK_20261019.md) gives
 actual sets on the initial interval with `a~1/log p`,
 `delta=o(a^(3/2))`, and
 `R3+R4<=(-11/20+o(1))a^4wmu`. It satisfies T5, the prescribed original
@@ -42,7 +42,7 @@ strength, with the original density and diagonal hypotheses.
   regime (M13). The general fixed-pattern ceiling is `(R-1)/(m-1)` when
   every AP-free subset of m slots has at most R elements; an elementary
   `R_4(12)=8` certificate gives 7/11. All finite errors and diagonals are
-  explicit in [FINITE_PATTERN_TERMINAL_20261018.md](FINITE_PATTERN_TERMINAL_20261018.md).
+  explicit in [FINITE_PATTERN_TERMINAL_20261018.md](docs/audits/FINITE_PATTERN_TERMINAL_20261018.md).
 - **PROVED:** The original weighted pair estimate is one-sided:
   `R_1^F=o(a^4wmu)` and `R_2^F>=-o(a^4wmu)` on reachable hosts.
   It is neither exact PSD nor an absolute smallness estimate.
@@ -50,17 +50,17 @@ strength, with the original density and diagonal hypotheses.
   `R_4^F=U^2-E_F(u)/2`, where `U=wa(1-a)` and E_F is the explicitly
   defined nonnegative shifted-chirp difference energy. The pairing
   baseline and quartic diagonal are accounted for exactly. See
-  [WEIGHTED_QUARTIC_COVARIANCE_20261018.md](WEIGHTED_QUARTIC_COVARIANCE_20261018.md).
+  [WEIGHTED_QUARTIC_COVARIANCE_20261018.md](docs/audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md).
 - **PROVED:** Four weighted completion channels give a hole projection,
   a disjoint-six-point lower bound `m^2/(1-a)-26m/p`, and a conditional
   atomic/relative-Gram certificate for sufficient correlation. Existence
   of that certificate and its low-completion alternative remain OPEN;
-  see [WEIGHTED_COMPLETION_CERTIFICATE_20261018.md](WEIGHTED_COMPLETION_CERTIFICATE_20261018.md).
+  see [WEIGHTED_COMPLETION_CERTIFICATE_20261018.md](docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md).
 - **PROVED DOMAIN SEPARATION:** For every fixed `1/3<theta<1/2`, actual
   Boolean cyclic AP-free sets exist with `a~p^-theta` and
   `delta/a^(3/2)->0`. This disproves extending phase selection to all
   densities, but these sets fail the target density range and diagonal
-  regime. See [BOOLEAN_TYPICAL_ALTERATION_20261018.md](BOOLEAN_TYPICAL_ALTERATION_20261018.md).
+  regime. See [BOOLEAN_TYPICAL_ALTERATION_20261018.md](docs/audits/BOOLEAN_TYPICAL_ALTERATION_20261018.md).
 - **PROVED CONDITIONAL IMPLICATION:** DIRECT-Q-GAIN still implies the
   target through the unchanged quarter-cell tradeoff
   `mu_C gamma>=kappa delta/(8a)`. Any uniform divergent multiplier above
@@ -99,7 +99,7 @@ DIRECT-Q-GAIN retains the exact domain
 
 The constants and divergent function must precede every eligible instance.
 Its general two-branch negation is proved in
-[O2_QUANTIFIERS_CUBIC_BOUND_20261017.md](O2_QUANTIFIERS_CUBIC_BOUND_20261017.md).
+[O2_QUANTIFIERS_CUBIC_BOUND_20261017.md](docs/audits/O2_QUANTIFIERS_CUBIC_BOUND_20261017.md).
 The October 19 reduction excludes the positive-density branch.
 All 76 finite diagnostic records fail the product budget and have
 prescribed H=0. Neither those records nor the sparse asymptotic

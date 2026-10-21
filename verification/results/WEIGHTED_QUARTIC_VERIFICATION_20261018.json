@@ -1,0 +1,433 @@
+{
+  "date": "2026-10-18",
+  "offline": true,
+  "target_proved": false,
+  "counts": {
+    "exact_chirp_orthogonality_branches": 3996,
+    "exact_mode_phase_absorption": 3996,
+    "floating_tent_real_nonnegative": 6,
+    "floating_probability_mass": 6,
+    "floating_centered_row_sum": 240,
+    "floating_shifted_energy_universal": 240,
+    "floating_individual_mode_covariance": 6480,
+    "floating_original_weight_covariance": 24,
+    "floating_nonnegative_defect_energy_identity": 24,
+    "floating_defect_bounds": 24,
+    "floating_Boolean_baseline": 60,
+    "floating_Q_energy_identity": 6
+  },
+  "total_checks": 15102,
+  "max_errors": {
+    "floating_tent_real_nonnegative": 0.0,
+    "floating_probability_mass": 3.3306690738754696e-16,
+    "floating_centered_row_sum": 4.551327307291793e-16,
+    "floating_shifted_energy_universal": 3.3306690738754696e-16,
+    "floating_individual_mode_covariance": 3.3306690738754696e-16,
+    "floating_original_weight_covariance": 1.1102230246251565e-16,
+    "floating_nonnegative_defect_energy_identity": 1.1060596882828122e-14,
+    "floating_Boolean_baseline": 5.928593550334434e-17,
+    "floating_Q_energy_identity": 2.2551405187698492e-17
+  },
+  "cases": [
+    {
+      "p": 5,
+      "H": 1,
+      "linear": [
+        1
+      ],
+      "quadratic": [],
+      "field": "constant",
+      "R4": 0.4,
+      "U2": 1.0,
+      "diagonal": 0.2,
+      "defect_energy": 1.2
+    },
+    {
+      "p": 5,
+      "H": 1,
+      "linear": [
+        1
+      ],
+      "quadratic": [],
+      "field": "point",
+      "R4": 0.04,
+      "U2": 0.04000000000000001,
+      "diagonal": 0.04,
+      "defect_energy": 0.0
+    },
+    {
+      "p": 5,
+      "H": 1,
+      "linear": [
+        1
+      ],
+      "quadratic": [],
+      "field": "real",
+      "R4": 0.039506207401913705,
+      "U2": 0.08810068722827827,
+      "diagonal": 0.03839994447937859,
+      "defect_energy": 0.09718895965272908
+    },
+    {
+      "p": 5,
+      "H": 1,
+      "linear": [
+        1
+      ],
+      "quadratic": [],
+      "field": "boolean_residual",
+      "R4": 0.0125,
+      "U2": 0.04000000000000001,
+      "diagonal": 0.01,
+      "defect_energy": 0.055000000000000014
+    },
+    {
+      "p": 7,
+      "H": 2,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          0
+        ]
+      ],
+      "field": "constant",
+      "R4": 0.2653061224489796,
+      "U2": 1.0,
+      "diagonal": 0.14285714285714285,
+      "defect_energy": 1.46938775510204
+    },
+    {
+      "p": 7,
+      "H": 2,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          0
+        ]
+      ],
+      "field": "point",
+      "R4": 0.02040816326530612,
+      "U2": 0.02040816326530612,
+      "diagonal": 0.02040816326530612,
+      "defect_energy": 0.0
+    },
+    {
+      "p": 7,
+      "H": 2,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          0
+        ]
+      ],
+      "field": "real",
+      "R4": 0.007307237494911006,
+      "U2": 0.028579462349183224,
+      "diagonal": 0.007733717712996995,
+      "defect_energy": 0.042544449708544436
+    },
+    {
+      "p": 7,
+      "H": 2,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          0
+        ]
+      ],
+      "field": "boolean_residual",
+      "R4": 0.009462221102432743,
+      "U2": 0.036281179138322,
+      "diagonal": 0.009070294784580499,
+      "defect_energy": 0.0536379160717785
+    },
+    {
+      "p": 11,
+      "H": 2,
+      "linear": [
+        1
+      ],
+      "quadratic": [
+        [
+          2,
+          3
+        ]
+      ],
+      "field": "constant",
+      "R4": 0.10192837465564737,
+      "U2": 1.0,
+      "diagonal": 0.09090909090909091,
+      "defect_energy": 1.7961432506887274
+    },
+    {
+      "p": 11,
+      "H": 2,
+      "linear": [
+        1
+      ],
+      "quadratic": [
+        [
+          2,
+          3
+        ]
+      ],
+      "field": "point",
+      "R4": 0.008264462809917356,
+      "U2": 0.008264462809917356,
+      "diagonal": 0.008264462809917356,
+      "defect_energy": 0.0
+    },
+    {
+      "p": 11,
+      "H": 2,
+      "linear": [
+        1
+      ],
+      "quadratic": [
+        [
+          2,
+          3
+        ]
+      ],
+      "field": "real",
+      "R4": 0.019348728777888766,
+      "U2": 0.12657988339364282,
+      "diagonal": 0.018739296144208814,
+      "defect_energy": 0.21446230923150886
+    },
+    {
+      "p": 11,
+      "H": 2,
+      "linear": [
+        1
+      ],
+      "quadratic": [
+        [
+          2,
+          3
+        ]
+      ],
+      "field": "boolean_residual",
+      "R4": 0.006176408470958915,
+      "U2": 0.019997959391898783,
+      "diagonal": 0.006189844573682959,
+      "defect_energy": 0.027643101841879774
+    },
+    {
+      "p": 7,
+      "H": 1,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "field": "constant",
+      "R4": 0.15816326530612246,
+      "U2": 1.0,
+      "diagonal": 0.14285714285714285,
+      "defect_energy": 1.683673469387754
+    },
+    {
+      "p": 7,
+      "H": 1,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "field": "point",
+      "R4": 0.02040816326530612,
+      "U2": 0.02040816326530612,
+      "diagonal": 0.02040816326530612,
+      "defect_energy": 0.0
+    },
+    {
+      "p": 7,
+      "H": 1,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "field": "real",
+      "R4": 0.011707020844222269,
+      "U2": 0.033194426816641094,
+      "diagonal": 0.011698476043574801,
+      "defect_energy": 0.04297481194483762
+    },
+    {
+      "p": 7,
+      "H": 1,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "field": "boolean_residual",
+      "R4": 0.008051658163265306,
+      "U2": 0.04591836734693877,
+      "diagonal": 0.007653061224489796,
+      "defect_energy": 0.07573341836734689
+    },
+    {
+      "p": 13,
+      "H": 3,
+      "linear": [],
+      "quadratic": [
+        [
+          2,
+          1
+        ]
+      ],
+      "field": "constant",
+      "R4": 0.1242603550295858,
+      "U2": 1.0,
+      "diagonal": 0.07692307692307693,
+      "defect_energy": 1.7514792899408307
+    },
+    {
+      "p": 13,
+      "H": 3,
+      "linear": [],
+      "quadratic": [
+        [
+          2,
+          1
+        ]
+      ],
+      "field": "point",
+      "R4": 0.005917159763313609,
+      "U2": 0.00591715976331361,
+      "diagonal": 0.00591715976331361,
+      "defect_energy": 0.0
+    },
+    {
+      "p": 13,
+      "H": 3,
+      "linear": [],
+      "quadratic": [
+        [
+          2,
+          1
+        ]
+      ],
+      "field": "real",
+      "R4": 0.009190408641416577,
+      "U2": 0.09380889360617548,
+      "diagonal": 0.009930843087572734,
+      "defect_energy": 0.16923696992951773
+    },
+    {
+      "p": 13,
+      "H": 3,
+      "linear": [],
+      "quadratic": [
+        [
+          2,
+          1
+        ]
+      ],
+      "field": "boolean_residual",
+      "R4": 0.004061538461538462,
+      "U2": 0.03408284023668638,
+      "diagonal": 0.003976331360946745,
+      "defect_energy": 0.06004260355029583
+    },
+    {
+      "p": 17,
+      "H": 2,
+      "linear": [
+        1,
+        2
+      ],
+      "quadratic": [],
+      "field": "constant",
+      "R4": 0.08496732026143791,
+      "U2": 1.0,
+      "diagonal": 0.058823529411764705,
+      "defect_energy": 1.830065359477124
+    },
+    {
+      "p": 17,
+      "H": 2,
+      "linear": [
+        1,
+        2
+      ],
+      "quadratic": [],
+      "field": "point",
+      "R4": 0.0034602076124567475,
+      "U2": 0.0034602076124567475,
+      "diagonal": 0.0034602076124567475,
+      "defect_energy": 0.0
+    },
+    {
+      "p": 17,
+      "H": 2,
+      "linear": [
+        1,
+        2
+      ],
+      "quadratic": [],
+      "field": "real",
+      "R4": 0.012070816340282876,
+      "U2": 0.15709615728691984,
+      "diagonal": 0.013998358358994992,
+      "defect_energy": 0.2900506818932739
+    },
+    {
+      "p": 17,
+      "H": 2,
+      "linear": [
+        1,
+        2
+      ],
+      "quadratic": [],
+      "field": "boolean_residual",
+      "R4": 0.0032062337124446035,
+      "U2": 0.03611719661759587,
+      "diagonal": 0.0028443946054150598,
+      "defect_energy": 0.06582192581030252
+    }
+  ],
+  "scope": [
+    "Modular branch and phase identities checked exactly.",
+    "Fourier and weighted covariance identities checked in floating arithmetic.",
+    "All finite primes are outside the target product-budget domain.",
+    "No sign, phase selection, P12, or asymptotic target is proved computationally."
+  ],
+  "source_sha256": {
+    "verification/scripts/verify_weighted_quartic_covariance_20261018.py": "c9f531d20df53e428a8465ac2ff0c63090881f161968f48a979a5a9bbc88f3cc",
+    "docs/audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md": "0032257a1377f8692609e488cb8cb5b90e43898a7fea29da1afaf1c4fa16d77f",
+    "docs/audits/WEIGHTED_PAIR_REDUCTION_20261016.md": "4977ef97a49ea24b9325b66ab90e83b3a9c87b69b53a020462689fe68783f7fe",
+    "docs/audits/O2_QUANTIFIERS_CUBIC_BOUND_20261017.md": "93985c90712ad13b5fa1ab7d8b6eb6d02a3e5a6a0761c2bd8a117008b9086892"
+  }
+}

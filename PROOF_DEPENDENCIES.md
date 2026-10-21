@@ -1,6 +1,6 @@
 ## Publication dependency update — 21 October 2026
 
-Mathematical frontier: [19 October](O2_CONTINUATION_20261019.md).
+Mathematical frontier: [19 October](docs/audits/O2_CONTINUATION_20261019.md).
 The local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN. Publication state:
 `AUTONOMOUS_CHECKPOINT_20261021.json`. Historical graphs below retain their
 dated claims and corrections.
@@ -14,8 +14,8 @@ dated claims and corrections.
 | W8 / P12 on eligible AP-free sets | OPEN | WQ18 proves equivalence only; C19 is not an eligible counterexample |
 | Completion route | OPEN existence and small/zero-mean branch | WC18 proves pointwise `Bq_j=0`, projection, disjoint energy and a conditional certificate; no unconditional selection edge |
 
-Sources: [PD19](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) and
-[C19](O2_COVARIANCE_ATTACK_20261019.md). There is no proved implication
+Sources: [PD19](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) and
+[C19](docs/audits/O2_COVARIANCE_ATTACK_20261019.md). There is no proved implication
 from Booleanity, a small individual chirp cap and a reduced weighted count
 to W8. The new obstruction requires stronger use of actual AP exclusion.
 
@@ -28,7 +28,7 @@ qualitative four-term Szemerédi theorem (explicit established input,
 not reproved here) -> uniform vanishing of eligible relative density ->
 exclusion of the positive-density QC17 failure branch.
 The remaining a->0 branch, W8, and the target remain OPEN.
-[Complete proof and finite errors](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
+[Complete proof and finite errors](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
 
 ---
 
@@ -59,7 +59,7 @@ no unconditional replacement premise was silently inserted.
 
 > **17 October 2026 recovery:** The latest operative frontier is in
 > [CURRENT_STATUS.md](CURRENT_STATUS.md), [OPEN_LEMMAS.md](OPEN_LEMMAS.md),
-> and [RESUME_AUDIT_20261017.md](RESUME_AUDIT_20261017.md). The late-16-October
+> and [RESUME_AUDIT_20261017.md](docs/audits/RESUME_AUDIT_20261017.md). The late-16-October
 > pair theorem reduces the gap to R_3^F+R_4^F; DIRECT-Q-GAIN replaces the
 > stronger old threshold. The target remains OPEN. Earlier entries below
 > are historical and retain their original scope and later corrections.

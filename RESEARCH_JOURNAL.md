@@ -11,7 +11,7 @@ new verifier run. Outcome remains D and the local target remains OPEN.
 ## 19 October 2026 — Logarithmic-density obstruction without AP exclusion
 
 Completed and independently audited the construction in
-[O2_COVARIANCE_ATTACK_20261019.md](O2_COVARIANCE_ATTACK_20261019.md).
+[O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 Random translations of a cyclic AP-free mask modulo 101 in about
 `(log p)^(5/2)` blocks, followed by independent thinning, yield actual
 Boolean sets with `a~1/log p` and all quadratic correlations

@@ -13,11 +13,10 @@ Use Python **3.10 or newer**. Several later scripts use `int.bit_count()`,
 so the original Python 3.9 metadata does not describe the requirements of
 the entire research collection.
 
-The September checkers in `verification/scripts/` use the standard
-library. Several later checkers at the repository root use **NumPy** for
-Fourier calculations and numerical linear algebra. **SciPy** is used by
-the `discover_*.py` exploration scripts, not by the verification suites
-listed below.
+The original September checkers use the standard library. Several later
+checkers in `verification/scripts/` use **NumPy** for Fourier calculations
+and numerical linear algebra. **SciPy** is used by the `discover_*.py`
+exploration scripts, not by the verification suites listed below.
 
 For a separate environment on macOS or Linux:
 
@@ -66,15 +65,14 @@ certifies only those finite and repository checks.
 
 ## Start with the standard-library checks
 
-Run commands **from the repository root**. The public layout retains
-the original September checkers under `verification/scripts/`; dated
-continuation scripts remain at the root.
+Run commands **from the repository root**. Verifiers are organized under
+`verification/scripts/`.
 
 ```bash
 python verification/scripts/verify_core.py
-python verify_boolean_occupancy_20261017.py
-python verify_finite_pattern_terminal_20261018.py
-python verify_positive_density_branch_20261019.py
+python verification/scripts/verify_boolean_occupancy_20261017.py
+python verification/scripts/verify_finite_pattern_terminal_20261018.py
+python verification/scripts/verify_positive_density_branch_20261019.py
 ```
 
 These commands respectively check the original finite algebra, Boolean
@@ -91,9 +89,6 @@ for script in verification/scripts/verify_*.py; do
 done
 ```
 
-This loop covers the scripts in that directory only. It does not include
-the later root-level suites.
-
 ## Choose a suite for the claim being checked
 
 The following are entry points, not a claim that every archived
@@ -102,19 +97,19 @@ experiment must be rerun together.
 | Topic | Command from the repository root | Extra dependency |
 |---|---|---|
 | Original finite algebra | `python verification/scripts/verify_core.py` | None |
-| Mixed-window degree and terminal estimates | `python verify_log_density_attack_20261016.py` | NumPy |
-| Weighted pair near-positivity | `python verify_weighted_pair_20261016.py` | NumPy |
-| Boolean occupancy and the earlier 2/3 ceiling | `python verify_boolean_occupancy_20261017.py` | None |
-| Selection quantifiers and cubic identities | `python verify_o2_cubic_quantifiers_20261017.py` | NumPy |
-| Finite AP-free diagnostic examples | `python verify_boolean_o2_diagnostics_20261017.py` | NumPy |
-| Twelve-slot / 7/11 terminal ceiling | `python verify_finite_pattern_terminal_20261018.py` | None |
-| Cubic-bound audit | `python verify_o2_cubic_audit_20261018.py` | NumPy |
-| Exact shifted-chirp covariance identity | `python verify_weighted_quartic_covariance_20261018.py` | NumPy |
-| Four weighted completion channels | `python verify_weighted_completion_20261018.py` | NumPy |
-| Elementary sparse alteration construction | `python verify_boolean_alteration_chirp_20261018.py` | NumPy |
-| Typical-event alteration construction | `python verify_boolean_typical_alteration_20261018.py` | NumPy |
-| Covariance obstruction: finite mask, tent, and count checks | `python verify_o2_covariance_attack_20261019.py` | None |
-| Positive-density branch elimination: finite estimates | `python verify_positive_density_branch_20261019.py` | None |
+| Mixed-window degree and terminal estimates | `python verification/scripts/verify_log_density_attack_20261016.py` | NumPy |
+| Weighted pair near-positivity | `python verification/scripts/verify_weighted_pair_20261016.py` | NumPy |
+| Boolean occupancy and the earlier 2/3 ceiling | `python verification/scripts/verify_boolean_occupancy_20261017.py` | None |
+| Selection quantifiers and cubic identities | `python verification/scripts/verify_o2_cubic_quantifiers_20261017.py` | NumPy |
+| Finite AP-free diagnostic examples | `python verification/scripts/verify_boolean_o2_diagnostics_20261017.py` | NumPy |
+| Twelve-slot / 7/11 terminal ceiling | `python verification/scripts/verify_finite_pattern_terminal_20261018.py` | None |
+| Cubic-bound audit | `python verification/scripts/verify_o2_cubic_audit_20261018.py` | NumPy |
+| Exact shifted-chirp covariance identity | `python verification/scripts/verify_weighted_quartic_covariance_20261018.py` | NumPy |
+| Four weighted completion channels | `python verification/scripts/verify_weighted_completion_20261018.py` | NumPy |
+| Elementary sparse alteration construction | `python verification/scripts/verify_boolean_alteration_chirp_20261018.py` | NumPy |
+| Typical-event alteration construction | `python verification/scripts/verify_boolean_typical_alteration_20261018.py` | NumPy |
+| Covariance obstruction: finite mask, tent, and count checks | `python verification/scripts/verify_o2_covariance_attack_20261019.py` | None |
+| Positive-density branch elimination: finite estimates | `python verification/scripts/verify_positive_density_branch_20261019.py` | None |
 
 Read the associated dated Markdown note before interpreting a report.
 The mathematical statements have hypotheses that are not automatically

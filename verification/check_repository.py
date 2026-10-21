@@ -16,12 +16,13 @@ def main():
     scripts = sorted(set(ROOT.glob("*.py")) | set((ROOT / "verification").rglob("*.py")))
     for script in scripts:
         ast.parse(script.read_text(), filename=str(script.relative_to(ROOT)))
-    reports = sorted(set(ROOT.glob("*.json")) | set((ROOT / "history").rglob("*.json"))
+    reports = sorted(set(ROOT.glob("*.json")) | set((ROOT / "checkpoints").rglob("*.json"))
+                     | set((ROOT / "history").rglob("*.json"))
                      | set((ROOT / "verification").rglob("*.json")))
     for report in reports:
         json.loads(report.read_text())
     navigation = ["README.md", "CURRENT_STATUS.md", "OPEN_LEMMAS.md", "VERIFYING.md",
-                  "NEXT_AUTONOMOUS_ACTION.md", "O2_CONTINUATION_20261019.md",
+                  "NEXT_AUTONOMOUS_ACTION.md", "docs/audits/O2_CONTINUATION_20261019.md",
                   "docs/README.md", "docs/PROGRESS.md", "docs/ROADMAP.md"]
     links = 0
     for name in navigation:
@@ -33,7 +34,7 @@ def main():
             if relative:
                 assert (source.parent / relative).exists(), f"Broken link in {name}: {target}"
                 links += 1
-    checkpoint_path = sorted(ROOT.glob("AUTONOMOUS_CHECKPOINT_*.json"))[-1]
+    checkpoint_path = sorted((ROOT / "checkpoints").glob("AUTONOMOUS_CHECKPOINT_*.json"))[-1]
     checkpoint = json.loads(checkpoint_path.read_text())
     assert checkpoint["target_proved"] is False, "The current research target is still open."
     hashes = checkpoint["file_sha256"]

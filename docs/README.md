@@ -11,21 +11,22 @@ was integrated on 21 October 2026.
 |---|---|
 | [Repository overview](../README.md) | Current results, limits, and quickstart |
 | [Current status](../CURRENT_STATUS.md) | Authoritative current research status |
-| [October 19 report](../O2_CONTINUATION_20261019.md) | Positive-density reduction and covariance obstruction |
+| [October 19 report](audits/O2_CONTINUATION_20261019.md) | Positive-density reduction and covariance obstruction |
 | [Progress](PROGRESS.md) | Current proved, conditional, and open statements |
 | [Roadmap](ROADMAP.md) | Concrete next mathematical tasks |
 | [Open lemmas](../OPEN_LEMMAS.md) | Full quantifiers and remaining gaps |
 | [Proof dependencies](../PROOF_DEPENDENCIES.md) | Dependencies and external classical input |
 | [Verification guide](../VERIFYING.md) | Reproduce finite checks without changing saved reports |
-| [Latest checkpoint](../AUTONOMOUS_CHECKPOINT_20261021.json) | Status and source hashes |
+| [Latest checkpoint](../checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json) | Status and source hashes |
 | [Official problem](literature/OFFICIAL_142.md) | Distinction between official #142 and the local target |
 | [Attribution](PRIORITY_AND_ATTRIBUTION.md) | Author of record and citation |
 
 ## Historical material
 
-The [September audits](audits/) preserve the original research route.
-Dated October notes and checkers remain at the repository root to preserve
-cross-references and recorded hashes. [History](../history/) contains
+The [research audits](audits/) preserve the complete chronological route from
+September and October. Finite verifiers are organized under
+`verification/scripts/` with captured evidence under `verification/results/`.
+Checkpoints are organized under `checkpoints/`. [History](../history/) contains
 previous navigation states and verification captures; those states describe
 their own dates, not the current frontier.
 

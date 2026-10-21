@@ -16,7 +16,7 @@ is a related, weaker question.
 By [Mangesh Raut](https://github.com/mangeshraut712). Research through
 **19 October 2026**; repository integration **21 October 2026**.
 
-[Current status](CURRENT_STATUS.md) · [Latest research report](O2_CONTINUATION_20261019.md) ·
+[Current status](CURRENT_STATUS.md) · [Latest research report](docs/audits/O2_CONTINUATION_20261019.md) ·
 [Proof dependencies](PROOF_DEPENDENCIES.md) · [Reproduce checks](VERIFYING.md) ·
 [Next steps](docs/ROADMAP.md)
 
@@ -24,12 +24,12 @@ By [Mangesh Raut](https://github.com/mangeshraut712). Research through
 
 | Result in the notes | What it establishes | Limit |
 |---|---|---|
-| [Positive-density branch reduction](POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) | Eligible failure sequences must have density tending to zero | Uses classical qualitative four-term Szemerédi; no quantitative rate |
-| [Covariance obstruction](O2_COVARIANCE_ATTACK_20261019.md) | Booleanity and small quadratic phases alone do not force the desired energy bound at logarithmic density | Constructed sets contain a 4-AP; this does **not** refute P12 |
-| [Exact quartic identity](WEIGHTED_QUARTIC_COVARIANCE_20261018.md) | Rewrites P12 as the precise energy inequality W8 | The required upper bound remains open |
-| [Finite-pattern terminal bound](FINITE_PATTERN_TERMINAL_20261018.md) | A 7/11 asymptotic density ceiling under the stated M13 hypotheses | A partial terminal result, not the target bound |
-| [Weighted completion certificate](WEIGHTED_COMPLETION_CERTIFICATE_20261018.md) | A sufficient phase-selection certificate when its conditions hold | Certificate existence and the low-mean branch remain open |
-| [Sparse Boolean construction](BOOLEAN_TYPICAL_ALTERATION_20261018.md) | AP-free sets with small quadratic correlation at polynomially small density | Outside the logarithmic-density and negligible-diagonal regime |
+| [Positive-density branch reduction](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) | Eligible failure sequences must have density tending to zero | Uses classical qualitative four-term Szemerédi; no quantitative rate |
+| [Covariance obstruction](docs/audits/O2_COVARIANCE_ATTACK_20261019.md) | Booleanity and small quadratic phases alone do not force the desired energy bound at logarithmic density | Constructed sets contain a 4-AP; this does **not** refute P12 |
+| [Exact quartic identity](docs/audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md) | Rewrites P12 as the precise energy inequality W8 | The required upper bound remains open |
+| [Finite-pattern terminal bound](docs/audits/FINITE_PATTERN_TERMINAL_20261018.md) | A 7/11 asymptotic density ceiling under the stated M13 hypotheses | A partial terminal result, not the target bound |
+| [Weighted completion certificate](docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md) | A sufficient phase-selection certificate when its conditions hold | Certificate existence and the low-mean branch remain open |
+| [Sparse Boolean construction](docs/audits/BOOLEAN_TYPICAL_ALTERATION_20261018.md) | AP-free sets with small quadratic correlation at polynomially small density | Outside the logarithmic-density and negligible-diagonal regime |
 
 These are claims with written proofs and finite audits, not a formal proof
 of the research target. Read each statement's hypotheses before reusing it.
@@ -69,16 +69,16 @@ for exact versus floating checks, optional SciPy searches, and limitations.
 
 ## Reading and repository map
 
-- [Latest report](O2_CONTINUATION_20261019.md): the two new results and the remaining task.
+- [Latest report](docs/audits/O2_CONTINUATION_20261019.md): the two new results and the remaining task.
 - [Current status](CURRENT_STATUS.md), [theorem ledger](VERIFIED_THEOREMS.md),
   and [failed approaches](FAILED_APPROACHES.md): claims and their boundaries.
 - [Documentation index](docs/README.md), [progress](docs/PROGRESS.md),
   and [roadmap](docs/ROADMAP.md): entry points for contributors.
-- [Latest checkpoint](AUTONOMOUS_CHECKPOINT_20261021.json): current status and source hashes.
-- Root dated Markdown, Python, and JSON files: October continuations.
-- [docs/audits/](docs/audits/): original September notes;
-  [verification/scripts/](verification/scripts/) and
-  [verification/results/](verification/results/): their checkers and captures.
+- [Latest checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json): current status and source hashes.
+- [checkpoints/](checkpoints/): current and historical autonomous research checkpoints.
+- [docs/audits/](docs/audits/): chronological research audits and continuation reports from September and October.
+- [verification/scripts/](verification/scripts/) and
+  [verification/results/](verification/results/): verifier suites, discovery checkers, and captured JSON evidence.
 - [history/](history/): previous checkpoints, navigation snapshots, and rerun evidence.
 
 The [September status card](docs/status.html) and its

@@ -16,25 +16,25 @@ settle [official #142](literature/OFFICIAL_142.md).
    four-term Szemerédi, show that every eligible failure sequence has
    `a -> 0`. This is a qualitative reduction; the density threshold cannot
    be varied with the prime to obtain the target rate.
-   [Proof and scope](../POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
+   [Proof and scope](audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md).
 2. **A weakened covariance claim is obstructed at logarithmic density.**
    The block-mask construction has `a ~ 1/log p`, small quadratic phases,
    and `R3+R4 < -a^4 w mu/2` with the original weight. It deliberately
    contains `{0,1,2,3}`. Thus it does not satisfy AP exclusion and does not
-   refute P12. [Proof and scope](../O2_COVARIANCE_ATTACK_20261019.md).
+   refute P12. [Proof and scope](audits/O2_COVARIANCE_ATTACK_20261019.md).
 
-The [October 19 report](../O2_CONTINUATION_20261019.md) explains how these
+The [October 19 report](audits/O2_CONTINUATION_20261019.md) explains how these
 results constrain the next attempt.
 
 ## Supporting results
 
-- [Fixed-pattern terminal theorem](../FINITE_PATTERN_TERMINAL_20261018.md):
+- [Fixed-pattern terminal theorem](audits/FINITE_PATTERN_TERMINAL_20261018.md):
   the twelve-slot certificate yields a 7/11 ceiling under original M13.
-- [Quartic covariance identity](../WEIGHTED_QUARTIC_COVARIANCE_20261018.md):
+- [Quartic covariance identity](audits/WEIGHTED_QUARTIC_COVARIANCE_20261018.md):
   `R4=U^2-E_F/2` exactly, including the centered diagonal corrections.
-- [Weighted completion theorem](../WEIGHTED_COMPLETION_CERTIFICATE_20261018.md):
+- [Weighted completion theorem](audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md):
   exact projections, collision estimates, and a conditional phase certificate.
-- [Sparse alteration theorem](../BOOLEAN_TYPICAL_ALTERATION_20261018.md):
+- [Sparse alteration theorem](audits/BOOLEAN_TYPICAL_ALTERATION_20261018.md):
   actual AP-free Boolean examples with `delta/a^(3/2) -> 0` for
   `a ~ p^-theta`, `1/3 < theta < 1/2`. These fail the target density and
   diagonal requirements.
@@ -59,7 +59,7 @@ See [OPEN_LEMMAS.md](../OPEN_LEMMAS.md) for quantifiers and
 The [verification guide](../VERIFYING.md) separates exact finite checks,
 floating diagnostics, probabilistic proofs, and the classical theorem
 used in the qualitative reduction. Passing checks does not close the gap.
-The [latest checkpoint](../AUTONOMOUS_CHECKPOINT_20261021.json) binds the
+The [latest checkpoint](../checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json) binds the
 current files to their hashes. Earlier September energy formulations and
 refuted shortcuts remain in [audits](audits/) and
 [the failed-approach ledger](../FAILED_APPROACHES.md).

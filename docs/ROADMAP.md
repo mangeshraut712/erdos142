@@ -4,7 +4,7 @@
 # Research roadmap
 
 The local target remains open. Start with the
-[October 19 report](../O2_CONTINUATION_20261019.md) and the exact
+[October 19 report](audits/O2_CONTINUATION_20261019.md) and the exact
 [open-lemma statements](../OPEN_LEMMAS.md).
 
 ## 1. Use pointwise AP exclusion in the covariance bound
@@ -18,14 +18,14 @@ negligible-diagonal condition.
 
 ## 2. Complete a direct phase-selection route
 
-The [weighted completion certificate](../WEIGHTED_COMPLETION_CERTIFICATE_20261018.md)
+The [weighted completion certificate](audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md)
 is sufficient when its positive-mean hypotheses hold. Prove existence
 with the stated norm bounds, and handle the small/zero completion-mean
 branch. A conditional certificate alone is not DIRECT-Q-GAIN.
 
 ## 3. Keep the quantitative domain intact
 
-The [positive-density reduction](../POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md)
+The [positive-density reduction](audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md)
 leaves only `a -> 0` failure sequences. Retain T5, the original weight,
 the logarithmic density lower bound, and the exact diagonals. Do not use
 an uncontrolled qualitative threshold as a quantitative rate. Small-prime

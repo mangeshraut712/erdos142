@@ -15,17 +15,17 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT = [
-    "verify_boolean_occupancy_20261017.py",
-    "verify_boolean_o2_diagnostics_20261017.py",
-    "verify_o2_cubic_quantifiers_20261017.py",
-    "verify_finite_pattern_terminal_20261018.py",
-    "verify_o2_cubic_audit_20261018.py",
-    "verify_weighted_completion_20261018.py",
-    "verify_weighted_quartic_covariance_20261018.py",
-    "verify_boolean_alteration_chirp_20261018.py",
-    "verify_boolean_typical_alteration_20261018.py",
-    "verify_positive_density_branch_20261019.py",
-    "verify_o2_covariance_attack_20261019.py",
+    "verification/scripts/verify_boolean_occupancy_20261017.py",
+    "verification/scripts/verify_boolean_o2_diagnostics_20261017.py",
+    "verification/scripts/verify_o2_cubic_quantifiers_20261017.py",
+    "verification/scripts/verify_finite_pattern_terminal_20261018.py",
+    "verification/scripts/verify_o2_cubic_audit_20261018.py",
+    "verification/scripts/verify_weighted_completion_20261018.py",
+    "verification/scripts/verify_weighted_quartic_covariance_20261018.py",
+    "verification/scripts/verify_boolean_alteration_chirp_20261018.py",
+    "verification/scripts/verify_boolean_typical_alteration_20261018.py",
+    "verification/scripts/verify_positive_density_branch_20261019.py",
+    "verification/scripts/verify_o2_covariance_attack_20261019.py",
 ]
 LEGACY = [
     f"verification/scripts/{name}.py"

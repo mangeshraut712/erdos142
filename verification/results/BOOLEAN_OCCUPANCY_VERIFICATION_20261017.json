@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-17",
+  "offline": true,
+  "target_proved": false,
+  "counts": {
+    "exact_Boolean_square": 1280,
+    "exact_pointwise_Q": 320,
+    "exact_pointwise_expansion": 320,
+    "exact_missing_edge_occupancy": 300,
+    "exact_occupancy_slack": 300,
+    "exact_two_thirds_law_mass": 1,
+    "exact_two_thirds_marginal": 4,
+    "exact_two_thirds_pair": 6,
+    "exact_two_thirds_residuals": 1,
+    "exact_lower_moment_law_probability": 20,
+    "exact_lower_moment_law_AP_exclusion": 20,
+    "exact_lower_moment_law_moment": 300,
+    "exact_lower_moment_law_quartic": 20,
+    "exact_host_count": 587,
+    "exact_APfree_diagonal": 587,
+    "exact_host_residual_expansion": 2935,
+    "exact_host_Boolean_square": 587,
+    "exact_host_Q_identity": 587,
+    "exact_host_missing_edge_inequality": 587,
+    "exact_host_occupancy_slack": 587,
+    "exact_R1_diagonal": 587,
+    "exact_R2_diagonal": 587,
+    "exact_R3_diagonal": 587,
+    "exact_R4_diagonal": 587,
+    "exact_finite_terminal_polynomial": 582,
+    "floating_first_residual_envelope": 582,
+    "floating_pair_residual_envelope": 582,
+    "floating_explicit_terminal_envelope": 582,
+    "exact_finite_two_thirds_bound": 16
+  },
+  "total_checks": 14041,
+  "cases": [
+    {
+      "p": 7,
+      "H": 2,
+      "linear": [
+        [
+          1,
+          0,
+          7
+        ]
+      ],
+      "quadratic": [],
+      "n": 7,
+      "T": "3/7",
+      "mu": "3/7",
+      "APfree_cases": 78
+    },
+    {
+      "p": 11,
+      "H": 3,
+      "linear": [
+        [
+          1,
+          8,
+          7
+        ]
+      ],
+      "quadratic": [],
+      "n": 7,
+      "T": "14/121",
+      "mu": "4/11",
+      "APfree_cases": 99
+    },
+    {
+      "p": 11,
+      "H": 3,
+      "linear": [
+        [
+          1,
+          0,
+          10
+        ]
+      ],
+      "quadratic": [
+        [
+          1,
+          1,
+          0,
+          0,
+          8
+        ]
+      ],
+      "n": 7,
+      "T": "475/7744",
+      "mu": "64/1331",
+      "APfree_cases": 103
+    },
+    {
+      "p": 13,
+      "H": 4,
+      "linear": [],
+      "quadratic": [
+        [
+          1,
+          0,
+          0,
+          11,
+          8
+        ]
+      ],
+      "n": 9,
+      "T": "27/325",
+      "mu": "25/169",
+      "APfree_cases": 299
+    },
+    {
+      "p": 7,
+      "H": 2,
+      "linear": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "quadratic": [],
+      "n": 3,
+      "T": "3/49",
+      "mu": "3/7",
+      "APfree_cases": 8
+    }
+  ],
+  "scope": [
+    "Boolean and physical progression identities are exact rational.",
+    "Square-root error envelopes use floating arithmetic.",
+    "The abstract probability laws are not arithmetic AP-free constructions.",
+    "The asymptotic 2/3 terminal bound follows from the proof, not finite extrapolation.",
+    "No phase selection or P12 claim is proved."
+  ],
+  "source_sha256": {
+    "docs/audits/BOOLEAN_OCCUPANCY_TERMINAL_20261017.md": "03944223868e614064885b82daede99c66bbc6a1f59cee93a9822f8b49aba542",
+    "verification/scripts/verify_boolean_occupancy_20261017.py": "3452188f7cf65878175295990305340a53cd6c4a544ad69e40ab8ab8b871042d",
+    "docs/audits/MIXED_QUADRATIC_TERMINAL_20261016.md": "2f34912dd3c66ac6ccd87713eac0fd0e8d040bcb7cb0e1ff588af5046a27c938",
+    "docs/audits/WEIGHTED_PAIR_REDUCTION_20261016.md": "4977ef97a49ea24b9325b66ab90e83b3a9c87b69b53a020462689fe68783f7fe"
+  }
+}
