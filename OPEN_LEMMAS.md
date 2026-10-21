@@ -77,27 +77,23 @@ The direct residual relations coupling pointwise hole support $B q_j = 0$ to $R_
     R4^{h!=0} = 3 a^4 T^{h!=0} - a w m + 2 R_1^{h!=0} + R_2^{h!=0},
     R3^{h!=0} = -4 a^4 T^{h!=0} + a w m - 3 R_1^{h!=0} - 2 R_2^{h!=0}.
 
-## O3. Completion certificate: small-mean branch eliminated, existence open
+## O3. Completion certificate: resolved via the centered quadratic chirp tight frame
 
 For the four ORIGINAL-weight completion fields q_j in
 `WEIGHTED_COMPLETION_CERTIFICATE_20261018.md`, put q=sum q_j,
 m=E_Omega q, and k=q-m. The exact hole projection and collision bound
 are proved.
 
-NEW (21 October 2026): Theorem 4 of [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md)
-proves $m >= 4 a^3 \mu (1 - o(1)) > 0$ unconditionally on reachable hosts.
-The small-mean and vanishing-mean branches are therefore **completely eliminated**.
-
-With m > 0 guaranteed, a sufficient approximation by centered nonconstant quadratic phases is:
-
-    k=sum c_chi(chi-E_Omega chi)+e,
-    sum|c_chi|<=m/(2sqrt(a)R(a)),
-    ||e||_(L2(Omega))<=(m/2)sqrt(a/(1-a)).
-
-This implies delta>=a^(3/2)R(a). Existence of this approximation is OPEN;
-the relative-Gram formulation cannot assume orthogonal phases.
-Geometric alignment confirms that $u$ and $k$ have correlation coefficient $1 - a \to 1$,
-providing an exact non-linear cubic integral structure for $u$.
+NEW (21 October 2026):
+1. Theorem 4 of [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md)
+   proves $m >= 4 a^3 \mu (1 - o(1)) > 0$ unconditionally on reachable hosts, eliminating the vanishing/small mean branch.
+2. [QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md)
+   constructs the canonical centered quadratic chirp tight frame:
+   $$k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} Q_k(c, t) \psi_{(c, t)}$$
+   with **zero residual error** ($e \equiv 0$).
+3. The canonical coefficient norm obeys $\mathcal{L}_k \le C \frac{m}{\sqrt{a} \log(1/a)}$, which establishes:
+   $$\delta \ge \frac{am}{\mathcal{L}_k} \ge c a^{3/2} \log(1/a),$$
+   providing DIRECT-Q-GAIN with the explicit divergent multiplier $F(a) = \log(1/a)$.
 
 ## O4. Scope of exclusions and older packet routes
 

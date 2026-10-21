@@ -27,6 +27,7 @@ CURRENT = [
     "verification/scripts/verify_positive_density_branch_20261019.py",
     "verification/scripts/verify_o2_covariance_attack_20261019.py",
     "verification/scripts/verify_completion_energy_resolution_20261021.py",
+    "verification/scripts/verify_quadratic_frame_certificate_20261021.py",
 ]
 LEGACY = [
     f"verification/scripts/{name}.py"

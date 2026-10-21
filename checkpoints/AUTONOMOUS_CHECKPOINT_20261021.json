@@ -11,7 +11,7 @@
   "background_work_running": false,
   "execution_state": "verified_publication_checkpoint",
   "supersedes_for_navigation": "checkpoints/AUTONOMOUS_CHECKPOINT_20261019.json",
-  "report": "docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md",
+  "report": "docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md",
   "proved_results": [
     {
       "id": "BO17",
@@ -65,6 +65,13 @@
       "claim": "Exact cyclic AP-free chirp energy identity, dual completion-residual relations, structural impossibility of W8/P12 across all branches, and unconditional completion-mean positivity m >= 4 a^3 mu",
       "W8_refuted_as_direct_lemma": true,
       "small_mean_branch_eliminated": true
+    },
+    {
+      "id": "QF21",
+      "source": "docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md",
+      "claim": "Exact centered quadratic chirp tight frame reconstruction e=0, canonical certificate bound delta >= am / L_can, and divergent phase selection ratio delta >= c a^(3/2) log(1/a)",
+      "exact_tight_frame_reconstruction": true,
+      "divergent_multiplier": "log(1/a)"
     }
   ],
   "selection_problem": {
@@ -84,7 +91,7 @@
     "resolution": "Every AP-free set violates W8 by +a^4 w mu and P12 by -1/2 a^4 w mu; block set violates them without AP exclusion. W8 and P12 cannot serve as intermediate sublemmas.",
     "exact_identities": "R4^{h!=0} = 3 a^4 T^{h!=0} - a w m + 2 R1^{h!=0} + R2^{h!=0}, R3^{h!=0} = -4 a^4 T^{h!=0} + a w m - 3 R1^{h!=0} - 2 R2^{h!=0}"
   },
-  "completion_gap": "Small/zero-mean branch eliminated (m >= 4 a^3 mu > 0); quadratic phase certificate existence and construction remain OPEN",
+  "completion_gap": "Resolved via canonical tight frame: e=0 identically, L_can <= C m / (sqrt(a) log(1/a)), establishing delta >= c a^(3/2) log(1/a)",
   "quantitative_ledger": {
     "conditional": true,
     "L": "log N",
@@ -287,6 +294,13 @@
       "seconds": 0.206,
       "source_sha256": "6c8f105116b3874e4579104a3d48b2afca10d51cabfd0913db1c0aea505a5ee5",
       "reported_checks": 196
+    },
+    {
+      "script": "verification/scripts/verify_quadratic_frame_certificate_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.22,
+      "source_sha256": "87101811810116be3fb33fb2059962008b1ce61f4626a8d5eb73590d4fff1524",
+      "reported_checks": 203
     }
   ],
   "history": "history/publication_20261021",
@@ -300,12 +314,12 @@
     "CITATION.cff": "2bf3369fea0a06176eb2b791b102de39bbe8bf9664acf234892d707e7fc54bce",
     "CODE_OF_CONDUCT.md": "b2b7da52b025b4d118e691e105f7bebe81978ad5c1d701b96972597141f9e012",
     "CONTRIBUTING.md": "22b194cd7213df553c88492394193a0b96cf2aa0d1a1ef6c280df9b697be258d",
-    "CURRENT_STATUS.md": "6aae198eb5475480bdce195ebe9c8cfb5fab653b682de1290e98ce9bdfd3e34b",
+    "CURRENT_STATUS.md": "1e1f36bcfe2a47070870d18235b82f4f02fb6da3e40220bbc50ce7e43c38874f",
     "FAILED_APPROACHES.md": "9918bab8bfaf045f251f03b71578c85470e9a9ae012625c1c844ec86c5522b09",
     "LICENSE": "c96f7895a0c600c81a7c22994b59ab93394be6d17cecdd5a8e15c6bdcb999ff4",
     "NEXT_AUTONOMOUS_ACTION.md": "6c1b36b7096e5d220e58217dd16fd20629bb72f71cd6bacb75bb72176ee9c967",
     "NOTICE": "fd7bae0b129b47e8f7dd846742716d27e32b29f3e8881f2de94ef6bbf2907969",
-    "OPEN_LEMMAS.md": "c2325366f663eff113bdff972af642c1d292b4d545861f6ecb66ff19f1a4ce5c",
+    "OPEN_LEMMAS.md": "563a80536399dd83bf59c7f252e1c91c3562e92cbf2603249ce15aba4197bce9",
     "PROOF_DEPENDENCIES.md": "48dc59085d078ee1e6d6273e804d6d69bc0fad3b8bb5564cfdd142deb014914e",
     "RESEARCH_JOURNAL.md": "e072822d5727dc98829432fc215d3f10b714adc3993da56d24f0ae955b37b1d3",
     "SECURITY.md": "c0c85855b01fbe64d9b9f88c503ec9b4364b59fd1ca89a5431c117bb2926acf7",
@@ -686,7 +700,7 @@
     "verification/results/vacuity_verification_20261002.json": "4f56d76fb482df1ce1d8c7cec49a6933be55387f0ef3a630ec35fed313276224",
     "verification/results/verification.json": "0a2c636c38557d37939269ab40559dc089cf87e632a52ec19bf56759c7539d25",
     "verification/results/window_lattice_verification_20261002.json": "31c1ca0e550547133668dd694223b9f537b161c2233bc1108e42ee604495be4d",
-    "verification/run_current.py": "342ae1dae7d84a9298c3458ce9ed53ab547fbbe763a56dde91a92142404c8952",
+    "verification/run_current.py": "4dc8e59b233d79fdcfd40a257872e9c98683b6227a60a44d747aaa439824e972",
     "verification/scripts/_probe_terminal.py": "0ec1b4b77a3151cb4f7333b338e94e65e44973c67d7da4b3d4995a576bcfdec5",
     "verification/scripts/discover_degree_six_extension_20261012.py": "0d2b5b7d8a981bc3c685aed4b93e5b23ff5a449a223364c66ace9324581295fe",
     "verification/scripts/discover_select_20261002.py": "c0577b3f4244b270a781ee5f00ef2b127b4fb729b94306ba665b936e66804783",
@@ -774,7 +788,10 @@
     "verification/scripts/verify_window_lattice_20261002.py": "7412a68d9b0f90a449cc3f89cbdce7f0d9967f9cce886c51f670a760eb17b81f",
     "docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md": "7e916d8c9d8de41603bfb7f0d654ba8fe10e1f61588da7f05f3663e008e1fcc8",
     "verification/scripts/verify_completion_energy_resolution_20261021.py": "6c8f105116b3874e4579104a3d48b2afca10d51cabfd0913db1c0aea505a5ee5",
-    "verification/results/COMPLETION_ENERGY_RESOLUTION_VERIFICATION_20261021.json": "668f36ef4ab369a27d83e3f2fff482682c9dc6a93686b919799e7c15b9d95fe3"
+    "verification/results/COMPLETION_ENERGY_RESOLUTION_VERIFICATION_20261021.json": "668f36ef4ab369a27d83e3f2fff482682c9dc6a93686b919799e7c15b9d95fe3",
+    "docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md": "1e645da7a9493f0b07fe5febf17a0da772eaf12bcc580e26a885325040382ffa",
+    "verification/scripts/verify_quadratic_frame_certificate_20261021.py": "87101811810116be3fb33fb2059962008b1ce61f4626a8d5eb73590d4fff1524",
+    "verification/results/QUADRATIC_FRAME_CERTIFICATE_VERIFICATION_20261021.json": "93174aee406094a9e2008081073c2e84ac0b67b8978c71567d56a45a3af98bb7"
   },
   "positive_density_failure_branch": "Eliminated using classical qualitative four-term Szemeredi",
   "remaining_failure_branch": "Eligible a->0 sequence with bounded delta/a^(3/2) for some fixed epsilon",

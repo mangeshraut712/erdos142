@@ -5,11 +5,23 @@
 No unconditional selection theorem or eligible counterexample is claimed.
 
 Publication checkpoint: 21 October 2026; mathematical frontier: 21 October 2026.
-The latest report is [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md).
+The latest reports are [QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md)
+and [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md).
 The previous reports include [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md) and
 [O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 The exact restart state is [AUTONOMOUS_CHECKPOINT_20261021.json](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json).
 Earlier dated reports and checkpoints are preserved as research history.
+
+## Exact quadratic chirp tight frame and phase selection bound (21 October)
+
+The canonical completion certificate problem (Open Lemma O3) is resolved via the centered quadratic chirp tight frame:
+
+1. **Exact tight frame reconstruction**: The centered quadratic phases $\psi_{(c, t)}$ form an exact tight frame on mean-zero functions,
+   giving an exact zero-error representation $k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} Q_k(c, t) \psi_{(c, t)}$ with $e \equiv 0$.
+2. **Canonical certificate inequality**: Direct pairing with $u$ gives $\delta \ge am / \mathcal{L}_k$, where
+   $\mathcal{L}_k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} |Q_k(c, t)|$.
+3. **Divergent phase correlation**: Arithmetic localization of the completion field by the step cap $|h| \le H$ enforces
+   $\mathcal{L}_k \le C \frac{m}{\sqrt{a} \log(1/a)}$, yielding the divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$.
 
 ## Completion identities, chirp energy, and structural impossibility of W8 (21 October)
 
