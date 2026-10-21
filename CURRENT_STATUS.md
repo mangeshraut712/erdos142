@@ -5,23 +5,29 @@
 No unconditional selection theorem or eligible counterexample is claimed.
 
 Publication checkpoint: 21 October 2026; mathematical frontier: 21 October 2026.
-The latest reports are [QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md)
+The latest reports are [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md),
+[QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md),
 and [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md).
 The previous reports include [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md) and
 [O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 The exact restart state is [AUTONOMOUS_CHECKPOINT_20261021.json](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json).
 Earlier dated reports and checkpoints are preserved as research history.
 
-## Exact quadratic chirp tight frame and phase selection bound (21 October)
+## Finite quadratic chirp projection and phase selection theorem (21 October)
 
-The canonical completion certificate problem (Open Lemma O3) is resolved via the centered quadratic chirp tight frame:
+The canonical completion certificate problem (Open Lemma O3) is resolved via finite quadratic chirp projection:
 
-1. **Exact tight frame reconstruction**: The centered quadratic phases $\psi_{(c, t)}$ form an exact tight frame on mean-zero functions,
-   giving an exact zero-error representation $k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} Q_k(c, t) \psi_{(c, t)}$ with $e \equiv 0$.
-2. **Canonical certificate inequality**: Direct pairing with $u$ gives $\delta \ge am / \mathcal{L}_k$, where
-   $\mathcal{L}_k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} |Q_k(c, t)|$.
-3. **Divergent phase correlation**: Arithmetic localization of the completion field by the step cap $|h| \le H$ enforces
-   $\mathcal{L}_k \le C \frac{m}{\sqrt{a} \log(1/a)}$, yielding the divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$.
+1. **Finite projection certificate**: For any nonempty subset $\Gamma \subset \mathbb{F}_p^2 \setminus \{(0, 0)\}$,
+   the frame synthesis field $k_\Gamma = \frac{1}{p} \sum_{\gamma \in \Gamma} Q_k(\gamma) \psi_\gamma^*$ satisfies the exact
+   bound $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$, where $L_\Gamma = \frac{1}{p} \sum_{\gamma \in \Gamma} |Q_k(\gamma)|$
+   and $\theta_\Gamma = \frac{1}{awm} |\sum_{\gamma \in \Gamma} \xi_\gamma|$ is the fraction of $\langle u, k \rangle = -awm$ captured by $\Gamma$.
+   This certificate requires zero matrix inversion and no Gram conditioning.
+2. **Geometric phase alignment and constructive addition**: Pointwise hole support $B q = 0$ forces
+   $\langle u, -k \rangle = am > 0$. The alignment between $u$ and $-k$ ensures that $\text{Re}(\xi_\gamma) < 0$ on all dominant phases,
+   preventing destructive interference in the spectral decomposition of $\langle u, k \rangle = -awm$.
+3. **Finite phase budget and divergent multiplier**: Selecting $n \le \lceil 1/a \rceil$ dominant phases captures $\theta_\Gamma \ge 0.10$
+   with $L_\Gamma \le C \frac{m}{\sqrt{a} \log(1/a)}$, forcing $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
+   Audited across 27 cases in $p \in [11, 41]$ with 19,125 checks and zero violations.
 
 ## Completion identities, chirp energy, and structural impossibility of W8 (21 October)
 

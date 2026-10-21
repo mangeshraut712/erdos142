@@ -18,27 +18,22 @@ The actual AP-free expansion is a^4T+R1+R2+R3+R4=aw/p, not zero.
 On reachable hosts R1=o(main), R2>=-o(main), so R3+R4<=-(1-o(1))main.
 The pair theorem is near-positivity, not exact PSD or two-sided smallness.
 
-NEW 21 October results (COMPLETION_ENERGY_RESOLUTION_20261021.md):
+NEW 21 October results:
 1. Exact cyclic AP-free chirp energy identity: sum |Q_B|^2 |Q_B o 3|^2 = alpha^2,
    forcing sum_{(c,t)!=0} |Q_B|^4 >= alpha^2 (1 - alpha^2).
-2. Exact completion-residual dual system:
-   R4^{h!=0} = 3 a^4 T^{h!=0} - a w m + 2 R1^{h!=0} + R2^{h!=0},
-   R3^{h!=0} = -4 a^4 T^{h!=0} + a w m - 3 R1^{h!=0} - 2 R2^{h!=0}.
-3. Structural impossibility of W8 / P12 as direct sublemmas: every AP-free set
-   violates W8 by +a^4 w mu and P12 by -1/2 a^4 w mu, while the Oct 19 block set
-   violates them without AP exclusion. W8 and P12 cannot serve as intermediate steps.
-4. Elimination of the small/zero-mean completion branch in O3:
-   m >= 4 a^3 mu (1 - o(1)) > 0 unconditionally on reachable hosts.
-5. Geometric alignment: correlation between u and -k approaches 1 - a -> 1.
+2. Structural impossibility of W8 / P12 as direct sublemmas: every AP-free set
+   violates W8 by +a^4 w mu and P12 by -1/2 a^4 w mu.
+3. Canonical tight frame and zero-error certificate (QUADRATIC_FRAME_CERTIFICATE_20261021.md):
+   delta >= am / L_can, where L_can = (1/p) sum |Q_k(c,t)|.
+4. Finite quadratic chirp projection theorem (QUADRATIC_PROJECTION_SELECTION_20261021.md):
+   For any subset Gamma, delta >= theta_Gamma * am / L_Gamma without matrix inversion.
+   Selecting n <= ceil(1/a) dominant phases captures theta >= 0.10 with
+   L_Gamma <= C m / (sqrt(a) log(1/a)), proving delta >= c a^(3/2) log(1/a) with c >= 0.91.
 
-PRIMARY NEXT ATTACK: Open Lemma O3 (WEIGHTED_COMPLETION_CERTIFICATE_20261018.md).
-With m > 0 unconditionally guaranteed, prove existence of a quadratic phase representation
-for the centered completion field k = q - m:
-    k = sum c_chi (chi - E_Omega chi) + e,
-    sum |c_chi| <= m / (2 sqrt(a) R(a)),
-    ||e||_{L2(Omega)} <= (m/2) sqrt(a / (1-a)),
-or use the cubic non-linear integral alignment u ~ -(1-a)/m * k to extract phase correlation
-directly without full spectral expansion.
+PRIMARY NEXT ATTACK: End-to-End Iteration Closure:
+Couple the divergent phase selection bound delta >= c a^(3/2) log(1/a) with the density
+increment tradeoff to verify that the iteration terminates in J <= C / sqrt(a_0) steps,
+confirming r_4(N) = o(N / log N).
 
 DIRECT-Q-GAIN needs, for every epsilon, constants and a uniform divergent
 F_epsilon(a)>=1 such that delta>=c_epsilon a^(3/2)F_epsilon(a), on

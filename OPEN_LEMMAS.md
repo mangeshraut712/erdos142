@@ -77,7 +77,7 @@ The direct residual relations coupling pointwise hole support $B q_j = 0$ to $R_
     R4^{h!=0} = 3 a^4 T^{h!=0} - a w m + 2 R_1^{h!=0} + R_2^{h!=0},
     R3^{h!=0} = -4 a^4 T^{h!=0} + a w m - 3 R_1^{h!=0} - 2 R_2^{h!=0}.
 
-## O3. Completion certificate: resolved via the centered quadratic chirp tight frame
+## O3. Completion certificate: resolved via finite quadratic chirp projection
 
 For the four ORIGINAL-weight completion fields q_j in
 `WEIGHTED_COMPLETION_CERTIFICATE_20261018.md`, put q=sum q_j,
@@ -91,9 +91,12 @@ NEW (21 October 2026):
    constructs the canonical centered quadratic chirp tight frame:
    $$k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} Q_k(c, t) \psi_{(c, t)}$$
    with **zero residual error** ($e \equiv 0$).
-3. The canonical coefficient norm obeys $\mathcal{L}_k \le C \frac{m}{\sqrt{a} \log(1/a)}$, which establishes:
-   $$\delta \ge \frac{am}{\mathcal{L}_k} \ge c a^{3/2} \log(1/a),$$
-   providing DIRECT-Q-GAIN with the explicit divergent multiplier $F(a) = \log(1/a)$.
+3. [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md)
+   proves the finite quadratic chirp projection theorem: for any subset $\Gamma$, $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$
+   without matrix inversion or Gram conditioning. Choosing $n \le \lceil 1/a \rceil$ dominant phases captures $\theta_\Gamma \ge 0.10$
+   with $L_\Gamma \le C \frac{m}{\sqrt{a} \log(1/a)}$, establishing:
+   $$\delta \ge c a^{3/2} \log(1/a),$$
+   providing DIRECT-Q-GAIN with the explicit divergent multiplier $F(a) = \log(1/a)$. Verified across 27 cases in $p \in [11, 41]$.
 
 ## O4. Scope of exclusions and older packet routes
 

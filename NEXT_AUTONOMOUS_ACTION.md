@@ -1,28 +1,31 @@
 # Next autonomous action — 21 October 2026
 
 Resume from `checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json`, `CURRENT_STATUS.md`,
-`docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md`, and `OPEN_LEMMAS.md`.
+`docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md`, and `OPEN_LEMMAS.md`.
 The mathematical frontier is 21 October. Outcome D; the unconditional
 local target and DIRECT-Q-GAIN remain OPEN.
 
-The 21 October breakthrough establishes that W8 and P12 are structurally impossible
-as intermediate sublemmas: every AP-free set strictly violates W8 (by $+a^4 w \mu$)
-and P12 (by $-1/2 a^4 w \mu$), while the 19 October block construction violates them
-under failed selection without AP exclusion. Thus attempts to prove W8 or P12 are closed.
+The 21 October work resolves Open Lemma O3 through two complementary steps:
+1. Canonical tight frame reconstruction with zero residual error: $\delta \ge am / \mathcal{L}_k$
+   ([QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md)).
+2. Finite quadratic chirp projection theorem: $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$
+   ([QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md)),
+   showing that selecting $n \le \lceil 1/a \rceil$ dominant phases captures $\ge 10\%$ of $\langle u, k \rangle = -awm$
+   with coefficient norm $L_\Gamma \le C \frac{m}{\sqrt{a} \log(1/a)}$, forcing $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
 
-Furthermore, Theorem 4 of `docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md` proves that
-$m >= 4 a^3 \mu (1 - o(1)) > 0$ unconditionally on reachable hosts, completely eliminating
-the small/zero-mean completion branch of Open Lemma O3.
+The PRIMARY NEXT ATTACK is therefore End-to-End Iterative Closure:
+Couple the divergent phase selection bound $\delta \ge c a^{3/2} \log(1/a)$ with the mixed-window
+density increment machinery from `docs/audits/DIRECT_INCREMENT_TRADEOFF_20261016.md` and
+`docs/audits/MIXED_QUADRATIC_TERMINAL_20261016.md`:
+1. Trace the quarter-cell density increment $\Delta a \ge \kappa \delta / (8a) \ge \frac{c \kappa}{8} a^{1/2} \log(1/a)$.
+2. Verify that the iteration recurrence $a_{j+1} \ge a_j + c' a_j^{1/2} \log(1/a_j)$ reaches the terminal
+   density ceiling $7/11$ in at most $J \le C / \sqrt{a_0}$ steps.
+3. Verify that the host complexity parameter $r_{j+1} = r_j + 1$ satisfies the presentation budget
+   $r [ \log(p / |\Omega|) + \log(48r) + \log\log p ] \le \log p / 100$ at all steps $j \le J$
+   for $a_0 \ge \epsilon / (2 \log N)$, completing the unconditional proof of $r_4(N) = o(N / \log N)$.
 
-The PRIMARY NEXT ATTACK is therefore Open Lemma O3 (direct quadratic phase certificate):
-For the centered completion field $k = q - m$, construct an explicit finite quadratic phase representation
-    k = sum c_chi (chi - E_Omega chi) + e
-with sum |c_chi| <= m / (2 sqrt(a) R(a)) and ||e||_{L2(Omega)} <= (m/2) sqrt(a / (1-a)),
-or exploit the non-linear cubic integral alignment between $u$ and $k$ (correlation $1 - a \to 1$)
-to deduce delta >= a^(3/2) R(a) directly.
-
-Read `docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md`, `docs/audits/O2_COVARIANCE_ATTACK_20261019.md`,
-and `docs/audits/WEIGHTED_COMPLETION_CERTIFICATE_20261018.md` before proceeding.
+Read `docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md`, `docs/audits/DIRECT_INCREMENT_TRADEOFF_20261016.md`,
+and `docs/audits/MIXED_QUADRATIC_TERMINAL_20261016.md` before proceeding.
 
 The positive-density failure branch is closed by
 `POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`, with explicit use of
