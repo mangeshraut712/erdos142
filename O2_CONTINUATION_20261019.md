@@ -81,8 +81,9 @@ Neither a sufficient completion certificate nor W8 is proved.
 
 Both new proofs received independent line-by-line mathematical audits.
 The positive-density finite-envelope verifier passed 18,022 checks and
-its isolated rerun matched the saved JSON. The covariance note separates
-finite mask/count checks from its asymptotic probabilistic proof. The
+its isolated rerun matched the saved JSON. The covariance verifier passed 38,895 checks (37,287 exact and 1,608
+floating Fourier checks; maximum Fourier discrepancy 1.74e-18). These
+finite mask/count checks are separate from its asymptotic probabilistic proof. The
 current machine-readable verification record and source hashes are in
 the latest dated checkpoint. Passing finite checks is not an asymptotic
 proof of phase selection.

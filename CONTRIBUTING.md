@@ -30,18 +30,24 @@ priority and overlap are visible.
 
 ## Development
 
-Python **standard library only**. No third-party packages are required.
+Use Python **3.10+**. Recent Fourier verifiers need NumPy; optional discovery
+scripts also need SciPy. The original thirteen September verifiers remain
+standard-library only. See [VERIFYING.md](VERIFYING.md) for full scope.
 
 ```bash
-python3 verification/scripts/verify_core.py
-python3 verification/scripts/verify_full_group_energy.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[verification]"
+python verification/check_repository.py
+python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-Keep new checkers in `verification/scripts/` and captured JSON in
-`verification/results/`. Running `verify_full_group_energy.py` rewrites
-`verification/results/full_group_energy_verification.json`; float
-serialization can dirty a clean checkout. Do not commit that incidental
-diff unless you intend to refresh the capture.
+The runner uses a temporary copy so historical JSON captures stay unchanged.
+New independent utilities belong in `verification/`; preserve existing dated
+root-level proof/checker/report groups and their recorded paths. New research
+claims must update the nine navigation/ledger files and the latest checkpoint.
+Keep historical snapshots intact and label numerical tolerance checks separately
+from exact arithmetic and asymptotic arguments.
 
 ## License of contributions (CLA-lite)
 

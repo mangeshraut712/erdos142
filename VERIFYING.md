@@ -24,13 +24,13 @@ For a separate environment on macOS or Linux:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install numpy
+python -m pip install -e ".[verification]"
 ```
 
 Install SciPy only if running the exploration scripts:
 
 ```bash
-python -m pip install scipy
+python -m pip install -e ".[exploration]"
 ```
 
 The checkers themselves run locally and do not need service credentials
@@ -44,6 +44,25 @@ python -m pip freeze
 
 Do not use `python -O`: these scripts use assertions, which optimization
 can disable.
+
+## Recommended isolated runner
+
+```bash
+python verification/check_repository.py
+python verification/run_current.py --suite all --output .verification-runs/latest
+```
+
+`current` runs the eleven October 17–19 entry points; `legacy` runs the
+thirteen original September verifiers; `all` runs both (24 scripts).
+These options select the publication suites, not every historical experiment.
+The runner copies the complete research tree to a temporary directory,
+sets the local module paths, keeps assertions enabled, and records exit
+statuses, source hashes, runtime versions, and logs. Original saved reports
+are never overwritten. Fresh logs under `.verification-runs/` are ignored
+by Git. The repository checker verifies Python syntax, JSON parsing,
+current navigation links, and latest checkpoint hashes.
+GitHub Actions runs the same checks on Python 3.10 and 3.12; passing CI
+certifies only those finite and repository checks.
 
 ## Start with the standard-library checks
 
@@ -94,6 +113,7 @@ experiment must be rerun together.
 | Four weighted completion channels | `python verify_weighted_completion_20261018.py` | NumPy |
 | Elementary sparse alteration construction | `python verify_boolean_alteration_chirp_20261018.py` | NumPy |
 | Typical-event alteration construction | `python verify_boolean_typical_alteration_20261018.py` | NumPy |
+| Covariance obstruction: finite mask, tent, and count checks | `python verify_o2_covariance_attack_20261019.py` | None |
 | Positive-density branch elimination: finite estimates | `python verify_positive_density_branch_20261019.py` | None |
 
 Read the associated dated Markdown note before interpreting a report.

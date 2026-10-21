@@ -27,18 +27,28 @@ CURRENT = [
     "verify_positive_density_branch_20261019.py",
     "verify_o2_covariance_attack_20261019.py",
 ]
+LEGACY = [
+    f"verification/scripts/{name}.py"
+    for name in (
+        "verify_ap_richness", "verify_compat", "verify_compatibility",
+        "verify_core", "verify_endpoint_incidence", "verify_energy_counterexample",
+        "verify_full_group_energy", "verify_increment", "verify_localization",
+        "verify_mixed", "verify_phase2", "verify_relative", "verify_signed",
+    )
+]
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--suite", choices=["current", "legacy", "all"], default="current")
-    parser.add_argument("--output", type=Path, help="Optional directory for logs and summary.json")
+    parser.add_argument("--output", type=Path,
+                        help="Log directory outside the checkout or under .verification-runs/")
     args = parser.parse_args()
     if not __debug__ or os.environ.get("PYTHONOPTIMIZE"):
         parser.error("Assertions must be enabled; remove -O and PYTHONOPTIMIZE.")
     paths = CURRENT.copy() if args.suite != "legacy" else []
     if args.suite != "current":
-        paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT / "verification/scripts").glob("verify_*.py"))]
+        paths += LEGACY
     if not paths or any(not (ROOT / p).is_file() for p in paths):
         parser.error("A selected verifier is missing; run from a complete checkout.")
     numpy_version = None
@@ -51,24 +61,27 @@ def main() -> int:
     output = args.output.resolve() if args.output else None
     # Put reports outside the temporary copy; never overwrite original captures.
     if output:
-        if output == ROOT:
-            parser.error("Choose a separate output directory, not the repository root.")
+        if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT / ".verification-runs"):
+            parser.error("Inside this checkout, output must be under .verification-runs/ to preserve saved evidence.")
         output.mkdir(parents=True, exist_ok=True)
     results = []
     with tempfile.TemporaryDirectory(prefix="erdos142-verify-") as directory:
         copied = Path(directory) / "repo"
         ignore = shutil.ignore_patterns(".git", ".venv", "__pycache__", "*.pyc", ".verification-runs", "node_modules", ".next")
-        shutil.copytree(ROOT, copied, ignore=ignore, symlinks=True)
+        # Copy symlink targets as ordinary files so a verifier cannot write
+        # through a preserved link into the original checkout.
+        shutil.copytree(ROOT, copied, ignore=ignore, symlinks=False)
         env = os.environ.copy()
         env["PYTHONDONTWRITEBYTECODE"] = "1"
         env["PYTHONPATH"] = os.pathsep.join([str(copied), str(copied / "verification/scripts")])
         for path in paths:
             started = time.monotonic()
+            source_hash = hashlib.sha256((copied / path).read_bytes()).hexdigest()
             process = subprocess.run([sys.executable, str(copied / path)], cwd=copied, env=env,
                                      capture_output=True, text=True)
             result = {"script": path, "exit_code": process.returncode,
                       "seconds": round(time.monotonic() - started, 3),
-                      "source_sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest()}
+                      "source_sha256": source_hash}
             try:
                 payload = json.loads(process.stdout)
                 if isinstance(payload, dict):
@@ -87,7 +100,7 @@ def main() -> int:
               "isolated": True, "saved_reports_overwritten": False,
               "passed": len(results) == len(paths) and all(x["exit_code"] == 0 for x in results),
               "results": results,
-              "scope": "Finite verifiers and their internal assertions; no asymptotic target proof."}
+              "scope": "Selected current and/or original September verifiers, not every archived experiment; no asymptotic target proof."}
     if output:
         (output / "summary.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))

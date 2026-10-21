@@ -1,0 +1,40 @@
+name: Verify research artifacts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install verifier dependencies
+        run: python -m pip install -e '.[verification]'
+      - name: Check syntax, JSON, navigation, and checkpoint
+        run: python verification/check_repository.py
+      - name: Run current and original finite suites
+        run: python verification/run_current.py --suite all --output .verification-runs/ci
+      - name: Preserve finite-check logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: finite-checks-python-${{ matrix.python-version }}
+          path: .verification-runs/ci/
+          if-no-files-found: ignore
+          retention-days: 14

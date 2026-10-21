@@ -1,26 +1,34 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <!-- Copyright 2026 Mangesh Raut -->
 
-# Docs
+# Documentation index
 
-Human-facing notes for this **open** research pack. Nothing here is a
-completed solution of official Erdős problem 142 or of the local
-\(r_4(N)=o(N/\log N)\) target.
+The local target and official Erdős #142 are not solved in this repository.
+The latest mathematical work is dated 19 October 2026; the public repository
+was integrated on 21 October 2026.
 
-| File | Role |
+| Start here | Purpose |
 |---|---|
-| [../README.md](../README.md) | GitHub card / recruiter landing |
-| [PROGRESS.md](PROGRESS.md) | Proved, refuted, and still open |
-| [ROADMAP.md](ROADMAP.md) | Highest-leverage next lemmas |
-| [PRIORITY_AND_ATTRIBUTION.md](PRIORITY_AND_ATTRIBUTION.md) | Author of record and citation |
-| [status.html](status.html) | Static Apple-style OPEN snapshot (no JS deps) |
-| [screenshots/](screenshots/) | README gallery captured from that page |
-| [literature/](literature/) | Official #142 wording; no invented bounty |
-| [audits/](audits/) | Full research trail (source of truth) |
+| [Repository overview](../README.md) | Current results, limits, and quickstart |
+| [Current status](../CURRENT_STATUS.md) | Authoritative current research status |
+| [October 19 report](../O2_CONTINUATION_20261019.md) | Positive-density reduction and covariance obstruction |
+| [Progress](PROGRESS.md) | Current proved, conditional, and open statements |
+| [Roadmap](ROADMAP.md) | Concrete next mathematical tasks |
+| [Open lemmas](../OPEN_LEMMAS.md) | Full quantifiers and remaining gaps |
+| [Proof dependencies](../PROOF_DEPENDENCIES.md) | Dependencies and external classical input |
+| [Verification guide](../VERIFYING.md) | Reproduce finite checks without changing saved reports |
+| [Latest checkpoint](../AUTONOMOUS_CHECKPOINT_20261021.json) | Status and source hashes |
+| [Official problem](literature/OFFICIAL_142.md) | Distinction between official #142 and the local target |
+| [Attribution](PRIORITY_AND_ATTRIBUTION.md) | Author of record and citation |
 
-Start with **PROGRESS.md**, then the named energy theorem in
-[audits/ENDPOINT_INCIDENCE_AUDIT.md](audits/ENDPOINT_INCIDENCE_AUDIT.md) §5.
+## Historical material
 
-Stdlib checkers: see the Quickstart in [../README.md](../README.md).
-`verify_full_group_energy.py` rewrites a tracked JSON capture; passing
-scripts are finite identities, not a proof.
+The [September audits](audits/) preserve the original research route.
+Dated October notes and checkers remain at the repository root to preserve
+cross-references and recorded hashes. [History](../history/) contains
+previous navigation states and verification captures; those states describe
+their own dates, not the current frontier.
+
+The [static status card](status.html) and [screenshots](screenshots/) are
+September artifacts. Their old energy frontier and standard-library-only
+setup have been superseded by the current overview and verification guide.

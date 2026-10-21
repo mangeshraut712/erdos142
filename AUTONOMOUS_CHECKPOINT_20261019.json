@@ -1,0 +1,130 @@
+{
+  "checkpoint_date": "2026-10-19",
+  "saved_on_local_date": "2026-10-21",
+  "latest_mathematical_work_date": "2026-10-19",
+  "principal_status": "D",
+  "offline": true,
+  "target": "r_4(N)=o(N/log N)",
+  "target_proved": false,
+  "P12_proved": false,
+  "genuine_eligible_P12_counterexample_found": false,
+  "background_work_running": false,
+  "execution_state": "retrospectively_saved_research_checkpoint",
+  "supersedes_for_navigation": "AUTONOMOUS_CHECKPOINT_20261018.json",
+  "report": "O2_CONTINUATION_20261019.md",
+  "proved_results": [
+    {
+      "id": "BO17",
+      "source": "BOOLEAN_OCCUPANCY_TERMINAL_20261017.md",
+      "claim": "Exact Boolean expansion and2/3 terminal ceiling"
+    },
+    {
+      "id": "QC17",
+      "source": "O2_QUANTIFIERS_CUBIC_BOUND_20261017.md",
+      "claim": "Exact negation and direct weighted cubic inequality; bound insufficient at target scale"
+    },
+    {
+      "id": "FP18",
+      "source": "FINITE_PATTERN_TERMINAL_20261018.md",
+      "claim": "General fixed-pattern terminal,7/11 under originalM13"
+    },
+    {
+      "id": "WC18",
+      "source": "WEIGHTED_COMPLETION_CERTIFICATE_20261018.md",
+      "claim": "Four-channel completion projection,disjoint energy,and conditional atomic/Gram certificate",
+      "certificate_existence_proved": false
+    },
+    {
+      "id": "WQ18",
+      "source": "WEIGHTED_QUARTIC_COVARIANCE_20261018.md",
+      "claim": "Exact R4=U²-E_F/2 for original weight; P12 equivalent to unprovedW8"
+    },
+    {
+      "id": "TA18",
+      "source": "BOOLEAN_TYPICAL_ALTERATION_20261018.md",
+      "claim": "Actual Boolean AP-free a~p^-theta anddelta/a^1.5→0 for1/3<theta<1/2",
+      "target_domain_eligible": false
+    },
+    {
+      "id": "PD19",
+      "source": "POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md",
+      "claim": "Uniform positive-density branch elimination on T5; remaining failure sequences have a tending to zero",
+      "external_input": "Classical qualitative four-term Szemeredi theorem; not reproved here",
+      "quantitative_target_rate_proved": false
+    },
+    {
+      "id": "C19",
+      "source": "O2_COVARIANCE_ATTACK_20261019.md",
+      "claim": "Boolean logarithmic-density obstruction to W8 without AP exclusion",
+      "constructed_sets_are_AP_free": false,
+      "eligible_P12_counterexample": false
+    }
+  ],
+  "selection_problem": {
+    "status": "OPEN",
+    "name": "DIRECT-Q-GAIN",
+    "domain": "r[log(p/|Omega|)+log(48r)+loglog p] <= log(p)/100; r>=1",
+    "density_range": "epsilon/(2log|Omega|) <= a <= 4/5",
+    "set": "Actual cyclically nonzero-4AP-free Boolean A subset a mixed linear/quadratic interval window Omega",
+    "residual": "1_A-a on the current window, trivial factor only",
+    "conclusion": "Nonconstant polynomial P of degree <=2 with relative correlation >=c_epsilon a^(3/2)F_epsilon(a)",
+    "multiplier": "F_epsilon(a)>=1 and F_epsilon(a)->infinity uniformly as a->0",
+    "concrete_multiplier": "R(a)=loglog(e^2/a); replace with max(1,R) at a constant cost",
+    "old_sqrt_log_multiplier_required": false
+  },
+  "signed_gap": {
+    "status": "OPEN",
+    "known": "R1=o(main),R2>=-o(main),AP forcesQ<=-(1-o(1))main",
+    "wanted": "Q>=-main/2 under failedadequateselection",
+    "equivalent_W8": "E_F(u)<=2U²+2R3+a^4wmu",
+    "Boolean_diagonal": "aw/p",
+    "quartic_diagonal": "E_pu^4/p"
+  },
+  "completion_gap": "Certificate existence and low-completion branch remain open",
+  "quantitative_ledger": {
+    "conditional": true,
+    "L": "log N",
+    "initial_density": "epsilon/log N",
+    "rank": "O_epsilon(sqrt(L)/loglog L + log L)",
+    "log_size_loss_upper_bound": "O_epsilon(sqrt(L)/loglog L + (log L)^2)",
+    "rank_times_log_size_loss": "o(L)",
+    "required_squared_correlation": "a^3 R(a)^2",
+    "remaining_gain_over_a4": "a^(-1)R(a)^2",
+    "unconditional_increment_proved": false
+  },
+  "finite_search": {
+    "actual_records": 76,
+    "eligible_P12_counterexamples": 0,
+    "all_fail_T5": true,
+    "all_have_prescribed_H_zero": true
+  },
+  "verification": [
+    {
+      "script": "verify_positive_density_branch_20261019.py",
+      "exit_code": 0,
+      "seconds": 0.321,
+      "source_sha256": "1670cbc55d31760887f54fea40520cb11434078abab6aa9c58de0956667e9c1a",
+      "reported_checks": 18022
+    },
+    {
+      "script": "verify_o2_covariance_attack_20261019.py",
+      "exit_code": 0,
+      "seconds": 4.078,
+      "source_sha256": "990bf585e8774baadc2e9e60f762f150e321878017adc151364133086777934a",
+      "reported_checks": 38895
+    }
+  ],
+  "history": "history/continuation_20261019",
+  "next_action": "Use pointwise AP-free completion identities Bq_j=0 with logarithmic density and negligible diagonals to prove W8, or complete both direct-selection branches.",
+  "file_sha256": {
+    "POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md": "6a82bf78de0f4549bd09015ee135e95f4fa72f1de46cc3c77f2a4617d70dacfb",
+    "POSITIVE_DENSITY_BRANCH_VERIFICATION_20261019.json": "a7cab81eeb832361d02321fcaac1a822cc219afe5cacad1579fb7bbfbae30955",
+    "verify_positive_density_branch_20261019.py": "1670cbc55d31760887f54fea40520cb11434078abab6aa9c58de0956667e9c1a",
+    "O2_COVARIANCE_ATTACK_20261019.md": "e13227522f9b6bd11e762ec39c4a1732ebc9c6376671069a3a6f8a39101ece9f",
+    "O2_COVARIANCE_ATTACK_VERIFICATION_20261019.json": "0887cfaf6d4911ddbd743498b2310155204d06048322fc99fbb34ac6795a5fce",
+    "verify_o2_covariance_attack_20261019.py": "990bf585e8774baadc2e9e60f762f150e321878017adc151364133086777934a",
+    "O2_CONTINUATION_20261019.md": "764945fc429991e0b2678b23a26183f28e64839dafe96ec295df9c9dea828d68"
+  },
+  "positive_density_failure_branch": "Eliminated using classical qualitative four-term Szemeredi",
+  "remaining_failure_branch": "Eligible a->0 sequence with bounded delta/a^(3/2) for some fixed epsilon"
+}
