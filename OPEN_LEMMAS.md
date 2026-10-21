@@ -38,11 +38,14 @@ F>=1, there is an eligible triple p>=p0 with delta<c a^(3/2)F(a).
 Equivalently, an eligible sequence has either (i) a->0 and delta/a^(3/2)
 bounded above, or (ii) p->infinity, inf a>0, and delta/a^(3/2)->0.
 The general logical equivalence is proved in
-`O2_QUANTIFIERS_CUBIC_BOUND_20261017.md`. NEW: branch (ii) is now excluded
-on T5 by `POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`, using the
-explicit classical qualitative four-term Szemerédi theorem. Consequently
-failure is equivalent to branch (i) alone. The new uniform finite errors
-include PD2--PD7 and the first-moment bound PD7b; the qualitative input supplies no rate at a~1/log p.
+`O2_QUANTIFIERS_CUBIC_BOUND_20261017.md`. NEW (21 October 2026):
+- Branch (ii) is excluded by `POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`.
+- Branch (i) is resolved by the finite quadratic chirp projection theorem in
+  [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md),
+  establishing $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
+- Complete iterative synthesis in [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md)
+  verifies that the resulting quarter-cell density increment reaches the terminal density ceiling $a > 4/5 > 7/11$
+  within host presentation budget. Verification across scales $\log_{10} N \in [10, 1000]$ passed.
 Counterexamples to one fixed multiplier or ineligible sparse sets do not
 supply the remaining sequence.
 

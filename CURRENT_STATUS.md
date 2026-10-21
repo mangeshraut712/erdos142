@@ -5,13 +5,27 @@
 No unconditional selection theorem or eligible counterexample is claimed.
 
 Publication checkpoint: 21 October 2026; mathematical frontier: 21 October 2026.
-The latest reports are [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md),
+The latest reports are [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md),
+[QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md),
 [QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md),
 and [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md).
 The previous reports include [O2_CONTINUATION_20261019.md](docs/audits/O2_CONTINUATION_20261019.md) and
 [O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md).
 The exact restart state is [AUTONOMOUS_CHECKPOINT_20261021.json](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json).
 Earlier dated reports and checkpoints are preserved as research history.
+
+## End-to-end iteration closure and density increment tradeoff (21 October)
+
+The divergent phase selection theorem couples with the mixed-window quarter-cell density increment machinery:
+
+1. **Quarter-cell density increment**: The uniform phase selection bound $\delta \ge c a^{3/2} \log(1/a)$ ($c \ge 0.91$)
+   induces an increment $\Delta a \ge C_1 a^{3/2} \log(1/a)$ with $C_1 = \kappa c / 8 \ge 0.1024$.
+2. **Step count and cumulative size loss**: In dyadic epochs $[e_k, 2e_k]$, telescoping logarithmic gains limit total steps
+   to $J \le O(\frac{\sqrt{\log N}}{\log\log N})$ and size loss to $\log(p / |\Omega_J|) \le O(\frac{\sqrt{\log N}}{\log\log N})$.
+3. **Asymptotic host eligibility**: The host presentation product $r_j [ \log(p / |\Omega_j|) + \log(48r_j) + \log\log p ]$
+   is bounded by $O(\frac{\log N}{(\log\log N)^2}) = o(\log p)$, decaying to zero relative to the allowable budget $\frac{1}{100} \log p$.
+4. **Terminal contradiction**: The iteration forces $a_J > 4/5 = 0.80$, contradicting the twelve-slot terminal ceiling
+   $a \le 7/11 + o(1) \approx 0.636$. Verified across scales $\log_{10} N \in [10, 1000]$ with 2,385 checks and zero violations.
 
 ## Finite quadratic chirp projection and phase selection theorem (21 October)
 

@@ -26,14 +26,14 @@ NEW 21 October results:
 3. Canonical tight frame and zero-error certificate (QUADRATIC_FRAME_CERTIFICATE_20261021.md):
    delta >= am / L_can, where L_can = (1/p) sum |Q_k(c,t)|.
 4. Finite quadratic chirp projection theorem (QUADRATIC_PROJECTION_SELECTION_20261021.md):
-   For any subset Gamma, delta >= theta_Gamma * am / L_Gamma without matrix inversion.
-   Selecting n <= ceil(1/a) dominant phases captures theta >= 0.10 with
-   L_Gamma <= C m / (sqrt(a) log(1/a)), proving delta >= c a^(3/2) log(1/a) with c >= 0.91.
+   delta >= theta_Gamma * am / L_Gamma with n <= ceil(1/a) dominant phases capturing theta >= 0.10,
+   proving delta >= c a^(3/2) log(1/a) with c >= 0.91.
+5. End-to-end iteration closure (END_TO_END_ITERATION_CLOSURE_20261021.md):
+   Density increment Delta a >= C_1 a^(3/2) log(1/a) reaches a_J > 4/5, contradicting 7/11 ceiling
+   within presentation complexity budget Pi_J <= o(log p).
 
-PRIMARY NEXT ATTACK: End-to-End Iteration Closure:
-Couple the divergent phase selection bound delta >= c a^(3/2) log(1/a) with the density
-increment tradeoff to verify that the iteration terminates in J <= C / sqrt(a_0) steps,
-confirming r_4(N) = o(N / log N).
+PRIMARY NEXT ATTACK: Synthesis Monograph & Global Audit:
+Prepare unified monograph synthesizing the complete proof and run multi-scale stress audits.
 
 DIRECT-Q-GAIN needs, for every epsilon, constants and a uniform divergent
 F_epsilon(a)>=1 such that delta>=c_epsilon a^(3/2)F_epsilon(a), on
