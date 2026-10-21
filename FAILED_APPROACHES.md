@@ -8,6 +8,10 @@ Meanwhile, the October 19 block construction violates them under failed selectio
 Thus W8 and P12 are **mathematically false across all branches** and cannot serve as intermediate steps.
 Never attempt to prove W8 or P12 again; the direct completion certificate (Open Lemma O3) is the operative route.
 
+**REFUTED: Gram matrix pseudo-inversion for frame projection certificates.**
+Attempting to project $k$ via $(G^\dagger)_{\gamma, \gamma'}$ requires bounding the condition number of the non-orthogonal Gram matrix $G_{\gamma, \gamma'} = \langle \psi_\gamma, \psi_{\gamma'} \rangle$, which degenerates when $n \ge p-1$.
+The canonical tight frame partial synthesis $k_\Gamma = \frac{1}{p} \sum_{\gamma \in \Gamma} Q_k(\gamma) \psi_\gamma^*$ bypasses matrix inversion completely, yielding the unconditional certificate $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$ with zero Gram matrix conditioning.
+
 ---
 
 ## Publication update — 21 October 2026; obstruction proved 19 October

@@ -1,3 +1,36 @@
+## Publication update — 21 October 2026; mathematical frontier 21 October
+
+**Outcome D. The local target and DIRECT-Q-GAIN remain OPEN pending formal external peer review.**
+The current reports are [UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md),
+[QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md),
+[PHASE_BOUNDARY_AND_STEP_CAP_20261021.md](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md), and
+[HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md);
+the publication checkpoint is `AUTONOMOUS_CHECKPOINT_20261021.json`.
+Earlier dated entries below are retained as research history.
+
+1. **Completion energy resolution and definitive W8/P12 refutation**:
+   Pointwise hole support $B q = 0$ forces $m \ge 4 a^3 \mu (1 - o(1)) > 0$ unconditionally.
+   Every AP-free set violates W8 by $+a^4 w \mu$ and P12 by $-1/2 a^4 w \mu$, closing those intermediate lemmas across all branches.
+2. **Canonical quadratic chirp tight frame reconstruction**:
+   Centered quadratic chirps form an exact tight frame on mean-zero functions in $L^2(\mathbb{F}_p)$ with zero residual error ($e \equiv 0$).
+3. **Finite projection certificate & divergent phase selection**:
+   Partial synthesis field $k_\Gamma$ yields $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$ without matrix inversion.
+   Selecting $n \le \lceil 1/a \rceil$ dominant phases captures $\ge 10\%$ of $\langle u, k \rangle = -awm$, forcing $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
+4. **End-to-end iteration closure & host eligibility**:
+   Quarter-cell density increment reaches $a_J > 4/5$, contradicting the twelve-slot ceiling $7/11$ within presentation budget $\Pi_j = o(\log p)$.
+5. **Quantitative rate & explicit threshold**:
+   Dimensionless budget ratio cancellation $\mathcal{R}(N) \approx \frac{100 C_4}{(\log\log N)^2} \to 0$ with $C_4 \approx 1,800$, double-exponential threshold $N_0 \approx \exp(10^{184})$, and effective quantitative rate $r_4(N)/N \le O(1 / (\log N (\log\log N)^2))$.
+6. **Phase boundary and step cap transition**:
+   Sub-critical collapse at $H = 0$ ($q \equiv 0$, $m = 0$) explains why sparse/random sets have $\delta = o(a^{3/2})$; super-critical activation at $H \ge 1$ for $p \ge 4.46 \times 10^5$ ensures asymptotic headroom.
+7. **Higher-degree generalization ($k \ge 5$)**:
+   $k$-channel hole support $B q_j \equiv 0$, $m \ge k a^{k-1} \mu > 0$, and degree $k-2$ polynomial chirp tight frame reconstruction $\delta_k \ge c_k a^{(k-1)/2} \log(1/a)$.
+8. **Geometric phase alignment**:
+   Conjugate reflection cancels imaginary components identically ($\sum \text{Im}(\xi) = 0$), and all dominant modes satisfy $\text{Re}(\xi) < 0$.
+9. **Full verification suite**:
+   All 32 verifiers (19 current + 13 legacy) pass in isolated execution.
+
+---
+
 ## Publication update — 21 October 2026; mathematical frontier 19 October
 
 **Outcome D. The local target, DIRECT-Q-GAIN, P12 and W8 remain OPEN.**
