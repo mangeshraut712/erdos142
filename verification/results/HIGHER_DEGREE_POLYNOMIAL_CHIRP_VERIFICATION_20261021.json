@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "total_checks": 2030,
+  "maximum_error": 1.1102258195386445e-16,
+  "scope": [
+    "Theorem 1: Pointwise hole support B(v) q_j(v) == 0 for all slots j in {0, ..., k-1} on k-AP-free sets (k = 3, 4, 5).",
+    "Corollary 2: Exact centered inner product identity <u, q> == -a * m.",
+    "Theorem 3: Strict positivity of completion mean m > 0 on eligible models.",
+    "Theorem 5: Exact tight frame resolution of identity for degree k-2 polynomial chirps (k = 3, 4, 5).",
+    "Section 5: Exact field reconstruction from degree k-2 frame coefficients."
+  ]
+}

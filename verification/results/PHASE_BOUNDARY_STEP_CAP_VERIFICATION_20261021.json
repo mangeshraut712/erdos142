@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "total_checks": 1879,
+  "maximum_error": 1.3877787807814457e-17,
+  "scope": [
+    "Theorem 1 & Lemma 1: Sub-critical kernel collapse f_0(h)*1_{h!=0} == 0 and q == 0 for H=0 verified.",
+    "Theorem 3: Super-critical activation when H >= 1, pointwise hole support B*q == 0 and m > 0 verified.",
+    "Theorem 4: Exact phase boundary a_crit and activation threshold p_arith ~ 4.46e5 verified.",
+    "Scales log10(p) in [3, 184] audited; asymptotic safety margin H >> 1 verified."
+  ]
+}

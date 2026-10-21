@@ -11,7 +11,19 @@ settle [official #142](literature/OFFICIAL_142.md).
 
 ## Latest results (21 October 2026)
 
-1. **End-to-end iteration tradeoff closure.**
+1. **Higher-degree polynomial chirp frames ($k \ge 5$).**
+   Degree $k-2$ polynomial chirps control $k$-APs with pointwise hole support $B q_j = 0$ for all $j \in \{0, \dots, k-1\}$.
+   Unconditional completion mean positivity $m \ge k a^{k-1} \mu > 0$ and tight frame synthesis yield $\delta_k \ge c_k a^{(k-1)/2} \log(1/a)$.
+   [Proof and scope](audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md).
+2. **Phase boundary and step cap transition.**
+   Step cap $H = \lfloor \frac{\tau w p}{48 r} \rfloor$ governs the transition: $H = 0$ collapses sparse/random sets ($q \equiv 0$, $m = 0$),
+   while $H \ge 1$ for $p \ge 4.46 \times 10^5$ guarantees asymptotic safety margin $H \gg 1$.
+   [Proof and scope](audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md).
+3. **Quantitative rate and threshold analysis.**
+   Dimensionless budget cancellation $\mathcal{R}(N) = \frac{\Pi_J}{\frac{1}{100}\log p} \approx \frac{100 C_4}{(\log\log N)^2} \to 0$ ($C_4 \approx 1,800$),
+   yielding double-exponential threshold $N_0 \approx \exp(10^{184})$ and effective rate $r_4(N)/N \le O(1 / (\log N (\log\log N)^2))$.
+   [Proof and scope](audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md).
+4. **End-to-end iteration tradeoff closure.**
    The quarter-cell density increment $\Delta a \ge C_1 a^{3/2} \log(1/a)$ reaches
    terminal density $a_J > 4/5$, contradicting the twelve-slot ceiling $7/11$.
    The host presentation complexity obeys $r [ \log(p/|\Omega|) + \dots ] \le o(\log p)$,

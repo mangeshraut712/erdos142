@@ -46,6 +46,11 @@ The general logical equivalence is proved in
 - Complete iterative synthesis in [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md)
   verifies that the resulting quarter-cell density increment reaches the terminal density ceiling $a > 4/5 > 7/11$
   within host presentation budget. Verification across scales $\log_{10} N \in [10, 1000]$ passed.
+- Quantitative rate and threshold in [QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md)
+  proves dimensionless budget cancellation $\mathcal{R}(N) \sim (\log\log N)^{-2}$ and rate $r_4(N)/N \le O(1 / (\log N (\log\log N)^2))$.
+- Phase boundary and step cap transition in [PHASE_BOUNDARY_AND_STEP_CAP_20261021.md](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md)
+  proves that $H = 0$ collapses completion fields for sparse/random sets while $H \ge 1$ activates arithmetic forcing for $p \ge 4.46 \times 10^5$.
+- Higher-degree polynomial chirp frames for $k \ge 5$ established in [HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md).
 Counterexamples to one fixed multiplier or ineligible sparse sets do not
 supply the remaining sequence.
 

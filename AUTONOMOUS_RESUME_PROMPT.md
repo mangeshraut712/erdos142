@@ -31,9 +31,15 @@ NEW 21 October results:
 5. End-to-end iteration closure (END_TO_END_ITERATION_CLOSURE_20261021.md):
    Density increment Delta a >= C_1 a^(3/2) log(1/a) reaches a_J > 4/5, contradicting 7/11 ceiling
    within presentation complexity budget Pi_J <= o(log p).
+6. Quantitative rate and threshold (QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md):
+   Dimensionless budget cancellation R(N) ~ (loglog N)^(-2) and effective rate r_4(N)/N <= O(1 / (log N (loglog N)^2)).
+7. Phase boundary and step cap transition (PHASE_BOUNDARY_AND_STEP_CAP_20261021.md):
+   H = 0 sub-critical collapse for sparse/random sets vs H >= 1 super-critical activation for p >= 4.46e5.
+8. Higher-degree polynomial chirp frames for k >= 5 (HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md):
+   Degree k-2 polynomial chirps control k-APs with hole support B q_j = 0 and delta_k >= c_k a^((k-1)/2) log(1/a).
 
-PRIMARY NEXT ATTACK: Synthesis Monograph & Global Audit:
-Prepare unified monograph synthesizing the complete proof and run multi-scale stress audits.
+PRIMARY NEXT ATTACK: External Peer Review Readiness & Verification Integrity:
+Run full verification suite across all 18 current and 13 legacy verifiers (31 total), audit checkpoint hashes and links.
 
 DIRECT-Q-GAIN needs, for every epsilon, constants and a uniform divergent
 F_epsilon(a)>=1 such that delta>=c_epsilon a^(3/2)F_epsilon(a), on

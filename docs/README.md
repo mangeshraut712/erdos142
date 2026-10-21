@@ -12,6 +12,9 @@ was integrated on 21 October 2026.
 | [Repository overview](../README.md) | Current results, limits, and quickstart |
 | [Current status](../CURRENT_STATUS.md) | Authoritative current research status |
 | [Synthesis monograph](audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md) | Unified technical synthesis of the complete proof of $r_4(N)=o(N/\log N)$ |
+| [Higher-degree polynomial chirps](audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md) | Extension of completion frames and hole support to $k$-APs ($k \ge 5$) |
+| [Phase boundary and step cap](audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md) | Phase transition at $H = 1$ and arithmetic activation scale $p \ge 4.46 \times 10^5$ |
+| [Quantitative rate and threshold](audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md) | Dimensionless budget cancellation $\mathcal{R}(N) \sim (\log\log N)^{-2}$ and double-exponential $N_0$ |
 | [End-to-end iteration closure](audits/END_TO_END_ITERATION_CLOSURE_20261021.md) | Quarter-cell density increment synthesis and presentation complexity |
 | [Quadratic projection selection](audits/QUADRATIC_PROJECTION_SELECTION_20261021.md) | Finite quadratic chirp projection and divergent phase selection bound |
 | [Progress](PROGRESS.md) | Current proved, conditional, and open statements |

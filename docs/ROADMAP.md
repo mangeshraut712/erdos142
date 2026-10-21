@@ -17,7 +17,7 @@ Exhaustive peer review of each step, constant, and bound is required before outc
 
 ## 2. Multi-scale stress audits and extended verification
 
-The current verification suite comprises 15 verifiers covering all aspects of the proof.
+The current verification suite comprises 18 current and 13 legacy verifiers (31 total) covering all aspects of the proof.
 Extend numerical verification to higher primes, varied host parameters, and alternative
 density regimes to continuously audit boundary constants.
 

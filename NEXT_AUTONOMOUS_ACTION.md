@@ -1,7 +1,8 @@
 # Next autonomous action — 21 October 2026
 
 Resume from `checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json`, `CURRENT_STATUS.md`,
-`docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md`, and `OPEN_LEMMAS.md`.
+`docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md`, `docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md`,
+`docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md`, and `OPEN_LEMMAS.md`.
 The mathematical frontier is 21 October. Outcome D; the unconditional
 local target and DIRECT-Q-GAIN remain OPEN pending formal community review.
 
@@ -19,9 +20,13 @@ The 21 October work establishes:
    ([UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md)).
 6. Quantitative threshold and explicit rate analysis: $r_4(N) / N \le O(1 / (\log N (\log\log N)^2))$
    ([QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md)).
+7. Phase boundary and step cap transition: $H = 0$ collapses sparse/random sets while $H \ge 1$ activates arithmetic forcing
+   ([PHASE_BOUNDARY_AND_STEP_CAP_20261021.md](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md)).
+8. Higher-degree polynomial chirp frames for general $k$-APs ($k \ge 5$):
+   ([HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md)).
 
-The PRIMARY NEXT ATTACK is Comprehensive Cross-Verification & Peer Review Readiness:
-1. Run the full verification suite across all 16 current and 13 legacy verifiers (29 total).
+The PRIMARY NEXT ATTACK is Community & External Peer Review Readiness:
+1. Run the full verification suite across all 18 current and 13 legacy verifiers (31 total).
 2. Audit all SHA256 hashes, local markdown links, and ledger entries with `check_repository.py`.
 3. Prepare the repository for peer scrutiny and community review.
 

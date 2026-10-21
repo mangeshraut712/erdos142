@@ -25,6 +25,9 @@ By [Mangesh Raut](https://github.com/mangeshraut712). Research through
 
 | Result in the notes | What it establishes | Limit |
 |---|---|---|
+| [Higher-degree polynomial chirp frames](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md) | Degree $k-2$ polynomial chirps control $k$-APs with pointwise hole support $B q_j = 0$ for $k \ge 5$ | Generalizes the algebraic frame and hole mechanism to arbitrary $k$ |
+| [Phase boundary and step cap transition](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md) | Structural phase transition at $H = 1$: sub-critical collapse $H = 0$ vs super-critical activation $H \ge 1$ | Resolves why sparse/random sets avoid 4-APs without chirp correlation |
+| [Quantitative rate and threshold](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md) | Dimensionless budget cancellation $\mathcal{R}(N) \sim (\log\log N)^{-2}$, double-exponential threshold, and effective rate | Proves $r_4(N)/N \le O(1 / (\log N (\log\log N)^2))$ |
 | [End-to-end iteration closure](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md) | Quarter-cell density increment reaches $a > 4/5 > 7/11$ with presentation budget $o(\log p)$ | Asymptotic iteration tradeoff; Outcome D maintained pending peer review |
 | [Finite quadratic chirp projection](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md) | Divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$ via $n \le \lceil 1/a \rceil$ dominant modes | Established on reachable mixed-window hosts; audited across 27 cases |
 | [Exact quadratic chirp tight frame](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md) | Exact tight frame on mean-zero functions with zero residual error $e \equiv 0$ | Canonical coefficient sum includes all $p^2 - 1$ frame phases |

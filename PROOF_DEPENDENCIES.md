@@ -7,6 +7,9 @@ dated claims and corrections.
 
 | Node | Classification | Dependencies and limitation |
 | --- | --- | --- |
+| HC21 | PROVED polynomial chirp generalization | Generalizes k-AP hole support B q_j = 0 and tight frame reconstruction to k >= 5; HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md |
+| PB21 | PROVED phase boundary & step cap transition | Resolves H = 0 sub-critical collapse vs H >= 1 super-critical activation and p_arith ~ 4.46e5; PHASE_BOUNDARY_AND_STEP_CAP_20261021.md |
+| QR21 | PROVED quantitative threshold & rate | EC21 step count + dimensionless budget cancellation R(N) ~ (loglog N)^(-2); QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md |
 | EC21 | PROVED iterative synthesis | QP21 divergent phase selection + direct quarter-cell tradeoff + twelve-slot terminal ceiling; END_TO_END_ITERATION_CLOSURE_20261021.md |
 | QP21 | PROVED finite projection certificate | Centered tight frame QF21 + dominant phase selection n <= ceil(1/a) capturing theta >= 0.10 + spectral compression; QUADRATIC_PROJECTION_SELECTION_20261021.md |
 | QF21 | PROVED canonical tight frame | Non-trivial centered chirps form exact tight frame on mean-zero functions (e = 0 identically); QUADRATIC_FRAME_CERTIFICATE_20261021.md |

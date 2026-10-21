@@ -51,8 +51,8 @@ python verification/check_repository.py
 python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-`current` runs the sixteen October 17–21 entry points; `legacy` runs the
-thirteen original September verifiers; `all` runs both (29 scripts).
+`current` runs the eighteen October 17–21 entry points; `legacy` runs the
+thirteen original September verifiers; `all` runs both (31 scripts).
 These options select the publication suites, not every historical experiment.
 The runner copies the complete research tree to a temporary directory,
 sets the local module paths, keeps assertions enabled, and records exit
@@ -110,6 +110,13 @@ experiment must be rerun together.
 | Typical-event alteration construction | `python verification/scripts/verify_boolean_typical_alteration_20261018.py` | NumPy |
 | Covariance obstruction: finite mask, tent, and count checks | `python verification/scripts/verify_o2_covariance_attack_20261019.py` | None |
 | Positive-density branch elimination: finite estimates | `python verification/scripts/verify_positive_density_branch_20261019.py` | None |
+| Completion energy resolution and W8 refutation | `python verification/scripts/verify_completion_energy_resolution_20261021.py` | NumPy |
+| Canonical quadratic chirp tight frame reconstruction | `python verification/scripts/verify_quadratic_frame_certificate_20261021.py` | NumPy |
+| Finite quadratic chirp projection theorem | `python verification/scripts/verify_quadratic_projection_selection_20261021.py` | NumPy |
+| End-to-end iteration closure & host eligibility | `python verification/scripts/verify_end_to_end_iteration_closure_20261021.py` | NumPy |
+| Quantitative threshold & explicit decay rate | `python verification/scripts/verify_quantitative_threshold_20261021.py` | NumPy |
+| Phase boundary and step cap transition | `python verification/scripts/verify_phase_boundary_step_cap_20261021.py` | NumPy |
+| Higher-degree polynomial chirp frames ($k \ge 5$) | `python verification/scripts/verify_higher_degree_polynomial_chirp_20261021.py` | NumPy |
 
 Read the associated dated Markdown note before interpreting a report.
 The mathematical statements have hypotheses that are not automatically
