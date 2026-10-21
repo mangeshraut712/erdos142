@@ -18,7 +18,7 @@ contribution integrity.
 - Repository: https://github.com/mangeshraut712/erdos142
 
 Work on this pack began with the offline notes dated **2026-09-06** and
-has continued through at least **2026-09-14** in the dated audit files.
+has continued through **2026-10-21** in the dated audit files.
 Those dates and the git history are the public timestamp.
 
 ## Dated commits are prior art
