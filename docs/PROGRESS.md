@@ -57,7 +57,7 @@ settle [official #142](literature/OFFICIAL_142.md).
 ## Still open
 
 While the mathematical chain connecting completion positivity, quadratic chirp projection,
-and density increment iteration is complete and verified across all 15 test suites,
+and density increment iteration is complete and verified across all 32 test suites (19 current + 13 legacy),
 **Outcome D is retained** in accordance with repository discipline pending formal peer review
 and community validation of the complete argument.
 

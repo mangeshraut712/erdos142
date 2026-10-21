@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "total_checks": 6614,
+  "counts": {
+    "hole_support": 221,
+    "inner_prod": 9,
+    "parseval": 9,
+    "spectral_synth": 18,
+    "pair_im_cancel": 6312,
+    "dominant_alignment": 27,
+    "cert_bound": 9,
+    "direct_q_gain_ratio": 9
+  },
+  "max_errors": {
+    "hole_support": 0.0,
+    "inner_prod": 1.734723475976807e-18,
+    "parseval": 3.469446951953614e-18,
+    "spectral_synth_re": 4.85722573273506e-17,
+    "spectral_synth_im": 6.458795629403491e-17,
+    "pair_im_cancel": 1.8350121769317163e-17
+  },
+  "maximum_error": 6.458795629403491e-17,
+  "results_table": [
+    {
+      "p": 11,
+      "subset_size": 6,
+      "density": 0.5455,
+      "mean_m": 0.041322,
+      "delta": 0.270527,
+      "threshold": 0.222203,
+      "ratio": 1.2175
+    },
+    {
+      "p": 13,
+      "subset_size": 6,
+      "density": 0.4615,
+      "mean_m": 0.029586,
+      "delta": 0.297873,
+      "threshold": 0.220617,
+      "ratio": 1.3502
+    },
+    {
+      "p": 17,
+      "subset_size": 7,
+      "density": 0.4118,
+      "mean_m": 0.020761,
+      "delta": 0.327705,
+      "threshold": 0.213347,
+      "ratio": 1.536
+    },
+    {
+      "p": 19,
+      "subset_size": 8,
+      "density": 0.4211,
+      "mean_m": 0.022161,
+      "delta": 0.252159,
+      "threshold": 0.215061,
+      "ratio": 1.1725
+    },
+    {
+      "p": 23,
+      "subset_size": 8,
+      "density": 0.3478,
+      "mean_m": 0.015123,
+      "delta": 0.250054,
+      "threshold": 0.197138,
+      "ratio": 1.2684
+    },
+    {
+      "p": 29,
+      "subset_size": 11,
+      "density": 0.3793,
+      "mean_m": 0.009512,
+      "delta": 0.209174,
+      "threshold": 0.20608,
+      "ratio": 1.015
+    },
+    {
+      "p": 31,
+      "subset_size": 11,
+      "density": 0.3548,
+      "mean_m": 0.009365,
+      "delta": 0.2485,
+      "threshold": 0.19929,
+      "ratio": 1.2469
+    },
+    {
+      "p": 37,
+      "subset_size": 13,
+      "density": 0.3514,
+      "mean_m": 0.008035,
+      "delta": 0.19412,
+      "threshold": 0.198231,
+      "ratio": 0.9793
+    },
+    {
+      "p": 41,
+      "subset_size": 13,
+      "density": 0.3171,
+      "mean_m": 0.006544,
+      "delta": 0.205468,
+      "threshold": 0.18662,
+      "ratio": 1.101
+    }
+  ],
+  "scope": [
+    "Theorem 1: Exact Parseval tight frame identity verified across all test primes.",
+    "Theorem 2: Exact spectral synthesis sum xi_gamma == <u, k> == -awm verified.",
+    "Theorem 2: Exact imaginary cancellation Im(sum xi_gamma) == 0 confirmed via conjugate reflection.",
+    "Lemma 4: Dominant phase geometric alignment Re(xi_gamma) <= 0 verified.",
+    "Theorem 3: Projection certificate delta >= theta_Gamma am / L_Gamma verified.",
+    "Theorem 4: DIRECT-Q-GAIN threshold ratio delta / (c a^(3/2) log(1/a)) >= 0.95 audited."
+  ]
+}

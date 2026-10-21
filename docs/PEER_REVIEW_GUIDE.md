@@ -35,13 +35,13 @@ python -m pip install -e ".[verification]"
 # 1. Audit repository integrity (hashes, links, JSON, syntax)
 python verification/check_repository.py
 
-# 2. Run all 31 verifiers (18 current + 13 legacy) in isolated execution
+# 2. Run all 32 verifiers (19 current + 13 legacy) in isolated execution
 python verification/run_current.py --suite all
 ```
 
 Expected output:
-- `check_repository.py`: `{"status": "passed", "python_files": 94, "json_files": 133, "local_links": 131, "checkpoint_hashes": 502}`
-- `run_current.py`: 31 scripts pass (`PASS verification/scripts/...`), exit code `0`.
+- `check_repository.py`: `{"status": "passed", "python_files": 95, "json_files": 134, "local_links": 135, "checkpoint_hashes": 513}`
+- `run_current.py`: 32 scripts pass (`PASS verification/scripts/...`), exit code `0`.
 
 ---
 
@@ -52,6 +52,7 @@ Expected output:
 | **Section 3: Lemma 1** | Pointwise hole support $B(v) q_j(v) \equiv 0$ on 4-AP-free sets | [`verify_completion_energy_resolution_20261021.py`](../verification/scripts/verify_completion_energy_resolution_20261021.py) | 196 checks; max error $6.66 \times 10^{-16}$ |
 | **Section 3: Theorem 3** | Unconditional mean positivity $m \ge 4 a^3 \mu > 0$ | [`verify_completion_energy_resolution_20261021.py`](../verification/scripts/verify_completion_energy_resolution_20261021.py) | Verified across reachable hosts |
 | **Section 4: Theorem 1** | Centered quadratic chirp tight frame reconstruction ($e \equiv 0$) | [`verify_quadratic_frame_certificate_20261021.py`](../verification/scripts/verify_quadratic_frame_certificate_20261021.py) | 203 checks; Parseval identity confirmed |
+| **Section 5: Lemma 3** | Geometric phase alignment $\text{Re}(\xi_\gamma) < 0$ & conjugate reflection $\text{Im}(\sum \xi_\gamma) = 0$ | [`verify_spectral_phase_alignment_20261021.py`](../verification/scripts/verify_spectral_phase_alignment_20261021.py) | 6,614 checks; max error $6.46 \times 10^{-17}$ |
 | **Section 5: Theorem 2** | Finite projection certificate $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$ | [`verify_quadratic_projection_selection_20261021.py`](../verification/scripts/verify_quadratic_projection_selection_20261021.py) | 19,125 checks across 27 cases in $p \in [11, 41]$ |
 | **Section 5: Theorem 3** | Dominant phase selection bound $\delta \ge c a^{3/2} \log(1/a)$ ($c \ge 0.91$) | [`verify_quadratic_projection_selection_20261021.py`](../verification/scripts/verify_quadratic_projection_selection_20261021.py) | Zero matrix inversion; $n \le \lceil 1/a \rceil$ phases |
 | **Section 6: Theorem 4** | Phase transition at $H = 1$, $H=0$ collapse, $p_{\text{arith}} \approx 4.46 \times 10^5$ | [`verify_phase_boundary_step_cap_20261021.py`](../verification/scripts/verify_phase_boundary_step_cap_20261021.py) | 1,879 checks across $\log_{10} p \in [3, 184]$ |

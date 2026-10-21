@@ -26,7 +26,7 @@ The 21 October work establishes:
    ([HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md)).
 
 The PRIMARY NEXT ATTACK is Community & External Peer Review Readiness:
-1. Run the full verification suite across all 18 current and 13 legacy verifiers (31 total).
+1. Run the full verification suite across all 19 current and 13 legacy verifiers (32 total).
 2. Audit all SHA256 hashes, local markdown links, and ledger entries with `check_repository.py`.
 3. Prepare the repository for peer scrutiny and community review.
 

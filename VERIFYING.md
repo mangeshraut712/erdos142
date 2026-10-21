@@ -51,8 +51,8 @@ python verification/check_repository.py
 python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-`current` runs the eighteen October 17–21 entry points; `legacy` runs the
-thirteen original September verifiers; `all` runs both (31 scripts).
+`current` runs the nineteen October 17–21 entry points; `legacy` runs the
+thirteen original September verifiers; `all` runs both (32 scripts).
 These options select the publication suites, not every historical experiment.
 The runner copies the complete research tree to a temporary directory,
 sets the local module paths, keeps assertions enabled, and records exit
@@ -117,6 +117,7 @@ experiment must be rerun together.
 | Quantitative threshold & explicit decay rate | `python verification/scripts/verify_quantitative_threshold_20261021.py` | NumPy |
 | Phase boundary and step cap transition | `python verification/scripts/verify_phase_boundary_step_cap_20261021.py` | NumPy |
 | Higher-degree polynomial chirp frames ($k \ge 5$) | `python verification/scripts/verify_higher_degree_polynomial_chirp_20261021.py` | NumPy |
+| Geometric phase alignment and chirp synthesis | `python verification/scripts/verify_spectral_phase_alignment_20261021.py` | NumPy |
 
 Read the associated dated Markdown note before interpreting a report.
 The mathematical statements have hypotheses that are not automatically

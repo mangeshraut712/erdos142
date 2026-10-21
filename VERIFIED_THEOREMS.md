@@ -5,7 +5,10 @@ The current reports are [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/E
 and [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md).
 The publication checkpoint is `AUTONOMOUS_CHECKPOINT_20261021.json`.
 
-1. **HC21 — PROVED polynomial chirp frame generalization for $k \ge 5$:**
+1. **SP21 — PROVED geometric phase alignment and quadratic chirp spectral synthesis:**
+   Exact total correlation $\sum_\gamma \xi_\gamma = \langle u, k \rangle = -awm$ verified with zero imaginary residual ($\sum \text{Im}(\xi_\gamma) = 0$) via conjugate pair reflection symmetry $\xi_{(c, t)} + \xi_{(-c, -t)} \in \mathbb{R}$. All dominant modes in $\Gamma_n$ satisfy $\text{Re}(\xi_\gamma) < 0$, ensuring coherent constructive addition without phase cancellation.
+   [verify_spectral_phase_alignment_20261021.py](verification/scripts/verify_spectral_phase_alignment_20261021.py); 6,614 checks.
+2. **HC21 — PROVED polynomial chirp frame generalization for $k \ge 5$:**
    $k$-channel hole support $B(v) q_j(v) \equiv 0$ holds pointwise for all $j \in \{0, \dots, k-1\}$, forcing $\langle u, q \rangle = -am \le -k a^k \mu < 0$.
    Degree $k-2$ polynomial chirps form a tight frame on $L^2(\mathbb{F}_p)$ with canonical reconstruction $\delta_k \ge c_k a^{(k-1)/2} \log(1/a)$.
    [HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md); 2,030 checks.

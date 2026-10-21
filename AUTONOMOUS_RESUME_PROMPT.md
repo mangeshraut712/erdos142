@@ -39,7 +39,7 @@ NEW 21 October results:
    Degree k-2 polynomial chirps control k-APs with hole support B q_j = 0 and delta_k >= c_k a^((k-1)/2) log(1/a).
 
 PRIMARY NEXT ATTACK: External Peer Review Readiness & Verification Integrity:
-Run full verification suite across all 18 current and 13 legacy verifiers (31 total), audit checkpoint hashes and links.
+Run full verification suite across all 19 current and 13 legacy verifiers (32 total), audit checkpoint hashes and links.
 
 DIRECT-Q-GAIN needs, for every epsilon, constants and a uniform divergent
 F_epsilon(a)>=1 such that delta>=c_epsilon a^(3/2)F_epsilon(a), on

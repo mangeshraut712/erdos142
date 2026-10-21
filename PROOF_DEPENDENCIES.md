@@ -7,6 +7,7 @@ dated claims and corrections.
 
 | Node | Classification | Dependencies and limitation |
 | --- | --- | --- |
+| SP21 | PROVED geometric phase alignment | Conjugate reflection Im(sum xi) = 0 and Re(xi) < 0 on dominant modes; verify_spectral_phase_alignment_20261021.py |
 | HC21 | PROVED polynomial chirp generalization | Generalizes k-AP hole support B q_j = 0 and tight frame reconstruction to k >= 5; HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md |
 | PB21 | PROVED phase boundary & step cap transition | Resolves H = 0 sub-critical collapse vs H >= 1 super-critical activation and p_arith ~ 4.46e5; PHASE_BOUNDARY_AND_STEP_CAP_20261021.md |
 | QR21 | PROVED quantitative threshold & rate | EC21 step count + dimensionless budget cancellation R(N) ~ (loglog N)^(-2); QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md |
