@@ -21,6 +21,8 @@ was integrated on 21 October 2026.
 | [Roadmap](ROADMAP.md) | Concrete next mathematical tasks |
 | [Open lemmas](../OPEN_LEMMAS.md) | Full quantifiers and remaining gaps |
 | [Proof dependencies](../PROOF_DEPENDENCIES.md) | Dependencies and external classical input |
+| [Peer review guide](PEER_REVIEW_GUIDE.md) | Reproducibility and mathematical verification mapping |
+| [LaTeX manuscript](manuscript/README.md) | Standalone AMS-LaTeX paper and BibTeX bibliography |
 | [Verification guide](../VERIFYING.md) | Reproduce finite checks without changing saved reports |
 | [Latest checkpoint](../checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json) | Status and source hashes |
 | [Official problem](literature/OFFICIAL_142.md) | Distinction between official #142 and the local target |
