@@ -359,7 +359,7 @@
   "history": "history/proof_audit_20261021",
   "next_action": "Prove residual control and cross-spectrum concentration on eligible hosts, with the low-mean branch, or prove conditional W8. Do not infer these from the tight frame or finite tests.",
   "file_sha256": {
-    ".github/workflows/verify.yml": "31b3a3cf6472ac32f63b499bc150aefb42aca6c62f8f100097ada77e2081ddeb",
+    ".github/workflows/verify.yml": "1ad0d95eeca4e5b79fed3a11f0004d3b6cc9e7c214c0c0c19b65d1c75727ffae",
     ".gitignore": "0b834a89b7020b98dddb46d0c1fd73af836772c68b3c915c0b18ca730884341a",
     "AGENTS.md": "42743fbe656babfe6108a3a87e947834f2747ae7bdb863f4a73c33927f6ecf45",
     "AUTHORS": "6040f8dd3ef92f2fab8b0cfc77dbafd4e55e2d11a0fc991ad3d015911a921dca",
