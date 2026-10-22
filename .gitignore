@@ -6,3 +6,6 @@ __pycache__/
 dist/
 build/
 .verification-runs/
+# Local agent tooling
+.agents/
+skills-lock.json
