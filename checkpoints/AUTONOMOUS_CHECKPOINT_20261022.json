@@ -360,7 +360,7 @@
   "next_action": "Prove residual control and cross-spectrum concentration on eligible hosts, with the low-mean branch, or prove conditional W8. Do not infer these from the tight frame or finite tests.",
   "file_sha256": {
     ".github/workflows/verify.yml": "31b3a3cf6472ac32f63b499bc150aefb42aca6c62f8f100097ada77e2081ddeb",
-    ".gitignore": "2769b20fead5be19720f1769a9f3e866e526c6b81f11ddeefc2f4307eed9ead7",
+    ".gitignore": "0b834a89b7020b98dddb46d0c1fd73af836772c68b3c915c0b18ca730884341a",
     "AGENTS.md": "42743fbe656babfe6108a3a87e947834f2747ae7bdb863f4a73c33927f6ecf45",
     "AUTHORS": "6040f8dd3ef92f2fab8b0cfc77dbafd4e55e2d11a0fc991ad3d015911a921dca",
     "AUTONOMOUS_RESUME_PROMPT.md": "b82c49fb1d8dfcf241e53b4389ae8aebbe4e48c82a81f358842df43d7172e0c4",
@@ -780,7 +780,6 @@
     "history/weighted_pair_20261016/new_verifier_stdout.json": "06b87357514de9bec60594ee3f26b9fa351d4a8fa76c5e9809d58fcc22618e23",
     "history/weighted_pair_20261016/prior_verifier_rerun.json": "5537d688b604ea49244de0ab2e2a409d78471d778f3db1bb5738aadf94d50831",
     "pyproject.toml": "4ac8b5e233d1fe713585528f5549c303e1096b56f488b1dd08508762a359f5bc",
-    "skills-lock.json": "0b32679053600f211d356e263f27c0c9cdbcc8a0e2619ebe0a7a2b244ef82b34",
     "verification/check_repository.py": "cde79578bebe58391e8dbd7a263725c0a4f5ae5a0e02a6aff051259c4803b7ef",
     "verification/results/BOOLEAN_ALTERATION_CHIRP_VERIFICATION_20261018.json": "2ab53cfc53bcf27b1a3a8c1f1a333fa758a5bde2f4f382c3371cbd0c33794843",
     "verification/results/BOOLEAN_O2_DIAGNOSTICS_20261017.json": "1ca3ef4af72ada869a64a4acd296bf897d24c84ffeb5365319b4abf2f38198c7",
