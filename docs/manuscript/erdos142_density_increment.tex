@@ -33,8 +33,7 @@
 \newcommand{\eps}{\varepsilon}
 \newcommand{\one}{\mathbf{1}}
 
-\title[A Density Increment Proof for Four-Term Progressions]{A Density Increment Proof of $r_4(N) = o(N/\log N)$ via Quadratic Chirp Frames on Mixed Arithmetic Windows}
-
+\title[Withdrawn proof draft]{Withdrawn proof draft: quadratic chirp density increment attempt}
 \author{Mangesh Raut}
 \address{Independent Researcher}
 \email{mangeshraut@users.noreply.github.com}
@@ -43,19 +42,22 @@
 \begin{document}
 
 \begin{abstract}
-Let $r_4(N)$ denote the maximum size of a subset of $\{1, \dots, N\}$ containing no four-term arithmetic progressions.
-A longstanding open problem in additive combinatorics, associated with Erd\H{o}s Problem~142, is whether $r_4(N) = o(N/\log N)$.
-In this paper, we establish that $r_4(N) \le O\left( \frac{N}{\log N (\log\log N)^2} \right)$.
-The proof proceeds via a density increment strategy on mixed circular-interval hosts $\Omega \subset \F_p$.
-The key structural engine is the exact tight frame of centered quadratic chirps, which unconditionally decomposes the centered arithmetic completion field $k = q - m$ with zero residual error.
-Because the set is progression-free, the completion field is supported strictly on the holes of $A$, forcing $\langle u, -k \rangle = am > 0$.
-A finite projection certificate selects $n \le \lceil 1/a \rceil$ dominant chirp phases without matrix inversion, capturing at least $10\%$ of the completion energy and establishing a quadratic correlation of order $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
-A quarter-cell density increment then produces $\Delta a \ge C_1 a^{3/2} \log(1/a)$, driving the density past $4/5$ in $J \le O\left(\frac{\sqrt{\log N}}{\log\log N}\right)$ steps.
-We prove a dimensionless budget cancellation showing that the host presentation complexity product satisfies $\Pi_j = o(\log p)$ throughout, preserving host eligibility with an asymptotically infinite safety margin and terminating in a contradiction against the twelve-slot density ceiling $a \le 7/11$.
-We also determine the exact phase boundary $H = 1$ separating sparse pseudo-random sets from the structured arithmetic regime, and formulate the natural generalization to $k$-term progressions using degree $k-2$ polynomial chirps.
+This draft is withdrawn as a proof as of October 22, 2026. The claimed
+phase selection, unconditional iteration closure, and explicit asymptotic
+rate are not established. The argument reverses a norm inequality,
+omits an uncontrolled cubic term, and assumes spectral concentration
+without proof. The target and conditional P12/W8 remain open.
+The original body below is retained solely as a disputed historical draft.
+The authoritative correction is the repository note
+\texttt{OCT21\_CLOSURE\_CORRECTION\_20261021.md}.
 \end{abstract}
 
 \maketitle
+
+\section*{Withdrawal notice}
+Every claim of a completed proof or effective rate in the retained body
+below is superseded by this notice. Finite checks do not establish those
+claims. This document is not ready for submission as a proof.
 
 \tableofcontents
 

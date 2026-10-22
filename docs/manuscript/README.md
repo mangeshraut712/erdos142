@@ -1,34 +1,15 @@
-# LaTeX Monograph: A Density Increment Proof of $r_4(N) = o(N / \log N)$
+# Withdrawn manuscript draft
 
-This directory contains the standalone LaTeX publication manuscript for the proof of the quantitative rate for 4-AP-free sets:
-$$\frac{r_4(N)}{N} \le O\left( \frac{1}{\log N (\log\log N)^2} \right).$$
+The October 21 manuscript is **withdrawn as a proof** as of 22 October 2026.
+The claimed asymptotic rate and unconditional selection argument are not
+established. See the [proof correction](../audits/OCT21_CLOSURE_CORRECTION_20261021.md).
 
-## Contents
+`erdos142_density_increment.tex` now carries a withdrawal title, abstract,
+and notice; the disputed body is retained for audit history. The original
+source is preserved under [history](../../history/proof_audit_20261021/disputed_sources/docs/manuscript/).
+The bibliography is retained as part of that draft, not a newly validated
+literature review. This manuscript is not ready for submission as a proof.
 
-- `erdos142_density_increment.tex`: Complete AMS-LaTeX paper containing all formal definitions, lemmas, theorems, and proofs.
-- `references.bib`: BibTeX bibliography file.
-
-## Compilation Instructions
-
-To compile with `pdflatex` and `bibtex`:
-
-```bash
-pdflatex erdos142_density_increment.tex
-bibtex erdos142_density_increment
-pdflatex erdos142_density_increment.tex
-pdflatex erdos142_density_increment.tex
-```
-
-Or using `latexmk`:
-
-```bash
-latexmk -pdf erdos142_density_increment.tex
-```
-
-Or using `tectonic`:
-
-```bash
-tectonic erdos142_density_increment.tex
-```
-
-The manuscript is also fully compatible with Overleaf and arXiv submission.
+No PDF or successful TeX compilation is claimed by this correction. The
+Python suites do not compile TeX. If a local TeX toolchain is available,
+compile the source only as a clearly labeled withdrawn draft.

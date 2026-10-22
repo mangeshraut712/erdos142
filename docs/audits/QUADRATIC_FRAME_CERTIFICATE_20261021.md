@@ -1,3 +1,15 @@
+> **Correction, 21 October 2026: the closure claims below are withdrawn.**
+> This file retains the disputed draft for audit history. It does not prove
+> DIRECT-Q-GAIN, P12/W8 failure, completion-mean positivity, an unconditional
+> iteration closure, or an asymptotic rate. Some exact algebraic identities
+> survive; the claimed spectral concentration and norm bounds do not follow.
+> See [the authoritative correction](OCT21_CLOSURE_CORRECTION_20261021.md)
+> for the precise surviving statements, proof gaps, and finite counterchecks.
+> The target and conditional P12/W8 remain **OPEN**; this is a missing-proof
+> issue, not merely a wait for external peer review.
+
+---
+
 # Exact quadratic chirp tight frame and the completion certificate (O3)
 
 21 October 2026. Offline research report. **PROVED canonical tight frame and phase selection bound.**

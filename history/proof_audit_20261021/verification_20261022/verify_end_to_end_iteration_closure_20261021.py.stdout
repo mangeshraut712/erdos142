@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "total_checks": 2385,
+  "counts": {
+    "step_gain_formula": 2316,
+    "terminal_density_exceeds_80": 21,
+    "terminal_contradiction_7_11": 21,
+    "simulated_steps_within_epoch_bound": 21,
+    "budget_ratio_strict_decay": 6
+  },
+  "maximum_error": 6.938893903907228e-18
+}

@@ -34,6 +34,7 @@ CURRENT = [
     "verification/scripts/verify_phase_boundary_step_cap_20261021.py",
     "verification/scripts/verify_higher_degree_polynomial_chirp_20261021.py",
     "verification/scripts/verify_spectral_phase_alignment_20261021.py",
+    "verification/scripts/verify_oct21_closure_correction_20261021.py",
 ]
 LEGACY = [
     f"verification/scripts/{name}.py"

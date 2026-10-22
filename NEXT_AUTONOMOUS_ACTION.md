@@ -1,58 +1,28 @@
-# Next autonomous action — 21 October 2026
+# Next research action
 
-Resume from `checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json`, `CURRENT_STATUS.md`,
-`docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md`, `docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md`,
-`docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md`, and `OPEN_LEMMAS.md`.
-The mathematical frontier is 21 October. Outcome D; the unconditional
-local target and DIRECT-Q-GAIN remain OPEN pending formal community review.
+**Status: OPEN; outcome D, partial results only.** Updated 22 October 2026.
+The local target `r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, P12 and W8 remain
+unproved. The October 21 closure and effective-rate claims are withdrawn
+because of missing proof steps, not merely pending external peer review.
 
-The 21 October work establishes:
-1. Completion energy resolution & unconditional completion positivity: $m \ge 4 a^3 \mu > 0$
-   ([COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md)).
-2. Canonical quadratic chirp tight frame reconstruction ($e \equiv 0$):
-   ([QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md)).
-3. Finite quadratic chirp projection theorem: $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$
-   ([QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md)).
-4. End-to-end iteration closure & host eligibility: quarter-cell density increment reaches
-   $a_J > 4/5$, contradicting twelve-slot ceiling $a \le 7/11 + o(1)$ within presentation budget
-   ([END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md)).
-5. Unified technical synthesis monograph consolidating the complete proof:
-   ([UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md)).
-6. Quantitative threshold and explicit rate analysis: $r_4(N) / N \le O(1 / (\log N (\log\log N)^2))$
-   ([QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md)).
-7. Phase boundary and step cap transition: $H = 0$ collapses sparse/random sets while $H \ge 1$ activates arithmetic forcing
-   ([PHASE_BOUNDARY_AND_STEP_CAP_20261021.md](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md)).
-8. Higher-degree polynomial chirp frames for general $k$-APs ($k \ge 5$):
-   ([HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md)).
+Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json).
 
-The PRIMARY NEXT ATTACK is Community & External Peer Review Readiness:
-1. Run the full verification suite across all 19 current and 13 legacy verifiers (32 total).
-2. Audit all SHA256 hashes, local markdown links, and ledger entries with `check_repository.py`.
-3. Prepare the repository for peer scrutiny and community review.
+For genuinely eligible AP-free hosts under failed adequate phase selection,
+prove `E_F(u)<=2U^2+2R3+a^4wmu`, where `U=wa(1-a)`, or prove adequate
+phase selection directly. Use the pointwise completion identities `Bq_j=0`
+together with T5, logarithmic density, original weight, and exact diagonals.
+Retain the cubic term. Do not replace one-sided pair bounds by equalities.
 
-The positive-density failure branch is closed by
-`POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`, with explicit use of
-the classical qualitative four-term Szemerédi theorem. The remaining
-DIRECT-Q-GAIN failure must be an eligible `a->0` sequence with bounded
-`delta/a^(3/2)`. The classical theorem is not reproved, and no rate at
-logarithmic density follows from its uncontrolled threshold.
+A direct completion route needs a uniform cross-spectrum concentration
+bound and control of the orthogonal residual, plus the small/zero completion
+mean branch. The exact frame alone does not provide any of these.
 
-Read the original framework before changing hypotheses:
-`WEIGHTED_PAIR_REDUCTION_20261016.md`,
-`DIRECT_INCREMENT_TRADEOFF_20261016.md`, and
-`MIXED_QUADRATIC_TERMINAL_20261016.md`.
-The terminal ceiling is `7/11+o(1)` under M13. Improving only that constant
-does not supply the structural phase-selection step; the conditional
-iteration parameters need no recalculation.
+Read the correction before any proof attempt. Test proposed norm and
+concentration inequalities on the recorded rational counterexamples before
+using them in an iteration. Preserve failed drafts and audit new analytic
+steps independently; passing finite checks cannot replace a proof.
 
-Every proposed counterexample must satisfy T5, the density range, actual
-AP exclusion, original H, and the failed cap. The 76 finite witnesses,
-the polynomial-density AP-free construction, and the October 19 block
-construction each fail at least one condition. Refuting one fixed
-multiplier is insufficient to negate the full DIRECT-Q-GAIN statement.
+## Previous record
 
-Use the latest checkpoint and `VERIFYING.md` for verification scope and
-commands. Do not repeat unchanged suites merely to restart. Independently
-audit a new proof and run the smallest relevant finite check. Preserve
-historical sources, update all nine navigation/ledger files, and save a
-dated checkpoint before ending. Saved notes do not imply background work.
+The [superseded pre-correction version](history/proof_audit_20261021/before_updates/NEXT_AUTONOMOUS_ACTION.md) is preserved verbatim. Earlier dated sources remain in [docs/audits/](docs/audits/) and [history/](history/).

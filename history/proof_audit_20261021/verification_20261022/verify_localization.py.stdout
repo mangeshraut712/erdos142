@@ -1,0 +1,69 @@
+{
+  "status": "proved bridge checks passed; extraction and target remain OPEN",
+  "terminal": {
+    "windows": 104,
+    "actual_4ap_free_subsets": 4418,
+    "arithmetic": "integer roots, residues, and exact packing"
+  },
+  "factor_atom_cases": 152,
+  "signed_factors": [
+    {
+      "p": 5,
+      "size": 2,
+      "T": "2/125",
+      "low_cubic": false,
+      "coarse_factors_checked": 10,
+      "signed_preserving_factors": 0,
+      "single_character_preserving_factors": 0,
+      "preserving_witnesses": [],
+      "soft_level_set_checked": false,
+      "scope": "finite diagnostic; no uniform compression theorem inferred"
+    },
+    {
+      "p": 13,
+      "size": 4,
+      "T": "-12/2197",
+      "low_cubic": true,
+      "coarse_factors_checked": 26,
+      "signed_preserving_factors": 1,
+      "single_character_preserving_factors": 0,
+      "preserving_witnesses": [
+        {
+          "frequencies": [
+            1,
+            3
+          ],
+          "offset": 0,
+          "cells": 12,
+          "correlation": "-12/2197"
+        }
+      ],
+      "soft_level_set_checked": true,
+      "scope": "finite diagnostic; no uniform compression theorem inferred"
+    },
+    {
+      "p": 101,
+      "size": 28,
+      "T": "-1348/1030301",
+      "low_cubic": true,
+      "coarse_factors_checked": 202,
+      "signed_preserving_factors": 1,
+      "single_character_preserving_factors": 0,
+      "preserving_witnesses": [
+        {
+          "frequencies": [
+            1,
+            3
+          ],
+          "offset": 0,
+          "cells": 12,
+          "correlation": "-49283/74181672"
+        }
+      ],
+      "soft_level_set_checked": true,
+      "scope": "finite diagnostic; no uniform compression theorem inferred"
+    }
+  ],
+  "Z11_wrap_counterexample": true,
+  "external_dependencies": []
+}

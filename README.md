@@ -14,42 +14,36 @@ formulae for the progression-free extremal functions; the local target
 is a related, weaker question.
 
 By [Mangesh Raut](https://github.com/mangeshraut712). Research through
-**21 October 2026**; repository integration **21 October 2026**.
+**22 October 2026**, including correction of the October 21 proof claims.
 
-[Current status](CURRENT_STATUS.md) · [Synthesis monograph](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md) ·
+[Current status](CURRENT_STATUS.md) · [Proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) ·
 [LaTeX manuscript](docs/manuscript/README.md) · [Peer review guide](docs/PEER_REVIEW_GUIDE.md) ·
 [Proof dependencies](PROOF_DEPENDENCIES.md) · [Reproduce checks](VERIFYING.md) ·
 [Next steps](docs/ROADMAP.md)
 
-## Current results and limits
+## Corrected research status — 22 October 2026
 
-| Result in the notes | What it establishes | Limit |
-|---|---|---|
-| [Higher-degree polynomial chirp frames](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md) | Degree $k-2$ polynomial chirps control $k$-APs with pointwise hole support $B q_j = 0$ for $k \ge 5$ | Generalizes the algebraic frame and hole mechanism to arbitrary $k$ |
-| [Phase boundary and step cap transition](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md) | Structural phase transition at $H = 1$: sub-critical collapse $H = 0$ vs super-critical activation $H \ge 1$ | Resolves why sparse/random sets avoid 4-APs without chirp correlation |
-| [Quantitative rate and threshold](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md) | Dimensionless budget cancellation $\mathcal{R}(N) \sim (\log\log N)^{-2}$, double-exponential threshold, and effective rate | Proves $r_4(N)/N \le O(1 / (\log N (\log\log N)^2))$ |
-| [End-to-end iteration closure](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md) | Quarter-cell density increment reaches $a > 4/5 > 7/11$ with presentation budget $o(\log p)$ | Asymptotic iteration tradeoff; Outcome D maintained pending peer review |
-| [Finite quadratic chirp projection](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md) | Divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$ via $n \le \lceil 1/a \rceil$ dominant modes | Established on reachable mixed-window hosts; audited across 27 cases |
-| [Exact quadratic chirp tight frame](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md) | Exact tight frame on mean-zero functions with zero residual error $e \equiv 0$ | Canonical coefficient sum includes all $p^2 - 1$ frame phases |
-| [Completion energy resolution](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md) | Exact dual completion residual system, $m \ge 4 a^3 \mu > 0$, and structural refutation of W8/P12 | Proves W8 and P12 cannot serve as intermediate lemmas |
-| [Positive-density branch reduction](docs/audits/POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md) | Eligible failure sequences must have density tending to zero | Uses classical qualitative four-term Szemerédi; no quantitative rate |
-| [Covariance obstruction](docs/audits/O2_COVARIANCE_ATTACK_20261019.md) | Booleanity and small quadratic phases alone do not force the desired energy bound at logarithmic density | Constructed sets contain a 4-AP; this does **not** refute P12 |
-| [Finite-pattern terminal bound](docs/audits/FINITE_PATTERN_TERMINAL_20261018.md) | A 7/11 asymptotic density ceiling under the stated M13 hypotheses | A partial terminal result, not the target bound |
-| [Sparse Boolean construction](docs/audits/BOOLEAN_TYPICAL_ALTERATION_20261018.md) | AP-free sets with small quadratic correlation at polynomially small density | Outside the logarithmic-density and negligible-diagonal regime |
+The October 21 closure and explicit-rate claims are **withdrawn**. The proof
+reversed a variance inequality, dropped an uncontrolled cubic term, and
+assumed spectral concentration without proving it. The target, DIRECT-Q-GAIN,
+and conditional P12/W8 remain open because of these gaps.
 
-These are claims with written proofs and finite audits, not a formal proof
-of the research target. Read each statement's hypotheses before reusing it.
+Read the [proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md),
+which includes exact rational counterchecks and a corrected tight-frame
+certificate. Finite diagnostics are not eligible asymptotic counterexamples.
 
-## The remaining proof gap
+| Retained result | Scope |
+|---|---|
+| Boolean expansion and quartic covariance identity | Exact identities; the W8 inequality is still missing |
+| Twelve-slot terminal theorem | 7/11 ceiling under the stated M13 regime |
+| Positive-density branch reduction | Uses classical qualitative Szemerédi; no quantitative rate |
+| October 19 covariance obstruction | Contains a 4-AP; does not refute P12 |
+| Tight-frame reconstruction and partial-spectrum certificate | No automatic concentration, coefficient bound, or phase selection |
+| Universal Boolean chirp fourth moment | Holds even for AP-rich sets; does not imply the missing cross-spectrum concentration |
 
-The 21 October investigation definitively closed the earlier attempted W8/P12 route
-by proving that W8 and P12 are structurally false across all branches (every AP-free set
-violates W8 by $+a^4 w \mu$ and P12 by $-1/2 a^4 w \mu$).
-The viable mathematical route—the direct quadratic chirp projection certificate (Open Lemma O3)—is
-now established, yielding the divergent phase correlation $\delta \ge c a^{3/2} \log(1/a)$
-and synthesizing the end-to-end iteration tradeoff with $o(\log p)$ presentation complexity.
-In accordance with repository discipline, Outcome D is maintained pending formal external peer review.
-Definitions and full quantifiers: [open lemmas](OPEN_LEMMAS.md).
+The manuscript and disputed drafts are clearly marked withdrawn, with
+previous versions preserved. Lean formalization remains incomplete and
+contains an admitted lemma and additional axioms.
 
 ## Reproduce the checks
 
@@ -65,20 +59,20 @@ python verification/run_current.py --suite all --output .verification-runs/lates
 ```
 
 The runner executes in a temporary copy so saved JSON evidence is preserved.
-`current` selects the eleven October 17–19 suites, `legacy` selects the
-thirteen original suites, and `all` runs both. Earlier dated experiments
+`current` selects twenty current suites and diagnostics, `legacy` selects the
+thirteen original suites, and `all` runs both (33 scripts). Earlier dated experiments
 remain available separately. A passing run checks finite identities and
 examples; it does not prove an asymptotic theorem. See [VERIFYING.md](VERIFYING.md)
 for exact versus floating checks, optional SciPy searches, and limitations.
 
 ## Reading and repository map
 
-- [Latest report](docs/audits/O2_CONTINUATION_20261019.md): the two new results and the remaining task.
+- [Latest report](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md): the proof audit and remaining task.
 - [Current status](CURRENT_STATUS.md), [theorem ledger](VERIFIED_THEOREMS.md),
   and [failed approaches](FAILED_APPROACHES.md): claims and their boundaries.
 - [Documentation index](docs/README.md), [progress](docs/PROGRESS.md),
   and [roadmap](docs/ROADMAP.md): entry points for contributors.
-- [Latest checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261021.json): current status and source hashes.
+- [Latest checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json): current status and source hashes.
 - [checkpoints/](checkpoints/): current and historical autonomous research checkpoints.
 - [docs/audits/](docs/audits/): chronological research audits and continuation reports from September and October.
 - [verification/scripts/](verification/scripts/) and

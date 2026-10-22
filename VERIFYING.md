@@ -1,213 +1,99 @@
-# Reproducing the finite checks
+# Reproducing finite checks
 
-The checkers test finite identities, examples, and explicit error estimates.
-A successful run does **not** prove the local target
-`r_4(N)=o(N/log N)`, the missing phase-selection statement, or official
-Erdős problem 142. Start with [CURRENT_STATUS.md](CURRENT_STATUS.md) for
-the mathematical status and [PROOF_DEPENDENCIES.md](PROOF_DEPENDENCIES.md)
-for dependencies between claims.
+Updated 22 October 2026. **Finite checks do not prove the local target.**
+The [proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md)
+explains why the October 21 closure claims were withdrawn even though their
+sample-based scripts passed. DIRECT-Q-GAIN and conditional P12/W8 remain open.
 
-## Environment
+## Environment and isolated execution
 
-Use Python **3.10 or newer**. Several later scripts use `int.bit_count()`,
-so the original Python 3.9 metadata does not describe the requirements of
-the entire research collection.
-
-The original September checkers use the standard library. Several later
-checkers in `verification/scripts/` use **NumPy** for Fourier calculations
-and numerical linear algebra. **SciPy** is used by the `discover_*.py`
-exploration scripts, not by the verification suites listed below.
-
-For a separate environment on macOS or Linux:
+Use Python 3.10 or newer. Current Fourier diagnostics require NumPy; the
+thirteen original September checkers use the standard library. Install the
+optional verification dependency in an isolated environment:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[verification]"
+python verification/check_repository.py
+python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-Install SciPy only if running the exploration scripts:
+The runner selects 20 current suites/diagnostics and 13 original suites
+(33 total). `--suite current` and `--suite legacy` select either group.
+These choices do not include every historical experiment. The runner
+copies the research tree to a temporary directory, sets module paths,
+keeps assertions enabled, and records exit statuses, source hashes,
+runtime versions, and logs. It does not overwrite saved report captures.
+In-repository log destinations must be under `.verification-runs/`, which
+Git ignores. Checkers themselves run offline; dependency installation may
+need network access. Do not use `python -O` or `PYTHONOPTIMIZE`.
+
+For only the original standard-library suite:
+
+```bash
+python verification/run_current.py --suite legacy
+```
+
+Some discovery scripts additionally require SciPy:
 
 ```bash
 python -m pip install -e ".[exploration]"
 ```
 
-The checkers themselves run locally and do not need service credentials
-or network access. Installing dependencies may need network access.
-For a reproducibility record, capture the interpreter and packages used:
+The declared lower Python version is also used by GitHub Actions. CI runs
+the repository checker and both selected finite suites on Python 3.10 and
+3.12, then uploads narrowly scoped diagnostic logs. It does not prove any
+analytic statement or compile Lean or LaTeX.
 
-```bash
-python --version
-python -m pip freeze
-```
+## What the results mean
 
-Do not use `python -O`: these scripts use assertions, which optimization
-can disable.
+- **Exact checks:** integer/modular enumeration and rational arithmetic
+  establish the tested finite identities without rounding error.
+- **Floating checks:** Fourier and matrix calculations use explicit
+  tolerances. Last-digit differences across runtimes are expected; inspect
+  the tolerance and normalization instead of silently replacing evidence.
+- **Asymptotic and probabilistic claims:** need complete written arguments.
+  Neither seeded examples nor finite phase sweeps establish a uniform
+  concentration theorem, a divergent multiplier, or an asymptotic rate.
+- **Classical input:** the positive-density reduction invokes qualitative
+  four-term Szemerédi. The verifier does not prove that theorem or a rate.
+- **Eligibility:** the correction's finite examples fail T5 and prescribed
+  radius. They diagnose auxiliary errors, not eligible P12 counterexamples.
 
-## Recommended isolated runner
+The new [correction verifier](verification/scripts/verify_oct21_closure_correction_20261021.py)
+checks the reversed variance bound, false correlation bound, and finite
+phase-budget overclaims. It also checks the universal Boolean fourth-moment
+identity on AP-rich and AP-free sets. The [saved report](verification/results/OCT21_CLOSURE_CORRECTION_VERIFICATION_20261021.json)
+separates exact and floating calculations.
 
-```bash
-python verification/check_repository.py
-python verification/run_current.py --suite all --output .verification-runs/latest
-```
+Older October 21 script names, counters, and archived reports sometimes use
+words such as “theorem” or “divergent.” These are finite observations on the
+listed examples, not certified universal conclusions. Their corrected scope
+is controlled by the proof audit, not by those historical labels.
 
-`current` runs the nineteen October 17–21 entry points; `legacy` runs the
-thirteen original September verifiers; `all` runs both (32 scripts).
-These options select the publication suites, not every historical experiment.
-The runner copies the complete research tree to a temporary directory,
-sets the local module paths, keeps assertions enabled, and records exit
-statuses, source hashes, runtime versions, and logs. Original saved reports
-are never overwritten. Fresh logs under `.verification-runs/` are ignored
-by Git. The repository checker verifies Python syntax, JSON parsing,
-current navigation links, and latest checkpoint hashes.
-GitHub Actions runs the same checks on Python 3.10 and 3.12; passing CI
-certifies only those finite and repository checks.
+## Reports and preservation
 
-## Start with the standard-library checks
+Some scripts write next to `__file__`, others relative to the working
+directory. Running an individual script directly may overwrite a saved
+JSON file; changing only the working directory is not sufficient isolation.
+Use the runner, or a separate complete checkout, to preserve captures.
 
-Run commands **from the repository root**. Verifiers are organized under
-`verification/scripts/`.
+Current source groups are under `docs/audits/`, `verification/scripts/`,
+and `verification/results/`. Historical captures and pre-edit copies are
+under `history/`; checkpoints live under `checkpoints/`. The
+[October 22 checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json)
+binds the corrected current files to their hashes. A historical checkpoint
+records its own snapshot, not a certification of later edited sources.
 
-```bash
-python verification/scripts/verify_core.py
-python verification/scripts/verify_boolean_occupancy_20261017.py
-python verification/scripts/verify_finite_pattern_terminal_20261018.py
-python verification/scripts/verify_positive_density_branch_20261019.py
-```
+The repository checker tests Python syntax, JSON parsing, current local
+navigation links, and latest checkpoint hashes. A successful check is not a
+mathematical proof. A nonzero exit, missing input, or skipped suite is not a
+successful verification.
 
-These commands respectively check the original finite algebra, Boolean
-occupancy identities, the twelve-slot terminal argument, and the
-positive-density branch's finite error estimates. They do not need
-NumPy. The positive-density verifier does not prove the classical
-qualitative Szemerédi theorem invoked in that note.
+## Lean and manuscript limitations
 
-To rerun the original September suite:
-
-```bash
-for script in verification/scripts/verify_*.py; do
-    python "$script" || exit 1
-done
-```
-
-## Choose a suite for the claim being checked
-
-The following are entry points, not a claim that every archived
-experiment must be rerun together.
-
-| Topic | Command from the repository root | Extra dependency |
-|---|---|---|
-| Original finite algebra | `python verification/scripts/verify_core.py` | None |
-| Mixed-window degree and terminal estimates | `python verification/scripts/verify_log_density_attack_20261016.py` | NumPy |
-| Weighted pair near-positivity | `python verification/scripts/verify_weighted_pair_20261016.py` | NumPy |
-| Boolean occupancy and the earlier 2/3 ceiling | `python verification/scripts/verify_boolean_occupancy_20261017.py` | None |
-| Selection quantifiers and cubic identities | `python verification/scripts/verify_o2_cubic_quantifiers_20261017.py` | NumPy |
-| Finite AP-free diagnostic examples | `python verification/scripts/verify_boolean_o2_diagnostics_20261017.py` | NumPy |
-| Twelve-slot / 7/11 terminal ceiling | `python verification/scripts/verify_finite_pattern_terminal_20261018.py` | None |
-| Cubic-bound audit | `python verification/scripts/verify_o2_cubic_audit_20261018.py` | NumPy |
-| Exact shifted-chirp covariance identity | `python verification/scripts/verify_weighted_quartic_covariance_20261018.py` | NumPy |
-| Four weighted completion channels | `python verification/scripts/verify_weighted_completion_20261018.py` | NumPy |
-| Elementary sparse alteration construction | `python verification/scripts/verify_boolean_alteration_chirp_20261018.py` | NumPy |
-| Typical-event alteration construction | `python verification/scripts/verify_boolean_typical_alteration_20261018.py` | NumPy |
-| Covariance obstruction: finite mask, tent, and count checks | `python verification/scripts/verify_o2_covariance_attack_20261019.py` | None |
-| Positive-density branch elimination: finite estimates | `python verification/scripts/verify_positive_density_branch_20261019.py` | None |
-| Completion energy resolution and W8 refutation | `python verification/scripts/verify_completion_energy_resolution_20261021.py` | NumPy |
-| Canonical quadratic chirp tight frame reconstruction | `python verification/scripts/verify_quadratic_frame_certificate_20261021.py` | NumPy |
-| Finite quadratic chirp projection theorem | `python verification/scripts/verify_quadratic_projection_selection_20261021.py` | NumPy |
-| End-to-end iteration closure & host eligibility | `python verification/scripts/verify_end_to_end_iteration_closure_20261021.py` | NumPy |
-| Quantitative threshold & explicit decay rate | `python verification/scripts/verify_quantitative_threshold_20261021.py` | NumPy |
-| Phase boundary and step cap transition | `python verification/scripts/verify_phase_boundary_step_cap_20261021.py` | NumPy |
-| Higher-degree polynomial chirp frames ($k \ge 5$) | `python verification/scripts/verify_higher_degree_polynomial_chirp_20261021.py` | NumPy |
-| Geometric phase alignment and chirp synthesis | `python verification/scripts/verify_spectral_phase_alignment_20261021.py` | NumPy |
-
-Read the associated dated Markdown note before interpreting a report.
-The mathematical statements have hypotheses that are not automatically
-satisfied by every small-prime diagnostic case.
-
-The `discover_*.py` files are exploratory searches. Their output can
-suggest examples or lemmas; it is not a substitute for the corresponding
-proof and verifier. Some older scripts also import other local research
-modules, so retain the complete repository layout.
-
-## Generated reports and isolated runs
-
-Use a separate clone or complete working copy when comparing results
-against the saved snapshots. A number of checkers **rewrite tracked
-JSON reports**. Some write next to their script via `__file__`; others
-write relative to the current working directory. Changing only the
-working directory therefore does not reliably isolate a run.
-
-For example:
-
-- `verify_core.py` prints its report to stdout.
-- `verify_o2_cubic_quantifiers_20261017.py` prints its report to stdout.
-- `verify_finite_pattern_terminal_20261018.py` writes
-  `FINITE_PATTERN_TERMINAL_VERIFICATION_20261018.json` next to the script.
-- `verify_weighted_completion_20261018.py` writes
-  `WEIGHTED_COMPLETION_VERIFICATION_20261018.json` in the working directory.
-
-Copying only one script can fail because some checkers read companion
-proofs, saved input reports, or local modules. In particular, the pair
-verifier reads `LOG_DENSITY_VERIFICATION_20261016.json`; several reports
-also record hashes of their source notes.
-
-After a run, inspect the exit status and the report, then review changes:
-
-```bash
-git status --short
-git diff --stat
-```
-
-A nonzero exit status, assertion failure, missing dependency, or missing
-input file is not a successful verification. Do not overwrite a
-historical capture merely to hide a numerical difference.
-
-## What the reports establish
-
-**Exact arithmetic.** Checks using integers, modular arithmetic, or
-`fractions.Fraction` establish the tested finite equalities or
-inequalities without rounding error. Exhaustive searches establish the
-stated finite search result, such as the twelve-point occupancy
-certificate. They do not by themselves establish a theorem for all
-primes or growing parameters.
-
-**Floating arithmetic.** Fourier transforms, square roots, and matrix
-calculations may use floating-point tolerances. Reports distinguish
-these from exact checks and often give a maximum observed discrepancy.
-Different Python, NumPy, or numerical-library versions can change the
-last digits of serialized values. Check the asserted tolerance and
-mathematical normalization before deciding whether a difference matters.
-
-**Probabilistic constructions.** Seeded samples and finite phase sweeps
-test implementation and examples. The asymptotic existence conclusions
-depend on the written probability estimates, not on extrapolating those
-samples.
-
-**External mathematical input.** The positive-density branch reduction
-explicitly uses qualitative four-term Szemerédi. Its checker verifies
-the finite parameter estimates; it does not formalize or reprove that
-classical theorem.
-
-**Scope of obstructions.** The sparse AP-free constructions lie outside
-the logarithmic-density and negligible-diagonal regime. The later
-logarithmic-density block construction deliberately contains a 4-AP.
-Neither supplies an eligible counterexample to P12. The exact covariance
-identity W7 and its equivalence with W8 are proved; the W8 energy upper
-bound remains open.
-
-A report's check count measures its own recorded checks. It is not a
-confidence percentage, a count of independent proofs, or interchangeable
-with the number of Fourier coefficients evaluated.
-
-## Saved evidence
-
-Original captures are under `verification/results/`. Later dated reports
-are at the repository root, with preserved rerun summaries and
-before-update copies under `history/`. In particular:
-
-- [October 18 rerun summary](history/continuation_20261018/verification/run_summary.json)
-- [October 19 finite-envelope rerun summary](history/continuation_20261019/verification/run_summary.json)
-
-These summaries describe specific recorded runs. A source hash binds a
-capture to the files checked at that time; a changed hash means the
-capture needs review against the changed source. A historical successful
-run does not automatically certify a subsequently edited proof or script.
+The [Lean draft](formalization/lean/README.md) contains an admitted lemma
+and four extra axioms. No successful Lean build or complete formalization
+is claimed. The [manuscript](docs/manuscript/README.md) is withdrawn and
+marked accordingly; no PDF compilation is claimed by this correction.

@@ -1,0 +1,124 @@
+{
+  "checks": 440,
+  "chirp_coefficients_evaluated": 16894167,
+  "maximum_FFT_direct_error": 1.4979264390648768e-17,
+  "seed": 18102026,
+  "scope": "exact modular AP checks; floating all-chirp checks; no asymptotic inference",
+  "cases": [
+    {
+      "p": 127,
+      "theta": 0.45,
+      "sampling_density": 0.11305462286183698,
+      "initial_size": 5,
+      "final_size": 5,
+      "ordered_nonzero_APs_initial": 0,
+      "ordered_nonzero_APs_final": 0,
+      "deleted_vertices": 0,
+      "a": 0.03937007874015748,
+      "delta": 0.04057584502087932,
+      "delta_over_a_three_halves": 5.194193782114576,
+      "maximizing_quadratic_linear_coefficients": [
+        21,
+        19
+      ],
+      "max_centered_coefficient_change": 0.0,
+      "deterministic_deletion_change_bound": 0.0,
+      "concentration_event_holds": true,
+      "AP_count_event_holds": true,
+      "original_weight_H": 0,
+      "scope": "finite diagnostic; no asymptotic or target-domain certification"
+    },
+    {
+      "p": 257,
+      "theta": 0.45,
+      "sampling_density": 0.08232468819604098,
+      "initial_size": 21,
+      "final_size": 19,
+      "ordered_nonzero_APs_initial": 4,
+      "ordered_nonzero_APs_final": 0,
+      "deleted_vertices": 2,
+      "a": 0.07392996108949416,
+      "delta": 0.05430962841607364,
+      "delta_over_a_three_halves": 2.701755939876933,
+      "maximizing_quadratic_linear_coefficients": [
+        211,
+        169
+      ],
+      "max_centered_coefficient_change": 0.008267501161871893,
+      "deterministic_deletion_change_bound": 0.01556420233463035,
+      "concentration_event_holds": true,
+      "AP_count_event_holds": true,
+      "original_weight_H": 0,
+      "scope": "finite diagnostic; no asymptotic or target-domain certification"
+    },
+    {
+      "p": 521,
+      "theta": 0.45,
+      "sampling_density": 0.059899476181086306,
+      "initial_size": 28,
+      "final_size": 27,
+      "ordered_nonzero_APs_initial": 4,
+      "ordered_nonzero_APs_final": 0,
+      "deleted_vertices": 1,
+      "a": 0.05182341650671785,
+      "delta": 0.03169140175891944,
+      "delta_over_a_three_halves": 2.686286860624696,
+      "maximizing_quadratic_linear_coefficients": [
+        1,
+        61
+      ],
+      "max_centered_coefficient_change": 0.0020034756150361563,
+      "deterministic_deletion_change_bound": 0.003838771593090211,
+      "concentration_event_holds": true,
+      "AP_count_event_holds": true,
+      "original_weight_H": 0,
+      "scope": "finite diagnostic; no asymptotic or target-domain certification"
+    },
+    {
+      "p": 1031,
+      "theta": 0.45,
+      "sampling_density": 0.04405889498025868,
+      "initial_size": 52,
+      "final_size": 48,
+      "ordered_nonzero_APs_initial": 10,
+      "ordered_nonzero_APs_final": 0,
+      "deleted_vertices": 4,
+      "a": 0.04655674102812803,
+      "delta": 0.024090222907716494,
+      "delta_over_a_three_halves": 2.39809818520028,
+      "maximizing_quadratic_linear_coefficients": [
+        400,
+        371
+      ],
+      "max_centered_coefficient_change": 0.0039926811657472385,
+      "deterministic_deletion_change_bound": 0.007759456838021339,
+      "concentration_event_holds": true,
+      "AP_count_event_holds": true,
+      "original_weight_H": 0,
+      "scope": "finite diagnostic; no asymptotic or target-domain certification"
+    },
+    {
+      "p": 2053,
+      "theta": 0.45,
+      "sampling_density": 0.032316548656209546,
+      "initial_size": 56,
+      "final_size": 56,
+      "ordered_nonzero_APs_initial": 0,
+      "ordered_nonzero_APs_final": 0,
+      "deleted_vertices": 0,
+      "a": 0.027277155382367267,
+      "delta": 0.013216801710921232,
+      "delta_over_a_three_halves": 2.9337814480474402,
+      "maximizing_quadratic_linear_coefficients": [
+        1444,
+        651
+      ],
+      "max_centered_coefficient_change": 0.0,
+      "deterministic_deletion_change_bound": 0.0,
+      "concentration_event_holds": true,
+      "AP_count_event_holds": true,
+      "original_weight_H": 0,
+      "scope": "finite diagnostic; no asymptotic or target-domain certification"
+    }
+  ]
+}

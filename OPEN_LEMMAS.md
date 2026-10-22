@@ -1,127 +1,38 @@
-# Open lemmas — operative checkpoint, 21 October 2026
+# Open lemmas
 
-The target `r_4(N)=o(N/log N)` remains OPEN. Current outcome is D.
-The previous list is preserved in
-`history/publication_20261021/before_updates/OPEN_LEMMAS.md`.
-The mathematical frontier is [the unified synthesis monograph](docs/audits/UNIFIED_SYNTHESIS_MONOGRAPH_20261021.md);
-the publication state is `AUTONOMOUS_CHECKPOINT_20261021.json`.
-Terminal geometry, Boolean occupancy and the exact covariance identities
-are proved; the missing input is still arithmetic phase selection.
+**Status: OPEN; outcome D, partial results only.** Updated 22 October 2026.
+The local target `r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, P12 and W8 remain
+unproved. The October 21 closure and effective-rate claims are withdrawn
+because of missing proof steps, not merely pending external peer review.
 
-## O1. DIRECT-Q-GAIN, with all quantifiers retained
+Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json).
 
-For every epsilon>0 seek c_epsilon>0, p_epsilon, and
-F_epsilon:(0,4/5]->[1,infinity), with F_epsilon(a)->infinity as a->0,
-such that every prime p>=p_epsilon, every nonempty mixed circular-interval
-host Omega with its specified presentation r=d+s>=1 satisfying
+DIRECT-Q-GAIN requires: for each epsilon>0, constants and a function
+F_epsilon(a)>=1 tending to infinity as a->0, chosen uniformly before all
+eligible instances, such that delta>=c_epsilon a^(3/2) F_epsilon(a).
+Eligibility includes actual cyclic 4-AP exclusion, mixed interval hosts,
+`r[log(1/w)+log(48r)+loglog p]<=log p/100`, and
+`epsilon/(2log|Omega|)<=a<=4/5`, with r>=1.
 
-    r[log(p/|Omega|)+log(48r)+loglog p]<=log p/100,
+The original P12 statement retains its failed-selection antecedent.
+AP exclusion giving the opposite signed bound is its intended contradiction,
+not a refutation of that conditional implication. No eligible counterexample
+has been supplied. The positive-density failure branch is excluded using
+classical qualitative Szemerédi; an eligible a->0 failure sequence remains
+possible. The finite correction examples fail T5 and prescribed H.
 
-and every actual cyclically nonzero-4AP-free A subset Omega with
+For genuinely eligible AP-free hosts under failed adequate phase selection,
+prove `E_F(u)<=2U^2+2R3+a^4wmu`, where `U=wa(1-a)`, or prove adequate
+phase selection directly. Use the pointwise completion identities `Bq_j=0`
+together with T5, logarithmic density, original weight, and exact diagonals.
+Retain the cubic term. Do not replace one-sided pair bounds by equalities.
 
-    epsilon/(2log|Omega|)<=a=|A|/|Omega|<=4/5
+A direct completion route needs a uniform cross-spectrum concentration
+bound and control of the orthogonal residual, plus the small/zero completion
+mean branch. The exact frame alone does not provide any of these.
 
-obey
 
-    delta=max_(c,t)!=(0,0)|E_Omega(1_A-a)e_p(-cx^2-tx)|
-           >=c_epsilon a^(3/2)F_epsilon(a).
+## Previous record
 
-This is the current-mean residual on the trivial partition of Omega.
-Constants/functions are chosen before the instance. The proved
-conditional iteration in `DIRECT_INCREMENT_TRADEOFF_20261016.md` needs
-any uniform divergent multiplier, with `loglog(e^2/a)` a concrete choice.
-The obsolete extra sqrt(log(2/a)) is unnecessary. A proved adequate
-reachable subclass retaining the initial interval would also suffice.
-
-The EXACT negation is: for some epsilon>0, for every c>0,p0,and divergent
-F>=1, there is an eligible triple p>=p0 with delta<c a^(3/2)F(a).
-Equivalently, an eligible sequence has either (i) a->0 and delta/a^(3/2)
-bounded above, or (ii) p->infinity, inf a>0, and delta/a^(3/2)->0.
-The general logical equivalence is proved in
-`O2_QUANTIFIERS_CUBIC_BOUND_20261017.md`. NEW (21 October 2026):
-- Branch (ii) is excluded by `POSITIVE_DENSITY_BRANCH_ELIMINATION_20261019.md`.
-- Branch (i) is resolved by the finite quadratic chirp projection theorem in
-  [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md),
-  establishing $\delta \ge c a^{3/2} \log(1/a)$ with $c \ge 0.91$.
-- Complete iterative synthesis in [END_TO_END_ITERATION_CLOSURE_20261021.md](docs/audits/END_TO_END_ITERATION_CLOSURE_20261021.md)
-  verifies that the resulting quarter-cell density increment reaches the terminal density ceiling $a > 4/5 > 7/11$
-  within host presentation budget. Verification across scales $\log_{10} N \in [10, 1000]$ passed.
-- Quantitative rate and threshold in [QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md](docs/audits/QUANTITATIVE_RATE_AND_THRESHOLD_20261021.md)
-  proves dimensionless budget cancellation $\mathcal{R}(N) \sim (\log\log N)^{-2}$ and rate $r_4(N)/N \le O(1 / (\log N (\log\log N)^2))$.
-- Phase boundary and step cap transition in [PHASE_BOUNDARY_AND_STEP_CAP_20261021.md](docs/audits/PHASE_BOUNDARY_AND_STEP_CAP_20261021.md)
-  proves that $H = 0$ collapses completion fields for sparse/random sets while $H \ge 1$ activates arithmetic forcing for $p \ge 4.46 \times 10^5$.
-- Higher-degree polynomial chirp frames for $k \ge 5$ established in [HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md](docs/audits/HIGHER_DEGREE_POLYNOMIAL_CHIRP_20261021.md).
-Counterexamples to one fixed multiplier or ineligible sparse sets do not
-supply the remaining sequence.
-
-## O2. P12 / W8: structural resolution and refutation as direct sublemmas
-
-Retain the original F, tau=a^2/log p, H=floor(tau wp/(48r)),
-mu=lambda(0,0,0), w=|Omega|/p, u=1_A-a1_Omega, and U=wa(1-a).
-The exact expansion has diagonal aw/p. The proved reachable-host
-estimates give R1=o(a^4wmu), R2>=-o(a^4wmu), and
-
-    Q=R3+R4<=-(1-o(1))a^4wmu.
-
-Under failed adequate selection, the earlier attempted lower bound was
-
-    Q>=-(1/2)a^4wmu.                                    (P12)
-
-It is exactly equivalent at finite p to the bound
-
-    E_F(u)<=2U^2+2R3+a^4wmu.                             (W8)
-
-NEW (21 October 2026, [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md)):
-Every 4-AP-free set has $E_F(u) = 2 U^2 + 2 R_3 + 2 a^4 T + 2 R_1 + 2 R_2 - 2aw/p$,
-which forces $E_F(u) - (2 U^2 + 2 R_3 + a^4 w \mu) = a^4 w \mu (1 - o(1)) > 0$ and
-$Q - (-1/2 a^4 w \mu) = -1/2 a^4 w \mu (1 + o(1)) < 0$.
-Thus every AP-free set strictly violates W8 and P12.
-Meanwhile, the 19 October construction in [O2_COVARIANCE_ATTACK_20261019.md](docs/audits/O2_COVARIANCE_ATTACK_20261019.md)
-refutes W8 and P12 under failed selection without AP exclusion ($Q <= -11/20 a^4 w \mu$).
-Therefore W8 and P12 are **mathematically false across all branches** and cannot serve
-as intermediate lemmas.
-
-The direct residual relations coupling pointwise hole support $B q_j = 0$ to $R_3, R_4$ are now exact:
-    R4^{h!=0} = 3 a^4 T^{h!=0} - a w m + 2 R_1^{h!=0} + R_2^{h!=0},
-    R3^{h!=0} = -4 a^4 T^{h!=0} + a w m - 3 R_1^{h!=0} - 2 R_2^{h!=0}.
-
-## O3. Completion certificate: resolved via finite quadratic chirp projection
-
-For the four ORIGINAL-weight completion fields q_j in
-`WEIGHTED_COMPLETION_CERTIFICATE_20261018.md`, put q=sum q_j,
-m=E_Omega q, and k=q-m. The exact hole projection and collision bound
-are proved.
-
-NEW (21 October 2026):
-1. Theorem 4 of [COMPLETION_ENERGY_RESOLUTION_20261021.md](docs/audits/COMPLETION_ENERGY_RESOLUTION_20261021.md)
-   proves $m >= 4 a^3 \mu (1 - o(1)) > 0$ unconditionally on reachable hosts, eliminating the vanishing/small mean branch.
-2. [QUADRATIC_FRAME_CERTIFICATE_20261021.md](docs/audits/QUADRATIC_FRAME_CERTIFICATE_20261021.md)
-   constructs the canonical centered quadratic chirp tight frame:
-   $$k = \frac{1}{p} \sum_{(c, t) \ne (0, 0)} Q_k(c, t) \psi_{(c, t)}$$
-   with **zero residual error** ($e \equiv 0$).
-3. [QUADRATIC_PROJECTION_SELECTION_20261021.md](docs/audits/QUADRATIC_PROJECTION_SELECTION_20261021.md)
-   proves the finite quadratic chirp projection theorem: for any subset $\Gamma$, $\delta \ge \theta_\Gamma \frac{am}{L_\Gamma}$
-   without matrix inversion or Gram conditioning. Choosing $n \le \lceil 1/a \rceil$ dominant phases captures $\theta_\Gamma \ge 0.10$
-   with $L_\Gamma \le C \frac{m}{\sqrt{a} \log(1/a)}$, establishing:
-   $$\delta \ge c a^{3/2} \log(1/a),$$
-   providing DIRECT-Q-GAIN with the explicit divergent multiplier $F(a) = \log(1/a)$. Verified across 27 cases in $p \in [11, 41]$.
-
-## O4. Scope of exclusions and older packet routes
-
-SELECT/WSELECT/SIGNED/COLLECTIVE-WSELECT existence and retention remain
-open on their original domains. Current weighted estimates cannot be
-transferred to arbitrary prior-factor residuals without proof.
-
-- Single-edge Boolean moment laws do not imply P12; the sharp 2/3 law
-  is not an arithmetic counterexample. Overlapping twelve-slot arithmetic
-  improves the terminal ceiling to 7/11 but yields no phase-selection step.
-- Actual p=19 data have both R3<0 and R4<0, but no eligible P12 violation.
-  All 76 saved finite records fail T5 and have prescribed H=0.
-- Actual Boolean AP-free examples with a~p^-theta, 1/3<theta<1/2, have
-  delta/a^(3/2)->0. They fail the logarithmic density hypothesis and
-  pa^3mu->infinity for every 0<mu<=1. They do not negate O1 or O2.
-- The October 19 Boolean block construction satisfies the density and
-  diagonal conditions but deliberately contains a nonzero 4-AP. It only
-  refutes W8 with AP exclusion omitted.
-- The fractional-quadratic bounded-weight obstruction of October 16 is
-  neither Boolean nor AP-free and also does not negate those claims.
+The [superseded pre-correction version](history/proof_audit_20261021/before_updates/OPEN_LEMMAS.md) is preserved verbatim. Earlier dated sources remain in [docs/audits/](docs/audits/) and [history/](history/).

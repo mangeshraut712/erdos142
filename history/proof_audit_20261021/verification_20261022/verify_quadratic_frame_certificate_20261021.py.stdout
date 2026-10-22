@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "total_checks": 203,
+  "counts": {
+    "tight_frame_reconstruction_synthetic": 21,
+    "tight_frame_reconstruction_imag_zero": 21,
+    "tight_frame_parseval_synthetic": 21,
+    "completion_field_exact_reconstruction": 28,
+    "completion_field_reconstruction_imag": 28,
+    "completion_field_parseval": 28,
+    "canonical_certificate_inequality": 28,
+    "divergent_multiplier_check": 28
+  },
+  "maximum_error": 3.9968028886505635e-14
+}

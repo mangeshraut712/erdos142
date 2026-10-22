@@ -23,7 +23,11 @@ def main():
         json.loads(report.read_text())
     navigation = ["README.md", "CURRENT_STATUS.md", "OPEN_LEMMAS.md", "VERIFYING.md",
                   "NEXT_AUTONOMOUS_ACTION.md", "docs/audits/O2_CONTINUATION_20261019.md",
-                  "docs/README.md", "docs/PROGRESS.md", "docs/ROADMAP.md"]
+                  "docs/README.md", "docs/PROGRESS.md", "docs/ROADMAP.md",
+                  "SOLUTION_LEDGER.md", "PROOF_DEPENDENCIES.md", "VERIFIED_THEOREMS.md",
+                  "FAILED_APPROACHES.md", "RESEARCH_JOURNAL.md", "AUTONOMOUS_RESUME_PROMPT.md",
+                  "docs/PEER_REVIEW_GUIDE.md", "docs/manuscript/README.md",
+                  "formalization/lean/README.md", "docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md"]
     links = 0
     for name in navigation:
         source = ROOT / name
