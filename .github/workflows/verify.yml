@@ -25,7 +25,9 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
       - name: Install verifier dependencies
-        run: python -m pip install -e '.[verification]'
+        run: |
+          python -m pip install --upgrade 'pip>=26.2.2'
+          python -m pip install -e '.[verification]'
       - name: Check syntax, JSON, navigation, and checkpoint
         run: python verification/check_repository.py
       - name: Run current and original finite suites
