@@ -1,0 +1,266 @@
+{
+  "suite": "all",
+  "python": "3.14.7",
+  "numpy": "2.5.4",
+  "isolated": true,
+  "saved_reports_overwritten": false,
+  "passed": true,
+  "results": [
+    {
+      "script": "verification/scripts/verify_overlap_constraints_20261023.py",
+      "exit_code": 0,
+      "seconds": 7.835,
+      "source_sha256": "ebea7ae83dbc282d00826b9779701a1b0b701b759b1e1cad64e6e42c91819ac6",
+      "reported_checks": 293771
+    },
+    {
+      "script": "verification/scripts/verify_low_mean_moments_20261023.py",
+      "exit_code": 0,
+      "seconds": 0.794,
+      "source_sha256": "27ce50b45dd2d08b214c3bedb554dafa7d384b3653988732ead86a701a7038a7",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_boolean_occupancy_20261017.py",
+      "exit_code": 0,
+      "seconds": 0.292,
+      "source_sha256": "3452188f7cf65878175295990305340a53cd6c4a544ad69e40ab8ab8b871042d",
+      "reported_checks": 14041
+    },
+    {
+      "script": "verification/scripts/verify_boolean_o2_diagnostics_20261017.py",
+      "exit_code": 0,
+      "seconds": 8.663,
+      "source_sha256": "ded8e6b359b1d23afe0efa1bc88471ef7114935f68e7bbc11e3b1fd5b3567217",
+      "reported_checks": {
+        "exact_residual_expansion_diagonals_occupancy": 3230,
+        "floating_all_quadratic_phase_sweep_and_Parseval": 76,
+        "independent_exact_saved_witness_recount": 76
+      }
+    },
+    {
+      "script": "verification/scripts/verify_o2_cubic_quantifiers_20261017.py",
+      "exit_code": 0,
+      "seconds": 0.199,
+      "source_sha256": "c3329ea09c5533aa1a4049b68dad399928ae2de0ccb194ed32aa5db494d75ca4",
+      "reported_checks": 468
+    },
+    {
+      "script": "verification/scripts/verify_finite_pattern_terminal_20261018.py",
+      "exit_code": 0,
+      "seconds": 0.474,
+      "source_sha256": "10e5d4877fb27aa0f61367902c82526357aadec100e51154ae5771d12d2076f8",
+      "reported_checks": 51971
+    },
+    {
+      "script": "verification/scripts/verify_o2_cubic_audit_20261018.py",
+      "exit_code": 0,
+      "seconds": 0.26,
+      "source_sha256": "8664bb01e8ee414a599b858609998b0fac2261fbf25307c215f432973d603d33",
+      "reported_checks": 48
+    },
+    {
+      "script": "verification/scripts/verify_weighted_completion_20261018.py",
+      "exit_code": 0,
+      "seconds": 0.83,
+      "source_sha256": "f6f9fcd7234c3b54d4d60d01ab0c49e6ecdf6472cc8edf4ab2388a1ca55effda",
+      "reported_checks": {
+        "exact_overlap_geometry_channel_pairs": 144,
+        "exact_diagonal_mean_and_collision_cases": 366,
+        "exact_projection_and_disjoint_energy_cases": 366,
+        "numerical_atomic_and_Gram_cases": 145,
+        "hosts": 4
+      }
+    },
+    {
+      "script": "verification/scripts/verify_weighted_quartic_covariance_20261018.py",
+      "exit_code": 0,
+      "seconds": 0.297,
+      "source_sha256": "c9f531d20df53e428a8465ac2ff0c63090881f161968f48a979a5a9bbc88f3cc",
+      "reported_checks": 15102
+    },
+    {
+      "script": "verification/scripts/verify_boolean_alteration_chirp_20261018.py",
+      "exit_code": 0,
+      "seconds": 0.746,
+      "source_sha256": "7dbb3119be77a387ecff21425b9c8a39c7e58c383f6a8e3aa24fd0a049ccccef",
+      "reported_checks": 440
+    },
+    {
+      "script": "verification/scripts/verify_boolean_typical_alteration_20261018.py",
+      "exit_code": 0,
+      "seconds": 0.347,
+      "source_sha256": "139eaf2733d6c4a8550b9829d44ee70c74d9401c5637824c7157b2f151312b89",
+      "reported_checks": 525186
+    },
+    {
+      "script": "verification/scripts/verify_positive_density_branch_20261019.py",
+      "exit_code": 0,
+      "seconds": 0.329,
+      "source_sha256": "4741fa233900070334db8d88e2a6e52bf69c7c2c3d6c2fc9ba4635c25511c31b",
+      "reported_checks": 18022
+    },
+    {
+      "script": "verification/scripts/verify_o2_covariance_attack_20261019.py",
+      "exit_code": 0,
+      "seconds": 4.006,
+      "source_sha256": "10f0b0112f1dd919db9bf64b15263c29958e0015d7d6429731e034121ed652f2",
+      "reported_checks": 38895
+    },
+    {
+      "script": "verification/scripts/verify_completion_energy_resolution_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.21,
+      "source_sha256": "6c8f105116b3874e4579104a3d48b2afca10d51cabfd0913db1c0aea505a5ee5",
+      "reported_checks": 196
+    },
+    {
+      "script": "verification/scripts/verify_quadratic_frame_certificate_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.442,
+      "source_sha256": "87101811810116be3fb33fb2059962008b1ce61f4626a8d5eb73590d4fff1524",
+      "reported_checks": 203
+    },
+    {
+      "script": "verification/scripts/verify_quadratic_projection_selection_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.515,
+      "source_sha256": "2b98ca57eaedcdb337758c03e60dca2d535399bfde5dc8a2143b3cf011f14e82",
+      "reported_checks": 19125
+    },
+    {
+      "script": "verification/scripts/verify_end_to_end_iteration_closure_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.092,
+      "source_sha256": "66f7a4f92cef2617c9af5f74d67050869c465b977ebd9ebc4e1cf1ab5b7b4963",
+      "reported_checks": 2385
+    },
+    {
+      "script": "verification/scripts/verify_quantitative_threshold_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.08,
+      "source_sha256": "71769dd26ce2d7cf4f9abf10668587df6023adf8725bed2e893578236d40cc9f",
+      "reported_checks": 32
+    },
+    {
+      "script": "verification/scripts/verify_phase_boundary_step_cap_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.086,
+      "source_sha256": "c389964244c8c1a2b05e01d64f4ef711544f1a8e2a7f1148f49dd76b34adb0c6",
+      "reported_checks": 1879
+    },
+    {
+      "script": "verification/scripts/verify_higher_degree_polynomial_chirp_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.117,
+      "source_sha256": "bf6ad41345acb9f955c9f2e7f2d82eafe1ff269c4030844501f899e0cbeceae9",
+      "reported_checks": 2030
+    },
+    {
+      "script": "verification/scripts/verify_spectral_phase_alignment_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.141,
+      "source_sha256": "12270f3a02ff09abe6841dd489192123eee0fc175149dca4fb2d9c02b5043be0",
+      "reported_checks": 6614
+    },
+    {
+      "script": "verification/scripts/verify_oct21_closure_correction_20261021.py",
+      "exit_code": 0,
+      "seconds": 0.216,
+      "source_sha256": "fc87a2c18d79af0c60f4385367d95fe94ad8f30d7e5d755fff924dae8153099b",
+      "reported_checks": 11810
+    },
+    {
+      "script": "verification/scripts/verify_ap_richness.py",
+      "exit_code": 0,
+      "seconds": 1.36,
+      "source_sha256": "22e9a1d4af7c2b608b1a978bd884fcef68c9bad14ced3e7b1ccdd014c42a9948",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_compat.py",
+      "exit_code": 0,
+      "seconds": 0.075,
+      "source_sha256": "384e4394deebf8de25ec509141452cf9a14a538275a36cf749a4d163acbe2083",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_compatibility.py",
+      "exit_code": 0,
+      "seconds": 1.197,
+      "source_sha256": "dbe22055c140a2bcf2025bcbe218d53542db68f6d3212a1ec335baecadf26766",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_core.py",
+      "exit_code": 0,
+      "seconds": 4.426,
+      "source_sha256": "edd6c464ad4b147ca10dd533086f25942cbafc013cf98eb16f23bb4804d429cc",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_endpoint_incidence.py",
+      "exit_code": 0,
+      "seconds": 0.066,
+      "source_sha256": "4d8f3041851d38bc7fdfa05cc27229e20baa9313f8eef3d7e28f5417cd52303d",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_energy_counterexample.py",
+      "exit_code": 0,
+      "seconds": 0.097,
+      "source_sha256": "f085ecf63cc5481a2a060f70eb4e0de33e16b48ddcc3bd1b636a8f14feda6187",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_full_group_energy.py",
+      "exit_code": 0,
+      "seconds": 8.943,
+      "source_sha256": "0b5f5df1f208d118c10dc5ea5b69ffc2a7e76666c4fa7d693522d3d3f5665c56",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_increment.py",
+      "exit_code": 0,
+      "seconds": 0.705,
+      "source_sha256": "61c914a593f3b4ceec7dc8122b3c890eed5dbdda872bd0478fa37e091ab3d6ae",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_localization.py",
+      "exit_code": 0,
+      "seconds": 0.135,
+      "source_sha256": "d6f9c9b7402d2e4926561c08dd0ad51ef3f37c044ba3dbbd1ac6599f47ab0107",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_mixed.py",
+      "exit_code": 0,
+      "seconds": 0.047,
+      "source_sha256": "008d9256e04db505033cba9777c6df93a28df96024b46ecab4f901bf818aff91",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_phase2.py",
+      "exit_code": 0,
+      "seconds": 1.539,
+      "source_sha256": "f582c6e54c7d6fdf45bfe7e6a8230e27ef2b15f258baee895a0107158ad7fc19",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_relative.py",
+      "exit_code": 0,
+      "seconds": 1.386,
+      "source_sha256": "cea6f33fdf291f9978ff28ad814358b6f5b3469eef766c18cb20da25639c97a0",
+      "reported_checks": null
+    },
+    {
+      "script": "verification/scripts/verify_signed.py",
+      "exit_code": 0,
+      "seconds": 3.978,
+      "source_sha256": "648fda4431e4cc13093abf95fa7c897ff4f0e00c0964d92478eacf25224f96a3",
+      "reported_checks": null
+    }
+  ],
+  "scope": "Selected current and/or original September verifiers, not every archived experiment; no asymptotic target proof."
+}

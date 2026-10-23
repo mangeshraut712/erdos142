@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "total_checks": 19125,
+  "counts": {
+    "ap_free_hole_support_zero": 27,
+    "exact_inner_product_identity": 27,
+    "geometric_alignment_formula": 27,
+    "geometric_alignment_acute_positive": 27,
+    "total_frame_inner_product_sum": 27,
+    "projection_certificate_inequality": 18936,
+    "finite_phase_budget_bound": 27,
+    "divergent_multiplier_lower_bound": 27
+  },
+  "maximum_error": 1.1102230246251565e-16
+}

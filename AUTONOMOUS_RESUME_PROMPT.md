@@ -6,7 +6,7 @@ unproved. The October 21 closure and effective-rate claims are withdrawn
 because of missing proof steps, not merely pending external peer review.
 
 Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
-[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023.json).
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023_overlap.json).
 
 For genuinely eligible AP-free hosts under failed adequate phase selection,
 prove `E_F(u)<=2U^2+2R3+a^4wmu`, where `U=wa(1-a)`, or prove adequate
@@ -20,15 +20,33 @@ mean branch. The exact frame alone does not provide any of these.
 
 Resume from the October 23 checkpoint. The previous claimed closure is
 withdrawn; do not restore it from historical notes or green CI. Current
-verification selects 21 current and 13 legacy scripts. Lean files contain
+verification selects 22 current and 13 legacy scripts. Lean files contain
 an admitted lemma and four additional axioms; neither Lean compilation nor
 a complete formal proof has been established. No background work is implied.
 
 ## October 23 research continuation
 
-Resume from the October 23 checkpoint and LM23 note. The low-mean moment interval is sharp and permits zero mean at small density; VB23 is a valid upper variance bound but insufficient for compression. Next attack overlapping allowed triples under failed phase selection. Preserve the October 21 withdrawal. The current suite now selects 21 current and 13 legacy scripts; finite tests do not prove selection. No background research continues after this execution.
+Resume from the October 23 checkpoint and LM23 note. The low-mean moment interval is sharp and permits zero mean at small density; VB23 is a valid upper variance bound but insufficient for compression. Next attack overlapping allowed triples under failed phase selection. Preserve the October 21 withdrawal. The current suite now selects 22 current and 13 legacy scripts; finite tests do not prove selection. No background research continues after this execution.
 
 [Exact statements, proofs, obstruction and dependency graph](docs/audits/LOW_MEAN_MOMENT_CONE_20261023.md).
+
+## October 23 overlapping-progression results
+
+**OD23:** For actual cyclic four-AP-free A and the original bounded weight,
+q(v)<=2aw and Var_Omega(q)<=2aw m-m^2, improving the previous constants.
+The proof uses mutually exclusive completion triples at directions h and 2h.
+**CL23:** Consistent local Boolean laws on every set of at most floor(1/a)+1
+vertices have marginal a, pair moments a^2, zero triples, and residual
+R3+R4=-a^4 on each four-coordinate edge. These are local probability laws,
+not eligible arithmetic counterexamples. OC23 provides the exact modular
+overlap parameterization and finite joint occupancy polytopes.
+
+P12, W8 and DIRECT-Q-GAIN remain OPEN. The degree improvement gives no
+positive mean or sufficient phase gain. Next attack a density-dependent
+family of overlaps using global consistency or failed phase selection;
+a fixed finite overlap alone cannot exclude CL23.
+
+[Proofs, exact slack identity, audit and updated dependency graph](docs/audits/OVERLAP_CONSTRAINTS_20261023.md).
 
 ## Previous record
 

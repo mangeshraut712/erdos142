@@ -6,7 +6,7 @@ unproved. The October 21 closure and effective-rate claims are withdrawn
 because of missing proof steps, not merely pending external peer review.
 
 Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
-[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023.json).
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023_overlap.json).
 
 The exact Boolean expansion, weighted pair near-positivity, twelve-slot
 7/11 terminal ceiling under M13, completion projection identities, and
@@ -37,6 +37,24 @@ mean branch. The exact frame alone does not provide any of these.
 LM23: exact finite interval for wm from the first two nonzero-edge occupancy moments. ZM23: for 0<a<=1/3, an abstract zero-triple law has R1=R2=0, R3=-4a^4, R4=3a^4. VB23: Var(q)<=4aw m-m^2. These are partial results, not eligible-host counterexamples.
 
 [Exact statements, proofs, obstruction and dependency graph](docs/audits/LOW_MEAN_MOMENT_CONE_20261023.md).
+
+## October 23 overlapping-progression results
+
+**OD23:** For actual cyclic four-AP-free A and the original bounded weight,
+q(v)<=2aw and Var_Omega(q)<=2aw m-m^2, improving the previous constants.
+The proof uses mutually exclusive completion triples at directions h and 2h.
+**CL23:** Consistent local Boolean laws on every set of at most floor(1/a)+1
+vertices have marginal a, pair moments a^2, zero triples, and residual
+R3+R4=-a^4 on each four-coordinate edge. These are local probability laws,
+not eligible arithmetic counterexamples. OC23 provides the exact modular
+overlap parameterization and finite joint occupancy polytopes.
+
+P12, W8 and DIRECT-Q-GAIN remain OPEN. The degree improvement gives no
+positive mean or sufficient phase gain. Next attack a density-dependent
+family of overlaps using global consistency or failed phase selection;
+a fixed finite overlap alone cannot exclude CL23.
+
+[Proofs, exact slack identity, audit and updated dependency graph](docs/audits/OVERLAP_CONSTRAINTS_20261023.md).
 
 ## Previous record
 

@@ -1,0 +1,132 @@
+{
+  "status": "passed; finite envelope algebra only",
+  "checks": 18022,
+  "exact_rational_checks": 17986,
+  "floating_log_parameter_checks": 36,
+  "maximum_log_inverse_mu0_over_log_p": 0.01124932339699083,
+  "parameter_cases": [
+    {
+      "a0": 0.01,
+      "log_p": 100999999.99999999,
+      "r": 1,
+      "k": 1,
+      "S": 504977.69816791423,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.005000091191488832,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.01,
+      "log_p": 100999999.99999999,
+      "r": 1,
+      "k": 2,
+      "S": 504977.69816791423,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.010000182382977663,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.01,
+      "log_p": 100999999.99999999,
+      "r": 6850,
+      "k": 6850,
+      "S": 42.588791720256566,
+      "T5_budget_over_log_p": 0.004999999999999999,
+      "log_inverse_mu0_over_log_p": 0.005624661698495415,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.01,
+      "log_p": 100999999.99999999,
+      "r": 6850,
+      "k": 13700,
+      "S": 42.588791720256566,
+      "T5_budget_over_log_p": 0.004999999999999999,
+      "log_inverse_mu0_over_log_p": 0.01124932339699083,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.1,
+      "log_p": 10099.999999999998,
+      "r": 1,
+      "k": 1,
+      "S": 37.40850828626275,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.005455957444157237,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.1,
+      "log_p": 10099.999999999998,
+      "r": 1,
+      "k": 2,
+      "S": 37.40850828626275,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.010911914888314474,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.1,
+      "log_p": 10099.999999999998,
+      "r": 1,
+      "k": 1,
+      "S": 37.40850828626275,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.005455957444157237,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.1,
+      "log_p": 10099.999999999998,
+      "r": 1,
+      "k": 2,
+      "S": 37.40850828626275,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.010911914888314474,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.5,
+      "log_p": 10000.0,
+      "r": 1,
+      "k": 1,
+      "S": 36.91845861711593,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.005138629436111989,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.5,
+      "log_p": 10000.0,
+      "r": 1,
+      "k": 2,
+      "S": 36.91845861711593,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.010277258872223978,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.5,
+      "log_p": 10000.0,
+      "r": 1,
+      "k": 1,
+      "S": 36.91845861711593,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.005138629436111989,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    },
+    {
+      "a0": 0.5,
+      "log_p": 10000.0,
+      "r": 1,
+      "k": 2,
+      "S": 36.91845861711593,
+      "T5_budget_over_log_p": 0.005,
+      "log_inverse_mu0_over_log_p": 0.010277258872223978,
+      "scope": "log-space parameter check, not an actual finite-field instance"
+    }
+  ],
+  "classical_qualitative_theorem_proved_by_script": false,
+  "P12_or_target_proved": false,
+  "scope": "Supports PD2--PD7; PD8 is an explicitly invoked established theorem; no actual eligible example claimed"
+}
