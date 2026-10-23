@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "total_checks": 32,
+  "counts": {
+    "c4_bounded_range": 11,
+    "continuum_integral_discretization_ratio": 5,
+    "dimensionless_scaling_metric": 7,
+    "budget_ratio_monotonic_decrease": 6,
+    "effective_rate_scaling_verified": 3
+  },
+  "maximum_error": 0.0
+}

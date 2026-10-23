@@ -1,0 +1,18 @@
+{
+  "status": "finite auxiliary checks passed; no asymptotic theorem proved",
+  "exact_counting_energy_subsets": 2208,
+  "nonempty_proper_4ap_free_subsets": 762,
+  "exact_four_atom_subsets": 2288,
+  "exact_general_even_spectral_arrays": 276,
+  "groups_for_counting": [
+    5,
+    7,
+    11
+  ],
+  "extra_groups_for_degeneracies": [
+    4,
+    6
+  ],
+  "spectral_kernel_counterexample": "float check of exact radical formulas, tolerance 1e-12",
+  "external_dependencies": []
+}

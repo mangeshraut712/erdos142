@@ -1,0 +1,9 @@
+{
+  "output": "/private/var/folders/n2/59sfgk3d1d51mxd3qzzc2hbm0000gn/T/erdos142-verify-vccrgrog/repo/verification/results/BOOLEAN_O2_DIAGNOSTICS_20261017.json",
+  "counts": {
+    "exact_residual_expansion_diagonals_occupancy": 3230,
+    "floating_all_quadratic_phase_sweep_and_Parseval": 76,
+    "independent_exact_saved_witness_recount": 76
+  },
+  "records": 76
+}

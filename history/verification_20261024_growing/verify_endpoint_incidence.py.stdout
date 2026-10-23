@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "exact_star_cases": 24,
+  "exact_gram_entries": 1896,
+  "target_proved": false
+}

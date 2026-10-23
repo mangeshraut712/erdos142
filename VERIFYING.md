@@ -1,6 +1,6 @@
 # Reproducing finite checks
 
-Updated 23 October 2026. **Finite checks do not prove the local target.**
+Updated 24 October 2026. **Finite checks do not prove the local target.**
 The [proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md)
 explains why the October 21 closure claims were withdrawn even though their
 sample-based scripts passed. DIRECT-Q-GAIN and conditional P12/W8 remain open.
@@ -19,8 +19,8 @@ python verification/check_repository.py
 python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-The runner selects 22 current suites/diagnostics and 13 original suites
-(35 total). `--suite current` and `--suite legacy` select either group.
+The runner selects 23 current suites/diagnostics and 13 original suites
+(36 total). `--suite current` and `--suite legacy` select either group.
 These choices do not include every historical experiment. The runner
 copies the research tree to a temporary directory, sets module paths,
 keeps assertions enabled, and records exit statuses, source hashes,
@@ -82,7 +82,7 @@ Use the runner, or a separate complete checkout, to preserve captures.
 Current source groups are under `docs/audits/`, `verification/scripts/`,
 and `verification/results/`. Historical captures and pre-edit copies are
 under `history/`; checkpoints live under `checkpoints/`. The
-[October 23 checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023_overlap.json)
+[October 23 checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261024.json)
 binds the corrected current files to their hashes. A historical checkpoint
 records its own snapshot, not a certification of later edited sources.
 
@@ -101,3 +101,5 @@ marked accordingly; no PDF compilation is claimed by this correction.
 The [October 23 verifier](verification/scripts/verify_low_mean_moments_20261023.py) adds 26,477 exact rational assertions for the moment cone, low-mean laws, completion fields, diagonal corrections, and variance bounds. Its small arithmetic examples test universal identities, not eligible-host phase selection.
 
 The overlap verifier checks 293,771 exact assertions across 1,056 finite arithmetic cases. Its nine phase records are separately labeled floating diagnostics; none establishes eligible-host failure.
+
+The October 24 growing-overlap verifier adds 43,045 exact assertions across 982 arithmetic cases. These test the incidence bounds and complete residual identity, not asymptotic phase selection.

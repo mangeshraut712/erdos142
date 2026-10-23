@@ -14,14 +14,14 @@ formulae for the progression-free extremal functions; the local target
 is a related, weaker question.
 
 By [Mangesh Raut](https://github.com/mangeshraut712). Research through
-**23 October 2026**, including correction of the October 21 proof claims.
+**24 October 2026**, including correction of the October 21 proof claims.
 
 [Current status](CURRENT_STATUS.md) · [Proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) ·
 [LaTeX manuscript](docs/manuscript/README.md) · [Peer review guide](docs/PEER_REVIEW_GUIDE.md) ·
 [Proof dependencies](PROOF_DEPENDENCIES.md) · [Reproduce checks](VERIFYING.md) ·
 [Next steps](docs/ROADMAP.md)
 
-## Corrected research status — 23 October 2026
+## Corrected research status — 24 October 2026
 
 The October 21 closure and explicit-rate claims are **withdrawn**. The proof
 reversed a variance inequality, dropped an uncontrolled cubic term, and
@@ -35,6 +35,8 @@ certificate. Finite diagnostics are not eligible asymptotic counterexamples.
 The [October 23 continuation](docs/audits/LOW_MEAN_MOMENT_CONE_20261023.md) proves a sharp completion-mean interval and valid variance upper bound, and constructs an abstract zero-mean obstruction. The arithmetic low-mean branch remains open.
 
 The overlap continuation improves the completion bound to q<=2aw and proves a consistent local-law obstruction through floor(1/a)+1 vertices. Neither supplies the missing uniform phase gain.
+
+The October 24 continuation proves a weighted incidence-operator bound and constructs actual zero-completion subsets in growing patterns. The missing transfer from arbitrary triples to weighted arithmetic triples remains open.
 
 | Retained result | Scope |
 |---|---|
@@ -63,20 +65,20 @@ python verification/run_current.py --suite all --output .verification-runs/lates
 ```
 
 The runner executes in a temporary copy so saved JSON evidence is preserved.
-`current` selects twenty-two current suites and diagnostics, `legacy` selects the
-thirteen original suites, and `all` runs both (35 scripts). Earlier dated experiments
+`current` selects twenty-three current suites and diagnostics, `legacy` selects the
+thirteen original suites, and `all` runs both (36 scripts). Earlier dated experiments
 remain available separately. A passing run checks finite identities and
 examples; it does not prove an asymptotic theorem. See [VERIFYING.md](VERIFYING.md)
 for exact versus floating checks, optional SciPy searches, and limitations.
 
 ## Reading and repository map
 
-- [Latest report](docs/audits/OVERLAP_CONSTRAINTS_20261023.md): improved completion degree, consistent local obstruction, and proof dependencies.
+- [Latest report](docs/audits/GROWING_OVERLAP_SYSTEMS_20261024.md): sparse completion triples, growing arithmetic constructions, and incidence energy.
 - [Current status](CURRENT_STATUS.md), [theorem ledger](VERIFIED_THEOREMS.md),
   and [failed approaches](FAILED_APPROACHES.md): claims and their boundaries.
 - [Documentation index](docs/README.md), [progress](docs/PROGRESS.md),
   and [roadmap](docs/ROADMAP.md): entry points for contributors.
-- [Latest checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023_overlap.json): current status and source hashes.
+- [Latest checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261024.json): current status and source hashes.
 - [checkpoints/](checkpoints/): current and historical autonomous research checkpoints.
 - [docs/audits/](docs/audits/): chronological research audits and continuation reports from September and October.
 - [verification/scripts/](verification/scripts/) and

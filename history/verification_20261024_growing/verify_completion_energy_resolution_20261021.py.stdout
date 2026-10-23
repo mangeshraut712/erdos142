@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "total_checks": 196,
+  "counts": {
+    "chirp_energy_identity_floating": 6,
+    "chirp_fourth_power_lower_bound": 6,
+    "pointwise_hole_support": 148,
+    "ap_free_expansion_h_ne0": 6,
+    "completion_inner_product_identity": 6,
+    "exact_R4_completion_formula": 6,
+    "exact_R3_completion_formula": 6,
+    "completion_mean_positivity": 6,
+    "norm_k_lower_bound": 6
+  },
+  "maximum_error": 6.661338147750939e-16
+}

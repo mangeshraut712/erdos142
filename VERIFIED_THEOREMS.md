@@ -1,12 +1,12 @@
 # Theorem ledger: corrected scope
 
-**Status: OPEN; outcome D, partial results only.** Updated 23 October 2026.
+**Status: OPEN; outcome D, partial results only.** Updated 24 October 2026.
 The local target `r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, P12 and W8 remain
 unproved. The October 21 closure and effective-rate claims are withdrawn
 because of missing proof steps, not merely pending external peer review.
 
 Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
-[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023_overlap.json).
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261024.json).
 
 The exact Boolean expansion, weighted pair near-positivity, twelve-slot
 7/11 terminal ceiling under M13, completion projection identities, and
@@ -52,6 +52,24 @@ family of overlaps using global consistency or failed phase selection;
 a fixed finite overlap alone cannot exclude CL23.
 
 [Proofs, exact slack identity, audit and updated dependency graph](docs/audits/OVERLAP_CONSTRAINTS_20261023.md).
+
+## October 24 growing-system results
+
+PC24 proves that an occupied pair has at most nine possible third vertices
+in a four-AP completion triple. GI24 constructs actual zero-completion
+subsets of every n-vertex pattern of size at least (2sqrt(2)/9)n/sqrt(n-1).
+IE24 proves the weighted completion incidence bound ||K||^2<=72aw/p,
+with counting Euclidean norms. These do not supply sufficient phase gain.
+
+The factorial threshold beyond n~1/a forces arbitrary triples, while
+completion triples form a sparse arithmetic subfamily. The missing
+transfer between those quantities remains OPEN. Next apply the incidence
+operator to centered occupied-pair data under failed phase selection,
+retaining the contribution of triples without arithmetic extensions.
+The October 21 closure remains withdrawn; no eligible counterexample exists
+in these new checks and no proof of the local target is claimed.
+
+[Precise statements, proofs, failed attacks and dependency graph](docs/audits/GROWING_OVERLAP_SYSTEMS_20261024.md).
 
 ## Previous record
 
