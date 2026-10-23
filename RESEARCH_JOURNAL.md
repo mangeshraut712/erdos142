@@ -1,12 +1,12 @@
 # Research journal: 22 October correction
 
-**Status: OPEN; outcome D, partial results only.** Updated 22 October 2026.
+**Status: OPEN; outcome D, partial results only.** Updated 23 October 2026.
 The local target `r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, P12 and W8 remain
 unproved. The October 21 closure and effective-rate claims are withdrawn
 because of missing proof steps, not merely pending external peer review.
 
 Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
-[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json).
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023.json).
 
 The repository was found at commit 51854a2 with closure and effective-rate
 claims. Independent mathematical audits identified missing estimates,
@@ -29,6 +29,12 @@ positivity on the eligible domain and the small/zero-mean alternative are
 unresolved. The new correction proves the universal Boolean chirp fourth
 moment identity and records finite counterchecks to auxiliary overclaims.
 
+
+## October 23 research continuation
+
+October 23 cycle: reconstructed P12/W8 and exact diagonals; solved the occupancy feasibility problem; expanded an explicit zero-mean law; proved the bounded-completion variance upper bound; isolated extendable-triple exclusion at m=0. Independent rational enumeration passed 26,477 assertions. No proof of the unconditional target or eligible asymptotic counterexample resulted.
+
+[Exact statements, proofs, obstruction and dependency graph](docs/audits/LOW_MEAN_MOMENT_CONE_20261023.md).
 
 ## Previous record
 

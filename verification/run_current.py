@@ -15,6 +15,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT = [
+    "verification/scripts/verify_low_mean_moments_20261023.py",
     "verification/scripts/verify_boolean_occupancy_20261017.py",
     "verification/scripts/verify_boolean_o2_diagnostics_20261017.py",
     "verification/scripts/verify_o2_cubic_quantifiers_20261017.py",

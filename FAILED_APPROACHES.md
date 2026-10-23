@@ -1,12 +1,12 @@
 # Failed approaches: October 22 audit
 
-**Status: OPEN; outcome D, partial results only.** Updated 22 October 2026.
+**Status: OPEN; outcome D, partial results only.** Updated 23 October 2026.
 The local target `r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, P12 and W8 remain
 unproved. The October 21 closure and effective-rate claims are withdrawn
 because of missing proof steps, not merely pending external peer review.
 
 Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
-[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json).
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023.json).
 
 Withdrawn October 21 steps:
 
@@ -32,6 +32,12 @@ positivity on the eligible domain and the small/zero-mean alternative are
 unresolved. The new correction proves the universal Boolean chirp fourth
 moment identity and records finite counterchecks to auxiliary overclaims.
 
+
+## October 23 research continuation
+
+October 23: solving the complete one-edge moment problem does not force a positive completion mean at small density; an explicit zero-mean law blocks a local SOS proof from those premises. The valid bounded-degree variance upper bound is too weak at m of order mu a^3. Zero mean forbids only extendable positive-weight triples, not arbitrary three-APs. None of these failures refutes DIRECT-Q-GAIN.
+
+[Exact statements, proofs, obstruction and dependency graph](docs/audits/LOW_MEAN_MOMENT_CONE_20261023.md).
 
 ## Previous record
 

@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "exact_chirp_orthogonality_branches": 3996,
+    "exact_mode_phase_absorption": 3996,
+    "floating_tent_real_nonnegative": 6,
+    "floating_probability_mass": 6,
+    "floating_centered_row_sum": 240,
+    "floating_shifted_energy_universal": 240,
+    "floating_individual_mode_covariance": 6480,
+    "floating_original_weight_covariance": 24,
+    "floating_nonnegative_defect_energy_identity": 24,
+    "floating_defect_bounds": 24,
+    "floating_Boolean_baseline": 60,
+    "floating_Q_energy_identity": 6
+  },
+  "total_checks": 15102,
+  "maximum_error": 1.1060596882828122e-14
+}

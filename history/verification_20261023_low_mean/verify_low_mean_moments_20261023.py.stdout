@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "date": "2026-10-23",
+  "exact_checks": 26477,
+  "occupancy_grid_laws": 4844,
+  "exchangeable_laws": 435,
+  "arithmetic_cases": 423,
+  "zero_mean_cases": 247,
+  "target_proved": false,
+  "P12_proved": false,
+  "eligible_counterexample_found": false,
+  "scope": "Exact Fraction checks. Arbitrary bounded weights test universal lemmas only; no T5 or prescribed-radius eligibility claim."
+}

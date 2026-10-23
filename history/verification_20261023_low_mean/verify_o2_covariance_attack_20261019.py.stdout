@@ -1,0 +1,560 @@
+{
+  "status": "passed; finite supporting identities and diagnostics only",
+  "checks": 38895,
+  "exact_checks": 37287,
+  "exact_checks_by_category": {
+    "mask_size": 1,
+    "nonzero_mask_progressions": 10100,
+    "exact_translation_probabilities": 10201,
+    "mask_ratio": 1,
+    "distinct_integer_vertices_same_block": 505,
+    "tent_multiple_identity": 1500,
+    "tent_multiple_bound": 1500,
+    "tent_total_mass": 1500,
+    "balanced_blocks": 9,
+    "same_block_expectation": 3348,
+    "crossing_count": 330,
+    "weighted_crossing_expectation": 54,
+    "full_expectation_bound": 54,
+    "cross_block_probability": 1824,
+    "forced_nonzero_AP": 24,
+    "four_vertex_insertion_cost": 24,
+    "anchored_incident_mass": 5856,
+    "eroded_boundary_size": 24,
+    "constant_residual": 24,
+    "exact_residual_expansion": 24,
+    "cubic_quartic_rearrangement": 24,
+    "host_mass_bound": 24,
+    "linear_boundary_bound": 24,
+    "pair_boundary_bound": 24,
+    "exact_full_pair_positivity": 144,
+    "individual_pair_boundary": 144
+  },
+  "floating_fourier_checks": 1608,
+  "maximum_fourier_error": 1.734723475976807e-18,
+  "mask": [
+    0,
+    1,
+    4,
+    6,
+    7,
+    9,
+    12,
+    14,
+    20,
+    26,
+    34,
+    35,
+    37,
+    38,
+    41,
+    42,
+    49,
+    55,
+    57,
+    66,
+    76,
+    77,
+    80,
+    82,
+    83,
+    85,
+    87,
+    96,
+    98
+  ],
+  "rho": "10201/24389",
+  "finite_expectation_cases": [
+    {
+      "p": 53,
+      "n": 13,
+      "K": 1,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "377/567418",
+      "upper_bound": "404653/458473744"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 1,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "377/1985963",
+      "upper_bound": "1880064/9828530887"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 1,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "377/567418",
+      "upper_bound": "263721/229236872"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 1,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "377/1985963",
+      "upper_bound": "13283237/68799716209"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 1,
+      "H": 4,
+      "t": "29/202",
+      "expected_count": "377/567418",
+      "upper_bound": "478319/229236872"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 1,
+      "H": 4,
+      "t": "29/707",
+      "expected_count": "377/1985963",
+      "upper_bound": "1958919/9828530887"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 2,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "304665/458473744",
+      "upper_bound": "465859/458473744"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 2,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "266540/1404075841",
+      "upper_bound": "13221654/68799716209"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 2,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "114325/171927654",
+      "upper_bound": "177765/114618436"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 2,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "39181985/206399148627",
+      "upper_bound": "13466855/68799716209"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 2,
+      "H": 4,
+      "t": "29/202",
+      "expected_count": "763577/1146184360",
+      "upper_bound": "784349/229236872"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 2,
+      "H": 4,
+      "t": "29/707",
+      "expected_count": "9329447/49142654435",
+      "upper_bound": "14324493/68799716209"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 5,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "30791899/46305848144",
+      "upper_bound": "649477/458473744"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 5,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "188446742/992681619587",
+      "upper_bound": "13405272/68799716209"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 5,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "4671563785/7015335993816",
+      "upper_bound": "630957/229236872"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 5,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "399708721955/2105477715144027",
+      "upper_bound": "14017709/68799716209"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 5,
+      "H": 4,
+      "t": "29/202",
+      "expected_count": "3900546643/5846113328180",
+      "upper_bound": "1702439/229236872"
+    },
+    {
+      "p": 53,
+      "n": 13,
+      "K": 5,
+      "H": 4,
+      "t": "29/707",
+      "expected_count": "666211510547/3509129525240045",
+      "upper_bound": "16160673/68799716209"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 1,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "725/2060602",
+      "upper_bound": "721681/1664966416"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 1,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "725/7212107",
+      "upper_bound": "25252056/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 1,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "725/2060602",
+      "upper_bound": "422409/832483208"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 1,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "725/7212107",
+      "upper_bound": "25375193/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 1,
+      "H": 5,
+      "t": "29/202",
+      "expected_count": "725/2060602",
+      "upper_bound": "1581465/1664966416"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 1,
+      "H": 5,
+      "t": "29/707",
+      "expected_count": "725/7212107",
+      "upper_bound": "26111840/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 2,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "585849/1664966416",
+      "upper_bound": "782887/1664966416"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 2,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "512576/5098959649",
+      "upper_bound": "25313262/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 2,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "219769/624362406",
+      "upper_bound": "257109/416241604"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 2,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "75349277/749547068403",
+      "upper_bound": "25558811/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 2,
+      "H": 5,
+      "t": "29/202",
+      "expected_count": "1763485/4994899248",
+      "upper_bound": "2499555/1664966416"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 2,
+      "H": 5,
+      "t": "29/707",
+      "expected_count": "75354610/749547068403",
+      "upper_bound": "27029930/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 5,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "146499/416241604",
+      "upper_bound": "966505/1664966416"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 5,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "512579/5098959649",
+      "upper_bound": "25496880/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 5,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "29633293/84080804008",
+      "upper_bound": "789645/832483208"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 5,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "362404923/3604964471843",
+      "upper_bound": "26109665/249849022801"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 5,
+      "H": 5,
+      "t": "29/202",
+      "expected_count": "752258235/2123040301202",
+      "upper_bound": "5253825/1664966416"
+    },
+    {
+      "p": 101,
+      "n": 25,
+      "K": 5,
+      "H": 5,
+      "t": "29/707",
+      "expected_count": "256252421255/2548709881593001",
+      "upper_bound": "29784200/249849022801"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 1,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "1073/4484602",
+      "upper_bound": "1038709/3623558416"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 1,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "1073/15696107",
+      "upper_bound": "37343664/543760234801"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 1,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "1073/4484602",
+      "upper_bound": "581097/1811779208"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 1,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "1073/15696107",
+      "upper_bound": "37467149/543760234801"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 1,
+      "H": 5,
+      "t": "29/202",
+      "expected_count": "1073/4484602",
+      "upper_bound": "1899885/3623558416"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 1,
+      "H": 5,
+      "t": "29/707",
+      "expected_count": "1073/15696107",
+      "upper_bound": "38204840/543760234801"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 2,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "867033/3623558416",
+      "upper_bound": "1099915/3623558416"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 2,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "758612/11097147649",
+      "upper_bound": "37404870/543760234801"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 2,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "325213/1358834406",
+      "upper_bound": "336453/905889604"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 2,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "111516569/1631280704403",
+      "upper_bound": "109769/1585306807"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 2,
+      "H": 5,
+      "t": "29/202",
+      "expected_count": "869109/3623558416",
+      "upper_bound": "2817975/3623558416"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 2,
+      "H": 5,
+      "t": "29/707",
+      "expected_count": "37174064/543760234801",
+      "upper_bound": "37510/521342507"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 5,
+      "H": 1,
+      "t": "29/202",
+      "expected_count": "1455/6079796",
+      "upper_bound": "1283533/3623558416"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 5,
+      "H": 1,
+      "t": "29/707",
+      "expected_count": "758615/11097147649",
+      "upper_bound": "767112/11097147649"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 5,
+      "H": 2,
+      "t": "29/202",
+      "expected_count": "325495/1358834406",
+      "upper_bound": "948333/1811779208"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 5,
+      "H": 2,
+      "t": "29/707",
+      "expected_count": "111518825/1631280704403",
+      "upper_bound": "38201621/543760234801"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 5,
+      "H": 5,
+      "t": "29/202",
+      "expected_count": "26729650685/110891758204848",
+      "upper_bound": "5572245/3623558416"
+    },
+    {
+      "p": 149,
+      "n": 37,
+      "K": 5,
+      "H": 5,
+      "t": "29/707",
+      "expected_count": "1137770188550/16640694465615003",
+      "upper_bound": "41877200/543760234801"
+    }
+  ],
+  "finite_cases_satisfy_asymptotic_prescriptions": false,
+  "forced_examples_are_AP_free": false,
+  "asymptotic_existence_proved_by_script": false,
+  "P12_or_target_proved": false,
+  "scope": "Exact modular/Fraction finite checks plus separately labeled floating Fourier checks. The asymptotic auxiliary obstruction is established by the written argument; the constructed final sets contain a nonzero 4-AP and are not P12 counterexamples."
+}

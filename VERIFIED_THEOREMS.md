@@ -1,12 +1,12 @@
 # Theorem ledger: corrected scope
 
-**Status: OPEN; outcome D, partial results only.** Updated 22 October 2026.
+**Status: OPEN; outcome D, partial results only.** Updated 23 October 2026.
 The local target `r_4(N)=o(N/log N)`, DIRECT-Q-GAIN, P12 and W8 remain
 unproved. The October 21 closure and effective-rate claims are withdrawn
 because of missing proof steps, not merely pending external peer review.
 
 Read the [authoritative proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md) and
-[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json).
+[current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023.json).
 
 The exact Boolean expansion, weighted pair near-positivity, twelve-slot
 7/11 terminal ceiling under M13, completion projection identities, and
@@ -28,6 +28,12 @@ completion positivity, E13 alignment bound, QP phase-budget and coefficient
 bounds, unconditional closure, and effective-rate claims are not verified
 theorems. Numerical samples and assumption-bearing Lean drafts do not
 upgrade their status.
+
+## October 23 research continuation
+
+LM23: max(0,(2M2*-M1*)/3)<=wm<=min(M2*/3,T*-M1*+M2*), with a necessary-and-sufficient one-edge feasibility converse. ZM23 gives an explicit zero-completion abstract law with negative combined residual. VB23 proves Var(q)<=4aw m-m^2 for the actual AP-free completion field and weights 0<=F<=1. See the note for proofs and exact scope.
+
+[Exact statements, proofs, obstruction and dependency graph](docs/audits/LOW_MEAN_MOMENT_CONE_20261023.md).
 
 ## Previous record
 

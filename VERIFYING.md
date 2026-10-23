@@ -1,6 +1,6 @@
 # Reproducing finite checks
 
-Updated 22 October 2026. **Finite checks do not prove the local target.**
+Updated 23 October 2026. **Finite checks do not prove the local target.**
 The [proof correction](docs/audits/OCT21_CLOSURE_CORRECTION_20261021.md)
 explains why the October 21 closure claims were withdrawn even though their
 sample-based scripts passed. DIRECT-Q-GAIN and conditional P12/W8 remain open.
@@ -19,8 +19,8 @@ python verification/check_repository.py
 python verification/run_current.py --suite all --output .verification-runs/latest
 ```
 
-The runner selects 20 current suites/diagnostics and 13 original suites
-(33 total). `--suite current` and `--suite legacy` select either group.
+The runner selects 21 current suites/diagnostics and 13 original suites
+(34 total). `--suite current` and `--suite legacy` select either group.
 These choices do not include every historical experiment. The runner
 copies the research tree to a temporary directory, sets module paths,
 keeps assertions enabled, and records exit statuses, source hashes,
@@ -82,7 +82,7 @@ Use the runner, or a separate complete checkout, to preserve captures.
 Current source groups are under `docs/audits/`, `verification/scripts/`,
 and `verification/results/`. Historical captures and pre-edit copies are
 under `history/`; checkpoints live under `checkpoints/`. The
-[October 22 checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261022.json)
+[October 23 checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261023.json)
 binds the corrected current files to their hashes. A historical checkpoint
 records its own snapshot, not a certification of later edited sources.
 
@@ -97,3 +97,5 @@ The [Lean draft](formalization/lean/README.md) contains an admitted lemma
 and four extra axioms. No successful Lean build or complete formalization
 is claimed. The [manuscript](docs/manuscript/README.md) is withdrawn and
 marked accordingly; no PDF compilation is claimed by this correction.
+
+The [October 23 verifier](verification/scripts/verify_low_mean_moments_20261023.py) adds 26,477 exact rational assertions for the moment cone, low-mean laws, completion fields, diagonal corrections, and variance bounds. Its small arithmetic examples test universal identities, not eligible-host phase selection.
