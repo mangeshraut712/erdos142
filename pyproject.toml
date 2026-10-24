@@ -18,6 +18,10 @@ dependencies = []
 [project.optional-dependencies]
 verification = ["numpy>=1.24,<3"]
 exploration = ["numpy>=1.24,<3", "scipy>=1.10,<2"]
+test = ["numpy>=1.24,<3", "pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [project.urls]
 Homepage = "https://github.com/mangeshraut712/erdos142"

@@ -83,6 +83,21 @@ adequate quadratic phase selection directly without passing through K.
 
 [Exact statements, proofs, ceiling audit and updated dependency graph](docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md).
 
+## October 24 multi-scale Bohr overlap results
+
+**MS24:** Pointwise hole support B(v) K_{1->2}(v, c) = 0 and spatial decoupling
+<u_1, K_{1->2} f> = -a_1 <g_{1->2}, f> hold across arbitrary multi-scale hosts.
+Density discrepancy shifts are annihilated on zero-mean phases:
+<u_1, psi> = <u_2, psi> = <u_{12}, psi>.
+Distinct quadratic phases are asymptotically orthogonal across overlapping Bohr hosts.
+
+P12, W8 and DIRECT-Q-GAIN remain OPEN. The incidence route through K is closed
+in both single-host and multi-host formulations. Next attack must prove adequate
+quadratic phase selection directly on Bohr neighborhoods without passing through K,
+or investigate the arithmetic low-mean branch m <= 2a^3 T / w using U^4 uniformity.
+
+[Exact statements, proofs, multi-scale audit and updated dependency graph](docs/audits/MULTISCALE_BOHR_OVERLAPS_20261024.md).
+
 ## Previous record
 
 The [superseded pre-correction version](history/proof_audit_20261021/before_updates/NEXT_AUTONOMOUS_ACTION.md) is preserved verbatim. Earlier dated sources remain in [docs/audits/](docs/audits/) and [history/](history/).
