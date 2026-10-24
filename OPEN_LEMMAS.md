@@ -75,6 +75,24 @@ in these new checks and no proof of the local target is claimed.
 
 [Precise statements, proofs, failed attacks and dependency graph](docs/audits/GROWING_OVERLAP_SYSTEMS_20261024.md).
 
+## October 24 bilinear-pair incidence results
+
+**BP24:** For every 4-AP-free subset A and every pair vector with ||f||_infty<=1
+and test function with ||psi||_infty<=1, |E_Omega[psibar Kf]|<=6w a^(3/2)<=6 a^(3/2).
+The ratio |E_Omega[psibar Kf]|/a^(3/2)<=6w is uniformly bounded and cannot
+supply the diverging factor F_epsilon(a)->infinity needed by DIRECT-Q-GAIN.
+Pointwise hole support B(v) K(v, c)=0 forces u(v)=-a on the entire row support
+of K, spatial decoupling <u, Kf> = -a <g, f>, and the exact closed quartic
+residual identity R4 = 3a^4T + 2R1 + R2 - awm + aw(1-4a)/p.
+Under m=0 and failed linear selection, R4 ~ 3a^4T > 0, but Gowers U^3 transfer
+yields an exponent gap delta >= a^(4C) (4C >= 2 > 3/2).
+
+P12, W8 and DIRECT-Q-GAIN remain OPEN. Next attack must either exploit
+multi-scale global consistency across overlapping Bohr hosts or prove
+adequate quadratic phase selection directly without passing through K.
+
+[Exact statements, proofs, ceiling audit and updated dependency graph](docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md).
+
 ## Previous record
 
 The [superseded pre-correction version](history/proof_audit_20261021/before_updates/OPEN_LEMMAS.md) is preserved verbatim. Earlier dated sources remain in [docs/audits/](docs/audits/) and [history/](history/).

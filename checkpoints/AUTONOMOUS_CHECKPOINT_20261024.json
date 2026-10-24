@@ -9,9 +9,9 @@
   "P12_proved": false,
   "genuine_eligible_P12_counterexample_found": false,
   "background_work_running": false,
-  "execution_state": "growing_overlap_partial_results_checkpoint",
+  "execution_state": "bilinear_pair_incidence_partial_results_checkpoint",
   "supersedes_for_navigation": "checkpoints/AUTONOMOUS_CHECKPOINT_20261023_overlap.json",
-  "report": "docs/audits/GROWING_OVERLAP_SYSTEMS_20261024.md",
+  "report": "docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md",
   "proved_results": [
     {
       "id": "BO17",
@@ -89,6 +89,11 @@
       "id": "PC24/GI24/IE24",
       "source": "docs/audits/GROWING_OVERLAP_SYSTEMS_20261024.md",
       "claim": "Completion triple pair-codegree <=9; actual independent subsets >=(2sqrt(2)/9)n/sqrt(n-1); weighted incidence norm squared <=72aw/p. Insufficient for phase selection."
+    },
+    {
+      "id": "BP24",
+      "source": "docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md",
+      "claim": "Universal bilinear incidence ceiling |E_Omega[psibar Kf]|<=6w a^(3/2)<=6 a^(3/2); hole-support degeneracy B K = 0 decoupling <u, Kf> = -a <g, f>; exact quartic residual R4 = 3a^4T + 2R1 + R2 - awm + aw(1-4a)/p."
     }
   ],
   "selection_problem": {
@@ -403,12 +408,12 @@
     "CITATION.cff": "2bf3369fea0a06176eb2b791b102de39bbe8bf9664acf234892d707e7fc54bce",
     "CODE_OF_CONDUCT.md": "b2b7da52b025b4d118e691e105f7bebe81978ad5c1d701b96972597141f9e012",
     "CONTRIBUTING.md": "22b194cd7213df553c88492394193a0b96cf2aa0d1a1ef6c280df9b697be258d",
-    "CURRENT_STATUS.md": "600b0a6e7578420c76f8c795b63a6dbd3246d8a038211176c8a56a557c583c1b",
+    "CURRENT_STATUS.md": "f2cdc3e44ca2f1137f256c0fab7357b6786340dc3de321315cb10571c0ebdbb6",
     "FAILED_APPROACHES.md": "d3c14641035c80355bcf9710cc9fe66e408d739802791d982caf4a77b01f3969",
     "LICENSE": "c96f7895a0c600c81a7c22994b59ab93394be6d17cecdd5a8e15c6bdcb999ff4",
-    "NEXT_AUTONOMOUS_ACTION.md": "7729d3d3bb7865d59ec26148da3bce2124808fc98cd4867de8353fceb790179b",
+    "NEXT_AUTONOMOUS_ACTION.md": "13a38a4b34b71b96d768e9078011538383c33924622d3dda790cbd96f92cda69",
     "NOTICE": "fd7bae0b129b47e8f7dd846742716d27e32b29f3e8881f2de94ef6bbf2907969",
-    "OPEN_LEMMAS.md": "e1e5599811a6cd116f4cf41163e1906eeff2d407460f007adcbe5e799ac5ede7",
+    "OPEN_LEMMAS.md": "629bddcb54631dc5c1ee9c33c2ee253b690f3b4c8c7af0d55566655f5d0b8707",
     "PROOF_DEPENDENCIES.md": "7d2f9873f4f1e5f95c5b272a8b1e5be8c7facab0ffe371f97a82d916d951ee55",
     "README.md": "4aeade6dae648d89b0a17b3d11ddc286b4e706d085adfb71ab3704db7e854855",
     "RESEARCH_JOURNAL.md": "f827af64c5b1b53ea287a7c24734ccddf2ce2f4d87f650a977f4f5c40b024521",
@@ -1135,7 +1140,7 @@
     "verification/results/vacuity_verification_20261002.json": "4f56d76fb482df1ce1d8c7cec49a6933be55387f0ef3a630ec35fed313276224",
     "verification/results/verification.json": "0a2c636c38557d37939269ab40559dc089cf87e632a52ec19bf56759c7539d25",
     "verification/results/window_lattice_verification_20261002.json": "31c1ca0e550547133668dd694223b9f537b161c2233bc1108e42ee604495be4d",
-    "verification/run_current.py": "68c0a220e1f52c9c123e6e31e55054a6672e285fcc65cbe151834ddf1cd1f97c",
+    "verification/run_current.py": "1d830741990a16e09dcf7617cc6c60b34cd0d39cc13814a7a144fb192e3d4351",
     "verification/scripts/_probe_terminal.py": "0ec1b4b77a3151cb4f7333b338e94e65e44973c67d7da4b3d4995a576bcfdec5",
     "verification/scripts/discover_degree_six_extension_20261012.py": "0d2b5b7d8a981bc3c685aed4b93e5b23ff5a449a223364c66ace9324581295fe",
     "verification/scripts/discover_select_20261002.py": "c0577b3f4244b270a781ee5f00ef2b127b4fb729b94306ba665b936e66804783",
@@ -1232,7 +1237,10 @@
     "verification/scripts/verify_weighted_completion_20261018.py": "f6f9fcd7234c3b54d4d60d01ab0c49e6ecdf6472cc8edf4ab2388a1ca55effda",
     "verification/scripts/verify_weighted_pair_20261016.py": "c6dd4d02e0d8bdc5cb845b57e730eb4b7cb186b17919b70e45f804492ad2594f",
     "verification/scripts/verify_weighted_quartic_covariance_20261018.py": "c9f531d20df53e428a8465ac2ff0c63090881f161968f48a979a5a9bbc88f3cc",
-    "verification/scripts/verify_window_lattice_20261002.py": "7412a68d9b0f90a449cc3f89cbdce7f0d9967f9cce886c51f670a760eb17b81f"
+    "verification/scripts/verify_window_lattice_20261002.py": "7412a68d9b0f90a449cc3f89cbdce7f0d9967f9cce886c51f670a760eb17b81f",
+    "docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md": "da733ecde404f5051e40c38e1acad8ec4811dd97cd6431910535ad8a497f6dec",
+    "verification/scripts/verify_bilinear_pair_incidence_20261024.py": "27af68d106eff443702980aa102c4518e6ca279a9f956dc797de3f36a65556b7",
+    "verification/results/BILINEAR_PAIR_INCIDENCE_20261024.json": "c0b565bd9fa85b721b2b5139983e3559db20d23e7e6db07e25f6653d8c285461"
   },
   "positive_density_failure_branch": "Eliminated using classical qualitative four-term Szemeredi",
   "remaining_failure_branch": "Eligible a->0 sequence with bounded delta/a^(3/2) for some fixed epsilon",
