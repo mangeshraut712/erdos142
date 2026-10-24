@@ -30,6 +30,10 @@ jobs:
           python -m pip install -e '.[verification]'
       - name: Check syntax, JSON, navigation, and checkpoint
         run: python verification/check_repository.py
+      - name: Verify status dashboard freshness
+        run: python verification/generate_dashboard.py --check
+      - name: Run automated test suite
+        run: python -m unittest discover tests
       - name: Run current and original finite suites
         run: python verification/run_current.py --suite all --output .verification-runs/ci
       - name: Preserve finite-check logs

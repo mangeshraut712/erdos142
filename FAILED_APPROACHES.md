@@ -75,6 +75,27 @@ in these new checks and no proof of the local target is claimed.
 
 [Precise statements, proofs, failed attacks and dependency graph](docs/audits/GROWING_OVERLAP_SYSTEMS_20261024.md).
 
+## October 24 bilinear-pair incidence obstruction (BP24)
+
+Attempting to obtain the diverging phase factor F_epsilon(a) -> infinity in DIRECT-Q-GAIN
+via the occupied-pair incidence operator K fails because of a universal a^(3/2) ceiling:
+|E_Omega[psibar Kf]| <= 6w a^(3/2). Furthermore, hole-support annihilation B(v) K(v, c) = 0
+forces u(v) = -a on the entire row support of K, causing exact spatial decoupling
+<u, Kf> = -a <g, f> that erases all spatial phase variations of u.
+
+[Exact proofs and ceiling audit](docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md).
+
+## October 24 multi-scale Bohr overlap obstruction (MS24)
+
+Attempting to bypass the single-host hole-support obstruction by coupling across
+multiple Bohr hosts Omega_1, Omega_2 fails. Pointwise hole support B(v) K_{1->2}(v, c) = 0
+and spatial decoupling <u_1, K_{1->2} f> = -a_1 <g_{1->2}, f> hold universally for
+arbitrary pairs of hosts. Density discrepancy shifts u_1 - u_2 are constant and vanish
+against zero-mean phase functions, while quadratic phases with distinct coefficients
+c_1 != c_2 are asymptotically orthogonal across overlapping Bohr domains.
+
+[Exact proofs and multi-scale audit](docs/audits/MULTISCALE_BOHR_OVERLAPS_20261024.md).
+
 ## Previous record
 
 The [superseded pre-correction version](history/proof_audit_20261021/before_updates/FAILED_APPROACHES.md) is preserved verbatim. Earlier dated sources remain in [docs/audits/](docs/audits/) and [history/](history/).

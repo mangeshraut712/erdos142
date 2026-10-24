@@ -92,6 +92,21 @@ adequate quadratic phase selection directly without passing through K.
 
 [Exact statements, proofs, ceiling audit and updated dependency graph](docs/audits/BILINEAR_PAIR_INCIDENCE_20261024.md).
 
+## October 24 multi-scale Bohr overlap results
+
+**MS24:** For overlapping Bohr hosts Omega_1, Omega_2 with non-empty intersection,
+local centered indicators satisfy exact density discrepancy invariance
+<u_1, psi> = <u_2, psi> = <u_12, psi> for all zero-mean phase functions psi.
+Cross-host incidence operators K_{1->2} satisfy universal pointwise hole annihilation
+B(v) K_{1->2}(v, c) = 0 and exact spatial decoupling <u_1, K_{1->2} f> = -a_1 <g_{1->2}, f>.
+Multi-scale coupling cannot bypass the hole-support degeneracy.
+Phase correlation between distinct quadratic coefficients c_1 != c_2 decays as O(log p / (w_12 sqrt(p))).
+
+P12, W8 and DIRECT-Q-GAIN remain OPEN. Future attacks must bypass K entirely,
+addressing direct quadratic phase selection or the low-mean branch under higher-degree Gowers uniformity.
+
+[Exact statements, proofs, multi-scale audit and updated dependency graph](docs/audits/MULTISCALE_BOHR_OVERLAPS_20261024.md).
+
 ## Previous record
 
 The [superseded pre-correction version](history/proof_audit_20261021/before_updates/CURRENT_STATUS.md) is preserved verbatim. Earlier dated sources remain in [docs/audits/](docs/audits/) and [history/](history/).

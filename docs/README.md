@@ -14,3 +14,7 @@ The [latest checkpoint](../checkpoints/AUTONOMOUS_CHECKPOINT_20261024.json) reco
 [Overlap continuation](audits/OVERLAP_CONSTRAINTS_20261023.md): arithmetic completion cap and consistent local laws.
 
 [Growing overlap systems](audits/GROWING_OVERLAP_SYSTEMS_20261024.md): nine possible third vertices per pair, actual sparse constructions, and weighted incidence energy.
+
+[Bilinear pair incidence](audits/BILINEAR_PAIR_INCIDENCE_20261024.md): universal 6w a^(3/2) ceiling, spatial decoupling on hole support, and phase transfer obstruction.
+
+[Multi-scale Bohr overlaps](audits/MULTISCALE_BOHR_OVERLAPS_20261024.md): density discrepancy invariance, universal cross-host spatial decoupling, and phase orthogonality.

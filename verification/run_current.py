@@ -15,6 +15,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT = [
+    "verification/scripts/verify_multiscale_bohr_overlap_20261024.py",
     "verification/scripts/verify_bilinear_pair_incidence_20261024.py",
     "verification/scripts/verify_growing_overlap_20261024.py",
     "verification/scripts/verify_overlap_constraints_20261023.py",
