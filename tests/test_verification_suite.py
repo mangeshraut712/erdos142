@@ -30,7 +30,7 @@ class TestVerificationSuite(unittest.TestCase):
         results = [
             "MULTISCALE_BOHR_OVERLAP_20261024.json",
             "BILINEAR_PAIR_INCIDENCE_20261024.json",
-            "GROWING_OVERLAP_SYSTEMS_20261024.json",
+            "GROWING_OVERLAP_20261024.json",
             "OVERLAP_CONSTRAINTS_20261023.json",
             "LOW_MEAN_MOMENTS_20261023.json",
         ]
