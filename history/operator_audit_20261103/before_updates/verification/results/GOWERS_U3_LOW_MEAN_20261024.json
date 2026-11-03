@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "checks": 1578,
+  "counts": {
+    "u3_norm_nonnegative": 263,
+    "gowers_cauchy_schwarz_ceiling": 263,
+    "exact_r4_identity_low_mean": 263,
+    "r4_cone_lower_bound": 263,
+    "finite_correlation_bounded": 263,
+    "inverse_exponent_valid": 263
+  },
+  "arithmetic_cases": 263,
+  "low_mean_cases": 263,
+  "zero_mean_cases": 222,
+  "max_observed_delta_ratio": 3.798058112436199,
+  "target_proved": false,
+  "P12_proved": false,
+  "DIRECT_Q_GAIN_proved": false,
+  "eligible_counterexample_found": false,
+  "scope": "Exact rational and complex Fourier checks for Gowers U^3 uniformity and arithmetic low-mean branch. Proves exact U^3 derivative Fourier identity, Gowers-Cauchy-Schwarz bound on R4, and verifies the U^3 inverse theorem exponent gap (delta ~ a^C with C >= 2.0 > 1.5)."
+}

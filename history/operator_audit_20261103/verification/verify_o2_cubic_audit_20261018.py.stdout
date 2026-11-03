@@ -1,0 +1,40 @@
+{
+  "checks": 48,
+  "maximum_identity_error": 2.7661073766277612e-18,
+  "scope": "finite identities; target domain not asserted",
+  "cases": [
+    {
+      "p": 257,
+      "host_size": 24,
+      "eroded_host_size": 4,
+      "set_size": 3,
+      "a": 0.125,
+      "max_host_correction": 1.2678501472391732e-06,
+      "boundary_bound": 0.008745428595157702,
+      "abs_R3": 1.5001661290292054e-05,
+      "cubic_bound": 0.0044544835289083585
+    },
+    {
+      "p": 521,
+      "host_size": 24,
+      "eroded_host_size": 4,
+      "set_size": 3,
+      "a": 0.125,
+      "max_host_correction": 3.0850252679219407e-07,
+      "boundary_bound": 0.0036011843379122046,
+      "abs_R3": 3.6503134256155112e-06,
+      "cubic_bound": 0.0018210728048663662
+    },
+    {
+      "p": 1031,
+      "host_size": 26,
+      "eroded_host_size": 9,
+      "set_size": 3,
+      "a": 0.11538461538461539,
+      "max_host_correction": 8.140594957631789e-08,
+      "boundary_bound": 0.001483456435482173,
+      "abs_R3": 8.924788123575227e-07,
+      "cubic_bound": 0.0006897005754537104
+    }
+  ]
+}

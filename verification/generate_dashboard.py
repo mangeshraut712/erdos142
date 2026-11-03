@@ -26,6 +26,10 @@ def build_dashboard_html() -> str:
     results_dir = ROOT / "verification/results"
 
     # Load notable result digests
+    gu24 = {}
+    if (results_dir / "GOWERS_U3_LOW_MEAN_20261024.json").exists():
+        gu24 = json.loads((results_dir / "GOWERS_U3_LOW_MEAN_20261024.json").read_text(encoding="utf-8"))
+
     ms24 = {}
     if (results_dir / "MULTISCALE_BOHR_OVERLAP_20261024.json").exists():
         ms24 = json.loads((results_dir / "MULTISCALE_BOHR_OVERLAP_20261024.json").read_text(encoding="utf-8"))
@@ -47,6 +51,7 @@ def build_dashboard_html() -> str:
     current_scripts = run_current.CURRENT
     legacy_scripts = run_current.LEGACY
 
+    gu24_checks = gu24.get("checks", 1578)
     ms24_checks = ms24.get("checks", 28844)
     bp24_checks = bp24.get("checks", 846305)
     go24_checks = go24.get("reported_checks", 43045)
@@ -332,6 +337,10 @@ def build_dashboard_html() -> str:
         <h2>October 2026 Advances & Rigorous Obstructions</h2>
         <ul>
           <li>
+            <span class="badge b-blue">GU24</span>
+            <strong>GU24 transfer withdrawn (3 November):</strong> The weighted U3 transfer, low-mean coefficient 5/2 and inverse-exponent barrier were not proved. AP27 establishes exact all-pair residual identities; P12 and the target remain open. See <a href="audits/ALL_PAIR_OPERATOR_20261103.md">the correction and new proof</a>.
+          </li>
+          <li>
             <span class="badge b-blue">MS24</span>
             <strong>Multi-Scale Bohr Overlaps:</strong> Proved universal density discrepancy invariance on overlaps and universal cross-host spatial decoupling &lang;<em>u</em><sub>1</sub>, <em>K</em><sub>1&rarr;2</sub><em>f</em>&rang; = &minus;<em>a</em><sub>1</sub> &lang;<em>g</em><sub>1&rarr;2</sub>, <em>f</em>&rang;. Multi-scale coupling cannot break the hole-support ceiling.
           </li>
@@ -381,6 +390,12 @@ def build_dashboard_html() -> str:
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td><code>verify_gowers_u3_low_mean_20261024.py</code></td>
+              <td><span class="badge b-green">PASS</span></td>
+              <td>Historical finite diagnostic only; claimed transfer withdrawn. Excluded from the current suite.</td>
+              <td><strong>{gu24_checks:,}</strong></td>
+            </tr>
             <tr>
               <td><code>verify_multiscale_bohr_overlap_20261024.py</code></td>
               <td><span class="badge b-green">PASS</span></td>

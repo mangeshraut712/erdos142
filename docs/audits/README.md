@@ -1,3 +1,6 @@
+> **3 November 2026 correction — authoritative current status.** AP27 proves the all-host-pair residual identities and the bound ||L||^2<=288/p. P12, DIRECT-Q-GAIN and the target remain unproved. GU24's weighted U3 transfer, 5/2 low-mean coefficient and universal inverse-exponent barrier are unsupported and withdrawn. BP24's ceiling applies only to bounded inputs to its specified operator; it does not rule out every incidence-based approach. Earlier conflicting claims below are retained as superseded history.
+> Read the [current proof and exact next task](ALL_PAIR_OPERATOR_20261103.md) and [current checkpoint](../../checkpoints/AUTONOMOUS_CHECKPOINT_20261103.json).
+
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <!-- Copyright 2026 Mangesh Raut -->
 
@@ -66,7 +69,7 @@ Key notes exploring structural geometry, generic factors, and the select operato
 - [OCT21_CLOSURE_CORRECTION_20261021.md](OCT21_CLOSURE_CORRECTION_20261021.md) (Authoritative proof correction)
 - [LOW_MEAN_MOMENT_CONE_20261023.md](LOW_MEAN_MOMENT_CONE_20261023.md) · [OVERLAP_CONSTRAINTS_20261023.md](OVERLAP_CONSTRAINTS_20261023.md)
 - [GROWING_OVERLAP_SYSTEMS_20261024.md](GROWING_OVERLAP_SYSTEMS_20261024.md) · [BILINEAR_PAIR_INCIDENCE_20261024.md](BILINEAR_PAIR_INCIDENCE_20261024.md)
-- [MULTISCALE_BOHR_OVERLAPS_20261024.md](MULTISCALE_BOHR_OVERLAPS_20261024.md) (Latest mathematical report)
+- [MULTISCALE_BOHR_OVERLAPS_20261024.md](MULTISCALE_BOHR_OVERLAPS_20261024.md) · [GOWERS_U3_LOW_MEAN_20261024.md](GOWERS_U3_LOW_MEAN_20261024.md) (Latest mathematical report)
 
 Python checkers live in `verification/scripts/`; captured JSON in
 `verification/results/`. Checkpoints live in `checkpoints/`.

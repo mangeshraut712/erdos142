@@ -1,0 +1,173 @@
+{
+ "status": "finite diagnostics for FULL_GROUP_ENERGY_AUDIT.md; not an asymptotic proof",
+ "rank1_rotation_identity": {
+  "p": 101,
+  "set": "Z101 size-28 4AP-free witness",
+  "characters_checked": 50,
+  "truncation": 4000,
+  "tail_bound": 1.9236694279931902e-06,
+  "sample_rows": [
+   {
+    "xi": 1,
+    "mean_t_numerator": "276758/104060401",
+    "lattice_formula_float": 0.0026593888461562,
+    "max_t_var": "145991/6630650",
+    "lower_bound_float": 0.001195726520664105
+   },
+   {
+    "xi": 2,
+    "mean_t_numerator": "452498/104060401",
+    "lattice_formula_float": 0.004348215961653754,
+    "max_t_var": "166999/6630650",
+    "lower_bound_float": 0.014803094264937963
+   },
+   {
+    "xi": 3,
+    "mean_t_numerator": "224844/104060401",
+    "lattice_formula_float": 0.002160505868767965,
+    "max_t_var": "50422/3315325",
+    "lower_bound_float": 0.00715767769050179
+   }
+  ],
+  "min_ratio_maxVar_over_lower_bound": 1.7013954289133884,
+  "sup_rank1_var_over_a2": "167807/509600",
+  "cutoff_eligible": false
+ },
+ "trivial_regime_digit_factor": [
+  {
+   "p": 61,
+   "s": 3,
+   "cells": 61,
+   "all_singletons": true
+  },
+  {
+   "p": 101,
+   "s": 4,
+   "cells": 101,
+   "all_singletons": true
+  },
+  {
+   "p": 251,
+   "s": 4,
+   "cells": 251,
+   "all_singletons": true
+  },
+  {
+   "p": 1021,
+   "s": 5,
+   "cells": 1021,
+   "all_singletons": true
+  }
+ ],
+ "affine_invariance_rank1_sup": {
+  "p": 31,
+  "A": [
+   1,
+   2,
+   4,
+   10,
+   12,
+   20
+  ],
+  "images": [
+   {
+    "u": 7,
+    "v": 11,
+    "sup": "306/6727"
+   },
+   {
+    "u": 30,
+    "v": 3,
+    "sup": "306/6727"
+   },
+   {
+    "u": 2,
+    "v": 0,
+    "sup": "306/6727"
+   }
+  ]
+ },
+ "thinning_identity": [
+  {
+   "theta": "1/3",
+   "S": [
+    1,
+    3,
+    6,
+    11,
+    16,
+    17,
+    18,
+    26
+   ],
+   "E_Var_A": "3425/484344",
+   "theta2_Var_S": "787/484344",
+   "bracket": "1319/53816"
+  },
+  {
+   "theta": "1/2",
+   "S": [
+    1,
+    2,
+    7,
+    13,
+    17,
+    26,
+    28,
+    29
+   ],
+   "E_Var_A": "151/13454",
+   "theta2_Var_S": "1035/215264",
+   "bracket": "1381/53816"
+  },
+  {
+   "theta": "4/5",
+   "S": [
+    1,
+    3,
+    7,
+    13,
+    18,
+    20,
+    24,
+    26
+   ],
+   "E_Var_A": "1567/168175",
+   "theta2_Var_S": "892/168175",
+   "bracket": "675/26908"
+  }
+ ],
+ "threeAPfree_level_a2_energy": {
+  "p": 101,
+  "A": [
+   0,
+   1,
+   4,
+   5,
+   11,
+   13,
+   14,
+   16,
+   20,
+   34,
+   37,
+   38,
+   41,
+   46,
+   47,
+   49,
+   50
+  ],
+  "a": 0.16831683168316833,
+  "p_a2": 2.8613861386138617,
+  "identity_a_over_p_minus_a3": -0.0031020061127767524,
+  "fourier_sum": -0.0031020061127767402,
+  "T_prime_size": 90,
+  "bound_16_a_minus3": 3355.3462243028694,
+  "energy_on_T_prime": 0.13059363591397394,
+  "a2_over_8": 0.003541319478482502,
+  "interval_supported_rank1_var_over_a2": 0.9834389140271492,
+  "max_fhat_over_a2": 2.795789048987223
+ },
+ "all_checks_passed": true
+}

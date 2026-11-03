@@ -1,0 +1,66 @@
+{
+  "Z101_regime": {
+    "S": "204/10201",
+    "a": "28/101",
+    "center_S": "23996/1030301",
+    "mean_r": "44/189",
+    "mean_r_minus_a": "-848/19089",
+    "n_fib": 100,
+    "p": 101,
+    "r_constant": false,
+    "size": 28,
+    "var_over_a2": "17181266911/106793406720",
+    "var_r": "17181266911/1389540232080"
+  },
+  "Z11_4apfree_count": 594,
+  "Z11_min_var": "1/484",
+  "Z11_min_var_set": [
+    0,
+    1,
+    2,
+    4,
+    7
+  ],
+  "Z11_minvar_set": {
+    "S": "15/121",
+    "a": "5/11",
+    "center_S": "155/1331",
+    "mean_r": "1/2",
+    "mean_r_minus_a": "1/22",
+    "n_fib": 10,
+    "p": 11,
+    "r_constant": true,
+    "size": 5,
+    "var_over_a2": "1/100",
+    "var_r": "1/484"
+  },
+  "Z13_flat": {
+    "S": "4/169",
+    "a": "4/13",
+    "center_S": "100/2197",
+    "mean_r": "0",
+    "mean_r_minus_a": "-4/13",
+    "n_fib": 12,
+    "p": 13,
+    "r_constant": true,
+    "size": 4,
+    "var_over_a2": "1",
+    "var_r": "16/169"
+  },
+  "Z7_4apfree_count": 49,
+  "Z7_constant_r": {
+    "S": "10/49",
+    "a": "4/7",
+    "center_S": "76/343",
+    "mean_r": "1/2",
+    "mean_r_minus_a": "-1/14",
+    "n_fib": 6,
+    "p": 7,
+    "r_constant": true,
+    "size": 4,
+    "var_over_a2": "1/64",
+    "var_r": "1/196"
+  },
+  "Z7_min_var": "1/196",
+  "status": "compatibility checks passed; local r4 target not proved"
+}

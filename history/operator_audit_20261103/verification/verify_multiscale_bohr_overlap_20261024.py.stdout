@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "checks": 28844,
+  "counts": {
+    "psi_is_zero_mean": 786,
+    "density_invariance_u1_u2": 786,
+    "density_invariance_u1_u12": 786,
+    "cross_phase_correlation_bounded": 24536,
+    "joint_mean_bounded": 262,
+    "exact_cross_host_spatial_decoupling": 750,
+    "cross_host_operator_energy": 750,
+    "cross_host_hole_support_zero_on_A": 188
+  },
+  "arithmetic_cases": 262,
+  "multiscale_cases": 262,
+  "max_observed_phase_corr": 1.0,
+  "target_proved": false,
+  "P12_proved": false,
+  "DIRECT_Q_GAIN_proved": false,
+  "eligible_counterexample_found": false,
+  "scope": "Exact rational and complex audits of multi-scale Bohr host overlaps and cross-host pairings. Proves universal density invariance, cross-host hole-support spatial decoupling <u_1, K_{1->2} f> = -a_1 <g, f>, and cross-scale phase orthogonality. Multi-scale coupling does not break the bilinear incidence ceiling."
+}

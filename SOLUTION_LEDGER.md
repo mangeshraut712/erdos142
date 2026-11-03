@@ -1,3 +1,6 @@
+> **3 November 2026 correction — authoritative current status.** AP27 proves the all-host-pair residual identities and the bound ||L||^2<=288/p. P12, DIRECT-Q-GAIN and the target remain unproved. GU24's weighted U3 transfer, 5/2 low-mean coefficient and universal inverse-exponent barrier are unsupported and withdrawn. BP24's ceiling applies only to bounded inputs to its specified operator; it does not rule out every incidence-based approach. Earlier conflicting claims below are retained as superseded history.
+> Read the [current proof and exact next task](docs/audits/ALL_PAIR_OPERATOR_20261103.md) and [current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261103.json).
+
 # Solution ledger: corrected frontier
 
 **Status: OPEN; outcome D, partial results only.** Updated 24 October 2026.
@@ -106,6 +109,21 @@ quadratic phase selection directly on Bohr neighborhoods without passing through
 or investigate the arithmetic low-mean branch m <= 2a^3 T / w using U^4 uniformity.
 
 [Exact statements, proofs, multi-scale audit and updated dependency graph](docs/audits/MULTISCALE_BOHR_OVERLAPS_20261024.md).
+
+## October 24 Gowers U^3 and arithmetic low-mean results
+
+**GU24:** For every 4-AP-free subset A and centered indicator u = 1_A - a 1_Omega,
+||u||_{U^3}^8 = (1/p) sum_r sum_k |hat{Delta_r u}(k)|^4 and |R4| <= C_F ||u||_{U^3}^4.
+On the arithmetic low-mean branch m <= 2 a^3 T / w under failed linear selection,
+R4 >= (5/2) a^4 T > 0, forcing ||u||_{U^3} >= c a.
+However, quantitative inverse transfer yields phase correlation delta >= c a^C with C >= 2 > 1.5,
+leaving the super-critical exponent a^(1.5) F(a) open.
+
+P12, W8 and DIRECT-Q-GAIN remain OPEN. Any valid closure of the low-mean branch
+must exploit the arithmetic geometry of progression-free sets directly,
+rather than general inverse uniformity transfers.
+
+[Exact statements, proofs, Gowers audit and updated dependency graph](docs/audits/GOWERS_U3_LOW_MEAN_20261024.md).
 
 ## Previous record
 

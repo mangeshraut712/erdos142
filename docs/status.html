@@ -247,22 +247,22 @@
       </div>
       <div class="pills">
         <span class="pill open"><span class="dot"></span> Status: OPEN</span>
-        <span class="pill pass"><span class="dot"></span> 25 Current Verifiers PASS</span>
+        <span class="pill pass"><span class="dot"></span> 26 Current Verifiers PASS</span>
         <span class="pill warn"><span class="dot"></span> Oct 21 Claims Withdrawn</span>
       </div>
     </header>
 
     <div class="metrics-grid">
       <div class="metric-card">
-        <div class="metric-num">38</div>
-        <div class="metric-label">Total Verifier Suites (25 current + 13 legacy)</div>
+        <div class="metric-num">39</div>
+        <div class="metric-label">Total Verifier Suites (26 current + 13 legacy)</div>
       </div>
       <div class="metric-card">
         <div class="metric-num">1,211,965+</div>
         <div class="metric-label">Finite Progression & Pair Checks (Recent)</div>
       </div>
       <div class="metric-card">
-        <div class="metric-num">859</div>
+        <div class="metric-num">865</div>
         <div class="metric-label">SHA-256 Checkpoint Protected Files</div>
       </div>
       <div class="metric-card">
@@ -275,6 +275,10 @@
       <article class="card">
         <h2>October 2026 Advances & Rigorous Obstructions</h2>
         <ul>
+          <li>
+            <span class="badge b-blue">GU24</span>
+            <strong>GU24 transfer withdrawn (3 November):</strong> The weighted U3 transfer, low-mean coefficient 5/2 and inverse-exponent barrier were not proved. AP27 establishes exact all-pair residual identities; P12 and the target remain open. See <a href="audits/ALL_PAIR_OPERATOR_20261103.md">the correction and new proof</a>.
+          </li>
           <li>
             <span class="badge b-blue">MS24</span>
             <strong>Multi-Scale Bohr Overlaps:</strong> Proved universal density discrepancy invariance on overlaps and universal cross-host spatial decoupling &lang;<em>u</em><sub>1</sub>, <em>K</em><sub>1&rarr;2</sub><em>f</em>&rang; = &minus;<em>a</em><sub>1</sub> &lang;<em>g</em><sub>1&rarr;2</sub>, <em>f</em>&rang;. Multi-scale coupling cannot break the hole-support ceiling.
@@ -325,6 +329,12 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td><code>verify_gowers_u3_low_mean_20261024.py</code></td>
+              <td><span class="badge b-green">PASS</span></td>
+              <td>Historical finite diagnostic only; claimed transfer withdrawn. Excluded from the current suite.</td>
+              <td><strong>1,578</strong></td>
+            </tr>
             <tr>
               <td><code>verify_multiscale_bohr_overlap_20261024.py</code></td>
               <td><span class="badge b-green">PASS</span></td>

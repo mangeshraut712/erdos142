@@ -18,10 +18,12 @@ class TestDashboard(unittest.TestCase):
         """Status dashboard HTML must generate and contain expected key badges, metrics, and scripts."""
         html = build_status_dashboard()
         self.assertIn("Erdős 142 — Research Pack Status Dashboard", html)
+        self.assertIn("GU24", html)
         self.assertIn("MS24", html)
         self.assertIn("BP24", html)
         self.assertIn("IE24", html)
         self.assertIn("CL23", html)
+        self.assertIn("verify_gowers_u3_low_mean_20261024.py", html)
         self.assertIn("verify_multiscale_bohr_overlap_20261024.py", html)
         self.assertIn("verify_bilinear_pair_incidence_20261024.py", html)
         self.assertIn("research pack status dashboard", html.lower())

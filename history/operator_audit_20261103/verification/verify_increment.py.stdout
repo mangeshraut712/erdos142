@@ -1,0 +1,148 @@
+{
+  "status": "finite increment checks passed; no asymptotic theorem established",
+  "groups": [
+    5,
+    7,
+    11,
+    13
+  ],
+  "nonempty_proper_subsets_checked": 10392,
+  "independent_direct_definition_cross_checks": 160,
+  "empty_full_subsets_excluded": 8,
+  "nonempty_proper_4ap_free_subsets": 2647,
+  "4ap_free_subsets_with_p_alpha_cubed_at_least_two": 0,
+  "counterexamples_to_increment_lemma": 0,
+  "arithmetic": "exact integers and fractions; no floating point",
+  "named_4ap_free_examples": [
+    {
+      "p": 5,
+      "A": [
+        0,
+        1
+      ],
+      "alpha": "2/5",
+      "b": "6/25",
+      "S": "14/625",
+      "progression": {
+        "start": 0,
+        "step": 1,
+        "length": 2,
+        "points": [
+          0,
+          1
+        ]
+      },
+      "density": "1",
+      "gain": "3/5",
+      "gain_squared": "9/25",
+      "required_gain_squared": "7/675"
+    },
+    {
+      "p": 7,
+      "A": [
+        0,
+        1,
+        3
+      ],
+      "alpha": "3/7",
+      "b": "12/49",
+      "S": "24/2401",
+      "progression": {
+        "start": 0,
+        "step": 1,
+        "length": 4,
+        "points": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "density": "3/4",
+      "gain": "9/28",
+      "gain_squared": "81/784",
+      "required_gain_squared": "2/441"
+    },
+    {
+      "p": 13,
+      "A": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "alpha": "4/13",
+      "b": "36/169",
+      "S": "108/28561",
+      "progression": {
+        "start": 1,
+        "step": 2,
+        "length": 7,
+        "points": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          0
+        ]
+      },
+      "density": "4/7",
+      "gain": "24/91",
+      "gain_squared": "576/8281",
+      "required_gain_squared": "1/507"
+    }
+  ],
+  "cyclic_reuse_counterexample": {
+    "original_increment": {
+      "p": 11,
+      "A": [
+        6,
+        8,
+        9,
+        10
+      ],
+      "alpha": "4/11",
+      "b": "28/121",
+      "S": "140/14641",
+      "progression": {
+        "start": 6,
+        "step": 1,
+        "length": 5,
+        "points": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "density": "4/5",
+      "gain": "24/55",
+      "gain_squared": "576/3025",
+      "required_gain_squared": "5/1089"
+    },
+    "index_set": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "new_modulus": 5,
+    "wrapped_4ap": [
+      0,
+      4,
+      3,
+      2
+    ],
+    "integer_interval_4ap_free": true,
+    "cyclic_4ap_free": false
+  },
+  "out_of_scope_examples": [
+    "Z_4 and Z_6: not prime groups; canonical atom checks retained",
+    "g=(1,1/2,1/2,1/2,1/2): not an indicator; canonical rejection retained",
+    "general spectral arrays: need not be spectra of indicators"
+  ],
+  "external_dependencies": []
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "checks": 46352,
+  "counts": {
+    "schur": 1308,
+    "adjoint": 1308,
+    "starred_identity": 2616,
+    "diagonal_identity": 2616,
+    "row_bound": 6318,
+    "column_bound": 28488,
+    "pair_mean": 1308,
+    "pair_norm_uu": 654,
+    "pair_norm_c2": 654,
+    "quartic_identity": 578,
+    "correct_low_mean_bound": 504
+  },
+  "cases": 654,
+  "target_proved": false,
+  "P12_proved": false,
+  "scope": "Exact Fraction checks of AP27. Arbitrary kernels test algebra only; no eligible asymptotic counterexample or phase gain."
+}

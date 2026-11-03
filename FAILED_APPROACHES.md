@@ -1,3 +1,6 @@
+> **3 November 2026 correction — authoritative current status.** AP27 proves the all-host-pair residual identities and the bound ||L||^2<=288/p. P12, DIRECT-Q-GAIN and the target remain unproved. GU24's weighted U3 transfer, 5/2 low-mean coefficient and universal inverse-exponent barrier are unsupported and withdrawn. BP24's ceiling applies only to bounded inputs to its specified operator; it does not rule out every incidence-based approach. Earlier conflicting claims below are retained as superseded history.
+> Read the [current proof and exact next task](docs/audits/ALL_PAIR_OPERATOR_20261103.md) and [current checkpoint](checkpoints/AUTONOMOUS_CHECKPOINT_20261103.json).
+
 # Failed approaches: October 22 audit
 
 **Status: OPEN; outcome D, partial results only.** Updated 24 October 2026.
@@ -95,6 +98,17 @@ against zero-mean phase functions, while quadratic phases with distinct coeffici
 c_1 != c_2 are asymptotically orthogonal across overlapping Bohr domains.
 
 [Exact proofs and multi-scale audit](docs/audits/MULTISCALE_BOHR_OVERLAPS_20261024.md).
+
+## October 24 Gowers U^3 inverse transfer obstruction (GU24)
+
+Attempting to close the arithmetic low-mean branch m <= 2 a^3 T / w by converting
+the strictly positive fourth residual R4 >= (5/2) a^4 T > 0 into quadratic phase
+correlation via generic Gowers U^3 inverse theorems fails. While ||u||_{U^3} >= c a
+is valid, generic polynomial inverse theorems give delta >= c a^C with C >= 2.0.
+Because 2.0 > 1.5, the bound loses at least a^(0.5) against the required super-critical
+threshold delta >= c_epsilon a^(1.5) F_epsilon(a).
+
+[Exact proofs and Gowers audit](docs/audits/GOWERS_U3_LOW_MEAN_20261024.md).
 
 ## Previous record
 

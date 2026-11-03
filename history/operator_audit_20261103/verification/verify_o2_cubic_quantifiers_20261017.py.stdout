@@ -1,0 +1,5 @@
+{
+  "checks": 468,
+  "maximum_identity_error": 1.5265566588595902e-16,
+  "scope": "finite identities only; primes outside logarithmic target domain"
+}

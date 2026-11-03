@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "checks": 846305,
+  "counts": {
+    "weighted_hypergraph_mean": 982,
+    "exact_quartic_residual_identity": 982,
+    "column_degree_bound": 4314,
+    "exact_u_Kf_pairing": 2865,
+    "schur_operator_energy": 2865,
+    "universal_ceiling_bound": 833396,
+    "hole_support_zero_on_A": 901
+  },
+  "arithmetic_cases": 982,
+  "zero_mean_cases": 745,
+  "max_observed_ratio": 0.0465584711892377,
+  "universal_ceiling_constant": 6.0,
+  "target_proved": false,
+  "P12_proved": false,
+  "DIRECT_Q_GAIN_proved": false,
+  "eligible_counterexample_found": false,
+  "scope": "Exact rational arithmetic and rigorous floating bounds for bilinear incidence pairings. Universal 6 w a^(3/2) ceiling proved and verified. No super-critical phase gain possible via K."
+}

@@ -1,0 +1,222 @@
+{
+  "checks": 525186,
+  "checks_by_kind": {
+    "exact_AP_free_output": 2208,
+    "exact_Doob_Bernoulli_increment": 158,
+    "exact_Doob_conditional_Lipschitz": 158,
+    "exact_Doob_conditional_variance": 158,
+    "exact_McShane_agreement": 90,
+    "exact_McShane_edge_bound": 1056,
+    "exact_codegree_bound": 114,
+    "exact_deletion_rule": 2208,
+    "exact_extension_mean_error": 2,
+    "exact_global_good_endpoint_Lipschitz": 486567,
+    "exact_greedy_coloring": 114,
+    "exact_incident_count": 114,
+    "exact_intersection_degree_bound": 6340,
+    "exact_mean_completion_independence": 23,
+    "exact_mean_union_bound": 3,
+    "exact_own_coordinate_independence": 23584,
+    "exact_sample_modular_AP_exclusion": 6,
+    "exact_sample_subset": 6,
+    "exact_translation_equivariance": 2208,
+    "exact_uniform_mean": 3,
+    "floating_FFT_direct_check": 60,
+    "floating_linear_Parseval": 6
+  },
+  "chirp_coefficients_evaluated": 707238,
+  "maximum_FFT_direct_error": 2.0888836804026048e-17,
+  "geometry": [
+    {
+      "p": 5,
+      "distinct_AP_sets": 5,
+      "max_codegree": 3,
+      "max_intersection_degree": 3,
+      "colors_used": 4
+    },
+    {
+      "p": 7,
+      "distinct_AP_sets": 21,
+      "max_codegree": 6,
+      "max_intersection_degree": 11,
+      "colors_used": 9
+    },
+    {
+      "p": 11,
+      "distinct_AP_sets": 55,
+      "max_codegree": 6,
+      "max_intersection_degree": 14,
+      "colors_used": 11
+    },
+    {
+      "p": 17,
+      "distinct_AP_sets": 136,
+      "max_codegree": 6,
+      "max_intersection_degree": 14,
+      "colors_used": 11
+    },
+    {
+      "p": 31,
+      "distinct_AP_sets": 465,
+      "max_codegree": 6,
+      "max_intersection_degree": 14,
+      "colors_used": 12
+    },
+    {
+      "p": 43,
+      "distinct_AP_sets": 903,
+      "max_codegree": 6,
+      "max_intersection_degree": 14,
+      "colors_used": 12
+    }
+  ],
+  "exhaustive_cubes": [
+    {
+      "p": 5,
+      "all_samples": 32,
+      "good_endpoint_tests": [
+        {
+          "degree_cap": 0,
+          "good_samples": 16,
+          "pairs": 136
+        },
+        {
+          "degree_cap": 1,
+          "good_samples": 26,
+          "pairs": 351
+        },
+        {
+          "degree_cap": 2,
+          "good_samples": 26,
+          "pairs": 351
+        }
+      ],
+      "exact_expected_density_at_t_quarter": "243/1024"
+    },
+    {
+      "p": 7,
+      "all_samples": 128,
+      "good_endpoint_tests": [
+        {
+          "degree_cap": 0,
+          "good_samples": 29,
+          "pairs": 435
+        },
+        {
+          "degree_cap": 1,
+          "good_samples": 64,
+          "pairs": 2080
+        },
+        {
+          "degree_cap": 2,
+          "good_samples": 85,
+          "pairs": 3655
+        }
+      ],
+      "exact_expected_density_at_t_quarter": "1809/8192"
+    },
+    {
+      "p": 11,
+      "all_samples": 2048,
+      "good_endpoint_tests": [
+        {
+          "degree_cap": 0,
+          "good_samples": 67,
+          "pairs": 2278
+        },
+        {
+          "degree_cap": 1,
+          "good_samples": 397,
+          "pairs": 79003
+        },
+        {
+          "degree_cap": 2,
+          "good_samples": 892,
+          "pairs": 398278
+        }
+      ],
+      "exact_expected_density_at_t_quarter": "834705/4194304"
+    }
+  ],
+  "actual_samples": [
+    {
+      "p": 127,
+      "theta": 0.36,
+      "initial_size": 14,
+      "final_size": 10,
+      "ordered_APs_initial": 2,
+      "ordered_APs_final": 0,
+      "density": 0.07874015748031496,
+      "delta": 0.06592365896527837,
+      "delta_over_a_three_halves": 2.9836431918748567,
+      "original_prescribed_H": 0,
+      "scope": "finite diagnostic, not target-domain or asymptotic certification"
+    },
+    {
+      "p": 127,
+      "theta": 0.45,
+      "initial_size": 17,
+      "final_size": 10,
+      "ordered_APs_initial": 4,
+      "ordered_APs_final": 0,
+      "density": 0.07874015748031496,
+      "delta": 0.06902715133241247,
+      "delta_over_a_three_halves": 3.124104355857158,
+      "original_prescribed_H": 0,
+      "scope": "finite diagnostic, not target-domain or asymptotic certification"
+    },
+    {
+      "p": 257,
+      "theta": 0.36,
+      "initial_size": 32,
+      "final_size": 12,
+      "ordered_APs_initial": 14,
+      "ordered_APs_final": 0,
+      "density": 0.04669260700389105,
+      "delta": 0.038844336586907724,
+      "delta_over_a_three_halves": 3.8499538586712663,
+      "original_prescribed_H": 0,
+      "scope": "finite diagnostic, not target-domain or asymptotic certification"
+    },
+    {
+      "p": 257,
+      "theta": 0.45,
+      "initial_size": 19,
+      "final_size": 15,
+      "ordered_APs_initial": 2,
+      "ordered_APs_final": 0,
+      "density": 0.058365758754863814,
+      "delta": 0.041314100361022336,
+      "delta_over_a_three_halves": 2.929955987268217,
+      "original_prescribed_H": 0,
+      "scope": "finite diagnostic, not target-domain or asymptotic certification"
+    },
+    {
+      "p": 521,
+      "theta": 0.36,
+      "initial_size": 63,
+      "final_size": 9,
+      "ordered_APs_initial": 66,
+      "ordered_APs_final": 0,
+      "density": 0.01727447216890595,
+      "delta": 0.016456149037386816,
+      "delta_over_a_three_halves": 7.248047532052079,
+      "original_prescribed_H": 0,
+      "scope": "finite diagnostic, not target-domain or asymptotic certification"
+    },
+    {
+      "p": 521,
+      "theta": 0.45,
+      "initial_size": 35,
+      "final_size": 35,
+      "ordered_APs_initial": 0,
+      "ordered_APs_final": 0,
+      "density": 0.0671785028790787,
+      "delta": 0.037207934968003134,
+      "delta_over_a_three_halves": 2.1369289655930825,
+      "original_prescribed_H": 0,
+      "scope": "finite diagnostic, not target-domain or asymptotic certification"
+    }
+  ],
+  "scope": "exact arithmetic and finite-cube checks; numerical phases; asymptotic theorem proved in note"
+}

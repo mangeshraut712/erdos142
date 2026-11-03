@@ -1,0 +1,92 @@
+{
+  "status": "relative-window diagnostics passed; ultimate r4 target not proved",
+  "intervals": {
+    "all_interval_subsets": 32766,
+    "four_ap_free_subsets_including_empty": 16021,
+    "largest_interval": 14,
+    "arithmetic": "exact integers and fractions"
+  },
+  "controlled_windows": {
+    "rank_two_exhaustive_subsets": 4096,
+    "seeded_extra_windows": 220,
+    "rank_two_window_points": [
+      0,
+      1,
+      2,
+      8,
+      9,
+      10,
+      16,
+      17,
+      18,
+      24,
+      25,
+      32
+    ],
+    "rank_two_count_numerator": 18
+  },
+  "relative_operator": {
+    "p": 19,
+    "window": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "A": [
+      1,
+      2,
+      3
+    ],
+    "mixed": "-12/9025",
+    "negative_quadratic_rayleigh": -0.00261896181055648,
+    "all_chirp_identity_residual": 8.673617379884035e-19,
+    "floating_tolerance": 1e-12,
+    "PSD_local_counterexample": {
+      "window": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "A": [
+        0,
+        3
+      ]
+    }
+  },
+  "large_interval_stability": [
+    {
+      "length": 8192,
+      "density": "1/2",
+      "no_coarse_gain": true,
+      "relative_phi_error": "1/11184811",
+      "AP_free": false
+    },
+    {
+      "length": 16384,
+      "density": "1/4",
+      "no_coarse_gain": true,
+      "relative_phi_error": "5/44739243",
+      "AP_free": false
+    },
+    {
+      "length": 32768,
+      "density": "1/8",
+      "no_coarse_gain": true,
+      "relative_phi_error": "21/178956971",
+      "AP_free": false
+    },
+    {
+      "length": 65536,
+      "density": "1/16",
+      "no_coarse_gain": true,
+      "relative_phi_error": "85/715827883",
+      "AP_free": false
+    }
+  ],
+  "external_dependencies": []
+}

@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "checks": 43045,
+  "counts": {
+    "ratio_set": 1,
+    "factorial_moment": 11473,
+    "local_threshold": 298,
+    "zero_completion_witness": 1,
+    "pair_codegree": 877,
+    "hypergraph_size": 7,
+    "weighted_hypergraph": 982,
+    "individual_weight": 982,
+    "full_diagonal": 982,
+    "full_residual": 982,
+    "incidence_rows": 9109,
+    "overlap_degree_recheck": 9109,
+    "schur_energy": 1964,
+    "weighted_energy": 982,
+    "matrix_energy": 982,
+    "incidence_columns": 4314
+  },
+  "arithmetic_cases": 982,
+  "zero_mean_cases": 745,
+  "geometry_records": [
+    {
+      "p": 5,
+      "ambient_triples": 10,
+      "greedy_zero_completion_set": [
+        0,
+        1
+      ]
+    },
+    {
+      "p": 7,
+      "ambient_triples": 35,
+      "greedy_zero_completion_set": [
+        0,
+        1
+      ]
+    },
+    {
+      "p": 11,
+      "ambient_triples": 165,
+      "greedy_zero_completion_set": [
+        0,
+        1
+      ]
+    },
+    {
+      "p": 13,
+      "ambient_triples": 234,
+      "greedy_zero_completion_set": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "p": 17,
+      "ambient_triples": 408,
+      "greedy_zero_completion_set": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "p": 19,
+      "ambient_triples": 513,
+      "greedy_zero_completion_set": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "p": 29,
+      "ambient_triples": 1218,
+      "greedy_zero_completion_set": [
+        0,
+        1,
+        4,
+        5
+      ]
+    }
+  ],
+  "target_proved": false,
+  "P12_proved": false,
+  "eligible_counterexample_found": false,
+  "scope": "All assertions use exact arithmetic. Finite positive radii are not the prescribed eligible radii. No phase-selection conclusion."
+}

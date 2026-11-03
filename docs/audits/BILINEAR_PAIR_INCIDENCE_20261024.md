@@ -1,3 +1,6 @@
+> **3 November 2026 correction — authoritative current status.** AP27 proves the all-host-pair residual identities and the bound ||L||^2<=288/p. P12, DIRECT-Q-GAIN and the target remain unproved. GU24's weighted U3 transfer, 5/2 low-mean coefficient and universal inverse-exponent barrier are unsupported and withdrawn. BP24's ceiling applies only to bounded inputs to its specified operator; it does not rule out every incidence-based approach. Earlier conflicting claims below are retained as superseded history.
+> Read the [current proof and exact next task](ALL_PAIR_OPERATOR_20261103.md) and [current checkpoint](../../checkpoints/AUTONOMOUS_CHECKPOINT_20261103.json).
+
 # Bilinear pair incidence bounds and phase transfer obstruction
 
 24 October 2026. **D: new rigorous partial results. Target OPEN.**

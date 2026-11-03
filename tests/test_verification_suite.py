@@ -28,6 +28,7 @@ class TestVerificationSuite(unittest.TestCase):
     def test_recent_results_json_schema(self) -> None:
         """Results files must include status=passed and target_proved=False."""
         results = [
+            "GOWERS_U3_LOW_MEAN_20261024.json",
             "MULTISCALE_BOHR_OVERLAP_20261024.json",
             "BILINEAR_PAIR_INCIDENCE_20261024.json",
             "GROWING_OVERLAP_SYSTEMS_20261024.json",

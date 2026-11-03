@@ -1,0 +1,72 @@
+{
+  "status": "finite geometry and energy checks passed; asymptotic theorem is in the written proof",
+  "geometry": [
+    {
+      "d": 2,
+      "L": 3,
+      "p": 18826245929,
+      "CRT_range_exhaustively_checked": 955647,
+      "window_size": 7,
+      "AP_free_core_size": 3,
+      "nontrivial_AP_count": 2,
+      "effective_direction_support": "2",
+      "refined_window_nontrivial_AP_count": 0,
+      "A_mass_retention_in_refinement": "1",
+      "asymptotic_parameters": false,
+      "asymptotic_A_d_generated": false
+    },
+    {
+      "d": 2,
+      "L": 5,
+      "p": 139456687519,
+      "CRT_range_exhaustively_checked": 4290975,
+      "window_size": 9,
+      "AP_free_core_size": 3,
+      "nontrivial_AP_count": 6,
+      "effective_direction_support": "2",
+      "refined_window_nontrivial_AP_count": 0,
+      "A_mass_retention_in_refinement": "1",
+      "asymptotic_parameters": false,
+      "asymptotic_A_d_generated": false
+    }
+  ],
+  "profile_energy_cases": 140,
+  "asymptotic_bound_diagnostics": [
+    {
+      "d": 256,
+      "characters_controlled": 16,
+      "a_cubed_n_beta_lower_bound": "4503599627370496/3",
+      "variance_over_a_squared_upper_bound": "2^-40",
+      "effective_support_over_window_size_upper_bound": "1/27670116110564327424",
+      "bounds_only_not_generated_sets": true
+    },
+    {
+      "d": 512,
+      "characters_controlled": 22,
+      "a_cubed_n_beta_lower_bound": "576460752303423488/3",
+      "variance_over_a_squared_upper_bound": "2^-182",
+      "effective_support_over_window_size_upper_bound": "1/36779892980781332600600328651607420406849738932406452224",
+      "bounds_only_not_generated_sets": true
+    },
+    {
+      "d": 1024,
+      "characters_controlled": 32,
+      "a_cubed_n_beta_lower_bound": "73786976294838206464/3",
+      "variance_over_a_squared_upper_bound": "2^-430",
+      "effective_support_over_window_size_upper_bound": "1/16636018164724889157470485104858502220618622452254899451022877483687727846833753738239846436624837468584347265768421430973844946944",
+      "bounds_only_not_generated_sets": true
+    },
+    {
+      "d": 4096,
+      "characters_controlled": 64,
+      "a_cubed_n_beta_lower_bound": "1208925819614629174706176/3",
+      "variance_over_a_squared_upper_bound": "2^-1950",
+      "effective_support_over_window_size_upper_bound": "1/611846943922736054712618810131105453831948378654119409502408226316081180616121838079731258188601616466566549575560853981020655979710405957355198237568309514986335471029009696057106171175945758403512508341376123749357500953286086605661522025416941271758579627392448679093977206407952591413505581147644459683534468878024937617978086831314041263679123136223280369261558813128171906464396634595608410567194148294209890889272190398840244765351953670337477341515086727528798024434964404103496786063320719059295067546513241379431218474952729315544434433874073199046795299698097864493558078111744",
+      "bounds_only_not_generated_sets": true
+    }
+  ],
+  "arithmetic": "exact integers and fractions",
+  "r4_target": "OPEN",
+  "full_checkpoint_energy_lemma": "OPEN",
+  "external_dependencies": []
+}
