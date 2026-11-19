@@ -49,8 +49,9 @@ def build_dashboard_html() -> str:
 
     ms24_checks = ms24.get("checks", 28844)
     bp24_checks = bp24.get("checks", 846305)
-    go24_checks = go24.get("reported_checks", 43045)
-    oc23_checks = oc23.get("reported_checks", 293771)
+    # Result artifacts store the count as "checks" (run_current summaries use "reported_checks").
+    go24_checks = go24.get("checks", go24.get("reported_checks", 43045))
+    oc23_checks = oc23.get("checks", oc23.get("reported_checks", 293771))
 
     tracked_hashes = len(cp_data.get("file_sha256", {}))
 

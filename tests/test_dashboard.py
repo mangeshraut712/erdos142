@@ -26,6 +26,24 @@ class TestDashboard(unittest.TestCase):
         self.assertIn("verify_bilinear_pair_incidence_20261024.py", html)
         self.assertIn("research pack status dashboard", html.lower())
 
+    def test_status_dashboard_reads_checks_from_result_artifacts(self) -> None:
+        """GO24/OC23 counts come from the artifacts' "checks" field, not hard-coded defaults."""
+        import json
+        import tempfile
+        from unittest import mock
+
+        import verification.generate_dashboard as status_dashboard
+
+        with tempfile.TemporaryDirectory() as tmp:
+            results = Path(tmp) / "verification/results"
+            results.mkdir(parents=True)
+            (results / "GROWING_OVERLAP_20261024.json").write_text(json.dumps({"checks": 12345}), encoding="utf-8")
+            (results / "OVERLAP_CONSTRAINTS_20261023.json").write_text(json.dumps({"checks": 67890}), encoding="utf-8")
+            with mock.patch.object(status_dashboard, "ROOT", Path(tmp)):
+                html = status_dashboard.build_dashboard_html()
+        self.assertIn("<strong>12,345</strong>", html)
+        self.assertIn("<strong>67,890</strong>", html)
+
     def test_status_file_matches_generator(self) -> None:
         """docs/status.html must match the status generator output."""
         status_file = ROOT / "docs/status.html"
