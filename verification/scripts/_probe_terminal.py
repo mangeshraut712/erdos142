@@ -45,7 +45,7 @@ def class_stats(bits):
 
 
 def max_block_gain(bits, min_len=2):
-    n, m = len(bits)
+    n, m = len(bits), sum(bits)
     a = F(m, n)
     best = F(0)
     best_len = 0
